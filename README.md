@@ -1,34 +1,57 @@
-# VIP-NLP
+edx-nlp
+==============================
 
-This sub-team is focused on the analysis of forum data from the OMSA programs at Georgia Tech. Forums can be wonderful places where students from around the globe discuss deep problems and learn from one another. They can also be pits of toxicity and despair, ghost-towns, or even worse, boring. A good forum or discussion tool is crucial to the success of learning at scale. Without it students are isolated, and cannot form communities to tackle tough problems and they won't learn from one another. 
+A short description of the project.
 
-Georgia Tech has had great success in MOOC forums. Check out C21U's chief scientist, Dr. Ashok Goel's [TEDx talk](https://www.youtube.com/watch?v=WbCguICyfTA) where a AI chatbot was trained using past forum data and successfully tricked students into thinking that it was a real human teaching assistant. Recent efforts to deploy the chatbot to other courses have failed due to the lack of participation in forums. The goal this semester is to put together a plan to understand what discourse is happening in the OMSA forums, if the discourse can power new tools, and if we can find ways to inspire students to engage in the forums more deeply.
+Project Organization
+------------
 
-# Open Questions
-* What discourse takes place on the forums?
-* How can we encourage deep discourse?
-* Can discourse predict student success?
-* What new technologies can be powered by discourse?
+    ├── LICENSE
+    ├── Makefile           <- Makefile with commands like `make data` or `make train`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── src                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── data           <- Scripts to download or generate data
+    │   │   └── make_dataset.py
+    │   │
+    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   │   └── build_features.py
+    │   │
+    │   ├── models         <- Scripts to train models and then use trained models to make
+    │   │   │                 predictions
+    │   │   ├── predict_model.py
+    │   │   └── train_model.py
+    │   │
+    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │       └── visualize.py
+    │
+    └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
 
-# Topics
-* Network analysis
-* Community of Inquiry
-* Quality of discourse
-* Slack web-scraping?
 
-# Fall 2019 Deliverables
-* Project management plan
-* Clean and pull data from MongoDB server
-* Initial NLP-based analysis of forum data
-* Present results
+--------
 
-# Team Roles and Responsibilities
-* **Project Manager** Coordinate tasks between team members, keep project tasks up to date, lead presentations
-* **Data Scientist** Apply machine learning, evaluate results, create visualization
-* **Back End Developer** Coordinate with data scientists to deliver data. Transform proof-of-concepts into robust code
-
-# Reading List
-* [Community of Inquiry](https://coi.athabascau.ca/coi-model/)
-* [Cohesion Network Analysis](https://repository.isls.org/bitstream/1/220/1/17.pdf)
-* [Scott Crossley's Research](https://shared.cas.gsu.edu/profile/crossley-scott/)
-* [Predicting Instructor Interventions in MOOC Forums](https://www.aclweb.org/anthology/P14-1141)
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
