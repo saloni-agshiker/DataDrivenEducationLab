@@ -15,7 +15,8 @@ shortlisted two ideas: a. Scrapping Piazza to generate reports for professors an
 More details will be listed on the meeting minutes. 
 https://docs.google.com/document/d/1OQDmQag-p9xbW83aBS2wHeFiao84nQJQZbbP8_eyNQI/edit
 
-2. Better time for subteam meeting: We explored if we could find a better time (9-5 PM) during weekdays for our team meeting. 
+2. Better time for subteam meeting: We explored if we could find a better time (9-5 PM) during weekdays for our team meeting.
+https://doodle.com/poll/6bgiu9mpzxh77xq8
 
 To do:
 1. Talk with TA's and Professors to explore what tools could be beneficial for Piazza and other forums
