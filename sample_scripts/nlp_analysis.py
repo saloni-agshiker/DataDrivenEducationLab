@@ -1,6 +1,4 @@
 import pymongo
-from bson import json_util
-import psycopg2
 import creds
 from textblob import TextBlob
 
@@ -8,8 +6,8 @@ from textblob import TextBlob
 def mongo_client():
     """Connect to mongo client."""
     client = pymongo.MongoClient(
-        creds.c21u_mongo['host'],
-        int(creds.c21u_mongo['port']),
+        host=creds.c21u_mongo['host'],
+        port=int(creds.c21u_mongo['port']),
         username=creds.c21u_mongo['user'],
         password=creds.c21u_mongo['password'],
         authSource='admin',
@@ -24,17 +22,17 @@ def mongo_database(db_name):
     return client[db_name]
 
 
-def process_edx_forum(db):
+def print_negative_sentiment(db, limit=-0.8):
     for post in db.forum.find():
         blob = TextBlob(post['body'])
         for sentence in blob.sentences:
-            if sentence.sentiment.polarity < -0.8:
+            if sentence.sentiment.polarity < limit:
                 print(sentence)
 
 
 def main():
     db = mongo_database(creds.c21u_mongo['database'])
-    process_edx_forum(db)
+    print_negative_sentiment(db)
 
 if __name__ == '__main__':
     main()

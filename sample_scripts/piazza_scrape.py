@@ -4,6 +4,7 @@ import json
 EMAIL = ''
 PASSWORD = ''
 
+
 def process_course(p, course_dict):
     course_obj = p.network(course_dict['nid'])
     course_dict['posts'] = course_obj.iter_all_posts()
