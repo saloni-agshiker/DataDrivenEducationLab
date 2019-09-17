@@ -6,7 +6,8 @@ Natural Language Processing Subteam
 Team members: Lindsey Blackmore, Zachary Abraham, Jianan Jin, Xinran Yu
 
 Meeting 1
-09 September 2019, 9-10 PM
+09 September 2019
+9-10 PM EST
 CULC 244
 
 Meeting summary:
