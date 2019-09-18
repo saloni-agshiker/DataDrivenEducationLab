@@ -20,5 +20,6 @@ Subteam Members: Atush Dhakal, Zachary Abraham, Jianan Jin, Lindsey Blackmore
 * Presented our progress to the VIP team, got feedback from the members, and learned about the progress of other subteams.
 * Decided the subteam will meet on Sept 20th from 11am to 12pm.
 * Learned about Markdown files.
+* Requested access to credentials
 ## To-do
 * Study sample_scripts
