@@ -37,3 +37,13 @@ Update:
 1. The presentation 1 has been finlaized and I will introduce the group and talk about Semantic analysis. 
 2. We will also finlaize the time for sub team meetings tomorrow - 18th during VIP weekly meeting
 3. TA's mentioned that any data that helps them understand student's view on homework,test, quizzes and topic that most students are talking about/struggling would be helpful
+
+2nd Subteam meeting
+20 September 2019
+11-12 pm
+Friday
+CULC 315
+Agenda:
+1. Finalizing project ideas
+2. Defining semester goals
+3. Esatblishing weekly goal
