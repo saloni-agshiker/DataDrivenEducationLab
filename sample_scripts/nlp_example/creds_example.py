@@ -35,3 +35,7 @@ c21u_mongo = {
     'user': '',
     'password': ''
 }
+
+c21u_ec2 = {
+    'id': ''
+}

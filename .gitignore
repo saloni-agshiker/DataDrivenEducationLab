@@ -1,3 +1,5 @@
+student_permissions.js
+.aws/
 creds.py
 *.json
 *.csv
