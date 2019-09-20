@@ -3,6 +3,7 @@ student_permissions.js
 creds.py
 *.json
 *.csv
+creds.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
