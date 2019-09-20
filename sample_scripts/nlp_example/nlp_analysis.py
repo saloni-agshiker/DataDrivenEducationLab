@@ -1,6 +1,4 @@
-import pymongo
-import boto3
-import creds
+import connect
 from textblob import TextBlob
 
 """
@@ -20,11 +18,7 @@ def start_instance():
 def mongo_client():
     """Connect to mongo client."""
     client = pymongo.MongoClient(
-        host=creds.c21u_mongo['host'],
-        port=int(creds.c21u_mongo['port']),
-        username=creds.c21u_mongo['user'],
-        password=creds.c21u_mongo['password'],
-        authSource=creds.c21u_mongo['database'],
+        **creds.c21u_mongo,
         authMechanism='SCRAM-SHA-256',
     )
     return client
@@ -46,8 +40,7 @@ def print_negative_sentiment(db, limit=-0.8):
 
 
 def main():
-    start_instance()
-    db = mongo_database(creds.c21u_mongo['database'])
+    db = connect.get_db()
     print_negative_sentiment(db)
 
 if __name__ == '__main__':
