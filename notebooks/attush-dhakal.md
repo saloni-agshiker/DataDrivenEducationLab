@@ -10,10 +10,13 @@
 ### 9-10 PM EST
 ### CULC 244
 
-Meeting summary:
+#### Meeting summary:
 1. Decided on project themes/ideas: We disucssed some of the ideas that was listed on the Google docs below. We decided to 
-shortlisted two ideas: a. Scrapping Piazza to generate reports for professors and b. Personalized resource recommendation.
-More details will be listed on the meeting minutes. 
+shortlisted two ideas: 
+* Scrapping Piazza to generate reports for professors
+* Personalized resource recommendation
+
+More details will be posted on the meeting minutes below:
 https://docs.google.com/document/d/1OQDmQag-p9xbW83aBS2wHeFiao84nQJQZbbP8_eyNQI/edit
 
 2. Better time for subteam meeting: We explored if we could find a better time (9-5 PM) during weekdays for our team meeting.
