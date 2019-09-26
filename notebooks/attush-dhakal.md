@@ -1,14 +1,14 @@
-Attush Dhakal
-adhakal7@gatech.edu
-Project Manager
-Natural Language Processing Subteam
+## Attush Dhakal
+## adhakal7@gatech.edu
+## Project Manager
+## Natural Language Processing Subteam
 
-Team members: Lindsey Blackmore, Zachary Abraham, Jianan Jin, Xinran Yu
+## Team members: Lindsey Blackmore, Zachary Abraham, Jianan Jin, Xinran Yu
 
-Meeting 1
-09 September 2019
-9-10 PM EST
-CULC 244
+### Meeting 1
+### 09 September 2019
+### 9-10 PM EST
+### CULC 244
 
 Meeting summary:
 1. Decided on project themes/ideas: We disucssed some of the ideas that was listed on the Google docs below. We decided to 
