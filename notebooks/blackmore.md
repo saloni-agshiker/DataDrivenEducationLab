@@ -34,7 +34,7 @@ September 20, 2019
   - Dr. Staudhauer gave us a rundown of docker and the sample_scripts he had uploaded to our github
 
 To-Do List:
-  - try to run the nlp_analysis script before our next meeting (completed but with partial success)
+  - try to run the nlp_analysis script before our next meeting (completed)
   
 September 25, 2019
   - Dr. Courville and Dr. Gazi presented in our class time today
@@ -45,6 +45,7 @@ September 26, 2019
   - attempted to run the simple nlp_analysis script through docker and am having trouble only on the last step of the proces. 
   AttributeError: module 'creds' has no attribute 'c21u_ec2' is the error I am receiving so I will ask about this in tomorrow's meeting
   - will be reading about the TextBlob library to further my understanding of NLP for this project
+  - resolved the situation with docker... had some of the files outside of the proper directory and needed to restart the docker quickstart terminal
 
 To-Do List:
-  - have the nlp_analysis script working by the weekend
+  - have the nlp_analysis script working by the weekend (completed)
