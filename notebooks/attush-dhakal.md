@@ -5,6 +5,7 @@
 
 ## Team members: Lindsey Blackmore, Zachary Abraham, Jianan Jin, Xinran Yu
 
+
 ### 1st Subteam meeting
 ### 09 September 2019
 ### 9-10 PM
@@ -16,10 +17,8 @@
 1. Decided on project themes/ideas: We discussed some of the ideas that are listed on the Google docs below. We decided to 
 shortlisted two ideas: 
 * Scrapping Piazza to generate reports for professors
-* Personalized resource recommendation
-
-More details is posted on the meeting minutes below:
-https://docs.google.com/document/d/1OQDmQag-p9xbW83aBS2wHeFiao84nQJQZbbP8_eyNQI/edit
+* Personalized resource recommendation<br/><br/>More details is posted on the meeting minutes below:
+ https://docs.google.com/document/d/1OQDmQag-p9xbW83aBS2wHeFiao84nQJQZbbP8_eyNQI/edit
 
 2. A better time for subteam meeting: We explored if we could find a better time (9-5 PM) during weekdays for our team meeting.
 https://doodle.com/poll/6bgiu9mpzxh77xq8
