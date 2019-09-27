@@ -49,3 +49,14 @@ September 26, 2019
 
 To-Do List:
   - have the nlp_analysis script working by the weekend (completed)
+  
+September 27, 2019
+  - was unable to attend the weekly meeting
+  https://nlp-vip.slack.com/archives/CMFPSU5H8/p1569541989001300 (meeting outline created by Atush)
+  - having some reservations about develping a closed domain chat bot as Jill Watson has already been implemented and I feel like creating an LTI to summarize sentiment of posts could answer questions that have not been addressed with the current research of this VIP
+  - having Dr. Staudhauer at meetings is proving to be helpful in our progress and my hope is that we begin research/implementation at the beginning of October
+  - September has served as this team's time to get our feet under us, decide on a direction, and begin to delegate tasks (essentially an extended planning period)
+
+To-Do List:
+  - scrape piazza forums that I currently have access to and play around with sentiment analysis if I am able to obtain data from this
+  - research the creation of LTI for canvas and familiarize myself with EdX
