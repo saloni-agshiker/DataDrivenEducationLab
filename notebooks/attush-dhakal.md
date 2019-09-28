@@ -46,7 +46,7 @@ https://doodle.com/poll/6bgiu9mpzxh77xq8
 ### 11-12 pm
 ### CULC 315
 
-#### Members Present: Atush Dhakal, Lindsey Blackmore, Jianan Jin, Xinran Yu
+#### Members Present: Atush Dhakal, Lindsey Blackmore, Jianan Jin, Xinran Yu, Shawn Staudaher
 
 #### Agenda:
 1. Finalizing project ideas
@@ -77,3 +77,12 @@ https://doodle.com/poll/6bgiu9mpzxh77xq8
 1. Journal is due today
 2. Peer-evals start on Monday (9/30) and will end on Friday (10/4) 
 https://www.vip.gatech.edu/peer-evaluations
+
+#### Members Present: Atush Dhakal, Jianan Jin, Xinran Yu, Shawn Staudaher
+
+#### Meeting Summary:
+1. We decided to spend the next week entirely focusing on getting data from Piazza.
+2. We established some of our semester goals but two of our Backend developers 
+3. He also shared a Python script that scrapes data from Piazzawere not able to attend due to schedule conflict so it could change.
+4. Our semester goal is to develop a tool that will prioritize notification by performing sentiment analysis on the post by students on Piazza. 
+5. Also, once the data is extracted, we will spend the next two weeks performing data engineering, NLP test, and statistical visualization.
