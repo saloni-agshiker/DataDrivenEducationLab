@@ -64,7 +64,7 @@ https://doodle.com/poll/6bgiu9mpzxh77xq8
 ### 3rd Subteam meeting
 ### 27 September 2019
 ### 11-12 pm
-### CULC 315
+### CULC 455
 
 #### Agenda:
 1. Gathering additional data from Piazza
