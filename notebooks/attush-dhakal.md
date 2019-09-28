@@ -86,3 +86,8 @@ https://www.vip.gatech.edu/peer-evaluations
 3. He also shared a Python script that scrapes data from Piazzawere not able to attend due to schedule conflict so it could change.
 4. Our semester goal is to develop a tool that will prioritize notification by performing sentiment analysis on the post by students on Piazza. 
 5. Also, once the data is extracted, we will spend the next two weeks performing data engineering, NLP test, and statistical visualization.
+
+#### Important reminders:
+1. Meeting with Dr. Staudaher on Tuesday 12-12:30 pm to discuss in details regarding data engineering, statistical visualization, and NLP test.
+2. Read about Scott Crossley and how we can scale our project to production
+3. Share Trello with Shawn
