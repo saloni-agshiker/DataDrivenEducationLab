@@ -17,6 +17,7 @@ def process_course(p, course_dict):
 def main():
     p = Piazza()
     p.user_login(email=EMAIL, password=PASSWORD)
+    #print ([course for course in p.get_user_classes()])
     piazza = []
     for course in p.get_user_classes():
         if course['nid'] in COURSES:
