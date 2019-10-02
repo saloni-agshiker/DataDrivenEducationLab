@@ -60,3 +60,13 @@ September 27, 2019
 To-Do List:
   - scrape piazza forums that I currently have access to and play around with sentiment analysis if I am able to obtain data from this
   - research the creation of LTI for canvas and familiarize myself with EdX
+  
+October 2, 2019
+  - work-day during VIP meeting time
+  - Xinran and Jianin scraped from CS 2316 and (grad level course ?) since they are both TAs and it became apparnet to the team that it was necessary to be a TA to properly scrape the forum
+  - Atush set up a Trello board for the team and has broken our semester down into three phases (Dr. Staudhauer will add small tasks in the coming days)
+  - peer evaluations opened at the beginning of this week (September 30) and must be completed by Friday
+
+To-Do List:
+  - complete midterm peer evaluation for sub-team members
+  - get meeting minutes from Atush since I will not be in attendance
