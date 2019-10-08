@@ -91,3 +91,33 @@ https://www.vip.gatech.edu/peer-evaluations
 1. Meeting with Dr. Staudaher on Tuesday 12-12:30 pm to discuss in details regarding data engineering, statistical visualization, and NLP test.
 2. Read about Scott Crossley and how we can scale our project to production
 3. Share Trello with Shawn
+
+### 4th Subteam meeting
+### 08 October 2019
+### 11-12 pm
+### CULC 455
+
+#### Agenda:
+1. Piazza data collection
+2. Next steps - Data engineering, Stat visualization
+3. Rough timeline of our goals for the semester
+4. Monthly sub-team presentation 2
+
+
+#### Important reminders:
+1. Peer evaluation due today at 4 pm - 20% of our grade
+
+#### Members Present: Atush Dhakal, Jianan Jin, Xinran Yu, Shawn Staudaher
+
+#### Meeting Summary:
+1. For 2nd Subteam meeting, talk about:
+- Recap of the mission
+- Updates and connect your present task with with the mission
+- Next steps - data ens, stat visualization
+- End goal - appl, tool development
+2. Jianan has pulled around additional posts 4,000 posts from ISYE6501 class on Piazza
+3. We will spend the next week performing NLP analysis on the data set we have
+4. We will also explore and do additional research on tools that we could develop for professors to use - web app, desktop app, something that could run from terminal
+
+#### Note:
+1. Please check Trello board for latest updates and meeting minutes
