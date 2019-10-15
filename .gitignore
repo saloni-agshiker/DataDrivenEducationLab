@@ -5,6 +5,7 @@ piazza_creds.py
 *.json
 *.csv
 creds.zip
+xinran.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
