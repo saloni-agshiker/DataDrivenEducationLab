@@ -1,6 +1,7 @@
 student_permissions.js
 .aws/
 creds.py
+piazza_creds.py
 *.json
 *.csv
 creds.zip
