@@ -70,3 +70,14 @@ October 2, 2019
 To-Do List:
   - complete midterm peer evaluation for sub-team members
   - get meeting minutes from Atush since I will not be in attendance
+  
+October 18, 2019
+  - weekly sub-team meeting 
+  - discussing how the sentiment analysis could be applied in differnet ways to the forum discourse
+  - using the scripts and analysis on different classes to see if trends appear (asking professors to participate in this)
+  - how was Manley able to join ISYE 6501 without a class access code?
+  
+To-Do List:
+  - create bare bones Flask web app and continue to develop it to get a user-friendly credential input
+  - meet with Zach to divide web dev work before the next presentation
+  - ask 2200 TAs for access to the piazza data (?)
