@@ -36,3 +36,35 @@ Subteam Members: Atush Dhakal, Zachary Abraham, Jianan Jin, Lindsey Blackmore
 ## To-do
 * Gather data from Piazza using the modified sample scripts by next week.
 * Run other sample scripts and play around with the textblob library.
+
+# October 2nd, 2019
+* In-class work day
+* Jianan shared her piazza_scrape.py file with us and we figured out that we could scrape the course data on piazza only if we were TAs or instructors. As a TA for CS2316, I successfully ran the script and scraped the data for CS2316 over Summer 2019 and Fall 2019. Jianan is a TA for ISYE6501 and she shared the scraped data for the course for Spring 2019 with us as a JSON file.
+* Completed peer evaluation.
+## To-do
+* Look into the structure of the JSON file
+
+# October 4th, 2019
+* Fourth subteam meeting from 11am to 12:30pm in CULC 455. Meeting notes: https://docs.google.com/document/d/1S8RXYh71tIAJENcNSajH5Jv-HiGJEQHCZ6ZB7HpFhpg/edit?usp=sharing
+* Populated the trello board with more specific tasks and decided the roles among members
+* Decided that I would be working on statistical visualization
+## To-do
+* Analyze the data file's strucutre and clean up the data (extracting contents as strings)
+* Once we get the cleaned data, we will perform NLP analysis and get the statistics of the data.
+
+# October 9th, 2019
+* Second presentation during class time (11:15am - 12:15pm)
+
+# October 16th, 2019
+* In-class work day
+* Decided that for this semester, we would develop a website that allows instructors to login with their credentials and see the data visualizations of their piazza post data easily
+
+# October 18th, 2019
+* Fifth subteam meeting from 11am to 12:30pm in CULC 344.
+* Discussed potential directions for web development and data visualizations
+* Dr. Staudhauer pointed out some potential modules in python for data visualization
+## To-do
+* Learn about plotly and seaborn
+
+# October 22nd, 2019
+* Went over the documentation for plotly and read some tutorials on how to use it
