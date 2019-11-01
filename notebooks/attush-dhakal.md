@@ -93,7 +93,7 @@ https://www.vip.gatech.edu/peer-evaluations
 3. Share Trello with Shawn
 
 ### 4th Subteam meeting
-### 08 October 2019
+### 04 October 2019
 ### 11-12 pm
 ### CULC 455
 
@@ -103,21 +103,59 @@ https://www.vip.gatech.edu/peer-evaluations
 3. Rough timeline of our goals for the semester
 4. Monthly sub-team presentation 2
 
-
 #### Important reminders:
 1. Peer evaluation due today at 4 pm - 20% of our grade
 
 #### Members Present: Atush Dhakal, Jianan Jin, Xinran Yu, Shawn Staudaher
 
 #### Meeting Summary:
-1. For 2nd Subteam meeting, talk about:
+1. Topics to cover for second subteam presentation:
 - Recap of the mission
 - Updates and connect your present task with with the mission
-- Next steps - data ens, stat visualization
-- End goal - appl, tool development
+- Next steps - data engineering, statistical visualization
+- End goal - web application
 2. Jianan has pulled around additional posts 4,000 posts from ISYE6501 class on Piazza
 3. We will spend the next week performing NLP analysis on the data set we have
 4. We will also explore and do additional research on tools that we could develop for professors to use - web app, desktop app, something that could run from terminal
 
 #### Note:
 1. Please check Trello board for latest updates and meeting minutes
+
+### 5th Subteam meeting
+### 18 October 2019
+### 11-12 pm
+### CULC 344
+
+#### Agenda:
+1. Web Application Development tools, server, environment
+2. LTI Integration
+
+#### Members Present: Atush Dhakal, Jianan Jin, Xinran Yu, Lindsey Blackmore, Shawn Staudaher
+
+#### Meeting Summary:
+1. Tools we decided to use for the web application development
+- Framework: Flask - a Python based framework
+- Data Dashboard: Plot.ly
+2. We need to perform more research on LTI Integration
+3. Lindsey will create a mockup for the Web App
+4. Xinran and Jianin will work on data visualization using Plot.ly
+
+### 6th Subteam meeting
+### 01 November 2019
+### 11-12 pm
+### CULC 242
+
+#### Agenda:
+1. Different metrics for data visualization
+2. LTI Integration
+3. Exploring Flask
+4. Ending the semester of a high
+
+#### Members Present: Atush Dhakal, Jianan Jin, Xinran Yu
+
+#### Meeting Summary:
+1. We explored different metrics for data visualization and decided on keywords and sentiment for now
+2. We explored LTI and how the process of authenticating users would work
+3. Xinran had wanted to know how we can add our app to the Canvas
+4. We also looked at Falsk and the number of screens required for UI. Our concluded that we will only need 2 screen for now:  one for authenticating user and one for displaying data in the dashboard. Since, we will have drillable dashboard, we will not need additional screen to display the data
+5. We also discussed how we can maximize the remaining time of the semester and end our semester on a high
