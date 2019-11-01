@@ -41,6 +41,7 @@ https://doodle.com/poll/6bgiu9mpzxh77xq8
 2. We will also finalize the time for sub-team meetings tomorrow - 18th during VIP weekly meeting
 3. TA's mentioned that any data that helps them understand student's view on homework, test, quizzes, and topic that most students are talking about/struggling would be helpful
 
+
 ### 2nd Subteam meeting
 ### 20 September 2019
 ### 11-12 pm
@@ -60,6 +61,7 @@ https://doodle.com/poll/6bgiu9mpzxh77xq8
 3. He also helped us connect with MongoDB and other required steps to run basic NLP scripts
 4. We concluded the meeting by deciding to gather some more data from Piazza and running the NLP script to perform basic sentiment analysis
 5. Also, we decided that we will 11-12 pm Friday every week
+
 
 ### 3rd Subteam meeting
 ### 27 September 2019
@@ -92,6 +94,7 @@ https://www.vip.gatech.edu/peer-evaluations
 2. Read about Scott Crossley and how we can scale our project to production
 3. Share Trello with Shawn
 
+
 ### 4th Subteam meeting
 ### 04 October 2019
 ### 11-12 pm
@@ -121,6 +124,7 @@ https://www.vip.gatech.edu/peer-evaluations
 #### Note:
 1. Please check Trello board for latest updates and meeting minutes
 
+
 ### 5th Subteam meeting
 ### 18 October 2019
 ### 11-12 pm
@@ -139,6 +143,7 @@ https://www.vip.gatech.edu/peer-evaluations
 2. We need to perform more research on LTI Integration
 3. Lindsey will create a mockup for the Web App
 4. Xinran and Jianin will work on data visualization using Plot.ly
+
 
 ### 6th Subteam meeting
 ### 01 November 2019
