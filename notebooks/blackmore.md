@@ -78,6 +78,23 @@ October 18, 2019
   - how was Manley able to join ISYE 6501 without a class access code?
   
 To-Do List:
-  - create bare bones Flask web app and continue to develop it to get a user-friendly credential input
+  - create bare bones Flask web app and continue to develop it to get a user-friendly credential input (completed Hello World version)
   - meet with Zach to divide web dev work before the next presentation
   - ask 2200 TAs for access to the piazza data (?)
+  
+October 23, 2019
+  - discussed the pros and cons of different deliverables for the sentiment analysis
+  - agreed on web application that has the hopes to be integrated into Canvas
+  
+To-Do List:
+  - brush up on HTML
+  - figure out a way to deliver a proof of concept since web app may be barely developed
+  
+October 30, 2019
+  - third monthly presentation
+  
+To-Do List:
+  - create an AdobeXD UI mockup by the 11/20/19
+  
+November 6, 2019
+  - continued work on the mockup
