@@ -164,3 +164,20 @@ https://www.vip.gatech.edu/peer-evaluations
 3. Xinran had wanted to know how we can add our app to the Canvas
 4. We also looked at Falsk and the number of screens required for UI. Our concluded that we will only need 2 screen for now:  one for authenticating user and one for displaying data in the dashboard. Since, we will have drillable dashboard, we will not need additional screen to display the data
 5. We also discussed how we can maximize the remaining time of the semester and end our semester on a high
+
+
+### 7th Subteam meeting
+### 08 November 2019
+### 11-12 pm
+### CULC 252
+
+#### Agenda:
+1. Web Application mockup
+2. What types of data should be displayed for web app?
+
+#### Members Present: Atush Dhakal, Jianan Jin, Xinran Yu, Lindsey Blackmore, Shawn Staudaher
+
+#### Meeting Summary:
+1. We discussed the mock up for the Web app. We brainstormed the number of screens, authentication, data visualization for the web app
+2. Lindsey will show us the mockup on Wednesday
+3. We also included the data to be displayed in the web app. We decided that we should display sentiment, categories, and frequency of keywords in the post
