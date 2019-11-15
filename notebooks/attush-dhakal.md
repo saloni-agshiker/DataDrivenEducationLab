@@ -181,3 +181,30 @@ https://www.vip.gatech.edu/peer-evaluations
 1. We discussed the mock up for the Web app. We brainstormed the number of screens, authentication, data visualization for the web app
 2. Lindsey will show us the mockup on Wednesday
 3. We also included the data to be displayed in the web app. We decided that we should display sentiment, categories, and frequency of keywords in the post
+
+
+### 8th Subteam meeting
+### 15 November 2019
+### 11-12 pm
+### CULC 242
+
+#### Agenda:
+1. This is our sub-team last meeting for the semester
+2. Final(3rd) presentation and last working day is on November 20
+3. Peer evaluation starts November 21st and ends on December 4th 5pm
+4. Notebooks are due by December 4th 5pm
+
+#### Notes:
+1. End of semester
+2. 3rd Subteam presentation
+3. Laying foundation for next semester with strong documentation
+4. Challenges we faced this semester
+
+#### Members Present: Atush Dhakal, Xinran Yu, Lindsey Blackmore
+
+#### Meeting Summary:
+1. Lindsey mentioned that she will talk with Maxim from Assessments about the  web app they are building. She would like to know about the front-end development and tools they are using
+2. Xinran mentioned that she will create a time series graph. It will help user understand frequency of posts and keywords per day, week, month, and etc
+3. Atush mentioned that he will work on the mock up for data dashboard
+4. We decided that the best way to end the semester will be finishing mockups, finalizing the metrics for data dashboard, and the tools and process for web application development
+5. We also discussed the challenges we faced this semester. This will be detailed on our presentation slides for 3rd presentation
