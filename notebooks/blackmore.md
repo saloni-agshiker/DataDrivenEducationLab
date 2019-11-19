@@ -79,7 +79,7 @@ October 18, 2019
   
 To-Do List:
   - create bare bones Flask web app and continue to develop it to get a user-friendly credential input (completed Hello World version)
-  - meet with Zach to divide web dev work before the next presentation
+  - meet with Zach to divide web dev work before the next presentation (Zach has either dropped the class or stopped participating)
   - ask 2200 TAs for access to the piazza data (?)
   
 October 23, 2019
@@ -87,14 +87,38 @@ October 23, 2019
   - agreed on web application that has the hopes to be integrated into Canvas
   
 To-Do List:
-  - brush up on HTML
+  - brush up on HTML (completed)
   - figure out a way to deliver a proof of concept since web app may be barely developed
   
 October 30, 2019
   - third monthly presentation
   
 To-Do List:
-  - create an AdobeXD UI mockup by the 11/20/19
+  - create an AdobeXD UI mockup by the 11/20/19 (completed before last monthly presentation)
   
 November 6, 2019
-  - continued work on the mockup
+  - continued work on mockup/making the prototype of it for the final presentation
+  - began work on the front end of the application
+  
+November 13, 2019
+  - uploaded adobeXD mockup to nlp github
+  - Atush said he may decide to modify the last slide in order to make it look more like a data dashboard
+  
+To-Do List:
+  - begin documentation on the current app code
+  
+November 15, 2019
+  - final sub-team meeting of the semester
+  - discussed challenges and successes of the semester
+  - decided what would go into the final presentation (successes, challenges, findings, tips for incoming VIP students, mockup, display any further data analysis, plans for what would be done next)
+  - if the app gets finished, demo that in the final presentation
+  - if not, show screencaps of current UI, the mockup, and detail the plans/documentation laid out for the person that will pick it up next
+
+To-Do List:
+  - contact Maxim about the structure of his app
+  - try to develop the app as much as possible
+  
+November 19, 2019
+  - completed README.md for the app which includes the current state of the project and what still needs to be accomplished
+  - uploaded the app to the nlp github
+  - added relevant screencaps and information to the google slides for the presentation
