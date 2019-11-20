@@ -68,3 +68,30 @@ Subteam Members: Atush Dhakal, Zachary Abraham, Jianan Jin, Lindsey Blackmore
 
 # October 22nd, 2019
 * Went over the documentation for plotly and read some tutorials on how to use it
+
+# October 26th, 2019
+* Produced visualizations using plotly and worked on the third presentation
+
+# October 30th, 2019
+* Third presentation during class time (11:15am - 12:15pm)
+
+# November 1st, 2019
+* Sixth subteam meeting from 11am to 12:30pm in CULC 242
+* Discussed about potential usage of flask in web development and possible screens
+* Jianan explained her code on NLP to us
+
+# November 6th, 2019
+* In class work day
+
+# November 13th, 2019
+* Missed the in class work day due to time conflicts
+
+# November 15th, 2019
+* Last subteam meeting from 11am to 12:00pm in CULC 242
+* Reflected on what went well and did not go well for this semester
+* Discussed about the progress of web application with Lindsey
+
+# November 19th, 2019
+* Extracted the time data from the raw file
+* Developed a time series graph which shows average sentiment over months
+* Worked on the final presentation
