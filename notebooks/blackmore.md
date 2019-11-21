@@ -122,3 +122,11 @@ November 19, 2019
   - completed README.md for the app which includes the current state of the project and what still needs to be accomplished
   - uploaded the app to the nlp github
   - added relevant screencaps and information to the google slides for the presentation
+  
+November 21, 2019
+  -thoughts and reflection for the semester:
+    - the web app should've been established as one of the deliverables earlier on in the semester
+    - working with Xinran to understand her scripts and possibly even modify them to work seamlessly with app would have possibly allowed for greater forward progress
+    - do not underestimate the power of taking the time to understand the frameworks or languages as it will most likely expedite the process
+    - be more reliable about updating the notebook (should document weekly instead of back tracking what progress was made once a month)
+    - rehearse presentations since they seemed a little rough around the edges each time
