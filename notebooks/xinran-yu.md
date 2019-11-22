@@ -95,3 +95,6 @@ Subteam Members: Atush Dhakal, Zachary Abraham, Jianan Jin, Lindsey Blackmore
 * Extracted the time data from the raw file
 * Developed a time series graph which shows average sentiment over months
 * Worked on the final presentation
+
+# November 20th, 2019
+* Final presentation during class time (11:15am - 12:15pm)
