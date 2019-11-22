@@ -3,6 +3,9 @@
 ## Project Manager
 ## Natural Language Processing Subteam
 
+## Trello: https://trello.com/invite/b/8Nis1Uzs/ef3dec0cdbcf80da9453f846ef1d375f/nlp-fall19
+## Google Drive:https://drive.google.com/drive/folders/1Z0cHeTBr_L1mu5q2GcRiXWQl0xt_hrQT?usp=sharing
+
 ## Team members: Lindsey Blackmore, Zachary Abraham, Jianan Jin, Xinran Yu
 
 
@@ -208,3 +211,5 @@ https://www.vip.gatech.edu/peer-evaluations
 3. Atush mentioned that he will work on the mock up for data dashboard
 4. We decided that the best way to end the semester will be finishing mockups, finalizing the metrics for data dashboard, and the tools and process for web application development
 5. We also discussed the challenges we faced this semester. This will be detailed on our presentation slides for 3rd presentation
+
+### End of Semester - Novermber 20th
