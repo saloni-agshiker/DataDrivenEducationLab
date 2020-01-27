@@ -32,4 +32,4 @@ Georgia Tech has had great success in MOOC forums. Check out C21U's chief scient
 * [Cohesion Network Analysis](https://repository.isls.org/bitstream/1/220/1/17.pdf)
 * [Scott Crossley's Research](https://shared.cas.gsu.edu/profile/crossley-scott/)
 * [Predicting Instructor Interventions in MOOC Forums](https://www.aclweb.org/anthology/P14-1141)
-* [Cognitive Presence Assessment through Learning Analytics Methods] (https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ad2fa27b0-1e6e-4de9-8d74-d3021ad6e20b)
+* [Cognitive Presence Assessment through Learning Analytics Methods](https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ad2fa27b0-1e6e-4de9-8d74-d3021ad6e20b)
