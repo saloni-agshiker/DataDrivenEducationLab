@@ -141,17 +141,41 @@ November 21, 2019
   * What information/tools should we provide instructors that would make the canvas discussion more appealing than piazza?
   * What information is actionable for instructors? (i.e. how would the sentiment of discussion posts help improve the course?)
 
+## **January 29, 2020**
+### _VIP Class_
+ * presentation on project management
+ * discussed progress within the subteam
+  * seems to be some lingering questions about roles and overall goals that should be addressed on Friday's subteam meeting
+ * pitched the idea that Morgan act as the project manager for the web dev side while Yuntian serves as the project manager for the entire subteam
+ * plan to use a Trello board more this semester
+  * Trello Board: [https://trello.com/b/2R3YOmqr/nlp-vip](https://trello.com/b/2R3YOmqr/nlp-vip)
+
+## **January 31, 2020**
+### _Subteam Meeting 2_
+ * presentation prep
+ * LTI network analysis tool: Threadz
+ * not yet focusing on making the app LTI enabled but will rather be running it locally
+  * use the python scripts Xinran will upload to display the analyses and vizualizations
+
+
 ### _To-Do_
  * find and complete a markdown tutorial so my notebook can appear neater and be followed more easily
   * Markdown Tutorial: [https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)
-  * Completed: January 25, 2020
+  * **Completed**: January 25, 2020
  * find and complete a basic flask tutorial to better understand the framework as well as how to organize the project files
   * Flask Tutorial: [https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-  * Completed: January 25, 2020
+  * **Completed**: January 25, 2020
   * flask-test folder contains the test app on my desktop... plan to delete the current flask app in the github and rebuild from scratch
  * create fake data on the sandbox course (either manually or with the help of software)
-  * Completed:
+  * **Completed**: added post January 28, 2020
  * explore the capabilities of the canvas API as well as how to incorporate the data visualizations/juypter notebook into the app
-  * Completed:
+  * **Completed**:
  * research some of the most popular data dashboards to get an idea of how this one should be formatted
-  * Completed:
+  * **Completed**:
+ * read the articles that Jonna sent in slack
+  * **Completed**:
+ * get access to EdX database through qualtrics survey on the onboarding github
+  * **Completed**:
+ * work with Morgan on a data dashboard mockup
+  * AdobeXD
+  * **Completed**:
