@@ -1,0 +1,9 @@
+Have Done
+Work on the first presentation
+Read through the paper on Community of Model
+Talk with Jonna, getting more idea for data scientist part and the following part
+
+To do
+Go through the dataset, talked with Jonna and discussed about how to label the data
+(Probably) Label the dataset
+discussion with Jonna and Xinran next Friday after meeting
