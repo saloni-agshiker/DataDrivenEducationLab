@@ -1,0 +1,17 @@
+Minutes:
+- Web app for data (text box, way to ingest data and look at text, categorize) --> explore in a prototype way (is this actually feasible?)
+- Put it into a spreadsheet (Excel?)
+- Erin writing script for professor interviews
+- Talk to TAs too?
+- Web app color scheme: white, navy blue, and gold
+- For now: singular view of sentiment analysis
+- Pictures!
+- Student option?
+- Features that Piazza has
+
+To Do:
+- Speak to data visualization professor (suggestions for the app in general)
+- Mock-ups on Adobe XD (data dump versus modular)
+- NOTEBOOK
+- Add to Canvas discussion
+- Reach out to combo prof and HB

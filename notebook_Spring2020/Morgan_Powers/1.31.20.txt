@@ -1,0 +1,20 @@
+Minutes:
+- Jonna's paper (https://nlp-vip.slack.com/files/USAUFMZ5Y/FTDA5HSAH/kovanovic_2017_presence.pdf?origin_team=TMLRRKYP3&origin_channel=CMFPSUL66)
+- Getting nlp stuff: sentiment score, complexity, grades
+- Network analysis: LTI tool (interaction between students in discussion forums) - Threadz (https://threadz.ewu.edu/)
+- Canvas analytics is pretty basic: list of students, numbers of posts
+- edX data: fill out Qualtrics survey (CS 1301 online)
+- Good place to start: sentiment score, grade level (i.e. written by an 8th grader, based on number of unique words?), Google nlp grade level Python
+- Brainstorm ideas for what webapp is going to look like (RDS -> App Server (analyses of Canvas API and visualization) -> Canvas front-end)
+- Front-end: good or bad for sentiment analysis
+- Only need a database for topic analysis (saving for later?)
+- Next step: use Canvas API code and add it to an app
+- Single-view app? Question for another time...
+- Context info from app: instructor, course number, who they are
+- Do what Piazza does
+
+To Do:
+- Set up notebook
+- Front end ideas (reading levels, sentiment values)
+- Presentation outline - ASAP
+- Make the PowerPoint version of the pic
