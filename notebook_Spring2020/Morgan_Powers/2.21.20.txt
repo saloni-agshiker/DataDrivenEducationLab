@@ -1,0 +1,21 @@
+2/21/20
+- Trello Board - needs to be fleshed out by project managers (web dev for me and cog presence for Yuntian)
+- What does everyone want to be doing? Division of labor
+- Add descriptions to Trello boards
+- Assign people to parts of it, break it into a checklist, add a due date, attach things
+- Plug-in applications as well
+- GitHub integration (?), Slack integration
+- Need more NLP parameters (more than just sentiment analysis)
+- Word clouds!! People like it and it's trendy
+- Time series - how sentiment is changing as the course progresses
+- Plotly - cool chord diagram
+- Sentiment visualization - used to look at what discussions need most attention, but doesn't apply as much to Canvas
+- Design document - requirements of web application (**good for next semester's team), multiple? --> after feasibility study happens
+- Erin is switching to Qualtrics for the surveys (depending on restrictions?)
+- Real data for discussion board?
+- How to integrate teams better?
+- Web app sub sub team meeting?
+To Do:
+- Add Dr. Joyner's paper link to robust lit review in cog presence board
+- Email Dr. Joyner back
+- Flesh out Trello board
