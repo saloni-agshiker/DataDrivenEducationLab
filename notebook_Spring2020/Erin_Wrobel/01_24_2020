@@ -1,0 +1,14 @@
+#01/24/2020
+Erin Wrobel - Education Researcher
+
+## Topics discussed:
+* How to get access to the Canvas API: Account → Settings → New Access Token; can be copied and pasted into Python to use the data Canvas provides
+* Possible Python resources: BeautifulSoup for html and web scraping, TextBlob for natural language processing and sentiment analysis
+* Goal of project: make an app that will make instructors want to utilize Canvas over Piazza
+
+## To Do:
+* Read over the reading list on github
+* Background on cohesion and network inquiry
+
+## Results: 
+* Read materials and familiarized self with scope and goal of the project

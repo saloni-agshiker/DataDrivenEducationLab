@@ -1,0 +1,13 @@
+Feb.14
+
+4th subteam meeting
+discuss with Jonna about coding scheme about one hour before sub-meeing
+
+Have Done
+Morgan and Lindsey presented the mockup for the web
+Data science team decided to use appendix B method in the paper to coding scheme
+assigned job to each ds team member
+
+To-do
+apply for the edx data
+try to convert json file from last semester from ISYE 6501 to CSV format

@@ -1,0 +1,31 @@
+Feb.21 th
+
+General submeeting & DS team submeeting
+Shawn introduce the project-management system
+Discussion of two trello
+creating a unified design document can be a good thing (for ds team)
+
+
+To-do
+watch and understand the "NLP Parameter Development" board on nlp-trello
+more coding part
+finish the master list of discussion posts and replies (how to filter sort) (do some basic sentimental analysis) (re do the second part of the code)
+concept of ML
+Try to do some basic NLP analysis using the edx data
+
+Confusing part:
+How to connect the ds team to app team  (one possible way: show the cognitive presence prediction shown)
+
+
+
+Appendex_A:
+some agreement on how to catagrize each comment into 4 phases of cognitive presence
+===
+1A : this is right/wrong “Then WHY”
+1B: I don’t know. I am confused
+
+If there are two lower 
+3: propose a solution 4:agree with someone else solution elaborate the solution
+
+Comment (from teacher and student)
+====
