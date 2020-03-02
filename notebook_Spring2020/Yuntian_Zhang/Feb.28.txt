@@ -1,0 +1,24 @@
+Feb.28
+
+general sub-team
+
+Question plan to ask processors  (web-app team)
+-possible ways to improve questions
+-mock-up will be done soon
+second presentation on March.11
+-preparation: what each team is doing right now
+
+
+To-do
+making a sekelton for the pre on March.11
+Do some change on Trello
+re-work on comments 3
+
+To-think:
+- how to use the coding result into data anaysis task( 
+- nltk 
+
+data-science sub-tram
+categorize 4 whenever the comment is pretty sure or definite  compare with 3: "In my way, I ...
+catgegory 2: "maybe try.... " categeory 3: "I do this with...
+category 0: not any comments ( keep any comments include)
