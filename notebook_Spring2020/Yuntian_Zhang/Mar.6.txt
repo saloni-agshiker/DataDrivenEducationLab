@@ -1,0 +1,20 @@
+Feb.28
+
+general sub-team
+
+miss it...
+current process on two sub-team
+preparation of next presentation (already finish most of it on Wednesday)
+
+
+data-science sub-team
+work on sheet 3 and sheet 4
+more on coding schmea
+reach an agreement on coding schema, starting indepedently working next week
+
+
+To-do & timeline
+each person working on 100 data-set before spring break. 300-data-set for training set
+100-testing-set (can use the data already done(89))
+
+talk with Shawn next Friday on how to combine NLP to machine learning
