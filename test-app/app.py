@@ -1,9 +1,19 @@
 from flask import Flask, render_template, request, json
+from canvasapi import Canvas
 app = Flask(__name__)
+
+API_KEY = '2096~ppaS3UNodRDzyJ6hkPVbzbJwixKpCwGq36Nc2PvuqviZfR74ZMl3fpRC9WHLfoIm'
+API_URL = 'https://gatech.instructure.com'
+AUTH_HEADER = {"Authorization": "Bearer {}".format(API_KEY)}
+
+# Create Canvas object and get a discussion's message
+canvas = Canvas(API_URL, API_KEY)
+course = canvas.get_course(109608)
+courseName = course.name
 
 @app.route("/")
 def main():
-    return render_template('courses.html')
+    return render_template('courses.html', course=courseName)
 
 @app.route("/showSignUp")
 def showSignUp():
