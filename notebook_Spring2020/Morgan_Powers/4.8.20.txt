@@ -1,0 +1,7 @@
+4/8/20
+- Fleshed out Trello board, added descriptions
+- Finished mock ups of front end designs and data visualizations, sent to Erin for surveys
+
+To Do:
+- Work on other potential front end designs and data visualizations
+- Work on design document
