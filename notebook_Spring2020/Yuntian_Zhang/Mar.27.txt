@@ -1,0 +1,5 @@
+ds-subteam
+first meeting on spring break: everyone has finished their part of the coding
+Discuss about some of the confusing comments, work together to finally categorize these comments into each phases
+discuss about next step: 1.try to find the key words on each category
+		        2. Shawn gives my some idea of my NLP analysis job: the dataset is too small, need a bigger one

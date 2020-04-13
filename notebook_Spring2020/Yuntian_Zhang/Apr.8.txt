@@ -1,0 +1,8 @@
+ds-subteam
+Discuss about what we found on the nlp analysis, Xinran and Jonna made key-word research, Jonna made a word cloud
+Applied the same NLP analysis based on the whole 500+ dataset we gained.
+Since the semester is about to end, decide to do the remaining modeling job in the summer semester
+Discuss with Xinran on what/how to present the data science team job among the whole semester in the following week's final presentation
+
+general
+agree to apply the similar method on the final presentation, a skelton is made.
