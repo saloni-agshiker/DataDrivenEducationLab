@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      text-align: left;
+      vertical-align: bottom;
+    }
+
+    table, td, th {
+      border: 1px solid black;
+    }
+
+    th {
+      background-color: #DB5032;
+    }
+
+    td {
+      width: 50%;
+    }
+
+  </style>
 
   <head>
     <title>Course Selection</title>
     <link href="../static/canvas_icon.png" rel="icon">
     <link href="../static/courses.css" type="text/css" rel="stylesheet">
   </head>
+
   <body>
     <div>
-      <h2>Select a course</h2>
+      <h2>Courses</h2>
     </div>
     <div id="courses" name="courses">
       <ul>
-        <li>{{course}}</li>
+        <li><h3>{{course}}</h3></li>
       </ul>
     </div>
+    <div id="discussion_topics" name="discussion_topics">
+      {% for topic in topics %}
+        <table border = 1>
+            <th>Discussion</th>
+            <th>Sentiment</th>
+          {% for key, value in topic.items() %}
+             <tr>
+                <td> {{ key }} </td>
+                <td> {{ value }} </td>
+             </tr>
+          {% endfor %}
+       </table>
+       <br>
+      {% endfor %}
+    </div>
   </body>
-  
+
 </html>
