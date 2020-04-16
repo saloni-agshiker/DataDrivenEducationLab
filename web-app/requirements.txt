@@ -1,4 +1,0 @@
-beautifulsoup4
-canvasapi
-textblob
-flask 
