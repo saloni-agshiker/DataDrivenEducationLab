@@ -70,3 +70,25 @@ Subteam Members: Lindsey Blackmore, Morgan Powers, Yuntian Zhang, Erin Wrobel
 * Summarize the Ferpa table and do some simple visualizations about the distribution of the data, such as how many posts do we have for each course and how many comments do we have for each post on average
 * Revist the second part of the sample edX data and reapply the coding scheme
 
+# 02/26/2020
+* In class, we had a journal club session led by Dr. Soleimani
+* Completed midterm peer evaluation
+
+# 03/04/2020
+* Worked on the 2nd presentation in class
+
+# 03/11/2020
+* 2nd subteam presentation in class
+
+# 03/15/2020 - 03/21/2020 Spring Break
+* The data science team worked on coding additional 1301 online comments independently.
+* The independently coded comments can be found in folder "NLP Subteam"/"Independent Coding".
+* We put the comments we are not sure fo in the excel file "Coding Q&A" and let others give suggestions.
+* I coded 150 comments from 1301 online sections.
+* Currently, we have around 450 coded comments available for training and testing.
+
+# 04/03/2020
+* Did basic analysis on the coded data; uploaded the jupyter notebook, named coded_data_analysis.ipynb to OneDrive, under folder C21U Reasearch Activities/VIP Team Projects/NLP Subteam/CS1301 Data NLP Analysis
+
+# 04/15/2020
+* In-class final presentation
