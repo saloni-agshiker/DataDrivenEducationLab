@@ -1,4 +1,4 @@
-##_Week In Review_##
+## Week In Review ##
  * presentation given on data science project management methods
    * discussed pros and cons to waterfall, agile, and the Microsoft approaches
    * decided that VIP necessitates a combination of waterfall and agile
@@ -7,10 +7,8 @@
  * I was unable to attend the subteam meeting this week but will read over the
    minutes
 
-##_To Do_##
+## To Do ##
  * web-app restructure (assigned to Sambhav)
-  * **Completed**:
  * review React components
- * aim to complete simple routing between the landing page and topic discussion
-   page
+ * aim to complete simple routing between the landing page and topic discussion page
  * look over scripts committed by the data science team

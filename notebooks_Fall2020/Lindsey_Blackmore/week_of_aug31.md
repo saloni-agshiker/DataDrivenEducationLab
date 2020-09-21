@@ -9,4 +9,4 @@
 
 ##_To Do_##
  * discussion topic view
-  * **Completed**:
+  * **Completed**: September 9, 2020
