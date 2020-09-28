@@ -13,7 +13,9 @@
 
 ## To Do ##
  * add my slides to the presentation
+   * Completed: September 21, 2020
  * ping Jonna about stakeholder options for the professor preferred metrics
+   * Completed: September 28, 2020
  * brush up on the community of inquiry side of the project
    * read the paper in the Github
    * review last semester's presentations
