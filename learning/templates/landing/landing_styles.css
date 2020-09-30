@@ -1,0 +1,30 @@
+.header1 {
+    color: black;
+    text-align: center;
+    font-family:"Verdana", sans-serif;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+.body {
+    background-color: aliceblue;
+}
+
+.button {
+    background-color: #afa84c; /* Gold */
+    border: 0.1px solid darkblue;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:"Verdana", sans-serif;
+    margin:0 3px 10px 0;
+  }
+
+  .ul {
+    list-style-type: none;
+    margin-left: 0px;
+  }
