@@ -5,8 +5,4 @@
   * decided to begin with a flask/react web app using Canvas API calls/constants
   * data science team is going to explore all data options (edX, Canvas, Piazza)
  * subteam meeting agenda and minutes added to VIP google drive folder
-  * (https://drive.google.com/drive/folders/13o6YiLOzscVNnXKNoXOoZGe3lNjZUYLm)[https://drive.google.com/drive/folders/13o6YiLOzscVNnXKNoXOoZGe3lNjZUYLm]
-
-##_To Do_##
- * discussion topic view
-  * **Completed**: September 9, 2020
+  * https://drive.google.com/drive/folders/13o6YiLOzscVNnXKNoXOoZGe3lNjZUYLm
