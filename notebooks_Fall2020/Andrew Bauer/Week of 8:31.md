@@ -28,4 +28,3 @@ Being that I'm fairly new to data science, Manny and John have recommended to me
 2. Download anaconda and play around with it ***completed***
 3. Read the files on cs2316 course material ***completed***
 
-Additionaly, the data science team is expected to meet after Jonna provides us with access to the data on edX and canvas
