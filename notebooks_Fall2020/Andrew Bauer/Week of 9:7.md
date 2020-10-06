@@ -23,6 +23,6 @@
 * We scheduled a meeting for the data science team at 1:00 pm on Monday, 9/14 to further discuss this.
 
 ### **To-Do for next week**
-* Clean up data in the 'id' and 'thread id' column for the data
-* Become further accustomed to python and pandas in the jupyter notebook
-* Data science team meeting at 1:00 pm on Monday, 9/14
+* Clean up data in the 'id' and 'thread id' column for the data ***completed***
+* Become further accustomed to python and pandas in the jupyter notebook ***completed***
+* Data science team meeting at 1:00 pm on Monday, 9/14 ***completed***
