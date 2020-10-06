@@ -11,5 +11,5 @@
 * This meeting was short and very brief, basically reiterated what we went over during the prior sub-team meeting regarding the next steps of our project
 
 ### **To-Do**
-* Work on scripts for sentiment and polarity scores on data
+* Work on scripts for sentiment and polarity scores on data ***completed***
 * Look into pre-trained models for sentiment analysis
