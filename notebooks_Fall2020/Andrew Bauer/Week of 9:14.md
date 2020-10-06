@@ -25,6 +25,6 @@
 * This will partially help bridge the gap between the web development team and the data science team
 
 ### **To-do for next week**
-* Help create presentation
-* Explore github to find sample scripts and see how edX data was assigned polarity scores by Spring 2020 team
-* Create basic scripts based on last semester's data
+* Help create presentation ***completed***
+* Explore github to find sample scripts and see how edX data was assigned polarity scores by Spring 2020 team ***completed***
+* Create basic scripts based on last semester's data ***completed***
