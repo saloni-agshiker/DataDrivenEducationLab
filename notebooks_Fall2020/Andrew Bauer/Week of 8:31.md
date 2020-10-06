@@ -24,8 +24,8 @@
 
 ### ***To-do for Next Week***
 Being that I'm fairly new to data science, Manny and John have recommended to me several technologies that they planned on using, and different resources to prepare myself to help contribute. Prior to next week, I should:
-1. Review 10 minutes to pandas
-2. Download anaconda and play around with it
-3. Read the files on cs2316 course material
+1. Review 10 minutes to pandas ***completed***
+2. Download anaconda and play around with it ***completed***
+3. Read the files on cs2316 course material ***completed***
 
 Additionaly, the data science team is expected to meet after Jonna provides us with access to the data on edX and canvas
