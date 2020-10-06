@@ -14,3 +14,4 @@ I am still very new to all this, so I need to get my bearings by:
 * Exploring the gitHub page, seeing what work has been done
 * Talking to my sub-team members, coming up with questions so that I learn more about my role and how to contribute
 * Learning more about the responsiblities of a data engineer in general
+**completed**
