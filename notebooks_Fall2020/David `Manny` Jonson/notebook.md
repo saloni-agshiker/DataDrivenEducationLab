@@ -2,16 +2,16 @@
 
 ## General Meeting 1 (8/26)
 
-Find meeting time with subteam (whenisgood)
-Check access to slack and github
-Accept calendar invite to weekly subteam meetings
-Review Code in github
+* Find meeting time with subteam (whenisgood)
+* Check access to slack and github
+* Accept calendar invite to weekly subteam meetings
+* Review Code in github
 
 ## Subteam Meeting 1 (8/27)
 
 ### Semester Goals
-Want subsubteams to be connected and on the same page
-Have a demo ready by the end of the semester
+* Want subsubteams to be connected and on the same page
+* Have a demo ready by the end of the semester
 
 ### Project Goals
 * Deliverable - web app used soley by professors
@@ -30,9 +30,6 @@ Have a demo ready by the end of the semester
     * using edx
         * pros - volume of students
         * cons - possible drift if deployed to Canvas
-* What datasets do we have access to?
-* What public datasets are we allowed to use?
-
 * Watch - https://www.youtube.com/watch?v=WbCguICyfTA
 * Read publications on github
 
@@ -75,7 +72,7 @@ Have a demo ready by the end of the semester
   * Keyword search
   * Student participation
 
-### ToDo
+### ToDo List
 * Clean up EdX data
     * Combine text columns using different methods
 * Meet with John and Andrew Monday at 1pm
@@ -94,7 +91,7 @@ Have a demo ready by the end of the semester
 * Prepare for presentation next Wednesday
 * Continue last semesters work
 
-### ToDo
+### ToDo List
 * Prep for presentation
 * Review material from Spring semester
 
@@ -105,7 +102,7 @@ Have a demo ready by the end of the semester
 * Pursue cognitive presence model (fail fast)
 * John will try KNN word2vec approach
 
-### ToDo
+### ToDo List
 * Explore hugging face transformers pipeline
 * Attempt to fine tune pre-trained models
 
@@ -126,7 +123,7 @@ Have a demo ready by the end of the semester
     * Reviewed word distance paper John shared
     * ToDo is still the same
 
-### ToDo
+### ToDo List
 * Same as last week
 
 ## General Meeting 7 (10/7)
@@ -135,5 +132,5 @@ Have a demo ready by the end of the semester
 ## Subteam Meeting 7 (10/8)
 * TBD
 
-### ToDo
+### ToDo List
 * Probably same as last week
