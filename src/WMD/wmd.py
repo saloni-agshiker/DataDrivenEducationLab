@@ -33,10 +33,19 @@ y = pdf_comments['CP Score']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.2, random_state=0)
 
 
-# Build knn model
+
+# What is a better voting model?
 def voter(n):
     return 5 - n
 
+# Distance model
+def dists(x_0, X_database, dist_func=model.wmdistance, vote=voter):
+    # Get distance metric
+    dists = X_database.apply(lambda x: dist_func(x, x_0))
+    dists = dists.replace(np.inf, 5)
+
+
+# Build knn model
 def lazy_knn(n_neighbors, text, X_database, y_database, dist_func=model.wmdistance, vote=voter):
     # Get distance metric
     dists = X_database.apply(lambda x: dist_func(x, text))
@@ -63,11 +72,14 @@ def lazy_knn(n_neighbors, text, X_database, y_database, dist_func=model.wmdistan
     election_results = vote_values.groupby(level=0).sum().sort_values(ascending=False)
     return election_results.index[0]
 
-n_neighbors = 9
+n_neighbors = 1
 X_database = X_train
 y_database = y_train
 vote = voter
-test = X_test.values[0]
+x_0 = X_test.values[1]
+
+# easy test
+y_0 = lazy_knn(n_neighbors, x_0, X_database, y_database)
 
 # hard test
 y_pred = [lazy_knn(n_neighbors, text, X_database, y_database) for text in X_test.values]
