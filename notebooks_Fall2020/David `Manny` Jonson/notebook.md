@@ -107,6 +107,7 @@
 * Attempt to fine tune pre-trained models
 
 ## General Meeting 6 (9/30)
+* Peer evaluations, notebooks, research paper
 * Learning analytics research
 * GT OMSA acceptance prediction
     * What features are important and influence outcome
