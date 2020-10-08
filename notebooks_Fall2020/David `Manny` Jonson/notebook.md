@@ -103,6 +103,7 @@
 * John will try KNN word2vec approach
 
 ### ToDo List
+* Combine phase data from Spring
 * Explore hugging face transformers pipeline
 * Attempt to fine tune pre-trained models
 
@@ -128,10 +129,24 @@
 * Same as last week
 
 ## General Meeting 7 (10/7)
+* Next week we'll transition to engagily (new meeting platform)
 * Journal Review
 
 ## Subteam Meeting 7 (10/8)
-* TBD
+* Logistics
+    * 2nd presentation 2 Wednesday from now.
+* Weekly update
+    * Finally resolved software and hardware problems
+    * Got "results" from BERT (not interpretable yet)
+    * Tensors diverged so need to figure that out (talk to John)
+* Update from Jonna
+    * It may be of interest to look at ...
+        * Changes in CP scores for same student
+        * Average of CP scores over time
+        * Correlation to CP score and forum lifetime (possibly instructor intervention)
 
 ### ToDo List
-* Probably same as last week
+* Read update article Jonna shared
+* Get results from fast-BERT following Johns advice
+* Work on web app for graduate assistants
+
