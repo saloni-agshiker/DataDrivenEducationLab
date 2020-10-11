@@ -32,4 +32,5 @@
   we plan to include in the web app and ideas for other helpful measures
   * look in week_of_sep28.md file for the letter draft and feedback received
   * **Completed**: October 1, 2020
-* get access to data and begin trying to integrate it into the web app 
+* get access to data and begin trying to integrate it into the web app
+  * received data access on October 9, 2020
