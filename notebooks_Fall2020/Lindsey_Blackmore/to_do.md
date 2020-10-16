@@ -34,3 +34,5 @@
   * **Completed**: October 1, 2020
 * get access to data and begin trying to integrate it into the web app
   * received data access on October 9, 2020
+  * no database exists for the data so the next step is to create one
+* add/edit slides for presentation 2
