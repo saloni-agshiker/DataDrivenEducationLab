@@ -36,3 +36,6 @@
   * received data access on October 9, 2020
   * no database exists for the data so the next step is to create one
 * add/edit slides for presentation 2
+  * **Completed**: October 20, 2020
+* create relational database for the edX data
+  * **Completed**: 
