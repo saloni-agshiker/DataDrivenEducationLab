@@ -38,4 +38,6 @@
 * add/edit slides for presentation 2
   * **Completed**: October 20, 2020
 * create relational database for the edX data
-  * **Completed**: 
+  * **Completed**: October 28, 2020
+* try new project structure tutorial
+* begin thoroughly documenting web app specific items in a README.md for the app
