@@ -40,4 +40,5 @@
 * create relational database for the edX data
   * **Completed**: October 28, 2020
 * try new project structure tutorial
+  * **Completed**: November 7, 2020
 * begin thoroughly documenting web app specific items in a README.md for the app
