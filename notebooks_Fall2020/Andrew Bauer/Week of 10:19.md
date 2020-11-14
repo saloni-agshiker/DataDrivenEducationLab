@@ -1,4 +1,4 @@
-# **Week of 10/12/20**
+# **Week of 10/19/20**
 ### **Data Science Meeting on Monday**
 * Regarding % engagement, there's a conflict that we do not have data on course enrollment
   * Might need to make a model with assumptions/dummy data for these figures
