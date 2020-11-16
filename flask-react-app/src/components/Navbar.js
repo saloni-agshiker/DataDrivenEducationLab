@@ -11,11 +11,10 @@ const Navigation = (props) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/">About</Nav.Link>
                     <Nav.Link href="/CS1301">CS 1301</Nav.Link>
-                    <Nav.Link href="/About">About</Nav.Link>
-                    <Nav.Link href="/Contact">Contact</Nav.Link>
-                    <Nav.Link href="/Products">Products</Nav.Link>
+                    {/* <Nav.Link href="/Contact">Contact</Nav.Link>
+                    <Nav.Link href="/Products">Products</Nav.Link> */}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

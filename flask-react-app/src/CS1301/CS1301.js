@@ -5,7 +5,7 @@ import history from './../history';
 class CS1301 extends Component {
 
     routeChange=()=> {
-        let path = "MidtermExamDate";
+        let path = "CS1301Homework1";
         history.push(path);
     }
 
@@ -15,8 +15,8 @@ class CS1301 extends Component {
                 <div><h2>CS 1301 Discussion Threads</h2>
                     <Card style={{ width: '18rem' }}>
                         <ListGroup>
-                            <ListGroup.Item action href="https://www.wikipedia.org/">Homework 1</ListGroup.Item>
-                            <ListGroup.Item action onClick={this.routeChange}>Midterm Exam Date?</ListGroup.Item>
+                            <ListGroup.Item action onClick={this.routeChange}>Homework 1</ListGroup.Item>
+                            <ListGroup.Item>Midterm Exam Date?</ListGroup.Item>
                             <ListGroup.Item>How to Mutate Tuples</ListGroup.Item>
                         </ListGroup>
                     </Card>
