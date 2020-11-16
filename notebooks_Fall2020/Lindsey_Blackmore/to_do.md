@@ -41,4 +41,6 @@
   * **Completed**: October 28, 2020
 * try new project structure tutorial
   * **Completed**: November 7, 2020
+* complete front end of the web app for demo during final presentation
+  * **Completed**: November 16, 2020
 * begin thoroughly documenting web app specific items in a README.md for the app
