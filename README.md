@@ -16,16 +16,20 @@ Georgia Tech has had great success in MOOC forums. Check out C21U's chief scient
 * Quality of discourse
 * Slack web-scraping?
 
-# Fall 2019 Deliverables
+# Fall 2020 Deliverables
 * Project management plan
-* Clean and pull data from MongoDB server
-* Initial NLP-based analysis of forum data
+* Initial NLP-based analysis of edX forum data
+* Creation of data collection tool
+* Exploration of data visualizations
+* Defining web-stack
+* Demo of initial web-app
 * Present results
 
 # Team Roles and Responsibilities
 * **Project Manager** Coordinate tasks between team members, keep project tasks up to date, lead presentations
 * **Data Scientist** Apply machine learning, evaluate results, create visualization
-* **Back End Developer** Coordinate with data scientists to deliver data. Transform proof-of-concepts into robust code
+* **Front-End Web Developer** Create a cohesive and accessible user experience for professors to interact with
+* **Back-End Web Developer** Coordinate with data scientists and front-end to deliver data, connect database to website
 
 # Reading List
 * [Community of Inquiry](https://coi.athabascau.ca/coi-model/)
