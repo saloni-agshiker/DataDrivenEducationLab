@@ -12,5 +12,5 @@
     * Could use UserID column in csv for edX data for something too
 
 ### **To-do for next week**
-* Look into more data visualization techniques
-* Continue discussing with Morgan about engagement metrics
+* Look into more data visualization techniques **completed**
+* Continue discussing with Morgan about engagement metrics **completed**
