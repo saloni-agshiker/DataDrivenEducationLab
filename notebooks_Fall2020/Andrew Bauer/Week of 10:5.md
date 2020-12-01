@@ -17,4 +17,4 @@
 
 ### **To-do for next week**
 * Look into more data visualization techniques **completed**
-* Work on finding data for % engagement in edX csvs
+* Work on finding data for % engagement in edX csvs **completed**
