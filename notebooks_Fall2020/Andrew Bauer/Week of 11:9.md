@@ -9,5 +9,5 @@
 * For my slides: finalize data visualizations and look into ways to integrate them to web app
 
 ### **To-do for next week**
-* Prepare for final sub-team presentation for next week
-* Finalize data visualizations
+* Prepare for final sub-team presentation for next week **completed**
+* Finalize data visualizations **completed**
