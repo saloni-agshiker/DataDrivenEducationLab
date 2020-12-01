@@ -5,5 +5,5 @@
 * Basically, continue with data vis work, look into more technologies
 
 ### **To-do for next week**
-* Look into more data visualization techniques
-* Discuss data vis, % engagement metrics with Morgan
+* Look into more data visualization techniques **completed**
+* Discuss data vis, % engagement metrics with Morgan **completed**
