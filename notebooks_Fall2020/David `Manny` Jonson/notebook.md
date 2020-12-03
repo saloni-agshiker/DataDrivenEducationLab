@@ -150,3 +150,74 @@
 * Get results from fast-BERT following Johns advice
 * Work on web app for graduate assistants
 
+## General Meeting 8 (10/14)
+* Presentation workday
+* Encorporate feedback from last presentation
+    * Include citations
+    * Define technical terms
+
+## Subteam Meeting 8 (10/15)
+* Missed meeting due to alarm troubles but worked on presentation slides and reviewed meeting minutes
+* Finalize slides by Tuesday
+
+### ToDo List
+* Same as last week
+* Finish slides for presentation
+    * Cite sources
+    * Define technical terms
+
+## General Meeting 9 (10/21)
+* Presentations
+
+## Subteam Meeting 9 (10/22)
+* Keep explanations shorter for next presentation
+* Improve visuals
+
+### ToDo List
+* Write scripts launching transformers experiment on AWS
+* Work on data collection web app
+
+## General Meeting 10 (10/28)
+* Engageli trial
+
+## Subteam Meeting 10 (10/29)
+* Unable to attend due to power outage
+* Continue to work on web app and AWS deployement
+
+### ToDo List
+* Same as last week
+* Create AWS Educate account
+
+## General Meeting 11 (11/4)
+* Dr. Courville and Dr. Gazi presented about the long term importance of SALE (Scalable Advanced Learning Ecosystems)
+
+## Subteam Meeting 11 (11/5)
+* Unable to attend meeting due to Uncle's retirement ceremony after 20 years in the marine core.
+* Reviewed meeting minutes
+    * Begin documenting code for next semester's team
+    * Jonna and her GRA's are ready to begin CP coding
+* Finished writing scripts
+
+### ToDo List
+* Resolve AWS Educate troubles
+* Send Jonna webapp
+
+## General Meeting 12 (11/11)
+* Presentation workday
+
+## Subteam Meeting 12 (11/12)
+* Presentations next week
+    * Share key takeaways and remaining steps to complete work, what are the challenges
+    * Write out what to say and time yourself
+* Do peer evaluations and final notebook
+
+### ToDo List
+* Work on presentation
+* Resolve AWS Educate authentication error
+
+## General Meeting 13 (11/18)
+* Presentations
+
+### ToDo List
+* Polish jupyter notebook files, scripts, and notebook before 12/2
+* Peer evaluations 12/2
