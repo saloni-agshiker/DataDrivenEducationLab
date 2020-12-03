@@ -19,6 +19,10 @@ import numpy as np
 import os
 data_dir = '.data'
 
+pdf_new_data = pd.read_csv(os.path.join(data_dir,'Fall 2020 Coding Results.csv'))
+X_new = pdf_new_data['body'].apply(lambda x: preprocess(x))
+y_new = pdf_new_data['CP Code']
+
 pdf_comments = pd.read_csv(os.path.join(data_dir, 'Combined Phases.csv'))
 pdf_comments['embedding'] = pdf_comments['Text'].apply(lambda x: preprocess(x))
 pdf_comments = pdf_comments.drop('Text', axis=1)
@@ -81,18 +85,36 @@ x_0 = X_test.values[1]
 # easy test
 y_0 = lazy_knn(n_neighbors, x_0, X_database, y_database)
 
-# hard test
-y_pred = [lazy_knn(n_neighbors, text, X_database, y_database) for text in X_test.values]
+scores = []
+for n_neighbors in [3, 5, 7]:
+    print (n_neighbors)
 
-from sklearn import metrics
-# Print the confusion matrix
-print(metrics.confusion_matrix(y_test, y_pred))
+    # hard test
+    y_pred = [lazy_knn(n_neighbors, text, X, y) for text in X_new.values]
 
-# Print the precision and recall, among other metrics
-print(metrics.classification_report(y_test, y_pred, digits=3))
 
-# Cohen Kappa
-print(metrics.cohen_kappa_score(y_test, y_pred))
+    from sklearn import metrics
+    # Print the confusion matrix
+    print(metrics.confusion_matrix(y_new, y_pred))
 
-# Explicit F1
-print(metrics.f1_score(y_test, y_pred, average='weighted'))
+    # Print the precision and recall, among other metrics
+    print(metrics.classification_report(y_new, y_pred, digits=3))
+
+    # Cohen Kappa
+    ck = metrics.cohen_kappa_score(y_new, y_pred)
+    print(ck)
+
+    # Explicit F1
+    f1 = metrics.f1_score(y_new, y_pred, average='weighted')
+    print(f1)
+
+    scores.append([n_neighbors, ck, f1])
+
+import matplotlib.pyplot as plt
+
+results = np.array(scores)
+plt.plot(results[:, 0], results[:, 2])
+plt.title("F1 Score vs. K")
+plt.xlabel("K Neighbors")
+plt.ylabel("F1 Score")
+
