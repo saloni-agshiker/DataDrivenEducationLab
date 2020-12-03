@@ -32,4 +32,15 @@
   we plan to include in the web app and ideas for other helpful measures
   * look in week_of_sep28.md file for the letter draft and feedback received
   * **Completed**: October 1, 2020
-* get access to data and begin trying to integrate it into the web app 
+* get access to data and begin trying to integrate it into the web app
+  * received data access on October 9, 2020
+  * no database exists for the data so the next step is to create one
+* add/edit slides for presentation 2
+  * **Completed**: October 20, 2020
+* create relational database for the edX data
+  * **Completed**: October 28, 2020
+* try new project structure tutorial
+  * **Completed**: November 7, 2020
+* complete front end of the web app for demo during final presentation
+  * **Completed**: November 16, 2020
+* begin thoroughly documenting web app specific items in a README.md for the app
