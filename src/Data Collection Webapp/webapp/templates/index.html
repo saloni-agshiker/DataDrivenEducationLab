@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#submit').click(function(e){
+        var score = document.forms["cp_form"]["cp_score"].value;
+        if (score.search(/^\d{1}/) != 0) {
+            e.preventDefault();
+            alert("CP Score must be 0, 1, 2, 3, or 4.");
+        }
+    });
+})
+
+
+
+
+</script>
+
+<link rel="stylesheet" href="static/styles.css">
+</head>
+<header>
+    <h2>Welcome!</h2>
+</header>
+
+<body>
+
+    <p>
+        <b>Remaining comments</b>: {{ remaining }}
+    </p>
+
+    <p>
+        <div class="container">
+
+            <form name="cp_form" action="{{ url_for('index') }}" method="post">
+            <b>Current comment row</b>: {{ row }} <br><br>
+            <b>Thread ID</b>: {{ thread_id }}<br><br>
+            <b>User ID</b>: {{ user_id }}<br><br>
+            <b>Title</b>: {{ title }}<br><br>
+            <b>Current comment</b>:<br>
+            <textarea id="commment" name="comment" rows="5" cols="38" style="width:500px">{{ comment }}</textarea><br><br>
+              <b>Enter CP Score</b>:<input type="text" name="cp_score" value="{{ cp_score }}"></input><br><br>
+              <b>Enter any feedback</b>: <input type="text" name="feedback" value="{{ feedback }}"></input><br><br>
+              <input type="submit" value="Submit" name="action" id="submit" style="width:508px"></input>
+              <input type="submit" value="Previous" name="action"id="previous" style="width:508px"/>
+              <input type="submit" value="Next" name="action" id="next" style="width:508px"/>
+            </form>
+        </div>
+
+    </p>
+</body>
+
+<br>
+<p>
+    If you are experiencing any issues with this application feel
+    free to <a href="mailto:djonson@gatech.edu">email me</a>.
+</p>
+
+</html>
