@@ -1,4 +1,7 @@
 # Starting the Frontend  
+Install dependencies:
+  - react-bootstrap: `npm install react-bootstrap bootstrap`
+  - react-router-dom: `npm install --save react-router-dom`
 
 In the root directory, execute 'yarn start'
 
