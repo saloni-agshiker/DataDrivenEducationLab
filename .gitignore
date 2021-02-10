@@ -115,3 +115,6 @@ venv.bak/
 
 # Ignore the data dir
 .data/
+
+# OSX specific
+.DS_Store
