@@ -39,6 +39,32 @@
   - How do we encourage students to answer?
   - How deep are the questions that students answer?
 
+## Minutes
+
+- Dr. Starner willing to provide CS 6601 piazza data~ 900 comments from assignment 4 and ~1000 form assignment 3
+- edX vs Piazza data
+  - Different structures of data
+  - Get access to edX data set and then maybe consider Piazza later
+- What are our main research questions?
+  - Understand engagement and critical thinking -> cognitive presence framework
+  - We want to go through comments and classify based on the scheme
+    - 4 phases of the cognitive presence scheme
+  - Last semester, they coded 900 comments manually
+  - ML team wants to build a model to automatically code comments
+  - Then app developers help visualize the findings - how many students, how many questions, how active is the participation, and how does that vary by student
+  - Making the app functional and smooth
+- Visualizations
+  - Person vs num comments
+  - Time vs num comments
+  - Initiating discussion and logistic vs content questions
+  - Subjectivity vs polarity
+  - Would be cool to hover over each point to read the comment
+  - Pleasant vs activation
+  - Count of negative, positive, and neutral comments by discussion topic
+- What will the professor do with the metrics?
+  - The goal is to help professor make informed decisions to improve teaching practices
+  - How to improve engagement, encouraging posting questions and encouraging posting answers
+
 ## Sub-sub team meeting with Dr. Lee
 
 - we could look into social presence in students comments
@@ -54,10 +80,10 @@
 
 ## To Do
 
-- [ ] Self-graded performance assessment with rubric (2/10)
+- [x] Self-graded performance assessment with rubric (2/10)
 - [x] request credentials through Qualtrics survey
 
-- [ ] Look at articles that Dr. Lee uploaded
-- [ ] Look at the GH code again
-- [ ] look through data to think about different visualizations and metrics we can do
+- [x] Look at articles that Dr. Lee uploaded
+- [x] Look at the GH code again
+- [x] look through data to think about different visualizations and metrics we can do
 - [x] request edX and Piazza data
