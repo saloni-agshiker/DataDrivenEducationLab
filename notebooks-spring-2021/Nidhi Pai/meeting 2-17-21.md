@@ -26,6 +26,6 @@
 
 ## To Do by Next Week
 
-- Fully read Kovanovic paper
-- Presentation slides
-- Learn about transformers
+- [x] Fully read Kovanovic paper (2/24)
+- [x] Presentation slides (2/24)
+- [x] Learn about transformers (2/24)

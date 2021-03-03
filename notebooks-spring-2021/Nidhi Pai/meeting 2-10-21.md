@@ -28,6 +28,6 @@ https://docs.google.com/document/d/1P-_Tsp5QaqE6Afbqa1bhmfNjYJZ5KXkSgrVk11wtGPs/
 
 ## To Do by Next Week
 
-- Look over papers one more time
-- Look into reddit models
+- [x] Look over papers one more time (2/17)
+- [x] Look into reddit models (2/17)
 
