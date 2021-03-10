@@ -1,0 +1,7 @@
+name: vip-nlp-cogpres
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pyyaml
+  - matplotlib

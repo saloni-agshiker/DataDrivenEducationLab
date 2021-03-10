@@ -1,0 +1,14 @@
+# TODO set up random forest params
+Train:
+  batch_size: 64
+  learning_rate: 1.0
+  reg: 0.00001
+  epochs: 10
+  momentum: 0.9
+  debug: True
+
+Model:
+  type: RandomForest
+  n_estimators: 20
+  max_depth: 10
+  criterion: gini
