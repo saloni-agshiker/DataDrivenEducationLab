@@ -5,4 +5,4 @@ dependencies:
   - numpy
   - pyyaml
   - matplotlib
-  - boto3
+  - psycopg2
