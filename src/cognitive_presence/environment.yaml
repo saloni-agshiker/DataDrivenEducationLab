@@ -6,3 +6,4 @@ dependencies:
   - pyyaml
   - matplotlib
   - psycopg2
+  - pandas
