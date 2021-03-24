@@ -26,7 +26,7 @@ try:
     cur = conn.cursor()
 
     '''
-    Get and print a list of tables in the database
+    Get and print a list of all the tables in the database
 
     src: https://stackoverflow.com/questions/10598002/how-do-i-get-tables-in-postgres-using-psycopg2
     '''
