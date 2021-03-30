@@ -5,3 +5,5 @@ dependencies:
   - numpy
   - pyyaml
   - matplotlib
+  - psycopg2
+  - pandas
