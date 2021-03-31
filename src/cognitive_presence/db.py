@@ -60,7 +60,6 @@ try:
 
     print(cs6601_p_anonymized)
     print(cs6601_np_anonymized)
-    
 
 except Exception as e:
     print("Database connection failed due to {}".format(e))
