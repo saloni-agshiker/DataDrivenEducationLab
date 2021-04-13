@@ -30,11 +30,19 @@ Note that nltk.tokenize requires Java JDK. Ensure that the filepath to the java 
 
         os.environ['JAVAHOME'] = '/home/david/Downloads/jdk-16/bin/java'
 
+For the rest of the instructions, please follow follow the [nltk documentation](http://www.nltk.org/api/nltk.tag.html#module-nltk.tag.stanford). It is likely to be necessary to convert the NER Filepath variables at the top of `main.py` to the code runs correctly.
+
 Resources
 =========
 https://nlp.stanford.edu/software/CRF-NER.shtml#Download
+
 http://www.nltk.org/api/nltk.tag.html#module-nltk.tag.stanford
+
 https://pythonprogramming.net/named-entity-recognition-stanford-ner-tagger/
+
 https://developers.google.com/machine-learning/crash-course/representation/feature-engineering
+
 https://machinelearningmastery.com/how-to-one-hot-encode-sequence-data-in-python/
+
 https://stackoverflow.com/questions/37292872/how-can-i-one-hot-encode-in-python
+
