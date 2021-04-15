@@ -24,13 +24,26 @@ Data is stored in [PostgreSQL](https://www.postgresql.org/). We connect to the d
 
 Feature Extraction
 ==================
+
+Named Entity Recognition
+------------------------
+
 Note that nltk.tokenize requires Java JDK. Ensure that the filepath to the java executable is correct in ``main.py``. An example of this is as follows:
 
     .. code::
 
         os.environ['JAVAHOME'] = '/home/david/Downloads/jdk-16/bin/java'
 
-For the rest of the instructions, please follow follow the [nltk documentation](http://www.nltk.org/api/nltk.tag.html#module-nltk.tag.stanford). It is likely to be necessary to convert the NER Filepath variables at the top of `main.py` to the code runs correctly.
+For additional instructions, please follow follow the [nltk documentation](http://www.nltk.org/api/nltk.tag.html#module-nltk.tag.stanford). It is likely to be necessary to convert the NER Filepath variables at the top of `main.py` to the code runs correctly.
+
+LIWC2015
+--------
+
+
+TAACO
+-----
+
+Download [TAACO](https://www.linguisticanalysistools.org/taaco.html). 
 
 Resources
 =========
