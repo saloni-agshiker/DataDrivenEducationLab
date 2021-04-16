@@ -106,7 +106,7 @@ def main():
 
     print("Training...")
     start_training_time = time.time()
-    clf = RandomForestClassifier(n_estimators=10000, max_depth=20, random_state=0)
+    clf = RandomForestClassifier(n_estimators=50, max_depth=50, n_jobs=-1, random_state=0)
     clf.fit(X_train, y_train)
     print("Completion Time:", time.time() - start_training_time)
 
