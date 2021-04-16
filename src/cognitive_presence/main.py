@@ -7,9 +7,11 @@ import pandas as pd
 from feature_extraction.discussion_context_features import DiscussionContextFeature
 from feature_extraction.taaco import TAACO
 import numpy as np
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import plot_confusion_matrix
 
 parser = argparse.ArgumentParser(description='Cognitive Presence')
 parser.add_argument('--config', default='./config/config_default.yaml')
@@ -108,9 +110,11 @@ def main():
     clf.fit(X_train, y_train)
     print("Completion Time:", time.time() - start_training_time)
 
-    y_pred= clf.predict(X_test)
+    y_pred = clf.predict(X_test)
     print("Accuracy:", accuracy_score(y_test, y_pred))
 
+    plot_confusion_matrix(clf, X_test, y_test)
+    plt.savefig('./graphs/confusion_matrix.png')
 
 
 
