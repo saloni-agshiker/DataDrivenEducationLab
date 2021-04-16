@@ -58,14 +58,12 @@ class DiscussionContextFeature():
         nltk.data.path = [nltk_path]
         self.ner_tagger = StanfordNERTagger(ner_classification_path, ner_jar_path, encoding='utf-8')
 
-        ''' Example
         text = 'While in France, Christine Lagarde discussed short-term stimulus efforts in a recent interview with the Wall Street Journal.'
 
         tokenized_text = word_tokenize(text)
         classified_text = self.ner_tagger.tag(tokenized_text)
 
         print(classified_text)
-        '''
 
     def extract(self, data):
         '''
