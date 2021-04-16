@@ -110,8 +110,11 @@ def main():
     clf.fit(X_train, y_train)
     print("Completion Time:", time.time() - start_training_time)
 
+    y_pred = clf.predict(X_train)
+    print("Train Accuracy:", accuracy_score(y_train, y_pred))
+    
     y_pred = clf.predict(X_test)
-    print("Accuracy:", accuracy_score(y_test, y_pred))
+    print("Test Accuracy:", accuracy_score(y_test, y_pred))
 
     plot_confusion_matrix(clf, X_test, y_test)
     plt.savefig('./graphs/confusion_matrix.png')
