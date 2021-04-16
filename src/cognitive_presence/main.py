@@ -118,7 +118,32 @@ def main():
 
     plot_confusion_matrix(clf, X_test, y_test)
     plt.savefig('./graphs/confusion_matrix.png')
+    plt.clf()
 
+    # Src: https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html
+    importances = clf.feature_importances_
+    std = np.std([tree.feature_importances_ for tree in clf.estimators_],
+                 axis=0)
+    indices = np.argsort(importances)[::-1]
+
+    # Print the feature ranking
+    print("Feature ranking:")
+
+    top_n = 20
+    for f in range(X.shape[1]):
+        print("%5d. %40s: (%10f)" % (f + 1, X.columns[f], importances[indices[f]]))
+
+    # Plot the impurity-based feature importances of the forest
+    '''
+    plt.figure()
+    plt.title("Feature importances")
+    plt.bar(range(top_n), importances[indices][:top_n],
+            color="r", yerr=std[indices][:top_n], align="center")
+#    plt.xticks(range(top_n), indices[:top_n])
+    plt.xticks(range(top_n), X.columns[indices][:top_n])
+    plt.xlim([-1, top_n])
+    plt.savefig('./graphs/20_feature_importance.png')
+    '''
 
 
 if __name__ == '__main__':
