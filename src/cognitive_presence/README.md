@@ -1,6 +1,6 @@
 Set up the environment
 ======================
-To successfully run this model, you only require setting up the environment, and extracting the features through LIWC2015 and TAACO. Connecting to the DB, Named Entity Recognition, ect... is not required.
+To successfully run this model, you are only required to set up the environment, and extracting the features through LIWC2015 and TAACO. Connecting to the DB, Named Entity Recognition, ect... is not required.
 
 Set up the environment
 ======================
@@ -49,9 +49,15 @@ Note that this application is behind a payment wall.
 
 TAACO
 -----
-1. Download [TAACO](https://www.linguisticanalysistools.org/taaco.html). 
 
-2. Run the TAACO application with the following configuration:
+1. in `main.py` uncomment the following lines to create batch text files:
+
+        taaco = TAACO('./.data/data.xlsx')
+        taaco.convert_csv_to_text()
+
+2. Download [TAACO](https://www.linguisticanalysistools.org/taaco.html). 
+
+3. Run the TAACO application with the following configuration:
 
     ![TAACO Config](./imgs/taaco_config.png)
 
