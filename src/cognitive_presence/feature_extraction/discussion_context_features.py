@@ -43,15 +43,34 @@ sifier an indication of how large the discussion is. the rationale
 behind this feature is that the triggering and exploration phases would
 generally have more replies than the integration and resolution phases.
 
-"""
+Sources:
+    https://nlp.stanford.edu/software/CRF-NER.html#Download
+        Extensions: Packages by others using Stanford NER
+        Stanford Tagger
 
-class discussioncontextfeature():
-    def __init__(self):
-        pass
+"""
+import nltk
+from nltk.tag import StanfordNERTagger
+from nltk.tokenize import word_tokenize
+
+class DiscussionContextFeature():
+    def __init__(self, ner_classification_path, ner_jar_path, nltk_path):
+        nltk.data.path = [nltk_path]
+        self.ner_tagger = StanfordNERTagger(ner_classification_path, ner_jar_path, encoding='utf-8')
+
+        text = 'While in France, Christine Lagarde discussed short-term stimulus efforts in a recent interview with the Wall Street Journal.'
+
+        tokenized_text = word_tokenize(text)
+        classified_text = self.ner_tagger.tag(tokenized_text)
+
+        print(classified_text)
 
     def extract(self, data):
         '''
         extract discussion context features from the data and store in a csv
         :param model: the data
         '''
+        pass
+    
+    def entity_count(self, data):
         pass

@@ -7,3 +7,6 @@ dependencies:
   - matplotlib
   - psycopg2
   - pandas
+  - openpyxl
+  - nltk
+  - scikit-learn
