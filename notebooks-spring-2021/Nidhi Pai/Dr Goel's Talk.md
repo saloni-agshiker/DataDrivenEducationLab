@@ -1,4 +1,4 @@
-On Dr. Ashok Goel's Talk from 3/3/21 
+Dr. Ashok Goel's Talk from 3/3/21 
 
 1. Knowledge-Based AI class - online vs. in person classes & engagement
 

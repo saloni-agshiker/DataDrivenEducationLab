@@ -23,6 +23,6 @@ Next subteam presentation on 3/31 - no meetings before that
 
 ## To Do
 
-- [ ] Upload code to GH by the end of the day
-- [ ] Update notebook by the end of the day
-- [ ] Get rid of all the code in the comments (3/17)
+- [x] Upload code to GH by the end of the day
+- [x] Update notebook by the end of the day
+- [x] Get rid of all the code in the comments (3/17)

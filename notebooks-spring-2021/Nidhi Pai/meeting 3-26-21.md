@@ -7,7 +7,8 @@ Subteam meeting only
   - Could record in ppt, bluejeans, quicktime, just need voice and video
   - Send to morgan by Friday - she’ll stitch it together
   - Discussed slides with Jonna
-- Contact sheet2nd presentation slides - already set up, progress update
+- Contact sheet
+- 2nd presentation slides - already set up, progress update
 - Stand up
   - Sambhav - tried database, switched to front end work
   - David - connected python to database
@@ -17,3 +18,9 @@ Subteam meeting only
   - Aanya - worked on the SQL
   - Pratik - tried John’s model with different pre-trained embeddings (from Twitter), trying transformer model (with PyTorch), looking at social network analysis
 - Jonna will upload newly coded Piazza data to OneDrive shortly
+
+### To Do
+
+- [x] Innovation competition video audio (4/26)
+- [x] Add contacts to contact sheet (today)
+

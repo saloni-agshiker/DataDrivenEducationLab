@@ -20,6 +20,6 @@ No main meeting today
 
 ## To Do
 
-- [ ] VIP video (3/24)
-- [ ] Continue working on visualizations (3/24)
-- [ ] Clean out the code(3/24)
+- [x] VIP video (3/24)
+- [x] Continue working on visualizations (3/24)
+- [x] Clean out the code(3/24)
