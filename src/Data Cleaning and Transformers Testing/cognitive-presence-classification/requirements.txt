@@ -180,6 +180,7 @@ knnimpute==0.1.0
 korean-lunar-calendar==0.2.1
 librosa==0.8.0
 lightgbm==2.2.3
+lime==0.2.0.1
 llvmlite==0.34.0
 lmdb==0.99
 LunarCalendar==0.0.9
