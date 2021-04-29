@@ -9,9 +9,10 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 import seaborn as sns
 
-if __name__ == '__main__':
 
-    '''
+def main():
+
+    """
     Load the dataset
     Clean the dataset
     Train test split
@@ -20,6 +21,10 @@ if __name__ == '__main__':
     Train Model
     Make predictions
     Model Explanations
-    '''
 
-    pass
+    :return: 0
+    """
+
+
+if __name__ == '__main__':
+    main()
