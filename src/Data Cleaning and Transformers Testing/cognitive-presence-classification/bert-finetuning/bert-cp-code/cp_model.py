@@ -1,3 +1,5 @@
+from abc import ABC
+
 import pandas as pd
 import numpy as np
 import torch
@@ -15,12 +17,20 @@ from pylab import rcParams
 import matplotlib.pyplot as plt
 from matplotlib import rc
 
+# Initial parameters
 LABEL_COLUMNS = 'CP Code'
 BERT_MODEL_NAME = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(BERT_MODEL_NAME)
 
+RANDOM_SEED = 42
+np.random.seed(RANDOM_SEED)
+torch.manual_seed(RANDOM_SEED)
+
 
 class CognitivePresenceDataset(Dataset):
+    """
+    Prepares the dataset for loading into Pytorch lightning module
+    """
 
     def __init__(self, data: pd.DataFrame, tokenizer: BertTokenizer, max_token_len: int = 128):
 
@@ -59,8 +69,11 @@ class CognitivePresenceDataset(Dataset):
 
 
 class CognitivePresenceDataModule(pl.LightningDataModule):
+    """
+    Prepares dataset for training with BERT
+    """
 
-    def __init__(self, train_df, test_df, tokenizer, batch_size=8, max_token_len=128):
+    def __init__(self, train_df, test_df, tokenizer=tokenizer, batch_size=8, max_token_len=128):
         super().__init__()
         self.train_df = train_df
         self.test_df = test_df
@@ -97,6 +110,9 @@ class CognitivePresenceDataModule(pl.LightningDataModule):
 
 
 class CognitivePresenceTagger(pl.LightningModule):
+    """
+    Model trainer: BERT fine-tuning
+    """
 
     def __init__(self, n_classes: int, steps_per_epoch=None, n_epochs=None):
         super().__init__()
