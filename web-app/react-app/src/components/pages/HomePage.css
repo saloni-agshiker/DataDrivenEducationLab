@@ -1,0 +1,22 @@
+.title-container {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.dropdown-container {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.description-container {
+    width: 700px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 5px;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 10px;
+}
