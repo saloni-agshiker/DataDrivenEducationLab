@@ -1,0 +1,36 @@
+# Meeting 9-8-21
+
+**Computing Research Tools**
+
+## LTI Development
+
+- GTCanvasSDK gives you a Canvas instance with fake users and courses
+- Built with Docker and Traefik
+- Have a template with React
+- github.gatech.edu/c21u/gtcanvassdk and /alti
+
+## DS Subteam Meeting
+
+- Focus on research questions from the innovation competition
+
+Possible directions for the project:
+
+1. Investigate whether the parameters from the survey actually correlate with student engagement and success and learning
+2. Integrating the cognitive presence model with the web app team - a way to make the manual coding easier
+3. Social presence - why are conversations concentrated around certain nodes? Social network analysis
+
+More data needed:
+
+- Labeled cognitive presence
+- We're getting more Piazza data - focus on Piazza data
+
+
+
+- My task: (1) figure out correlation between engagement and learning outcomes
+- (2) Communicate what visualizations are important for the front end
+- (3) See what features of discussion forum participation predict learning outcomes
+- (4) Integrate (3) with what professors want to see
+
+### To Do
+
+- [x] Submit a data request for final grades data on Piazza (9/15)
