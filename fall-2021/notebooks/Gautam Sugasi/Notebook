@@ -3,12 +3,13 @@
 -	First team meeting
 -	Introduction among team members 
 -	New members should explore the GitHub and look at code from last year
-  - Sambhav has a demo from last year of the application that he could show to us 
-    -	Rough around the edges, changes will happen to the demo
-  -	I had already explored some of the code on GitHub and will speak to Sambhav about seeing the demo 
+  o	Sambhav has a demo from last year of the application that he could show to us 
+    	Rough around the edges, changes will happen to the demo
+  o	I had already explored some of the code on GitHub and will speak to Sambhav about seeing the demo 
 -	Next meeting, we will discuss roles and plans for the year
-  -	How to spend team money?
-  -	How to split up tasks and responsibilities?
+  o	How to spend team money?
+  o	How to split up tasks and responsibilities?
+
 
 9/15 Class Meeting:
 
@@ -21,6 +22,7 @@
   o	Report and evaluate
 -	Ask if research question is researchable and don’t be too broad or specific
 -	UX research is something we can research in our team
+
 
 9/20 Team Meeting:
 
@@ -37,6 +39,7 @@
   o	I will need to investigate the Flask and SQLAlchemy tutorials posted in the slack channel to familiarize myself with the stack and technologies used 
   o	Work closely with data science team to help the conduct interviews and obtain data as there is not much we can do without getting the analyzed data
 
+
 9/22 Class Meeting:
 
 -	Good project management is vital to working on a successful project
@@ -50,6 +53,7 @@
     	Project is worked in iterations
     	Feedback is given on each iteration to the project is always up to date with the customer and checked
     	Can move back to previous aspects of the project and can jump around as needed
+
 
 9/27 Team Meeting:
 
@@ -70,9 +74,11 @@
   o	Back end has used Flask and SQLAlchemy last semester and will work with data science team to obtain metrics needed
   o	Diagram to show workflow of data
 
+
 9/29 Class Meeting:
 -	First sub team presentation
   o	Everything went as planned from previous team meeting 
+
 
 10/6 Class Meeting:
 -	Predicting whether an OMSCS application will be accepted into the program or not
@@ -84,6 +90,7 @@
   o	How does one’s demographic background affect their interaction rate in MOOC courses
   o	Clickstream from course navigation, problem interaction, and video interaction
   o	Used ML models 
+
 
 10/8 Team Meeting:
 -	Feedback from presentation one
