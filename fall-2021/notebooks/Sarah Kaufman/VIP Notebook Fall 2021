@@ -1,0 +1,90 @@
+
+9/8
+- to do: start looking at github and work from last semester
+- computing research tools:
+    - key performance indicator (KPI) canvas tool -- students can give feedback to professors throughout the course
+    - MOOCs -- massive open onlince courses
+- data sources
+    - edX -- discussion forums data
+    - canvas -- data on canvas courses
+- data security
+    - usee GT OneDrive and keep data on C21U servers
+
+9/13
+- i will be working on social presence
+- got some background on what the team did last semester
+
+9/15
+- to do: look at previous semester notebooks, request qualtrics data
+- ID research problem
+- review literature
+- specify research purpose
+
+9/20
+social presence
+- Sampling around interaction patterns
+- Focus on most active contributors and see what social cues motivate them to want to contribute
+- Which students are not as active and why
+- How does social presence manifest in this platform
+- What motivates people to interact and how is this different than traditional classroom
+- What motivates people to be active
+
+
+9/22
+Project management
+- Clear timelines and milestones
+- Well defined metrics
+- Waterfall — rigid
+- Agile — iterations, lots of customer feedback
+- Trello — task organization
+- JIRA
+- Which areas of project management are most important
+    - Assigning roles to people
+    - Clearly defined tasks
+    - Communication about what you have done — makes sure to ask questions if you have them
+    - Lots of check ins so that people know what others are doing
+
+9/27
+- went over slide show
+- fill in social presence slide
+- insert relevant visualizations
+- Last semester:
+    - Found discrepancy between frequency of posts — few people make majority of posts
+    - Maybe relate frequency of piazza participation to final grade?
+
+
+9/29
+- sub-team presentations
+
+10/6
+- Learning analytics research
+- OMSA applicant success prediction
+    - Data from online masters in analytics
+    - Research: can we predict whether an applicant will be admitted? Which application features predict this?
+    - Used machine learning: logistic regression, random forest, gradient boosting, ADABoost classification
+    - Compared using area under ROC curve
+    - Gradient boosting was best model
+    - Reduced complexity of raw data
+    - Identified key input variables
+- Analyzing MOOC environment using clickstream data
+    - Factors other than final grade measure student learning
+    - How is students’ interaction with MOOC courseware related to their course engagement
+    - Looked at demographic backgrounds
+    - Random forest ML algorithm
+
+10/8
+    - Setting goals
+    - 2 week sprints
+    - Feedback on sub team presentation:
+        - Need more social presence clarity
+        - I will do some research on this
+        - More even distribution between DS and web-dev
+    - We were in exploratory phase, now we are in implementation phase
+    - Connection between two nodes:
+        - Responses to threads
+    - Looking at the difference in content between students with high engagement and low engagement
+    - Social network relates to student outcomes and engagement
+    - Update Trello board
+    - Fill in document in google drive
+
+
