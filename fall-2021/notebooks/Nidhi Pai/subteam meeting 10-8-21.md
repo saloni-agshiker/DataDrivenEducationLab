@@ -10,5 +10,5 @@ To Do:
 
 - [ ] Read the paper from Pratik (10/18)
 - [x] Set up with Aanya and Gautam to figure out interview questions (10/15)
-- [ ] Do correlation analyses (10/26)
+- [x] Do correlation analyses (10/26)
 - [x] Journal club (10/13)
