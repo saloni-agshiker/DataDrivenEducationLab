@@ -116,3 +116,190 @@
 -	Third presentation shows wrap up
 -	By next class, I will need to prepare for Journal Club, and also finish my notebook entries and upload them onto the git repo
 -	I will also need to meet with Nidhi and Aanya to discuss metrics and interview questions 
+
+10/13 Class Meeting:
+-	Journal club 
+  o	Reviewed two papers 
+    	First one was reviewed by Dr. Meryem
+    	Second one was reviewed by the students in the class
+      •	My team’s section was the discussion and results and sections, and my specific section was talking about the third most important factor in predicting student satisfaction with MOOC, which was course content
+
+10/15 Team Meeting:
+-	We need to look into t-shirts and ordering them
+  o	It looks like ordering t-shirts would eat up a big majority of our team budget
+-	I need to collaborate with Nidhi and Aanya next week
+  o	Need to discuss what interview questions we can ask professors and TA’s so they can provide us with usable metrics
+  o	Also need to discuss which professors and TAs to ask and consider non-CS ones to have a larger sample size
+  o	Will have more updates next team meeting on this 
+-	Presentation 2 is 10/27 and we will need to show code that we have written and research that we have conducted
+  o	Web dev team will be doing a demo so time will be more evenly split between us and the data science team
+
+10/18 Metrics Meeting:
+-	I collaborated with Pratik, Nidhi, and Aanya
+-	Met to discuss issues with metrics and survey questions asked last semester
+  o	Need to redo the google forms with better questions to ask the TA’s and professors
+    	Better suited questions with more metrics as choices and a deeper explanation of some of the metrics
+    	I will meet with Aanya sometime later this week to discuss what changes need to be made
+      •	Nidhi gave us the link to the google drive containing last semesters questions and answer data 
+-	These metrics will tell us what professors and TA’s want to see in terms of extra information about students based on their interaction with Piazza
+  o	Could be helpful to determine extra credit points as well as TA consideration 
+-	These results will be displayed on the web page
+
+10/20 Metrics Meeting:
+-	Meeting consisted of me and Aanya
+-	Went over discussion from last meeting and decided to make a new google docs and completely do over the questions to ask the TAs and professors
+  o	Still used last year’s questions as a basis but plan to edit them to make them better
+-	I worked extensively on the google docs
+  o	Added comments on why the questions from last semester were confusing and how they could be changed
+  o	Proposed new questions to be asked in place of the old questions
+  o	Came up with additional questions as well
+-	Will finalize the new questions within the next few days
+
+10/22 Team Meeting:
+-	Think about how to spend money for our team
+  o	Need to spend it by next end of next semester
+-	Presentation 2 is next week
+  o	I need to work on my relevant slides in the PowerPoint and have them finished by Monday 
+-	I will also need to meet with Aanya again today to finalize the questions needed to be asked in the survey
+  o	Right now, there’s ideas and a rough draft but need to fine them into actual questions
+    	Will get extra feedback from Dr. Meryem and Nidhi 
+  o	Need to finish soon so we can interview people soon
+    	Can consult Dr. Meryem when deciding who to interview
+
+10/20 Metrics Meeting:
+-	Meeting consisted of me and Aanya
+-	Reviewed all our notes on the questions 
+-	Made final decisions on what questions to include
+  o	Decided order of questions and descriptions as well
+-	I translated the new questions from the google docs into a new google forms
+  o	This form is now finished and ready for review by others and to be sent out to professors and TA’s
+-	Will need to meet with Dr. Meryem sometime next week to decide who to send out the form to
+
+10/27 Class Meeting:
+-	Second sub team presentation
+  o	Everything went as planned
+
+10/29 Team Meeting:
+-	Feedback from presentation
+  o	Something that went well
+    	Everyone was prepared and the presentation went smoothly 
+  o	Something that can be done better for next time: 
+    	Better than first presentation, but talking time needs to be a little more even between team members 
+-	Next steps for me with the survey:
+  o	Meet with Dr. Meryem and possibly Nidhi/Aanya to decide who to send the survey out to 
+  o	Final on survey
+    	Maybe send the survey out to a few people initially to get feedback on questions and gauge initial response 
+    	Then, make necessary edits and send out to a wider range of TA’s and professors 
+
+11/1 UX Research Meeting:
+-	I collaborated with Pratik and Sambhav here
+-	Talked about having people manually test out the dashboard and get their thoughts and opinions on it 
+o	This can just be fellow TA’s and maybe professors later
+	Get input on design choices and how information is presented 
+-	Should focus on getting the dashboard working and functional first before design considerations though 
+
+11/3 Class Meeting:
+-	History of online/distance learning
+  o	Started back in the 18th century 
+-	In recent years, has evolved into MOOC’s
+  o	More popular in recent years due to pandemic, busier schedules for people, etc.
+-	Micro credentials
+  o	Show that someone is qualified in a skill
+-	There are papers on online learning research 
+
+11/5 Team Meeting:
+-	Met with Dr. Meryem and Nidhi the previous day to discuss next steps with survey 
+  o	Dr. Meryem had a couple suggestions on changes which I implemented, including a changing of question wording for one of the questions and a better description in the intro for what this survey is about and what our team is researching for 
+  o	I emailed Dr. Gazi and Dr. Courville for their input on the survey as well, as well as if they had any recommendations for professors that I should send the survey to
+  o	Collaborated after the call with Nidhi to discuss next steps and future plans for once the survey is sent out and metrics have been gathered
+    	Identify top metrics and work with data science team to gather information for these metrics 
+-	Other team members have been working with setting up databases for the data (Aanya), working on cognitive presence models (Malav), and conducting interviews for the web application prototype (Sambhav)
+
+11/10 Class Meeting:
+-	Relative to on campus programs, Georgia Tech has had a higher growth in online programs in recent years
+-	More investment in EdTech (educational technology) in courses
+-	Traditional design vs backwards design
+  o	Traditional design: choose a topic and lectures/assessment based off of this topic 
+  o	Backwards design: create assessment based off goals to be learned for the students, and then create lectures to address those goals
+
+11/12 Team Meeting:
+-	Similar to last team meeting in terms of team-wide progress and duties
+  o	Malav still working on cognitive presence models 
+  o	Sambhav and Aanya working with front-end and databases
+-	My updates:
+  o	I sent out the survey to my head TA from CS 1331 O
+  o	Nidhi also sent out the survey to some initial people
+    	Got some feedback from them including what they thought was good in the survey and what they thought could improve
+      •	Edited the survey based off of this feedback
+    	Also received initial responses to the survey questions and I exported them to an excel sheet to see how the results would like later with more responses 
+  o	I collaborated with Nidhi in fine-turning the survey, and helped her with reviewing each of the questions to make sure they were good
+  o	What went well:
+    	Sending out the survey to some people to gauge initial response and suggestion was a great idea
+    	Similar to beta testing an application 
+  o	What could have gone better:
+    	Possibly could consider running the survey by someone with a different background as well
+  o	Sentiment might not be a metric that is chosen by TA’s and professors because they might not think it is useful, but we should still consider it for our own research purposes
+    	More information on the dashboard, the merrier 
+  o	After making some more final edits, I plan to send out this survey to a wider range of TA’s and professors next week
+
+11/17 Class Meeting:
+-	Big Data
+  o	Educational Data Mining (EDM)
+    	Looking at data that comes from classrooms and trying to identify patterns 
+  o	Learning Analytics (LA)
+    	Looking at data about students in the classroom
+  o	Common Practices
+    	Surveys
+    	User testing 
+  o	Challenges
+    	Data privacy issues
+    	Data bias 
+  o	Opportunities in data-driven education
+
+11/19 Team Meeting:
+-	There will be a short demo for the last sub team presentation on the web application, and Sambhav will be working on it
+-	Responses to the survey have been rolling in
+  o	Too early to identify a trend for the most popular metrics but I should be able to do so next week after all the responses have been entered
+    	I will export the response data to an excel sheet to find most popular metrics
+  o	Many respondents have filled out the “what additional metrics” question
+    	Interesting to see other people’s views on important metrics that we haven’t considered
+    	Could include some of these on the final web application 
+-	Data science team is working on sentiment analysis and social presence 
+
+11/29 Team Meeting:
+-	Final sub team meeting 
+  o	Sambhav will not be returning next semester, but he has put together documentation to help next semester’s team get a head start with his work, and I plan to read up on that documentation and hopefully take up some of his role next semester 
+-	Data Science team has first run of cognitive presence model to be displayed at the presentation 
+-	Web development team has demo of web application ready to be displayed at the presentation too 
+-	Pratik is working on a proposal for Dr. Starner for the pilot study in his course
+  o	To be sent out sometime next semester 
+-	My updates with the survey:
+  o	All of the expected responses are in 
+    	About 10 responses in total 
+  o	I exported the responses to an excel sheet where I could see the data easier
+    	Issue: accidentally, some of the question choices had 1 – 7 as choices, while some had 1 – 5
+      •	I was able to fix this problem by normalizing the data, by multiply the question answers with choices 1 – 7 by 5/7, so to make it in tune with the 1 – 5 choices
+  o	After normalization, I identified the top three metrics chosen 
+    	Most popular topic that is trending this certain week? For example, if a lot of students have questions on a particular topic.
+    	Overall sentiment around a given homework/exam? Sentiment of a post/thread is how positive or negative the tone of a given post is.
+    	Top students that answer the most questions?
+  o	There were also some good responses for other metrics that could be considered
+    	How often their questions are marked as 'good question' by Tas
+    	Category of post (course concepts vs logistics)
+    	Average time certain types of posts take to be resolved
+  o	As seen last week, most of the respondents said they would be fine with be interviewed further if needed, so that is a possibility for next semester
+-	What went well:
+  o	The survey was a success as we got a lot of data from the respondents and now have a good idea on what metrics to include in the final web application 
+-	What could have gone better:
+  o	Even though the data was normalized to be in the same range (1 – 5), it should have been like that from the beginning and normalization should not have been required
+    	Could lead to a little inaccuracy but overall, the normalization should make it okay 
+-	Next steps/future goals for me:
+  o	Continue the survey work next semester
+    	Now with the top metrics identified, the next step will be to work with the data science team to identify methods to extract the information from the data that is required for each metric
+    	Then, work with web development team to portray this information on the application 
+  o	Personally, on the team, next semester, I’d like to take a bigger part in the web development portion as well
+    	Work deeper with the backend and frontend integration, but still also work with the data science team in data extraction based off the metrics
+
+12/1 Class Meeting:
+-	Third and final sub team presentation
+  o	Everything went as planned
