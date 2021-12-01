@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+    <h1> CS 6601: Artificial Intelligence</h1>
+    <hr></hr>
+
+    <div class="graph-container">
+        <div class="single-graph">
+            <image src="{{ url_for('static', filename='images/avg_weekly_polarity.png') }}">
+        </div>
+        <div class="single-graph">
+            <image src="{{ url_for('static', filename='images/post_frequency.png') }}">
+        </div>
+    </div>
+    <div class="graph-container">
+        <div class="single-graph">
+            <p><image src="{{ url_for('static', filename='images/avg_weekly_subjectivity.png') }}"></image></p>
+        </div>
+    </div>
+
+
+
+{% endblock %}
