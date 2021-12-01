@@ -1,6 +1,6 @@
 # Flask Web App #
 
-This Flask app uses the data from the flair model. To use the application, you will need to follow the following steps:
+This Flask app uses the data from the flair model. IT DOES NOT INCLUDE THE DATABASE data.db FOR FERPA REASONS. To use the application, you will need to follow the following steps:
 
 ## Database ## 
 The application uses SQLite3 to configure and store the data. The database should be placed in this folder ("database-app") and be named "data.db". The table should have the following attributes:
