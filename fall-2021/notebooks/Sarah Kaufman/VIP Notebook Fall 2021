@@ -87,4 +87,141 @@ Project management
     - Update Trello board
     - Fill in document in google drive
 
+10/13
+Article:
+- This study used learner satisfaction as the dependent variable, which meant that its measure of success was the degree of satisfaction that students got from the course
+- Having learner satisfaction is important to educational institutions because having satisfied students brings more students as they are more likely to recommend the institution to others and come back for more MOOCs
+- Completion rate doesn’t take into account the diverse goals of MOOC students which are not the same as a normal college course
+- This study adds to the field by identifying which attributes of MOOCs affect learner satisfaction
+- Learners who completed courses had highest satisfaction and learners who dropped courses had lowest satisfaction
+
+Abstract, Sections 1-3, 6
+- Discussion posts are characterized as relating to course content or not
+- Social interaction is an important element of online learning — are the courses we are looking at online?
+
+
+10/15
+10 questions:
+1. Which topics are being talked about the most?
+    1. How do these topics change with respect to time?
+2. Which students are contributing the most? How can they be characterized?
+3. How does social presence differ between content and non-content based discussions?
+4. How does social presence differ between task based and non-task based discussions? (Task refers to assignments such as homework and exams, while non-task would refer to asking questions about class content without focus on an assignment)
+5. How does the purpose of thread initiation contribute to social presence factors?
+6. How do different styles of comments contribute to social presence (asking direct questions, presenting problems, saying something is wrong, etc)?
+7. How does the style of instructor reply contribute to student learning ?
+    1. Could include instructors providing straightforward answers, hints, leading questions, etc
+8. How does the style of instructor reply contribute to the development of social networks?
+9. How does cognitive presence change for students with respect to time? (Does cognitive presence increase over the course of the semester?)
+10. How does social presence influence student outcomes in the class (final grade)?
+
+
+
+
+
+10/22
+Easy to compute, data available:
+1. Which students are contributing the most? How can they be characterized?
+    1. Show maybe top 5 students and their contribution style
+    2. Could be useful to find potential TAs and look at common attributes of successful students
+2. How does the presence of instructors in a thread contribute to cognitive presence?
+    1. Graph presence of instructor (maybe in terms of # of instructor comments on a thread) vs avg cognitive presence of student comments on that thread
+    2. Useful for instructors because it would help them know how much or how little their contributions are helping students
+3. How does cognitive presence change for students with respect to time? (Does cognitive presence increase over the course of the semester?)
+    1. Graph cognitive presence vs time
+    2. Useful to professors to see quality of student contributions over the course of the semester
+4. How does social presence influence student outcomes in the class (final grade)?
+    1.  Number of connections vs final grade
+    2. Useful because it helps determine whether social connections lead students to better academic outcomes
+
+Hard to compute, data available:
+1. Which topics are being talked about the most?
+    1. How do these topics change with respect to time?
+2. How does social presence differ between content and non-content based discussions?
+3. How does social presence differ between task based and non-task based discussions?
+4. How does the purpose of thread initiation contribute to social presence factors?
+5. How do different styles of comments contribute to social presence (asking direct questions, presenting problems, saying something is wrong, etc)?
+6. How does the style of instructor reply contribute to student learning ?
+7. How does the style of instructor reply contribute to the development of social networks?
+
+10/27
+- presentation!
+
+10/29
+More even work distribution for presentation
+Next 4 weeks:
+- Work on integration
+- Reaching out to TAs and profs for UX research
+- Research how to answer research questions
+- Send out form to TAs
+
+
+11/3
+Online learning-
+- Sync or async
+- Thru internet
+Distance learning — since 1700 through mail
+Pandemic
+- Emergency remote teaching
+Micro credentials
+
+
+11/5
+* How does the presence of instructors in a thread relate to students’ cognitive and social presence? 
+* Which students are contributing the most in discussion forums? How can these students be characterized? 
+* How do social factors influence student outcomes in the class? 
+First thing is to look at top contributors and see their qualities
+
+11/10
+Learning design and analytics
+- growth in online learning with covid
+- optimising and improving learning environments
+- deliberate choices about what, when, and how to teach
+- backward design -- identify desired outcome before planning anything
+
+11/17
+future directions for data driven education
+- EDM and LA
+challenges:
+- accessing big data
+    - formatting, privacy, etc
+- analyzing big data
+    - error, noise, programming skills
+- using big data
+    -explanation vs prediction
+    - minimizing bias
+next steps:
+- education moving toward a more personalized approach for each student
+- AI research shifting to cognitive focus
+- ML algoriths incorporate applicability and theoretical design
+- address ethical issues
+worked with Neel on reflection sheet
+
+
+
+11/19
+- I will be looking at top 5 student contributors to identify key characteristics
+- think about what info will be useful to professors
+- collaborate with Nidhi
+
+11/29
+- what to put in final presentation
+    - key findings about top 5 students
+    - goals for next semester
+    - challenges this semester
+Characteristics of top 5 students:
+- Students with the most posts tend to have very high grades (98% - 104%)
+- These students would be good candidates to be future teaching assistants
+- Their average sentiment tends to be positive, but mostly close to 0
+- Students with a lot of posts have a relatively low avg cognitive presence because they make a lot of posts 
+
+Next steps
+- Looking at how connections between students relate to other factors
+- Looking at how the contributions of instructors influence cognitive presence and sentiment of students
+- Looking at changes in cognitive presence, social presence, and sentiment over time
+
+
+
+10/1
+- final presentation went well!
 
