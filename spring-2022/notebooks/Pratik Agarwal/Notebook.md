@@ -56,3 +56,89 @@ Interview with AI Course TA - Vaibhav Bhosale (28th January):
 Thoughts:
 
 - Can explore more on Jill Watson (the TA AI), might be interesting to talk to someone from Dr. Ashok Goel's team and the PARQR team
+
+## 2nd February - 9th February
+
+Class meeting (2nd February):
+
+- Project Management
+  - Agile, Waterfall, Hybrid
+    - Trello, JIRA etc.
+  - How does project management work in research when the end goals might not be so obvious?
+  - Sparse feedback loops in research an important challenge (mentioned by Dr. Yakut Gazi)
+
+Team Meeting (3rd February):
+
+- General
+  - Need to work on the first subteam presentation
+  - Create the template and share with the team one week before the subteam presentation
+  - Discussion with the team on the meeting with Jonna, and the interview with the AI course TA and the Piazza Sandbox environment
+  
+- Web development
+  - Aanya will look into Piazza api and try connecting with PARQR team
+  - Some team members can act as the students in the sandbox course and then create posts and test our solutions on the sandbox
+  - Target would be to extensively test our MVP in the sandbox environment by the end of the semester, and then frame a proposal over the summer to possibly test it next sem on a real course
+  - Gautam exploring github code, connected with Sambhav to work on the front-end side and getting familiar with the demo and previous work, and learning React
+
+- Data Science
+  - Nidhi focusing on metrics and connecting with relevant teams, generating posts, analysing previous posts
+  - Malav and Jisan will be looking at topic modeling as a priority
+  - Harriet will be looking at previous code
+  
+- Education Research
+  - Daniel can focus on social presence and social network analysis (Gephi)
+
+Meeting with Dr. Soylu and Daniel (9th February):
+
+- Points
+  - Can explore metacognition through posts
+    - Confident/not-confident etc.
+  - EdX data might have interesting patterns on this front
+  - Existing library for metacognition detection: <https://github.com/aigagror/metacognitive_phrase_detector>
+
+Thoughts:
+
+- Can create a figma design for the FAQs list derived from previous semester questions using topic modeling and ask the AI course TA for feedback
+
+## 9th February - 16th February
+
+Class meeting (9th February)):
+
+- Educational & UX Research Design
+  - Research Design
+  - Formulating a research question
+  - Types of methods
+    - Qualitative
+    - Quantitative
+    - Mixed Methods
+  - Types of studies
+    - Exploratory
+    - Descriptive
+    - Relational
+    - Explanatory
+
+Team Meeting (10th February):
+
+- General
+  - Focus on presentation
+  - Everyone needs to spend equal time
+  - Dry run half an hour before presentation
+  - Allocated slides to individual team members
+
+Meeting with Malav and Jisan (14th February):
+
+- Points
+  - Needed clarity on topic modeling
+  - Shared resources/articles to learn more about it and how our specific use case can make use of this approach to generate FAQs
+  - Relevant links:
+    - <https://towardsdatascience.com/topic-modeling-articles-with-nmf-8c6b2a227a45>
+    - <https://towardsdatascience.com/topic-modeling-quora-questions-with-lda-nmf-aff8dce5e1dd>
+    - <https://www.youtube.com/watch?v=fCmIceNqVog&ab_channel=JordanBoyd-Graber>
+
+Thoughts:
+
+- Need to move quicker with implementation after the presentation
+
+## 16th February - 23rd February
+
+- Subteam Presentation (16th February)
