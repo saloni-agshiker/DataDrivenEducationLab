@@ -1,9 +1,7 @@
-# VIP Notes Jan 10th - Feb 24th 2022
-
 
 # VIP Notes J(an 10th - Feb 24th 2022)
 
-##Class (Jan 26th 2022)
+## Class (Jan 26th 2022)
 
 - Computing Tools are KPI Canvas tool and Dummy Piazza class
 - Using data from EdX, Piazza, Canvas, etc.
@@ -25,7 +23,7 @@ Sub-team Meeting (Jan 27th 2022):
   - Partik is working on creating the template for the sub-team presentation and coordinating work with data-science
 
 
-##Chat with Jonna (Feb 23rd 2022):
+## Chat with Jonna (Feb 23rd 2022):
 
 - Got on the same page on understanding the issues with the current data
 - Tried to get data through higher instructor access (didn't work)
@@ -33,13 +31,13 @@ Sub-team Meeting (Jan 27th 2022):
 - Ask if we can use their Python script as is
 - Need this to know where exactly the data has come from
 
-##Class (Feb 2nd 2022):
+## Class (Feb 2nd 2022):
 
   - Some project development models: Agile, Waterfall, Hybrid. We would like to follow Agile
   - Use Trello and other similar tools to keep track of work
   - What to do incase of ambiguous research goals
 
-##Sub-team Meeting (Feb 3rd 2022):
+## Sub-team Meeting (Feb 3rd 2022):
 
   - Work on the first sub-team presentation
  
@@ -52,20 +50,20 @@ Sub-team Meeting (Jan 27th 2022):
   - Daniel - social presence and social network analysis with Dr. Meryem
   - Pratik - more finalization on subteam presentation, coordinating with mentors, interviews, etc.
 
-##Class  (Feb 9th 2022):
+## Class  (Feb 9th 2022):
 
 - How to create/find your research question
 - Types of methods include qualitative, quantitative, and a mix of both
 - Studies can be relational, exploratory, etc.
 
-##Sub-team Meeting (Feb 10th 2022):
+## Sub-team Meeting (Feb 10th 2022):
 
   - Make sure everyone has equal talking time on the presentation 
   - Dry run half an hour before presentation
   - Allocated slides to individual team members
 
 
-##Class  (Feb 16th 2022):
+## Class  (Feb 16th 2022):
 
 - Subteam Presentations
 
@@ -82,12 +80,12 @@ Sub-team Meeting (Jan 27th 2022):
   - Pratik - post presentation follow-ups, working with Data-science code
 
 
-##Class (Feb 23rd 2022):
+## Class (Feb 23rd 2022):
 
 - Dr. Soylu presented on Research in Online Learning
 - Interactive quiz answering
 
-##Sub-eam Meeting (Feb 24th 2022):
+## Sub-eam Meeting (Feb 24th 2022):
 Standups:
   - Aanya collectng questions for meeting with PARQR team, able to get text from posts using Piazza API, connet with Dr. Lee to see if there are any security concerns
   - Gautam looking into the Piazza api and exports and front-end
