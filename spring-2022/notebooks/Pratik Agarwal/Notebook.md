@@ -141,4 +141,41 @@ Thoughts:
 
 ## 16th February - 23rd February
 
-- Subteam Presentation (16th February)
+Class Meeting (16th February)
+
+- Subteam Presentation
+  - We should try to have an elevator pitch for our project
+
+Team Meeting (17th February):
+
+- General
+  - Backward approach to tasks from Goals
+  - Target of having a pilot in 6 weeks in the sandbox environment
+  - Gautam will start with mockups, Nidhi will try creating a manual flow, Malav will look into Topic Modeling
+
+  - Harriet, Jisan still learning about the tool, frameworks and project code
+
+  - Daniel will come up with a small presentation on metacognition in 2 weeks
+
+Thoughts:
+
+- Need to move quicker with implementation and creating mocks to get quick user feedbacks
+
+## 23rd February - 2nd March
+
+Class meeting (23rd February)
+
+- Dr. Soylu presented on Research in Online Learning
+  - Distance learning, MOOCs etc.
+  - Changing conceptions of learning - Behavioral, Cognitivist, Constructivist
+  - Emergency remote teaching
+  - Employment
+
+Team Meeting (24th February):
+
+- General
+  - Aanya, Gautam and Harriet looking into the Piazza api and exports
+
+Thoughts:
+
+- Need to create sample posts on Piazza and see how the end-to-end pipeline works
