@@ -1,7 +1,7 @@
-#VIP Notes Jan 10th - Feb 24th 2022
+# VIP Notes Jan 10th - Feb 24th 2022
 
 
-#VIP Notes J(an 10th - Feb 24th 2022)
+# VIP Notes J(an 10th - Feb 24th 2022)
 
 ##Class (Jan 26th 2022)
 
