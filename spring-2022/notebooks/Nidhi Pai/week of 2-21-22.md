@@ -21,7 +21,7 @@ Unaccessible so as not to publish FERPA data on GH, but labeled topic data
 
 ## To Do
 
-- [ ] keep working on topic modeling data (3/4)
+- [x] keep working on topic modeling data (3/4)
 - [x] reply to saurabh and arrange meeting (2/25)
-- [ ] meet with gautam to build prototypes with content and minimalistic design (2/27)
+- [x] meet with gautam to build prototypes with content and minimalistic design (2/27)
 
