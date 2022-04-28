@@ -179,3 +179,121 @@ Team Meeting (24th February):
 Thoughts:
 
 - Need to create sample posts on Piazza and see how the end-to-end pipeline works
+
+## 2nd March - 9th March
+
+Class Meeting (2nd March):
+
+- Journal Club. Couldn't attend due to personal circumstances
+
+Team Meeting (3rd March):
+
+- General
+  - Aanya, Gautam and Harriet looking into the Piazza api
+  - Nidhi to continue manually labeling topics especially questions and answers
+    - Refine/mock up the whiteboard drafts and get some feedback
+
+Thoughts:
+
+- Need to speed up the integration of backend with data science team and have faster feedback loops
+
+## 9th March - 16th March
+
+No Class meeting
+
+Team Meeting (10th March):
+
+- General
+  - Focus on bringing teams (web-dev, ux, ed research, and data science) together for the presentation
+
+Thoughts:
+
+- Need to get everyone an insight into how everyone's work ties into the overarching vision
+
+## 16th March - 23rd March
+
+2nd Subteam presentation (16th March)
+
+Team Meeting (17th March):
+
+- General
+  - KBAI feedback - Try to get the most important 1 thing
+  - Figma based on TA feedback
+  - Aanya to give Knowledge Transfer to Gautam and Harriet, Web-dev team to start writing Unit tests and Integration test cases
+  - Pipeline to get data from DB to data science team to be able to run models on top
+
+Thoughts:
+
+- Need to create product docs for the application
+
+## 23rd March - 30th March
+
+No Class meeting
+
+No Team Meeting
+
+## 30th March - 6th April
+
+Class meeting (30th March)
+
+- Guest Presentation from GSU by Ms. Lindsey Fifield
+
+Team Meeting (31st March):
+
+- General
+  - Nidhi to get the TA feedback, work with Gautam on the mockups
+  - DS team to create the topic model relevant charts
+  - Backend team to write and execute test cases
+    - Structure backend code and test cases, help with front-end (optional)
+
+Thoughts:
+
+- What's the most important thing to get right on the dashboard?
+
+## 6th April - 13th April
+
+Class meeting (6th April)
+
+- Educational Data Mining (EDM), Learning Analytics process (LA)
+- Comparing basic level and Master degree class, Problem interaction in Micromaster, seq_goto, and seq_next most important activities.
+
+Team Meeting (7th April):
+
+- General
+  - Interviewed another TA from CS 4510
+  - Assigning questions to TAs
+  - Working on figma mockups
+  - Trying to get a real-time screen and a couple mock up
+  - Working on pipelining the data from data.db file to the saved model and providing the graphs to Nidhi
+  - Worked on creating graphs
+  - Work on data pipelining
+  - Analyzing the python files for metacognition
+
+Thoughts:
+
+- What's an achievable goal for the semester end? How do we tie metacognition into our application?
+
+## 13th April - 20th April
+
+Final Subteam presentation (20th April)
+
+- Presentation seemingly went well. Need to focus on getting things moving faster, get documentation done and expand to other courses
+
+Team Meeting (14th April):
+
+- General
+  - DS team to provide graphs to UX team for Mockups
+  - Web-dev team to close the loop and get a basic app running
+  - Education research to explore next sem - combining cognitive presence, social presence and metacognition
+
+Team Meeting (21st April):
+
+- Goodbyes and gratitude along with self-reflections
+  - Could have moved a bit faster so that the web-dev team didn't have to wait on the data science team
+  - It was nice to have pieces finally seem to fit together
+  - Focus for next sem will be to get started completing the pilot app ASAP
+  - Ask if we can get permission for more courses data etc.
+
+Thoughts:
+
+- Each member in the team should feel proud of their work and their team
