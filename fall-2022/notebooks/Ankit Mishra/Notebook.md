@@ -30,19 +30,20 @@
 
 > Presented the webpage in subteam meeting and got good feedback for it. 
 
-> Goal 
+> Goal:
 >>To create and third and fourth page of the webapp and make sure that navigation between them works.
 
 >>Learn react router to implement page navigation between second, third and fourth page.
 
 Week 4 (Sept 26 – 30)
 
-      • Created the third and fourth pages of the dashboard in react and made it look exactly like the Figma designs.
-      • Learnt routing in react and implemented it to connect the different pages of dashboard. This made it possible to
-        navigate to other pages of the dashboard from any one page.
-      • Goals :Create slides for the subteam presentation. My slides talk about the current progress of the webdev team and 
-               I will present this during the subteam presentation.
-              :Completed the peer evaluations.
+> Created the third and fourth pages of the dashboard in react and made it look exactly like the Figma designs.
+
+> Learnt routing in react and implemented it to connect the different pages of dashboard. This made it possible to navigate to other pages of the dashboard from any one page.
+
+> Goals:
+>> Create slides for the subteam presentation. My slides talk about the current progress of the webdev team and I will present this during the subteam presentation.
+>>Completed the peer evaluations.
 
 Week 5 (Oct 4 - 7)
 
