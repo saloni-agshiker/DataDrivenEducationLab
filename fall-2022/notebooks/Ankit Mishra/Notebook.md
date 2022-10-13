@@ -1,5 +1,4 @@
-**Week 1 (Sept 5 – 9)
-**
+Week 1 (Sept 5 – 9)
 
       • Had the first sub-team meeting.
       • Introduced to the project and what parts of the projects have been accomplished until last semester.
