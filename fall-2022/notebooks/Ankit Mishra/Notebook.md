@@ -19,7 +19,7 @@ Week 3 (Sept 19 – 23)
 - Made the front-end for second page of the dashboard and used grid layout in react to make the webpage look exactly like the Figma design.
 - Presented the webpage in subteam meeting and got good feedback for it. 
 - Goal - To create and third and fourth page of the webapp and make sure that navigation between them works.
-       - Learn react router to implement page navigation between second, third and fourth page.
+-      - Learn react router to implement page navigation between second, third and fourth page.
 
 Week 4 (Sept 26 – 30)
 
