@@ -10,7 +10,8 @@ Week 1 (Sept 5 – 9)
 Week 2 (Sept 12 – 16)
 
       • Looked at the Figma mock-ups for the front-end and started to learn React to produce those webpages.
-      • Met with Gautam and looked at the backend code for the project and looked at the different databases that needs to be connected to produce real time graphs in the front-end web page.
+      • Met with Gautam and looked at the backend code for the project and looked at the different databases 
+      that needs to be connected to produce real time graphs in the front-end web page.
       • Learnt grid layout in REACT and started creating the second page of the dashboard and separate it into different blocks for different graphs and data.
       • Goals: Make the second page of the webapp.
 
