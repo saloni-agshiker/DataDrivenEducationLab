@@ -4,7 +4,7 @@
 - Introduced to all the members of the team and their roles in the subteam.
 - Introduced to the project and what parts of the projects have been accomplished until last semester.
 - Learnt the goals of the project team for this semester and what my role is exactly (Front-end web developer).
-- My work is to use REACT in order to translate a Figma mockup of the dashboard into an actual webapp.
+- My work is to use REACT in order to translate a Figma mockup of the dashboard into an actual webapp. Then connect the backend database to the dashboard to produce graphs and scores.
 - Goals: Learn React and start building a new prototype of dashboard locally.
 
 # Week 2 (Sept 12 – 16)
@@ -16,11 +16,10 @@
 
 Week 3 (Sept 19 – 23)
 
-      • Made the front-end for second page of the dashboard and used grid layout in react to make the webpage look exactly 
-        like the Figma design.
-      • Presented the webpage in subteam meeting and got good feedback for it. 
-      • Goal: To create and third and fourth page of the webapp and make sure that navigation between them works.
-            : Learn react router to implement page navigation between second, third and fourth page.
+- Made the front-end for second page of the dashboard and used grid layout in react to make the webpage look exactly like the Figma design.
+- Presented the webpage in subteam meeting and got good feedback for it. 
+- Goal - To create and third and fourth page of the webapp and make sure that navigation between them works.
+       - Learn react router to implement page navigation between second, third and fourth page.
 
 Week 4 (Sept 26 – 30)
 
