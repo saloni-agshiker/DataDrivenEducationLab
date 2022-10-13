@@ -39,4 +39,4 @@ Week 5 (Oct 4 - 7)
       • Completed the peer evaluations and the notebooks for midterm evaluation.
       • Goals : Get the first page from Gautam and add it to the webapp. With this, the layout of all the pages for the 
                 webapp dashboard will be complete.
-              : Push the react file for the dashboard into github so everyone else can access it
+              : Replace the current webapp file in github with my local webapp file so the webdev team can build on those files.
