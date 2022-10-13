@@ -48,13 +48,13 @@ Week 4 (Sept 26 – 30)
 
 # Week 5 (Oct 4 - 7)
 
-> Presented the second, third and fourth page of webapp along with the working page navigation in the subteam meeting.
+> Presented the second, third and fourth page of dashboard along with the working page navigation in the subteam meeting.
 
 > Presented the current progress of the webdev team during the subteam presentations.
 
 > Completed the peer evaluations and the notebooks for midterm evaluation.
 
 > Goals: 
->>Get the first page from Gautam and add it to the webapp. With this, the layout of all the pages for the webapp dashboard will be complete.
+>>Get the first page from Gautam and add it to the dashboard. With this, the layout of all the pages for the dashboard will be complete.
 
->>Replace the current webapp file in github with my local webapp file so the webdev team can build on those files.
+>>Replace the current react webapp/ dashboard file in github with my local webapp file so the webdev team can build on those files.
