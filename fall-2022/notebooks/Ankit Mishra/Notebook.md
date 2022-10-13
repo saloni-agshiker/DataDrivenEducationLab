@@ -22,7 +22,7 @@
 > Learnt grid layout in REACT and started creating the second page of the dashboard.
 
 > Goals: 
-> >Make the second page of the webapp. Separate the page into differeent blocks just like in the Figma mockups.
+> >Make the second page of the webapp. Separate the page into different blocks just like in the Figma mockups.
 
 # Week 3 (Sept 19 – 23)
 
