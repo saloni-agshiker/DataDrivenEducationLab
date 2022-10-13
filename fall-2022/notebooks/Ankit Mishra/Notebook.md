@@ -43,14 +43,18 @@ Week 4 (Sept 26 – 30)
 
 > Goals:
 >> Create slides for the subteam presentation. My slides talk about the current progress of the webdev team and I will present this during the subteam presentation.
->>Completed the peer evaluations.
 
-Week 5 (Oct 4 - 7)
+>> Complete the peer evaluations and midterm notebook.
 
-      • Presented the second, third and fourth page of webapp along with the working page navigation in the subteam meeting.
-      • Presented the current progress of the webdev team during the subteam presentations.
-      • Completed the peer evaluations and the notebooks for midterm evaluation.
-      • Goals : Get the first page from Gautam and add it to the webapp. With this, the layout of all the pages for the 
-                webapp dashboard will be complete.
-              : Replace the current webapp file in github with my local webapp file so the webdev team can build on those 
-                files.
+# Week 5 (Oct 4 - 7)
+
+> Presented the second, third and fourth page of webapp along with the working page navigation in the subteam meeting.
+
+> Presented the current progress of the webdev team during the subteam presentations.
+
+> Completed the peer evaluations and the notebooks for midterm evaluation.
+
+> Goals: 
+>>Get the first page from Gautam and add it to the webapp. With this, the layout of all the pages for the webapp dashboard will be complete.
+
+>>Replace the current webapp file in github with my local webapp file so the webdev team can build on those files.
