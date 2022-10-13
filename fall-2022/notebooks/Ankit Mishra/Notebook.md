@@ -1,6 +1,7 @@
 Week 1 (Sept 5 – 9)
 
       • Had the first sub-team meeting.
+      • Introduced to all the members of the team and their roles in the subteam.
       • Introduced to the project and what parts of the projects have been accomplished until last semester.
       • Learnt the goals of the project team for this semester and what my role is exactly (Front-end web developer).
       • My work is to use REACT in order to translate a Figma mockup of the dashboard into an actual webapp.
