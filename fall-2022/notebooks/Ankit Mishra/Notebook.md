@@ -20,6 +20,7 @@
 > Met with Gautam and looked at the backend code for the project and looked at the different databases that needs to be connected to produce real time graphs in the front-end web page.
 
 > Learnt grid layout in REACT and started creating the second page of the dashboard.
+>> Learnt from: https://isamatov.com/react-grid-layout-tutorial/
 
 > Goals: 
 > >Make the second page of the webapp. Separate the page into different blocks just like in the Figma mockups.
