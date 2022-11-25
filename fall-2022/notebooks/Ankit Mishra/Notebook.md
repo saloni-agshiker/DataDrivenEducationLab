@@ -29,6 +29,8 @@
 
 > Made the front-end for second page of the dashboard and used grid layout in react to make the webpage look exactly like the Figma design.
 
+> Met with Gautam o get update about his meeting with James Lohse. Gautam told us that we are all by yourselves to make this project and we need to learn everything ourselves.
+
 > Presented the webpage in subteam meeting and got good feedback for it. 
 
 > Goal:
@@ -57,6 +59,8 @@
 > Presented the second, third and fourth page of dashboard along with the working page navigation in the subteam meeting.
 
 > Presented the current progress of the webdev team during the subteam presentations.
+
+> From our subteam, Ritika was not present and Gautam presented slides on the UX part that was completed last semester.
 
 > Completed the peer evaluations and the notebooks for midterm evaluation.
 
