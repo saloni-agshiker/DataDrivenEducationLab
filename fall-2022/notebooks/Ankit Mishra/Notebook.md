@@ -29,7 +29,7 @@
 
 > Made the front-end for second page of the dashboard and used grid layout in react to make the webpage look exactly like the Figma design.
 
-> Met with Gautam o get update about his meeting with James Lohse. Gautam told us that we are all by yourselves to make this project and we need to learn everything ourselves.
+> Met with Gautam to get update about his meeting with James Lohse. Gautam told us that we are all by yourselves to make this project and we need to learn everything ourselves.
 
 > Presented the webpage in subteam meeting and got good feedback for it. 
 
