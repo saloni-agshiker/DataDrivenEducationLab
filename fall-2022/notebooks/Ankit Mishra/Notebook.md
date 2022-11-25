@@ -35,11 +35,16 @@
 
 >>Learn react router to implement page navigation between second, third and fourth page.
 
-Week 4 (Sept 26 – 30)
+# Week 4 (Sept 26 – 30)
 
 > Created the third and fourth pages of the dashboard in react and made it look exactly like the Figma designs.
 
-> Learnt routing in react and implemented it to connect the different pages of dashboard. This made it possible to navigate to other pages of the dashboard from any one page.
+> Learnt routing in react and implemented it to connect the different pages of dashboard. This made it possible to navigate to other pages of the dashboard from any one page. I have listed the sources fro where I learnt.
+>> https://www.youtube.com/watch?v=aZGzwEjZrXc&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=22&ab_channel=TheNetNinja
+
+>> https://www.youtube.com/watch?v=EmUa_tcSM-k&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=23&ab_channel=TheNetNinja
+
+>> https://www.youtube.com/watch?v=EmUa_tcSM-k&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=23&ab_channel=TheNetNinja
 
 > Goals:
 >> Create slides for the subteam presentation. My slides talk about the current progress of the webdev team and I will present this during the subteam presentation.
