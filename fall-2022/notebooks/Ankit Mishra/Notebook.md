@@ -54,7 +54,7 @@
 
 >> Complete the peer evaluations and midterm notebook.
 
-# Week 5 (Oct 4 - 7)
+# Week 5 (Oct 3 - 7)
 
 > Presented the second, third and fourth page of dashboard along with the working page navigation in the subteam meeting.
 
@@ -68,3 +68,19 @@
 >>Get the first page from Gautam and add it to the dashboard. With this, the layout of all the pages for the dashboard will be complete.
 
 >>Replace the current react webapp/ dashboard file in github with my local webapp file so the webdev team can build on those files.
+
+# Week 6 (Oct 10 - 14)
+
+# Week 7 (Oct 17 - 21)
+
+# Week 8 (Oct 24 - 28)
+
+# Week 9 (Oct 31 - Nov 4)
+
+# Week 10 (Nov 7 - 11)
+
+# Week 11 (Nov 14 - 18)
+
+# Week 12 (Nov 21 - 25)
+
+# Week 13 (Nov 28 - 30)
