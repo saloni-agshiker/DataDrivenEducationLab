@@ -77,3 +77,129 @@ Team Meeting (30th September):
 Thoughts:
 
 - Need to learn more on prioritization skills. Once the compulsary action items are completed, it'd be important to prioritize well to set stage for the next sem team
+
+## 5th October - 12th October
+
+Team Meeting (7th October):
+
+- General
+  - Received feedback on presentation, notebooks and peer evals due
+  
+- Web development
+  - Developing the remaining pages on the dashboard according to Figma mockups
+
+- Data Science
+  - Output results from Aspect-based Sentiment Analysis model
+
+Thoughts:
+
+- Important to give more weightage to future plans than setting context of previous work even if that's being continued
+
+## 12th October - 19th October
+
+Team Meeting (14th October):
+
+- General
+  - Done with peer evaluations, focus on linking DS team and Web-dev team's work
+  
+- Web development
+  - Try out the graphs on the dashboard
+
+- Data Science
+  - Run backend scripts to get updated data in the database, Aspect Based Sentiment Analysis model
+
+Thoughts:
+
+- Establishing coordination between web-dev and data science teams can be very valuable
+
+## 19th October - 26th October
+
+Team Meeting (21st October):
+
+- General
+  - Focus on the 2nd subteam presentation, incorporate feedbacks from last time
+  
+- Web development
+  - Try to show your current demo of the dashboard
+
+- Data Science
+  - Can talk about aspect based sentiment analysis and how it's helpful for instructors
+
+Thoughts:
+
+- Need to ensure teams talk about their progress, challenges and learnings
+
+## 26th October - 2nd November
+
+Team Meeting (28th October):
+
+- General
+  - Created timelines and deliverables for the remaining semester
+  
+- Web development
+  - Focus on getting the MVP ready with outputs from Data Science team connected to the dashboard
+  - Document your work
+
+- Data Science
+  - Provide model outputs to the web-dev team to put on the dashboard
+  - Update existing models, document your work
+
+Thoughts:
+
+- Helpful to lay out week by week deliverable in advance to get to final outcomes. Gives enough time to plan things
+
+## 2nd November - 9th November
+
+Team Meeting (4th November):
+
+- General
+  - Start documenting your work to make it easier for next team to pick up
+  
+- Web development
+  - Work on table-display in React
+
+- Data Science
+  - Try to input data directly from Piazza api. Need credentials
+
+Thoughts:
+
+- Should take assistance from instructors earlier on
+
+## 9th November - 16th November
+
+Team Meeting (11th November):
+
+- General
+  - 2 weeks remaining, start wrapping up the work and documentation
+  
+- Web development
+  - Update topic modeling graphs on React dashboard
+  - Start documentation
+
+- Data Science
+  - Share the csv of outputs from topic models and ABSA to web-dev team
+  - Continue with documentation and providing details of models etc
+
+Thoughts:
+
+- Should be more proactive with team in providing feedbacks
+
+## 16th November - 23rd November
+
+Team Meeting (18th November):
+
+- General
+  - Work on presentation mainly, wrap up the remaining bit
+  
+- Web development
+  - Layout of topic page updated
+  - Next to work on documentation, and creating plots from the csv files on real data
+
+- Data Science
+  - Documentation on track
+  - Review cognitive presence model, add colab pro issue in the documentation, attempt the Piazza Q/A feature
+
+Thoughts:
+
+- Should give enough buffer time for team accounting for holidays and exams while planning timelines
+- Start documentation early on in the semester itself
