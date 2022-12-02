@@ -1,0 +1,184 @@
+Week of September 9th, 2022:
+ 
+-       First sub team meeting
+-       Met with new member on the sub team, including the new Web Dev members
+o   Harriet switching from web dev to data science
+o   Ritika – senior member switching from another VIP team, has interest and experience in React for front end work
+o   Ankit – new VIP member, also has a big interest in React and ready to start working on the dashboard
+-       React is the main programming language that we will use to code and build the front-end portion of our dashboard
+-       All three of us, me, Ritika, and Ankit, will spend time learning React through online tutorials and videos
+-       Goals for me: Learn React, get started on editing the preexisting dashboard code and web application to better match the Figma mockups 
+-       Link to Figma mockups: https://www.figma.com/file/E7GKzL49vurhk3X3XMFJBY/spring-2022-vip-mockups?node-id=0%3A1
+ 
+ 
+ 
+ 
+ 
+Week of September 16th, 2022:
+ 
+-       Worked on the first page/home page of the dashboard
+o   Transformed the home page from what it was before to look much more similar to what it looks like in the Figma mockups
+o   Improvements can still be made in terms of sizing and coloring, but main content, text, and pictures all match the mockups well
+§  First page done for now, improvements can come later
+-       Had a call with James Lohse
+o   His team is also working with React on a similar dashboard type feature, and they are also at the same stage as us
+o   Went over some React tutorials and examples I found online with him, and we compared our code layouts too
+o   Shared some valuable information and got some in return, and will keep in touch throughout the semester regarding any updates/breakthroughs
+-       Goals for me: Review what I learned in my call with James, update Ritika and Ankit on what happened in my call with James, split up web dev work among the web dev team, and improve the front page
+ 
+ 
+ 
+ 
+Week of September 23rd, 2022:
+-       Updated Ritika and Ankit on what happened during my call with James
+-       Split up the web dev work with Ritika and Ankit
+o   Me: Work on page navigation between our four dashboard pages
+o   Ankit: Work on grid layout, match layout in Figma
+o   Ritika: Experiment with React components
+-       My goals:
+o   Look into React Router, which is the main way in which page navigation works in React
+§  Need to learn about this and possibly look at code examples that other people have done to get a sense of how to implement it in our code
+o   Check in with Ankit and Ritika about how their work is going
+o   Send front page code to Ankit and Ritika so they can see the updated dashboard page
+o   First sub team presentation coming up soon so start thinking about what web dev can say for that and how the slides can be divided among the three of us
+ 
+ 
+ 
+ 
+ 
+Week of September 30th, 2022:
+-       Get ready for first sub team presentation, finish up notebook and submit it, and finish the peer evaluation
+-       My goals:
+o   Make web dev slides for presentation and prepare
+§  Ritika won’t be there, so just me and Ankit
+§  I will need to talk about the UX research part too
+·      How we figured out what data and metrics to display on the dashboard through surveys and interviews
+§  My web dev slides:
+·      Talk about last semester’s work, especially in Figma mockups
+o   Show the mockups and explain that ideally, this is how our code-based dashboard will look by the end of this semester
+§  Ankit’s slides:
+·      Talk about the current code and show how the current web page looks
+·      Talk about next steps and what we want to be accomplished by the next sub team meeting
+ 
+ 
+ 
+ 
+Week of October 7th, 2022:
+-       Got feedback from instructors on presentation
+o   Need to focus less on last year’s things and recap and need to instead focus more on current progress and plans for the semester.
+-       Made significant progress on the page to page navigation 
+-       My goals:
+o   Continue making progress and working on the web application, specifically finishing up the page-to-page navigation 
+o   After that, merge the navigation code with the layout code for each page 
+§  Once this is done, we will be able to navigate between the four pages and also view the outlines of those pages
+ 
+ 
+Week of October 14th, 2022:
+-       Worked with Ankit and finished page-to-page navigation
+-       I had wisdom tooth surgery this week over Fall Break, so I was not able to do much more
+-       My goals:
+o   Star thinking about upcoming second presentation and what to do there
+ 
+ 
+Week of October 21st, 2022:
+-       October 19th – Work Day Reflection
+o   Made significant progress today 
+§  Did extensive research on React technologies and libraries that can be used to build graphs and charts on our webpage
+·      Experimented with different ways we could make graphs and ran into a lot of roadblocks and things that did not work
+·      However, finally was able to get the library Canvas.js to work and was able to create a preliminary pie chart that displays dummy data, and was able to fit the chart into a box on the student’s page
+-       My goals:
+o   Experiment with Canvas.js more to make the pie chart look better
+§  Research about other possible libraries/technologies that we can use in React to make charts and graphs
+o   Using the same library used to make the pie chart, make the required line, and bar graphs too that are required by the Figma mockups 
+o   Start thinking about documentation for web dev
+§  Suggested by Pratik, helpful for future members of web dev team to understand what work was done before and have a basis to start off of
+§  We did not have good documentation this semester, so it was difficult for us in the beginning of the semester to get started and had to start everything anew
+o   Meet up with Ankit and Ritika again to split up the presentation slides
+Week of October 28th, 2022:
+-       Second sub team presentation 
+o   Split up the sides among the members of the web dev team to display three major things
+§  Current progress – what we have accomplished so far, and showing the progress as deliverables through screenshots of our presentation
+§  Challenges – what challenges we have faced thus far, including the challenge of starting anew in the beginning of the semester without prior documentation and challenges surrounding Canvas.js
+§  Next steps – what we plan to do next and what to finish by the last sub team presentation, such as a more finalized web application and documentation 
+-       My goals:
+o   Continue working on bar graphs and line charts
+§  Initial code for it is written following the outline and library used by the pie chart, but more fine work is needed to make it look good and accurate
+§  Brainstorm ideas for the documentation with Ritika, such as what sections we should have and what parts of the codebase we should highlight
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Week of November 4th, 2022:
+-       Finished working with graphs and charts
+o   Pie chart is finalized and looks good with all the relevant data being displayed
+o   Bar graph and line graphs are also finalized using the Canvas.js library, and all of their data is also being displayed in an easy-to-read manner
+-       Initial outline for the documentation is brainstormed and planned out roughly, still open to change
+-       My goals:
+o   Talk about more about the documentation with Ritika
+§  Plan more concretely about what specifically to include 
+o   Think about tables on the web application
+§  Graph and charts are implemented, so now the next step is implementing tables
+·      Need to research React libraries that can do this well
+ 
+ 
+ 
+Week of November 11th, 2022:
+-       Finished implementing tables on all three pages
+o   Now there are charts, graphs, and tables all displaying correctly, so the web application is starting to look very similar to Figma mockups now
+-       Talked with data science team about their ABSA research and results, and want to display that on the topics page instead of what is there right now 
+o   This is also the component that gives real data, which is needed because all of the current displays are off of fake data 
+-       My goals:
+o   Remake the topics page such that it displays the ABSA results instead of what was previously mocked on the Figma
+§  Spoke to other team members too and decided that the ABSA model results were more helpful to instructors anyway than the current things on the topics page
+o   Look into documentation made by the data science team as an example of what is needed and how to structure it
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Week of November 18th, 2022:
+-       Was able to complete the topics page with fake data
+o   Now, all three pages are fully populated with their relevant numbers, charts, graphs, and tables, but all of it is only on dummy data that is being hard coded
+-       The most immediate next step is to research and find a way to incorporate real data into one of the pages
+-       Made significant progress on the documentation 
+-       My goals:
+o   Finalize documentation 
+o   Thinking about final sub team presentation that is coming up
+o   Research and figure out a way to display the real ABSA results data from the data science team on the topics page in the web application
+§  Data science team is giving the data in a CSV file so need to find a way to parse that data into React and pass it into the Canvas.js data field
+ 
+ 
+ 
+ 
+ 
+ 
+Week of November 25th, 2022:
+-       Finalized documentation 
+-       Was able to successfully have the topics page run on the real ABSA results data from the data science team
+o   No more dummy data displayed on the topics page, only real data
+§  Student and Instructor pages still running on dummy data but that can be changed easily later based off of the same way the topics page got changed
+o   Unable to find an effective way to parse CSV data into React, but found a simple way to parse data from a JSON file
+§  So, converted the CSV file given by the data science team into a JSON file using an online converter, and uploaded this JSON file into the code base
+§  Then parsed this JSON file into React and was able to display the topics page using real data
+o   By doing this, we now have a successfully working minimum viable product 
+-       Uploaded the final code to GitHub, and here is the link for it: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Important%20Code%20Only).zip
+-       My goals:
+o   Finetune the web application for small things here and there
+§  Front page pictures editing
+§  Font editing
+§  Centering and aligning graphs and charts
+o   Plan for the final sub team presentation next week
+§  Need to split up the slides among me, Ritika, and Ankit
+·      Outcomes slide about the web application
+·      Outcomes slide about the documentation
+·      Reflection slides
+o   What we learned
+o   What worked well
+o   What could have gone better
+o   Goals for next semester
