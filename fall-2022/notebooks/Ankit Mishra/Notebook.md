@@ -1,3 +1,5 @@
+Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Important%20Code%20Only).zip
+
 # Week 1 (Sept 5 – 9)
 
 > Had the first sub-team meeting.
