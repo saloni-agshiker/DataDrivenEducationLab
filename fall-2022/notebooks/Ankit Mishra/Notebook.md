@@ -83,7 +83,7 @@ Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Im
 > We added first page to the React router to ensure that we can reach other pages from the first page and vice versa.
 
 > Goals:
->> Add graphs (piecharts, bargraphs and line graphs) to the dashboard 
+>> Learn how to add graphs (piecharts, bargraphs and line graphs) to the dashboard.
 
 # Week 7 (Oct 17 - 21)
 
