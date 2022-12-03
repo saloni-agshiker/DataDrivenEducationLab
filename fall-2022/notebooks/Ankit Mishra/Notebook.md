@@ -76,6 +76,15 @@ Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Im
 
 # Week 6 (Oct 10 - 14)
 
+> Met with Gautam to get the first page to the dashboard. At first, I could not add the first page to my dashboard code. However, Gautam and I debugged it together to finally add it to the code I had.
+
+> We formatted the first pages, added images and made the first page look exactly like the figma. 
+
+> We added first page to the React router to ensure that we can reach other pages from the first page and vice versa.
+
+> Goals:
+>> Add graphs (piecharts, bargraphs and line graphs) to the dashboard 
+
 # Week 7 (Oct 17 - 21)
 
 # Week 8 (Oct 24 - 28)
