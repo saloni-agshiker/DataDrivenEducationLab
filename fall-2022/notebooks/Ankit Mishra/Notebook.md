@@ -116,7 +116,7 @@ Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Im
 
 # Week 9 (Oct 31 - Nov 4)
 
-> Finishes producing all the graphs with proper formatting that matches the figma mockups.
+> Finished producing all the graphs with proper formatting that matches the figma mockups.
 
 > Researched way to create tables efficiently. We tried HTML table and React tables and we decided to use HTML tables because of its easy implementation.
 
