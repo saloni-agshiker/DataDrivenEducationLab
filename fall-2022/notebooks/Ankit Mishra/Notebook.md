@@ -129,7 +129,7 @@ Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Im
 
 # Week 10 (Nov 7 - 11)
 
-> Met with data science team to discuss about the new output they produced using their ABSA research. We decided to change our current Topics page to accommodate ate this new information. The new information is about the sentiment of students which is helpful information for professors.
+> Met with data science team to discuss about the new output they produced using their ABSA research. We decided to change our current Topics page to accommodate this new information. The new information is about the sentiment of students which is helpful information for professors.
 
 > Goals
 >> Create a new Topics page that displays the new data.
