@@ -111,6 +111,9 @@ Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Im
 
 > Completed research on the react libraries for graphing and decided with Gautam and Ritika to stick with Canvas.js library for all graphs.
 
+> Goals 
+>> Finalize all the graphs with proper formatting.
+
 # Week 9 (Oct 31 - Nov 4)
 
 > Finishes producing all the graphs with proper formatting that matches the figma mockups.
