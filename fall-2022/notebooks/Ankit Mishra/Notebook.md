@@ -102,13 +102,32 @@ Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Im
 
 # Week 8 (Oct 24 - 28)
 
+> Met with Gautam and Ritika to divide the slides.
+>> Me and Gautam --> Current progress of the dashboard and comparision with Figma to show what percentage of the dashboard is done.
+
+>> Ritika --> Challenges faced while working on the dashboard and the next steps for us.
+
+> Presented the slides during subteam presentation on October 26.
+
+> Completed research on the react libraries for graphing and decided with Gautam and Ritika to stick with Canvas.js library for all graphs.
+
 # Week 9 (Oct 31 - Nov 4)
 
 # Week 10 (Nov 7 - 11)
 
 # Week 11 (Nov 14 - 18)
 
-# Week 12 (Nov 21 - 25)
+> We created a new page for the topics page becaus of the new data we planned to display. Our new topics page is divided into 6 grids, each with a piechart. Each piechart has data about the student's sentiment towards a certain aspect of the class. This is useful data for the professors.
+
+> I and Gautam worked on coding the new grid layout and created the piecharts using Canjas.js. We used dummy data for the charts.
+
+> Made significant progress with the docuentation.
+
+Goals
+
+> Work with Gautam and Ritika to connect the graphs on Topics page to the real ABSA data provided by the data science team.
+
+# Week 12 (Nov 21 - 25) 
 
 > Ritika worked on finalizing documentation and I and Gautam worked on making the finishing changes for the dashboard.
 
