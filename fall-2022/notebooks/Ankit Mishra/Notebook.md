@@ -89,6 +89,17 @@ Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Im
 
 > Met with Gautam and Ritika to research react libraries and technologies that would help us produce the piecharts, line graphs and bar graphs. 
 
+> Initially, we created the graphs using plotly.js library, however, it was difficult to format the chart element such as graph colors, axes labels, etc. Then, we recreated graphs using chart.js and canvas.js. We decided to use Canvas.js among the three libraries because it was easier to use and compatible with our goal of eventually connecting the graphs with database created by data science team.
+
+> For now, we have created these graphs with dummy data.
+
+> Goals:
+>> To research more react libraries to find if there is a better library than Canvas.js. 
+
+>> Discuss the format and information we want to put in the documentation for the future web dev team.
+
+>> Start working on the slides for sub team presentation with Gautam and Ritika.
+
 # Week 8 (Oct 24 - 28)
 
 # Week 9 (Oct 31 - Nov 4)
