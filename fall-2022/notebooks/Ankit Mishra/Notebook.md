@@ -113,17 +113,35 @@ Link to code: https://github.gatech.edu/C21U/vip-nlp/blob/master/Dashboard%20(Im
 
 # Week 9 (Oct 31 - Nov 4)
 
+> Finishes producing all the graphs with proper formatting that matches the figma mockups.
+
+> Researched way to create tables efficiently. We tried HTML table and React tables and we decided to use HTML tables because of its easy implementation.
+
+> Filled all grids in the dashboard with dummy data to make the dashboard look exactly like the Figma.
+
+> Brainstormed ideas for documentation and planned a rough outline.
+
+> Goals 
+>> Meet with all subteam members to present the dashboard and discuss any changes that could be made. Discuss if we could replace some of the information with more useful informations.
+
 # Week 10 (Nov 7 - 11)
+
+> Met with data science team to discuss about the new output they produced using their ABSA research. We decided to change our current Topics page to accommodate ate this new information. The new information is about the sentiment of students which is helpful information for professors.
+
+> Goals
+>> Create a new Topics page that displays the new data.
+
+>> Work on the progress of documentation.
 
 # Week 11 (Nov 14 - 18)
 
-> We created a new page for the topics page becaus of the new data we planned to display. Our new topics page is divided into 6 grids, each with a piechart. Each piechart has data about the student's sentiment towards a certain aspect of the class. This is useful data for the professors.
+> We created a new page for the topics page because of the new data we planned to display. Our new topics page is divided into 6 grids, each with a piechart. Each piechart has data about the student's sentiment towards a certain aspect of the class. This is useful data for the professors.
 
 > I and Gautam worked on coding the new grid layout and created the piecharts using Canjas.js. We used dummy data for the charts.
 
 > Made significant progress with the docuentation.
 
-Goals
+> Goals
 
 > Work with Gautam and Ritika to connect the graphs on Topics page to the real ABSA data provided by the data science team.
 
