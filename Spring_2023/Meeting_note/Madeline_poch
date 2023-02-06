@@ -34,7 +34,33 @@ Familiarize yourself with necessary technology (I believe React)? -- Youngwook
 
 
 Updates:
+Meeting preparation:
+
+Remind everyone to begin documenting their weekly meetings and progress in their notebooks.
+
+Ideas for goals:
+        Find out if including ChatGPT is ok & talk to Dr. Lee - Maddie
+        Review documentation, explore new models to increase accuracy & review last model to increase accuracy - Harriet, Jisan, Emily, Rohan
+        Review rubric for subteam presentation 1 with the group to make plan for 
+        Onboard Youngwook - Ankit
+        Familiarize yourself with necessary technology (I believe React)? -- Youngwook
 
 Problems:
+- We are not sure if Dr. Lee would find it acceptable that we include some sort of ChatGPT scan implementation in our new model as this may overlap with the responsiblities of the AI in Education Team
+        - UPDATE TO ABOVE: Dr. Lee said this was ok
+- We need additional datasetes to improve Sentiment Analysis accuraacy
+        - UPDATE TO ABOVE: Dr. Lee also let me know that we could have access to some additional datasets to improve the accuracy of the Sentiment Analysis tool.
 
-Plans:
+Plans/ :
+
+Deliverables
+
+Find multiple implementations of ChatGPT and talk to Dr. Lee - Maddie
+Review documentation, figure out next model to implement - Harriet, Jisan, Emily, Rohan
+Review rubric for subteam presentation 1 with the group to make plan for Presentation 1 - all
+Attend office hours if possible - all
+Onboard Youngwook - Ankit
+Familiarize yourself with React -- Youngwook, Ankit provid assistance if necessary
+
+**Note: we will continue to build out a dashboard
+Ankit: if there are any new ideas you have for implementing this based on your work last semester, please let me know!
