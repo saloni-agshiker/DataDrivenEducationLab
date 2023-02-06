@@ -2,7 +2,7 @@
 
 1/27/2023: Discussion Forum Subteam Meeting #1
 
-Updates:
+Meeting Prep & Updates:
 Each team member introduced themselves (if they didn't already during the first two class meetings) and talked about what was covered on the last semester.
 Next week, subteam will do a presentation on the article "From Presences to Linked Influences Within Communities of Inquiry" By Peacock and Cowan
 We divided the roles --> I will do an overview of the article and a summary of any relevant literature
@@ -20,10 +20,9 @@ Plans:
 
 2/03/2023: Discussion from Subteam Meeting #2
 
-Meeting preparation:
+Meeting preparation & Updates:
 
 Remind everyone to begin documenting their weekly meetings and progress in their notebooks.
-
 Find multiple implementations of ChatGPT and talk to Dr. Lee - Maddie
 Review documentation, explore new models to increase accuracy & review last model to increase accuracy - Harriet, Jisan, Emily, Rohan
 Review rubric for subteam presentation 1 with the group to make plan for 
@@ -31,29 +30,13 @@ Onboard Youngwook - Ankit
 Familiarize yourself with necessary technology (I believe React)? -- Youngwook
 
 
-
-
-Updates:
-Meeting preparation:
-
-Remind everyone to begin documenting their weekly meetings and progress in their notebooks.
-
-Ideas for goals:
-        Find out if including ChatGPT is ok & talk to Dr. Lee - Maddie
-        Review documentation, explore new models to increase accuracy & review last model to increase accuracy - Harriet, Jisan, Emily, Rohan
-        Review rubric for subteam presentation 1 with the group to make plan for 
-        Onboard Youngwook - Ankit
-        Familiarize yourself with necessary technology (I believe React)? -- Youngwook
-
 Problems:
 - We are not sure if Dr. Lee would find it acceptable that we include some sort of ChatGPT scan implementation in our new model as this may overlap with the responsiblities of the AI in Education Team
         - UPDATE TO ABOVE: Dr. Lee said this was ok
 - We need additional datasetes to improve Sentiment Analysis accuraacy
         - UPDATE TO ABOVE: Dr. Lee also let me know that we could have access to some additional datasets to improve the accuracy of the Sentiment Analysis tool.
 
-Plans/ :
-
-Deliverables
+Plans/Deliverables:
 
 Find multiple implementations of ChatGPT and talk to Dr. Lee - Maddie
 Review documentation, figure out next model to implement - Harriet, Jisan, Emily, Rohan
