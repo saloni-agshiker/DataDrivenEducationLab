@@ -12,7 +12,8 @@
 ### Works done
 - Completed my slides for Journal Club presentation, but I couldnot be there for presentation due to time conflict.
 - During subteam meeting, we discussed about creating dashboard for two different courses this semester and discussed some of the approaches to it. Like:
-** Creating two different dashboards.
+  1. Creating two different dashboards. (easy way)
+  2. Creating a drop-down menu that allows user to choose a course and the dashboard shows information for that course. (hard way)
 ### Goals for next week
 - Onboard Youngwook by provding him materials from last semester and walking him through it.
 # Week 3: 02/08/2023
