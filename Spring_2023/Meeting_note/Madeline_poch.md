@@ -1,8 +1,8 @@
-## VIP Meeting Notes for Spring 2023
+# VIP Meeting Notes for Spring 2023
 
-[ DETAILED PLANS FOR THE SEMESTER: ( https://docs.google.com/document/d/1Cx3J3BSvgsnMZKo_OCrt92oxj31ptRIqGTDrtiTr2k8/edit?usp=sharing ) ]
+## DETAILED PLANS FOR THE SEMESTER: (https://docs.google.com/document/d/1Cx3J3BSvgsnMZKo_OCrt92oxj31ptRIqGTDrtiTr2k8/edit?usp=sharing)
 
-1/27/2023: Discussion Forum Subteam Meeting #1
+### 1/27/2023: Discussion Forum Subteam Meeting #1
 
 Meeting Prep & Updates:
 Each team member introduced themselves (if they didn't already during the first two class meetings) and talked about what was covered on the last semester.
@@ -20,7 +20,7 @@ Plans:
 - answer any questions that might come up
 
 
-2/03/2023: Discussion from Subteam Meeting #2
+### 2/03/2023: Discussion from Subteam Meeting #2
 
 Meeting preparation & Updates:
 
@@ -51,7 +51,7 @@ Familiarize yourself with React -- Youngwook, Ankit provid assistance if necessa
 Ankit: if there are any new ideas you have for implementing this based on your work last semester, please let me know!
 
 
-2/10/2023 Subteam Meeting:
+### 2/10/2023 Subteam Meeting:
 
 I was absent, but Jisan led the meeting.
 
@@ -82,5 +82,13 @@ Plans & Deliverables:
 - Start contacting professors and students to determine user needs.
 
 
-2/17/2023 Subteam meeting:
+### 2/17/2023 Subteam meeting:
+
+Meeting prep and & updates:
+
+Problems:
+
+Plans & Deliverables:
+
+
 
