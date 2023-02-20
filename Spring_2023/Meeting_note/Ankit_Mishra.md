@@ -20,9 +20,11 @@
 ### Works done
 - Met with Youngwook and explained him the past work in web-dev team by going through documentation, the dashboard and the code for the dashboard.
 - Provided Youngwook youtube link to learn react and also explained a bit of the dashboard code to get him started.
+- The subteam meeting was headed by Jisan today. I was asked to get started on the presentation for web-dev slides. I was also assigned to meet with Madeline about conducting interviews.
 ### Goals for next week
 - Prepare slides for subteam presentation which include web-dev team current progress and goals for the semester.
 - Meet the team 20 minutes before class to practice for the presentation.
+- Ask Madeline about the surveys/ interviews.
 # Week 4: 02/15/2023
 ### Works done
 - Prepared the slides related to web-dev and presented it during class. The presentation went well.
