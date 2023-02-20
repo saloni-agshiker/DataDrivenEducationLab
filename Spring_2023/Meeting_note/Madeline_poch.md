@@ -85,10 +85,24 @@ Plans & Deliverables:
 ### 2/17/2023 Subteam meeting:
 
 Meeting prep and & updates:
+- Made a detailed doc with deliverables for Web Dev, Data Engineering, and Data Science Teams (this Google Doc is linked at the top)
+- Made Teams chats for Web Dev, Data Engineering, and Data Science Teams
+- Data Science team will explore ways to improve the accuracy of ABSA, implememnt CS 1301 edX data, and will find seeds for the guided topic modeling
+- Web Dev team will conduct more specific interviews about function/implementation of ABSA and topic modeling in the dashboard
+- Rohan will work to apply ML guide to metacognitive dataset
+
 
 Problems:
+- Ankit reached out to me able an email template for contacting professors with interviews, I shared one with him in the Web Dev chat
+- Rohan will consult Jisan on the ways to get more numerical insights from the dataset he has access to right now
+- Rohan will also reach out to Adrian (guest speaker) about application of ML methods
+- 
 
 Plans & Deliverables:
-
+- Interviews will ideally be completed by next subteam meeting
+- Seed topics will be completed by the next subteam meeting
+- 1-2 of the methods shared with the Data Science team will be implemented to improve ABSA accuracy
+- Rohan will have reached out to Adrian and Jisan for next steps
+**VIP notebooks and participation surveys due Friday!!**
 
 
