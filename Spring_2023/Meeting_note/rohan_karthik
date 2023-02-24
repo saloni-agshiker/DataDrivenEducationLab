@@ -1,1 +1,20 @@
+Subteam Meeting 2-17-22
+Notes
+-Adrian and Maddie are able to help with the dataset
+-Review metacognitive data and think of ideas to implement this
+To Do
+-Re-familiarise with python libraries
+-Review adrian’s code and see if he can help with metacognitive data
+
+Find questions about previous model 
+
+How does the presence of instructors in a thread contribute to metacognitive presence?
+    1. Graph presence of instructor (maybe in terms of # of instructor comments on a thread) vs avg metacognitive presence of student comments on that thread
+    2. Useful for instructors because it would help them know how much or how little their contributions are helping students
+3. How does metacognitive presence change for students with respect to time? (Does metacognitive presence increase over the course of the semester?)
+    1. Graph metacognitive presence vs time
+
+Learn how pandas works and a way to clean data
+Learn about  ABSA/ talk to Jisan about this. → Reviewed
+https://medium.com/nlplanet/quick-intro-to-aspect-based-sentiment-analysis-c8888a09eda7
 
