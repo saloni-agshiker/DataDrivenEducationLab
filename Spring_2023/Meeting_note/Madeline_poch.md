@@ -96,7 +96,7 @@ Problems:
 - Ankit reached out to me able an email template for contacting professors with interviews, I shared one with him in the Web Dev chat
 - Rohan will consult Jisan on the ways to get more numerical insights from the dataset he has access to right now
 - Rohan will also reach out to Adrian (guest speaker) about application of ML methods
-- 
+
 
 Plans & Deliverables:
 - Interviews will ideally be completed by next subteam meeting
@@ -106,3 +106,30 @@ Plans & Deliverables:
 **VIP notebooks and participation surveys due Friday!!**
 
 
+### 2/24/2023 Subteam Meeting:
+
+Meeting prep & updates:
+- Continued to add to the detailed Google Doc linked at the top of thsi page
+- Received our feedback for our first subteam presentation
+        - important notes:
+                - include more about how the metacognitive coding data will be used
+                - need more detailed plans for front-end and back-end web dev
+- Interviewed Dr. Colakoglu on 02/23, and her interview is in the UX research section
+
+Problems:
+- There were some miscommunications about who was supposed to do what in the graphic where names weren't explicitly specified last week (ex. the Web Dev team never started to try different ways to improve ABSA model even when that was assigned to them last week)
+- I gave edit access so that people can self-assign tasks where it makes sense, and I assigned some tasks as well.
+- I also could have been a bit clearer in my instructions, so I made sure to send more individual messages to people to ask where they needed help/clarifcation.
+- Rohan is doing some learning on Pandas --> seemed a bit unsure of next steps. I will provide my notes from CS 2316 last semester.
+- Web Dev team wants information from Data Science team about Piazza API –> instructed them to message in the chat since the Data Science team ended the meeting early
+
+Plans & Deliverables:
+- Rohan will meet with Adrian to get a clearer idea of next steps
+- I will also share my notes with Rohan
+- Youngwook and Ankit will also conduct UX research focused on specific applications of the models we are developing
+- Ankit will work on creating a feature that allows the dashboard to toggle back and forth between two classes
+- Youngwook will get more info about the possibilty of getting the dashboard to update in real-time through the Piazza API
+- Data Science Deliverables
+        - Improve ABSA accuracy by trying 2-3 methods linked in an article I shared
+        - Created one guided model and one supervised model for topic modeling
+        - Define seeded topics
