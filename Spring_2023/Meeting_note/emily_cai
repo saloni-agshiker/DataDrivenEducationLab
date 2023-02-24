@@ -48,7 +48,8 @@ and gave us some great advice/guidance for any questions we had about our presen
 Harriet showed her code and displayed how she is trying to improve the guided topic modeling accuracy. Jisan also shared his preprocessing code and how it can be implemented to potentially
 improve accuracy. One of the components that could be improved is narrowing the seeded topics, so I will analyze the data more thoroughly and find more specific seeded topic lists for Harriet's code.
 
-Problems: Some of our tasks are overlapping, but we will inform each other of any questions or concerns we have in the data science group chat. 
+Problems: The accuracy of the model was not great, since many topics that were created were irrelevant. I will try to improve this by making the seeded topics more narrow and specific. 
+Harriet will also try other methods to improve the accuracy of the model, and Jisan will continue to work on his preprocessing code.
 
 Plans: I will do more detailed research on the seeded topics for both CS1301 and CS66O1. Jisan and Harriett will continue coding, and I will show them my topics and get their approval.
 Jisan will share his code with me so that I can familiarize myself with how topic modeling and ASBA work on the technical side. I will create new seeded topics and
