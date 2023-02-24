@@ -22,6 +22,6 @@ topid modeling:
 
 metacognition
 - understanding/enjoying/having further questions ideas
-- metacognition over time
+- metacognition over time in a course
 - understanding the sessions that create the highest and lowest levels of engagement
 - 
