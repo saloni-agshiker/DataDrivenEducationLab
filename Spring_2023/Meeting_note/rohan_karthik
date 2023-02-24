@@ -1,7 +1,42 @@
-Subteam Meeting 2-17-22
-Notes
+Subteam Meeting 1/27/2023
+Met everyone
+talked about the article "From Presences to Linked Influences Within Communities of Inquiry"
+
+To Do
+finish the presentation
+practice before class starts next Wednesday
+
+Subteam Meeting #22/03/2023:
+Meeting preparation & Updates:
+
+Go over previous documentation and moddels used
+look at past presentations
+
+To Do
+
+Read over what topic modeling and Aspect based sentiment analysis is.
+get access to dataset from psql
+
+2/10/2023 Subteam Meeting:
+Get metacognitive data from Dr.Lee
+
+Problems:
+Review the Metacognitve coding sheet
+Prepare for presentation
+finish the presentaiton by Tuesday.
+
+Subteam meeting 2/17/2023 
+
 -Adrian and Maddie are able to help with the dataset
 -Review metacognitive data and think of ideas to implement this
+-Talked to her about what I should do moving forward
+
+Meeting prep and & updates:
+
+Work to apply ML guide to metacognitive dataset
+Start with learning pandas/ libraries that I can use
+Rohan will also reach out to Adrian (guest speaker) about application of ML methods
+
 To Do
 -Re-familiarise with python libraries
 -Review adrian’s code and see if he can help with metacognitive data
@@ -15,6 +50,7 @@ How does the presence of instructors in a thread contribute to metacognitive pre
     1. Graph metacognitive presence vs time
 
 Learn how pandas works and a way to clean data
+My python notebook is in the data engineering folder in spring 2023
 Learn about  ABSA/ talk to Jisan about this. → Reviewed
 https://medium.com/nlplanet/quick-intro-to-aspect-based-sentiment-analysis-c8888a09eda7
 
