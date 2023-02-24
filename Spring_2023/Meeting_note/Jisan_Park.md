@@ -50,14 +50,6 @@ How can we design a web app that can provide actionable insights to the instruc
 
 If possible, please complete presentation slides before monday 11pm.
 
-1st Presentation
-
-Topic Modeling is unsupervised ML technique that is scanning a set of documents, detecting words and phrase patterns, clustering word groups, and classifying document by topic. We expected that Teaching team is aware of what students mainly talk about and what question comes frequently in the discussion forum. But, we have faced the limitation that is the top topic has too wide range and general words. We have two word clouds for the top topics. Those word clouds are irrelevant to the course contents. So we think it needs some labels to guide the model.
-
- To alter the limitation, we have adopted a guided topic modeling. It is the topic modeling approach by setting several seed_topics. We will develop this model by providing seed words for each topic, so each topic word is related to specific contents. For example, we have four topics as predefined topics in the images. we have tree topic, version topic, grading system topic and confusion matrix. So, if one question contains a lot of tree and node text,  the document would have higher score on the first topic than on other topics. We can notice it is the first topic question. Eventually we expect to reduce of running time by utilizing pipeline and improvement of accuracy for classification by topic.
-
-We will turn into Rohan to talk about metacognition research
-
 # 2/17 4th Meeting
 
 **Agenda**
