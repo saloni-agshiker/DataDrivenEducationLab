@@ -27,7 +27,7 @@ Updates: We decided that incorporating ChatGPT might cause some complications fr
 and he went over the plans for this coming week, which included completing the first sub-team presentation. I was assigned the "Research Questions" and "Data Science Big Picture" slides. We agreed to
 try to have our slides completed by Monday at 11PM.
 
-Problems: I'm not familiar with topic modeling or ABSA, but I will reach out to Jisan if I need any guidance since he's a returning member.
+Problems: I'm not familiar with topic modeling or ABSA, but I will reach out to Jisan or Harriet if I need any guidance since they are returning members.
 
 Plans: I will do more research on more possible resesarch questions. I will also learn more about topic modeling and aspect-sentiment analysis, since I have no prior knowledge of these. 
 We plan on presenting our sub-team presentation on Wednesday, and we will meet 20 minutes early to rehearse our presentation.
@@ -53,5 +53,5 @@ Harriet will also try other methods to improve the accuracy of the model, and Ji
 
 Plans: I will do more detailed research on the seeded topics for both CS1301 and CS66O1. Jisan and Harriett will continue coding, and I will show them my topics and get their approval.
 Jisan will share his code with me so that I can familiarize myself with how topic modeling and ASBA work on the technical side. I will create new seeded topics and
-implement these topics into his code to see how the model interprets this data and how it works.
+implement these topics into his code to see how the model interprets this data and how it works. If I need any help/guidance, I will reach out to Jisan or Harriet.
 
