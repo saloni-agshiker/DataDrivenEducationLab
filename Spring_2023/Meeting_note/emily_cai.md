@@ -26,7 +26,7 @@ Some people did not show up, but Maddie assigned roles to everyone and updated p
 I did well in explaining the Research Methods and Data Collection from the article, and my teammates did very well on their part as well. I will continue to review work from last semester and communicate with my data science teammates.
 
 ### Plans: 
-I will work with the other data scientists/engineers to review the past semester's work and make optimistic goals for the end of the semester (i.e. increasing accuracy)
+I will work with the other data scientists to review the past semester's work and make optimistic goals for the end of the semester (i.e. increasing accuracy). I will further explore past data findings and try to find potential directions to take for improving ABSA from last semester.
 
 ## 2/10/2023: Discussion Forum Subteam Meeting #3
 
@@ -40,8 +40,8 @@ I'm not familiar with topic modeling or ABSA, but I will reach out to Jisan or H
 Since I'm new to data science, I researched and learned more about topic modeling and ASBA and their applications to our goals. I'm interested to see how utilizing different types of topic modeling can affect the accuracy or effectiveness towards providing information to instructors via dashboards.
 
 
-### Plans: I will do more research on more possible resesarch questions. I will also learn more about topic modeling and aspect-sentiment analysis, since I have no prior knowledge of these. 
-We plan on presenting our sub-team presentation on Wednesday, and we will meet 20 minutes early to rehearse our presentation.
+### Plans: 
+I will do more research on more possible resesarch questions. I will also learn more about topic modeling and aspect-sentiment analysis, since I have no prior knowledge of these. We plan on presenting our sub-team presentation on Wednesday, and we will meet 20 minutes early to rehearse our presentation. I also plan to look at Adrian's code as guidance to see what steps he took.
 
 ## 2/17/2023: Discussion Forum Subteam Meeting #3
 
