@@ -1,4 +1,4 @@
-#VIP Meeting Notes for Spring 2023
+# VIP Meeting Notes for Spring 2023
 
 ##1/27/2023: Discussion Forum Subteam Meeting #1
 
