@@ -2,11 +2,11 @@
 
 ## 1/27/2023: Discussion Forum Subteam Meeting #1
 
-Updates: Each team member introduced themselves to each other, and returning members were able to give a glimpse as to what they accomplished and learned last semester. 
+### Updates: Each team member introduced themselves to each other, and returning members were able to give a glimpse as to what they accomplished and learned last semester. 
 Next week, our subteam will do a 10 minute presentation on the article "From Presences to Linked Influences Within Communities of Inquiry" By Peacock and Cowan.
 We divided the roles --> I will discuss the Research Methods and Data Collection in the article. We also established that we will meet 20 minutes before our presentation to rehearse our presentation
 
-Problems: We were unsure of what some of the slides were asking for in the template, but Kamaya was able to help us with any questions during our meeting
+### Problems: We were unsure of what some of the slides were asking for in the template, but Kamaya was able to help us with any questions during our meeting
 
 Plans: Next week, our sub-team plans to present our findings on the article we were assigned to analyze. Everyone should contribute outside and inside of class to ensure that 
 our presentation is executed well. We will also  learn what the other three sub-teams discovered in their research paper to get 
