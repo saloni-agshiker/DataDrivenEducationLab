@@ -12,7 +12,7 @@ Plans: Next week, our sub-team plans to present our findings on the article we w
 our presentation is executed well. We will also  learn what the other three sub-teams discovered in their research paper to get 
 a glimpse of what they were dedicating the semester towards. 
 
-##2/03/2023: Discussion Forum Subteam Meeting #2
+## 2/03/2023: Discussion Forum Subteam Meeting #2
   
 Updates: We are thinking of incorporating some of the problems regarding ChatGPT into our research, even though the AI in Education subteam will go more in depth about it.
 Maddie assigned each of us roles for the upcoming week in order to start making progress and set goals. 
