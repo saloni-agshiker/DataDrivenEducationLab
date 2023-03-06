@@ -76,3 +76,13 @@ I will do more detailed research on the seeded topics for both CS1301 and CS66O1
 Jisan will share his code with me so that I can familiarize myself with how topic modeling and ASBA work on the technical side. I will create new seeded topics and
 implement these topics into his code to see how the model interprets this data and how it works. If I need any help/guidance, I will reach out to Jisan or Harriet.
 
+## 03/03/2023: Discussion Forum Subteam Meeting #5
+
+### Updates:
+Each person was asked what they have focused/worked on this past week. Harriet informed us that the new narrowed seeded topics I created appeared to improve the accuracy. Rohan is now a part of the data science team. Both Rohan and I met up with Jisan outside of the sub-team meetings to learn more about metacognition and guided topic modeling, respectively. The web developmet team also informed us that the dashboard will be shared in the next couple of weeks to see how we like the appearance of the dashboard. 
+
+### Problems:
+Our project manager, Maddie, has unfortunately withdrawed from the VIP. We are looking for a new project manager, but there is a possibility that one of our returning members might take this position. Dr. Lee will continue to communicate with us how we will solve this issue.
+
+### Plans:
+I will meet up with Jisan again to learn how to implement our example code into our actual model. Harriet and Jisan have both provided great guidance for me. I hope to do more research on guided topic modeling and learn how to write code for the model. We will meet next week even though there is no in-class meeting Wednesday. We will also start drafting our presentation this coming week for our second sub-team presentation.
