@@ -1,4 +1,5 @@
 # VIP Meeting Notes for Spring 2023
+Link to Data Science Team Goal Chart: https://docs.google.com/document/d/1Cx3J3BSvgsnMZKo_OCrt92oxj31ptRIqGTDrtiTr2k8/edit
 
 ## 1/27/2023: Discussion Forum Subteam Meeting #1
 
@@ -47,7 +48,10 @@ I will do more research on more possible resesarch questions. I will also learn 
 
 ### Updates: 
 Maddie showed us the tasks for each sub-team and told us the plans for this coming week. We then divided up into breakout rooms for each sub-team. 
-Jisan, Harriet, and I divided up tasks to do before next wednesday's meeting. I'm in charge of going through the Piazza data for each course and finding around 7 seeded topic lists for each. We also got feedback from our first sub-team presentation, and we only got a few points off because of lack of specification in certain slides.
+Jisan, Harriet, and I divided up tasks to do before next wednesday's meeting. I'm in charge of going through the Piazza data for each course and finding around 7 seeded topic lists for each. We also got feedback from our first sub-team presentation, and we only got a few points off because of lack of specification in certain slides. Below are links that helped me choose seeded topics:
+https://towardsdatascience.com/why-to-use-seeded-topic-models-in-your-next-project-and-how-to-implement-them-in-r-8502d15d6e8d#:~:text=A%20seeded%20topic%20model%20allows,better%E2%80%9D%20interpretability%20of%20the%20results
+
+
 
 ### Problems: 
 Some of our tasks are overlapping, but we will inform each other of any questions or concerns we have in the data science group chat. From our presentation feedback, we need to make sure to have more defined goals from the web development side, and make sure we provide more elaboration on why we decided to focus on metacognition. 
@@ -62,7 +66,9 @@ I will do research on the seeded topics for both CS1301 and CS66O1 and see how t
 
 ### Updates: 
 Maddie reiterated the tasks that should be accomplished for each sub-team and informed us of what is expected for this week. Dr. Lee then came into the call and gave us some great advice/guidance for any questions we had about our presentation or improvements from last semester. We then divided up into breakout rooms for each sub-team. Harriet showed her code for the guided BERTopic for CS1301 class and displayed the accuracy issues in the model. Jisan also shared his preprocessing code and how it can be implemented to potentially
-improve accuracy. One of the components that could be improved is narrowing the seeded topics, so I will analyze the data more thoroughly and find more specific seeded topic lists for Harriet's code.
+improve accuracy. One of the components that could be improved is narrowing the seeded topics, so I will analyze the data more thoroughly and find more specific seeded topic lists for Harriet's code. Below are links to our code:
+https://colab.research.google.com/drive/1APgImOqAa35uFb25xTwAZZcIbvfbYh0o
+https://colab.research.google.com/drive/18_hYAAeszhQj7yFUaRbNi7et6DV0UYhS#scrollTo=d4WAN3osm5zM 
 
 ### Problems: 
 The accuracy of the model was not great, since many topics that were created were irrelevant. I will try to improve this by making the seeded topics more narrow and specific. Harriet will also try other methods to improve the accuracy of the model, and Jisan will continue to work on his preprocessing code.
