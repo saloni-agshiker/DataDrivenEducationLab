@@ -1,6 +1,6 @@
 # VIP Meeting Notes for Spring 2023
-Link to Data Science Team Goal Chart: https://docs.google.com/document/d/1Cx3J3BSvgsnMZKo_OCrt92oxj31ptRIqGTDrtiTr2k8/edit
-Links that help with coding: https://tutorials.quanteda.io/machine-learning/topicmodel/
+### Link to Data Science Team Goal Chart: https://docs.google.com/document/d/1Cx3J3BSvgsnMZKo_OCrt92oxj31ptRIqGTDrtiTr2k8/edit
+### Links that help with coding: https://tutorials.quanteda.io/machine-learning/topicmodel/
 
 ## 1/27/2023: Discussion Forum Subteam Meeting #1
 
