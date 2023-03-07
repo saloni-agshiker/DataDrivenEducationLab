@@ -84,5 +84,8 @@ Each person was asked what they have focused/worked on this past week. Harriet i
 ### Problems:
 Our project manager, Maddie, has unfortunately withdrawed from the VIP. We are looking for a new project manager, but there is a possibility that one of our returning members might take this position. Dr. Lee will continue to communicate with us how we will solve this issue.
 
+### Self-Assessment of Progress: 
+After meeting with Jisan, I was able to learn more about how the code of certain methods worked and how to test it. I'm still new to this, but I'm definitely excited to learn more about guided topic modeling. A link I found helpful was https://maartengr.github.io/BERTopic/getting_started/guided/guided.html#example
+
 ### Plans:
 I will meet up with Jisan again to learn how to implement our example code into our actual model. Harriet and Jisan have both provided great guidance for me. I hope to do more research on guided topic modeling and learn how to write code for the model. We will meet next week even though there is no in-class meeting Wednesday. We will also start drafting our presentation this coming week for our second sub-team presentation.
