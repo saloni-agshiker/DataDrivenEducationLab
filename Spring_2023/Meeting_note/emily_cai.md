@@ -101,13 +101,13 @@ I will meet up with Jisan again to learn how to implement our example code into 
 ## 03/10/2023: Discussion Forum Subteam Meeting #5
 
 ### Updates:
-Jisan is now our team's project manager. 
+Jisan is now our team's project manager. We went around and told each other what progress we've made in the past week, and what we plan to have done by the coming week. Jisan also shared our second sub-team presentation with us and we divided the slides between each person. I will focus on the progress we have made in topic modeling, the results the models have shown, as well as next steps to take.
 
 ### Problems:
-I'm currently writing 
+I'm currently writing code for our guided topic model, specifically for CS6601. If I have any concerns with Google Colab or the code in general, I will reach out to Jisan or Harriet. 
 
 ### Self-Assessment of Progress: 
-After meeting with Jisan, I was able to learn more about how the code of certain methods worked and how to test it. I'm still new to this, but I'm definitely excited to learn more about guided topic modeling. A link I found helpful was https://maartengr.github.io/BERTopic/getting_started/guided/guided.html#example
+I met with Harriet and Jisan this past Thursday, and Harriet explained her code for CS1301. I was becoming more familiar with what the code does and how to use Google Colab (similar to Jupyter Notebook). A link Harriet showed me for BERTopic modeling is below: https://maartengr.github.io/BERTopic/getting_started/guided/guided.html#example
 
 ### Plans:
-I will meet up with Jisan again to learn how to implement our example code into our actual model. Harriet and Jisan have both provided great guidance for me. I hope to do more research on guided topic modeling and learn how to write code for the model. We will meet next week even though there is no in-class meeting Wednesday. We will also start drafting our presentation this coming week for our second sub-team presentation.
+I will hopefully finish the code for the CS6601 guided topic model by next week's meeting. I also plan to finish my slides for our presentation by Monday evening, so that Jisan can review my slides and inform me of any improvements I can make on these slides before the finalizing the presentation.
