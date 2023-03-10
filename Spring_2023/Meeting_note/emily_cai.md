@@ -1,6 +1,7 @@
 # VIP Meeting Notes for Spring 2023
 ### Link to Data Science Team Goal Chart: https://docs.google.com/document/d/1Cx3J3BSvgsnMZKo_OCrt92oxj31ptRIqGTDrtiTr2k8/edit
 ### Links that help with coding: https://tutorials.quanteda.io/machine-learning/topicmodel/
+https://github.com/MaartenGr/BERTopic 
 
 ## 1/27/2023: Discussion Forum Subteam Meeting #1
 
@@ -90,6 +91,20 @@ Each person was asked what they have focused/worked on this past week. Harriet i
 
 ### Problems:
 Our project manager, Maddie, has unfortunately withdrawed from the VIP. We are looking for a new project manager, but there is a possibility that one of our returning members might take this position. Dr. Lee will continue to communicate with us how we will solve this issue.
+
+### Self-Assessment of Progress: 
+After meeting with Jisan, I was able to learn more about how the code of certain methods worked and how to test it. I'm still new to this, but I'm definitely excited to learn more about guided topic modeling. A link I found helpful was https://maartengr.github.io/BERTopic/getting_started/guided/guided.html#example
+
+### Plans:
+I will meet up with Jisan again to learn how to implement our example code into our actual model. Harriet and Jisan have both provided great guidance for me. I hope to do more research on guided topic modeling and learn how to write code for the model. We will meet next week even though there is no in-class meeting Wednesday. We will also start drafting our presentation this coming week for our second sub-team presentation.
+
+## 03/10/2023: Discussion Forum Subteam Meeting #5
+
+### Updates:
+Jisan is now our team's project manager. 
+
+### Problems:
+I'm currently writing 
 
 ### Self-Assessment of Progress: 
 After meeting with Jisan, I was able to learn more about how the code of certain methods worked and how to test it. I'm still new to this, but I'm definitely excited to learn more about guided topic modeling. A link I found helpful was https://maartengr.github.io/BERTopic/getting_started/guided/guided.html#example
