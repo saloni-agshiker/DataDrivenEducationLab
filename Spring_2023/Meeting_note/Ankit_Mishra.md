@@ -21,6 +21,10 @@
 - Met with Youngwook and explained him the past work in web-dev team by going through documentation, the dashboard and the code for the dashboard.
 - Provided Youngwook youtube link to learn react and also explained a bit of the dashboard code to get him started.
 - The subteam meeting was headed by Jisan today. I was asked to get started on the presentation for web-dev slides. I was also assigned to meet with Madeline about conducting interviews.
+### Self-reflection
+- I found some helpful resources to update the dashboard to allow users to look up information on 2 different courses. I created a drop-down bar on each page of the dashboard and the user can select the course in the drop down menu which will take them to required course.
+- Helpful Resource - https://www.youtube.com/watch?v=T2MhVxJxsL0&ab_channel=BrianDesign
+- I think I was able to help Youngwook be familiar with the code base as well.
 ### Goals for next week
 - Prepare slides for subteam presentation which include web-dev team current progress and goals for the semester.
 - Meet the team 20 minutes before class to practice for the presentation.
