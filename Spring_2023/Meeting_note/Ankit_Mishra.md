@@ -34,6 +34,8 @@
 - Prepared the slides related to web-dev and presented it during class. The presentation went well.
 - Answered Youngwook's question about the code. He is now able to run the dashboard and make changes to it so we can start progressing on the dashboard.
 - During sub-team meeting, Madeline assigned web-dev team to interview professors to gather more user requirements to modify some of the information we display in dashboard. If possible, include metric related to social and teaching presence.
+### Self-Reflection
+- I and Youngwook had a meeting with Madeline about the data in our dashboard. From my perspective, it seemed that most of the tables and graphs in our dashboard is simply from Piazza API. We are only using very little of the results produced from ABSA and topic-modeling done by Data Science team. So, we decided to conduct further interviews with professor/ TA to get their perspective on substituting information in current dashboard with data science team related content. This could help the dashboard in highlighting the cognitive, social and teaching presence in online community even better.
 ### Goals for next week
 - Send emails to professors in large online classes that use discussion boards to schedule interviews.
 - Interview professors if they are available.
