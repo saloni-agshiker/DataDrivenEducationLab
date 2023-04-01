@@ -111,3 +111,33 @@ I met with Harriet and Jisan this past Thursday, and Harriet explained her code 
 
 ### Plans:
 I will hopefully finish the code for the CS6601 guided topic model by next week's meeting. I also plan to finish my slides for our presentation by Monday evening, so that Jisan can review my slides and inform me of any improvements I can make on these slides before the finalizing the presentation.
+
+## 03/17/2023: Discussion Forum Subteam Meeting #6
+
+### Updates:
+Jisan showed us the updated subteam goal chart, and told us to update our progress as well as next steps we wanna take when we complete a task. This meeting was relatively short since several members were already traveling for spring break. 
+https://docs.google.com/document/d/1ypHeptEg07eeka1gWrUT2prdto0qf00Y/edit?rtpof=true&sd=true
+
+### Problems:
+Rohan and I have to divide our given tasks in a manner so that we can complete them before our final presentation. This will be discussed more during the meeting after spring break
+
+### Self-Assessment of Progress: 
+With our feedback from our presentation, we know we are on the right track. I will further my coding knowledge by doing research on the tasks we have to complete in the next 2-3 weeks. 
+
+### Plans:
+During our subteam meeting in 2 weeks, Jisan will delegate tasks accordingly to the data science team and webdev team. If any of the team members need any help, Jisan and other returning members will guide us.
+
+## 03/31/2023: Discussion Forum Subteam Meeting #6
+
+### Updates:
+Jisan reminded us the subteam goal chart that he showed us before spring break, and told us to update our progress as well as next steps we wanna take when we complete a task. Harriet will work more on the ABSA model, and she informed Rohan and me about the tasks that still need to be completed. I will take on the tasks labeled B, and Rohan will take on the tasks labeled A.
+https://docs.google.com/document/d/1ypHeptEg07eeka1gWrUT2prdto0qf00Y/edit?rtpof=true&sd=true
+
+### Problems:
+Rohan and I have quite a few assignments to fulfill, so if any of us need help we will reach out to each other as well as other members who are experienced with data science. 
+
+### Self-Assessment of Progress: 
+I asked Jisan for more details of the google document he shared with everyone as well as the tasks I should complete. Though it seems overwhelming, I think I can accomplish a lot as long as I put in the effort and ask for help when I need it
+
+### Plans:
+We will fill in the chart when we have any updates, and we will come back together next week to go around and say what each of us have accomplished.
