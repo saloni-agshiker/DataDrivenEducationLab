@@ -141,3 +141,34 @@ I asked Jisan for more details of the google document he shared with everyone as
 
 ### Plans:
 We will fill in the chart when we have any updates, and we will come back together next week to go around and say what each of us have accomplished.
+
+## 04/07/2023: Discussion Forum Subteam Meeting #7
+
+### Updates:
+Jisan asked each of us to go around and explain the progress we've made and next steps to take. We shared our screens and elaborated on what our code is doing. I showed how I was figuring out the "Post over Time" Graph and how I was having issues with how the data was given to us. Then, Jisan informed us we were all making good progress and to keep working on what we were doing. 
+
+### Problems:
+I was having troubles knowing how to sort the posts based on the dates they were posted and aligning those dates with the correct frequency. However, I plan to meet with Jisan to ask for any guidance. 
+
+### Self-Assessment of Progress: 
+I devoted this week towards understanding how to extract data from the EdX and Piazza files and output data that can be viewed in a graph. I experimented with the different columns in the data given as well as the different methods (e.g., numpy methods). The two links below helped me thoroughly understand how to take advantage of certain methods to get the data I want to display for the web developers to put on the dashboard.
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+https://numpy.org/doc/stable/reference/
+
+### Plans:
+I plan on focusing on making progress on my assigned tasks for the graphs needed on the dashboard. I should complete them as early as possible to ensure the web developers are not rushed. 
+
+## 04/15/2023: Discussion Forum Subteam Meeting #8
+
+### Updates:
+I figured out the problem with my code, since I could not figure out why it was sometimes outputting an empty array or an array of incorrect length. Jisan also asked us to each show our progress. Then, we went over the final presentation and deleted any unneeded slides. Jisan delegated slides to each person according to what they are focusing on. I am in charge of showing the results outputted by the graphs I created and what they indicate.
+
+### Problems:
+There were some issues with my code, and I spent a while trying to debug it. Then Jisan and I met for about 30 minutes, and we figured out it was because I should have sorted the data before iterating through each distinct post in the for loop. 
+
+### Self-Assessment of Progress: 
+I am basically done with "Posts over Time," so I will focus on "Posts by Students" and "Posts by Staff."
+
+### Plans:
+I plan on finishing my code by this weekend so that I can give my json file to the web developers to use and present in the dashboard. We also plan to finish drafting our slides for our final presentation. This was our last team meeting, and everyone said their thank yous for being so kind and helpful to each other this semester!
+
