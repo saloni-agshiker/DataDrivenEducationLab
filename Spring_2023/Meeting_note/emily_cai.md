@@ -152,9 +152,10 @@ I was having troubles knowing how to sort the posts based on the dates they were
 
 ### Self-Assessment of Progress: 
 I devoted this week towards understanding how to extract data from the EdX and Piazza files and output data that can be viewed in a graph. I experimented with the different columns in the data given as well as the different methods (e.g., numpy methods). The two links below helped me thoroughly understand how to take advantage of certain methods to get the data I want to display for the web developers to put on the dashboard.
-https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
 
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
 https://numpy.org/doc/stable/reference/
+https://www.tutorialspoint.com/python-select-multiple-columns-from-a-pandas-dataframe
 
 ### Plans:
 I plan on focusing on making progress on my assigned tasks for the graphs needed on the dashboard. I should complete them as early as possible to ensure the web developers are not rushed. 
