@@ -98,7 +98,7 @@ After meeting with Jisan, I was able to learn more about how the code of certain
 ### Plans:
 I will meet up with Jisan again to learn how to implement our example code into our actual model. Harriet and Jisan have both provided great guidance for me. I hope to do more research on guided topic modeling and learn how to write code for the model. We will meet next week even though there is no in-class meeting Wednesday. We will also start drafting our presentation this coming week for our second sub-team presentation.
 
-## 03/10/2023: Discussion Forum Subteam Meeting #5
+## 03/10/2023: Discussion Forum Subteam Meeting #6
 
 ### Updates:
 Jisan is now our team's project manager. We went around and told each other what progress we've made in the past week, and what we plan to have done by the coming week. Jisan also shared our second sub-team presentation with us and we divided the slides between each person. I will focus on the progress we have made in topic modeling, the results the models have shown, as well as next steps to take.
@@ -112,7 +112,7 @@ I met with Harriet and Jisan this past Thursday, and Harriet explained her code 
 ### Plans:
 I will hopefully finish the code for the CS6601 guided topic model by next week's meeting. I also plan to finish my slides for our presentation by Monday evening, so that Jisan can review my slides and inform me of any improvements I can make on these slides before the finalizing the presentation.
 
-## 03/17/2023: Discussion Forum Subteam Meeting #6
+## 03/17/2023: Discussion Forum Subteam Meeting #7
 
 ### Updates:
 Jisan showed us the updated subteam goal chart, and told us to update our progress as well as next steps we wanna take when we complete a task. This meeting was relatively short since several members were already traveling for spring break. 
@@ -127,7 +127,7 @@ With our feedback from our presentation, we know we are on the right track. I wi
 ### Plans:
 During our subteam meeting in 2 weeks, Jisan will delegate tasks accordingly to the data science team and webdev team. If any of the team members need any help, Jisan and other returning members will guide us.
 
-## 03/31/2023: Discussion Forum Subteam Meeting #6
+## 03/31/2023: Discussion Forum Subteam Meeting #8
 
 ### Updates:
 Jisan reminded us the subteam goal chart that he showed us before spring break, and told us to update our progress as well as next steps we wanna take when we complete a task. Harriet will work more on the ABSA model, and she informed Rohan and me about the tasks that still need to be completed. I will take on the tasks labeled B, and Rohan will take on the tasks labeled A.
@@ -142,7 +142,7 @@ I asked Jisan for more details of the google document he shared with everyone as
 ### Plans:
 We will fill in the chart when we have any updates, and we will come back together next week to go around and say what each of us have accomplished.
 
-## 04/07/2023: Discussion Forum Subteam Meeting #7
+## 04/07/2023: Discussion Forum Subteam Meeting #9
 
 ### Updates:
 Jisan asked each of us to go around and explain the progress we've made and next steps to take. We shared our screens and elaborated on what our code is doing. I showed how I was figuring out the "Post over Time" Graph and how I was having issues with how the data was given to us. Then, Jisan informed us we were all making good progress and to keep working on what we were doing. 
@@ -160,7 +160,7 @@ https://www.tutorialspoint.com/python-select-multiple-columns-from-a-pandas-data
 ### Plans:
 I plan on focusing on making progress on my assigned tasks for the graphs needed on the dashboard. I should complete them as early as possible to ensure the web developers are not rushed. 
 
-## 04/15/2023: Discussion Forum Subteam Meeting #8
+## 04/15/2023: Discussion Forum Subteam Meeting #10
 
 ### Updates:
 I figured out the problem with my code, since I could not figure out why it was sometimes outputting an empty array or an array of incorrect length. Jisan also asked us to each show our progress. Then, we went over the final presentation and deleted any unneeded slides. Jisan delegated slides to each person according to what they are focusing on. I am in charge of showing the results outputted by the graphs I created and what they indicate.
