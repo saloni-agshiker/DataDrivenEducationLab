@@ -54,3 +54,88 @@ My python notebook is in the data engineering folder in spring 2023
 Learn about  ABSA/ talk to Jisan about this. → Reviewed
 https://medium.com/nlplanet/quick-intro-to-aspect-based-sentiment-analysis-c8888a09eda7
 
+VIP Meeting Notes for Spring 2023
+Link to Data Science Team Goal Chart: https://docs.google.com/document/d/1Cx3J3BSvgsnMZKo_OCrt92oxj31ptRIqGTDrtiTr2k8/edit
+Links that help with coding: https://tutorials.quanteda.io/machine-learning/topicmodel/
+https://github.com/MaartenGr/BERTopic
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2/24/2023 Subteam Meeting
+Meeting prep and & updates:
+- Finished prepping the metacognitive so it is easier to graph
+- Talked to jisan about the specifics for metacognitive graphs
+- https://colab.research.google.com/drive/1YRyh243NrfmRbF3hC9zkcVBYhU0XRpWu?usp=sharing
+
+Problems:
+- created 2 graphs for metacognitive data, but Jisan explained to me that it wasn't very helpful. There are better ways o organize data.
+- instead of a pie chart of each metacognitve value, a bar chart showing number of students with x score will be more helpful.
+
+Plans:
+Change my current graph into one thais more useful.
+
+03/03/2023: Subteam Meeting
+Updates:
+- reworked my graph in order to better describe the range of students KC/RC valiues. Also on the same colab site.
+
+Problems:
+Maddie withdrew from the VIP. I still have tasks for next few weeks but left but there is not much content to graph from the metacognitve data file so I might help 
+the data science team with work they need.
+
+Plans:
+The goal is to finish visualizations of the data before next subteam meeting so they can be ready for the presentation.
+
+03/10/2023: Subteam Meeting 
+Updates:
+- The Subteam presentation is soon so work on and complete that. 
+- The graphs were fleshed out and made to be easier to read.
+
+Plans:
+- finish my slides for our presentation by Monday.
+- get ready to practice presentation before the meeting time on wednesday.
+
+03/17/2023: Subteam Meeting
+Updates:
+- Meeting before spring break, not much needed to be done because the presentation 2 was just finished.
+
+Problems:
+- Moved over to help the data science team present data so now I have to familiarize myself with the CS 6601 data.
+- I also don't know what graphs we need yet so need to talk to emily about that.
+
+Plans:
+- look over the CS 6601 data and see what values were measures. 
+- look at the list of graphs on the dashboard and split up the work
+
+03/31/2023: Subteam Meeting
+Updates:
+- Split the tasks between me and Emily
+    - take tasks labeled A
+
+Plans:
+- A good bit of planning needs to be done before I code so create pseaudocode for problems.
+- Learn the DATEtime Library as it will be helpful in finding time difference in graphs.
+- If possible prep the data with respect to the pseudocode.
+
+04/07/2023: Subteam Meeting
+Updates:
+- Finished the pseudocode and started on reformating the data
+- Shared Ideas with the group and asked for input.
+
+Problems:
+- Having difficulty properly calculating the average time between posts
+- finding How to calculate the time between who for example between first instance of TA - Student or Student - TA.
+
+Plans:
+Keep working on the graphs needed on the dashboard. 
+Talk to web dev team about the format needed to ensure a smooth transition to dashboard
+- https://colab.research.google.com/drive/1YRyh243NrfmRbF3hC9zkcVBYhU0XRpWu?usp=sharing
+This is my current and future progress.
+
+04/15/2023: Subteam Meeting
+Updates:
+- Finished organizing all the values for x and y axis but I still have to convert it into the JSON format.
+
+Problems:
+Initially I had the wrong output but Jisan explained how to fix it so I have to finish it soon so the webdev team can add it in time.
+
+Plans:
+- finish code by this weekend.
+- finish our slides for our final presentation.
