@@ -1,6 +1,8 @@
 
 # Notebook for Spring 2023
 
+Link to code to dashboard - 
+
 # Week 1: 01/25/2023
 ### Works done
 - Introduced everyone in our sub-team and as a returning member, I talked about past work of web-dev team.
@@ -81,15 +83,10 @@
 ### Self - Reflection
 - Worked on the sub-team presentation slides and explained it to Youngwook.
 - Finally got back from one of the TAs agreeing to interview. The interview is scheduled in 2 weeks.
+- Create interview questions and posted them in teams channel. Got feedback from team members and made required additions.
 ### Goals for Next Week
-- Create interview questions and get feedback from team members on the interview questions.
+- Interview with the TA and present finding to team members.
 # Week 9: 03/22/2023
-### Works done
-- 
-### Self - Reflection
--
-### Goals for Next Week
--
 ### ------------------------------------------------------------------------
 ### SPRING BREAK
 ### ------------------------------------------------------------------------
@@ -99,30 +96,45 @@
 - Divided the work among Data Science Team to delver required data for the dashboard.
 ### Self - Reflection
 - I interviewed with a TA and asked about what worked in the dashboard and what would she want to see in the dashboard that would actually help her. I got great feedbacks from her.
-#### Interview Notes
+#### Helpful feedbacks from interviews.
+- Top contributor is not needed because it does not help instructors. Instead, it would help to have a class sentiment over time graph that complements the posts over time graph so that instructors can know if the increase or decrease of posts is due to positive or negative reasons.
+- For the unresolved post, it would be better if we have a link to the particular post in the table so that TAs can directly go to that post from the dashboard. Also, it would help to have the option to reserve a post so that others know that this post is being answered by someone else.
+- It would be helpful to know reasons regarding the sentiment. For example, we show percentages of positive, neutral, and negative sentiment for tests. Is it possible to know what actually are the reasons behind those sentiments? So, if there is 60% negative sentiment on tests, can we show if the reason behind this if due to high frequency of tests, the difficulty of tests, time constraints for tests, etc.
 ### Goals for Next Week
--
+- Meet with the team and discuss if we could incorporate any changes suggested by the TA.
+- Make required changes to the dashboard.
 # Week 10: 04/05/2023
 ### Works done
-- 
+- Presented the interview findings to the subteam.
+- Incoporated required changes into the dashboard.
+- I got data from Data Science team for sentiment analysis and I added the data to Topics page.
 ### Self - Reflection
--
+- As per the TA suggestions, I removed top contributor table from dashoard and added the sentiment over time graph. We could not make other changes requested because we have no models that can produce those data at this moment.
+- I added the data I got from Data Science team to the dashboard and now the topic page is updated with real data.
 ### Goals for Next Week
--
+- Get other json files with real data from Data Science team and add that to the dashboard.
 # Week 10: 04/12/2023
 ### Works done
-- 
+- Data Science team managed to produce data required for the student page of the dashboard as well.
+- I added those data to the dashboard. Our dashboard now has real data for student and topics page for both the courses.
 ### Self - Reflection
--
+- I added the json file given to me by the Data Science team to the dashboard. We have student page and topics page working on real data. However, we could not update the teachers page because the data we have is from a piazza api of 2020 semester. We dont have real time access to this api and the teachers page requires real time data like current unresolved posts.
+- Aside from teachers page, the dashboard prototype is done for now.
 ### Goals for Next Week
--
+- Prepare slides for the presentation.
+- Add the code to github for the dashboard.
+- Complete notebook and peer evaluations.
 # Week 10: 04/19/2023
 ### Works done
-- 
-### Self - Reflection
--
-### Goals for Next Week
--
+- Completed the final presentation. I created a recording for my part due to a time conflict.
+- Added newest dashboard code to github.
+- Completed peer evaluations and notebook.
+
+### ------------------------------------------------------------------------
+### END OF SEMESTER.
+### ------------------------------------------------------------------------
+
+
 
 
 
