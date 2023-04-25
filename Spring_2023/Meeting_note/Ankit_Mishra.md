@@ -15,7 +15,7 @@
   1. Creating two different dashboards. (easy way)
   2. Creating a drop-down menu that allows user to choose a course and the dashboard shows information for that course. (hard way)
 ### Goals for next week
-- Onboard Youngwook by provding him materials from last semester and walking him through it.
+- Onboard Youngwook by providing him materials from last semester and walking him through it.
 # Week 3: 02/08/2023
 ### Works done
 - Updated dashboard to now allow users to see information about 2 courses.
