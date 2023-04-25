@@ -77,12 +77,27 @@
 ### Works done
 - Completed the sub-team meeting. I could not take part in the subteam meeting due to time conflict. However, I made the slides for the web-dev team for the presentation. I also met with Youngwook and described him the slides and how to present them.
 - I provided Jisan with the data that will be required for the dashboard. He updated the Data Science Team regarding that.
-- We created a subteam goal chart to 
+- We created a subteam goal chart to create a timeline for the rest of the semester.
+### Self - Reflection
+- Worked on the sub-team presentation slides and explained it to Youngwook.
+- Finally got back from one of the TAs agreeing to interview. The interview is scheduled in 2 weeks.
+### Goals for Next Week
+- Create interview questions and get feedback from team members on the interview questions.
 # Week 9: 03/22/2023
+### Works done
+- 
+### Self - Reflection
+-
+### Goals for Next Week
+-
 ### ------------------------------------------------------------------------
 ### SPRING BREAK
 ### ------------------------------------------------------------------------
-# Week 10: 03/28/2023
+# Week 10: 03/29/2023
+# Week 10: 04/05/2023
+# Week 10: 04/12/2023
+# Week 10: 04/19/2023
+
 
 
 
