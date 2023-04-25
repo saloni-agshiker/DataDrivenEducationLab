@@ -1,7 +1,8 @@
 
 # Notebook for Spring 2023
 
-Link to code to dashboard - 
+Link to code to dashboard - https://github.gatech.edu/C21U/vip-nlp/tree/master/Dashboard/src/pages
+Link to entire react app - https://github.gatech.edu/C21U/vip-nlp/tree/master/Dashboard
 
 # Week 1: 01/25/2023
 ### Works done
