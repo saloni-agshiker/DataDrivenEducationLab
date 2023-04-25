@@ -53,16 +53,31 @@
 - Making the dashboard reactive to fit different screen sizes.
 # Week 6: 03/01/2023
 ### Works done
-- Dashboard has been made reactive for the graphs and table. 
-- Sent interview emails to 
+- Dashboard has been made reactive for the graphs and table to adjust to screen size changes.
+- Sent interview emails to TAs because the professors have not responded for more than a week now.
+- The Data Science team is working on increasing the accuracy of the current models.
 ### Self - Relection
 - This week I worked on making the dashboard reactive. For example, if you reduce the size of the tabs, the graphs and tables will decrease in size to accomodate the change in screen size. Similarly, if screen width is decreased, the graphs will align one on top of the other instead of being aligned side by side and so on. 
 - The problem however is that the heading text for the containers are not reactive yet. I tried out few approaches like setting font-size of be a certain percentage of the screen but that did not work. I need to look a bit into this. 
 - However, the current priority is to get the dashboard updated with real time data and to interview TAs/ professors to get feedback on our current dashboard.
 ### Goals for next week
--
+- Prepare questions for interviews.
+- Look at the future steps for web-dev team and brainstorm ways to make dashboard ourselves in case we cannot interview any TAs.
 # Week 7: 03/08/2023
+### Works done 
+- We had a change in our team project manager. Jisan will now head the team.
+- Had an individual meeting with Jisan regarding the dashboard front-end progress and future task.
+- Divided slides for the second sub-team presentation.
+### Self - Reflection
+- I had a meeting with Jisan regarding the dashboard. We have a problem that we cannot get real-time access to the piazza api due to which we can not make the teacher's page of our dashboard update in real time. We decided to ask about this if we get a chance to interview a TA and to get feedback on alternative data that we could display in our dashboard. Similarly, the dashboard has all other functionalities completed except for adding the real-data into it and I informed Jisan about the data I need from the Data Science team to update those information into the dashboard.
+### Goals for next week
+- Prepare the slides for the subteam presentation.
+- Provide Jisan a list of the data that I will require for the dashboard.
 # Week 8: 03/15/2023
+### Works done
+- Completed the sub-team meeting. I could not take part in the subteam meeting due to time conflict. However, I made the slides for the web-dev team for the presentation. I also met with Youngwook and described him the slides and how to present them.
+- I provided Jisan with the data that will be required for the dashboard. He updated the Data Science Team regarding that.
+- We created a subteam goal chart to 
 # Week 9: 03/22/2023
 ### ------------------------------------------------------------------------
 ### SPRING BREAK
