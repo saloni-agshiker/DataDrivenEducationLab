@@ -94,9 +94,35 @@
 ### SPRING BREAK
 ### ------------------------------------------------------------------------
 # Week 10: 03/29/2023
+### Works done
+- Interviewed with the TA to get feedback on dashboard.
+- Divided the work among Data Science Team to delver required data for the dashboard.
+### Self - Reflection
+- I interviewed with a TA and asked about what worked in the dashboard and what would she want to see in the dashboard that would actually help her. I got great feedbacks from her.
+#### Interview Notes
+### Goals for Next Week
+-
 # Week 10: 04/05/2023
+### Works done
+- 
+### Self - Reflection
+-
+### Goals for Next Week
+-
 # Week 10: 04/12/2023
+### Works done
+- 
+### Self - Reflection
+-
+### Goals for Next Week
+-
 # Week 10: 04/19/2023
+### Works done
+- 
+### Self - Reflection
+-
+### Goals for Next Week
+-
 
 
 
