@@ -18,6 +18,7 @@
 - Onboard Youngwook by provding him materials from last semester and walking him through it.
 # Week 3: 02/08/2023
 ### Works done
+- Updated dashboard to now allow users to see information about 2 courses.
 - Met with Youngwook and explained him the past work in web-dev team by going through documentation, the dashboard and the code for the dashboard.
 - Provided Youngwook youtube link to learn react and also explained a bit of the dashboard code to get him started.
 - The subteam meeting was headed by Jisan today. I was asked to get started on the presentation for web-dev slides. I was also assigned to meet with Madeline about conducting interviews.
