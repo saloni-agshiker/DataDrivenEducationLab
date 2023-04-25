@@ -44,7 +44,7 @@
 ### Works done
 - Send out emails to professors looking for interviews but have not heard back from them. 
 - Changed the dashboard to create a different ways to allow for multiple course-work. Instead of creating a dropdown menu that allowed switching between different courses, we added an option to select course in homepage. To change to another course, we now have to return to homepage and select another course.
-- We we-dev team talked to Dr. Lee about progress and plans.
+- We web-dev team talked to Dr. Lee about progress and plans.
 - Submitted peer evaluations and notebook.
 ### Self - Reflection
 - I personally worked on changing the dashboard. I removed the original way of accessing multiple courses through drop-down menu because that would allow every professor to look at every other course information. But in the new way, we need to select a course at homepage and are only allowed to go to different course by navigating back to the home page. This will allow us to set password restrictions in the future on homepage so that only authorized users can select particular course.
