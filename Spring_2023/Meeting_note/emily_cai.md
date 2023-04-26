@@ -160,7 +160,7 @@ https://www.tutorialspoint.com/python-select-multiple-columns-from-a-pandas-data
 ### Plans:
 I plan on focusing on making progress on my assigned tasks for the graphs needed on the dashboard. I should complete them as early as possible to ensure the web developers are not rushed. 
 
-## 04/15/2023: Discussion Forum Subteam Meeting #10
+## 04/14/2023: Discussion Forum Subteam Meeting #10
 
 ### Updates:
 I figured out the problem with my code, since I could not figure out why it was sometimes outputting an empty array or an array of incorrect length. Jisan also asked us to each show our progress. Then, we went over the final presentation and deleted any unneeded slides. Jisan delegated slides to each person according to what they are focusing on. I am in charge of showing the results outputted by the graphs I created and what they indicate.
@@ -172,5 +172,18 @@ There were some issues with my code, and I spent a while trying to debug it. The
 I am basically done with "Posts over Time," so I will focus on "Posts by Students" and "Posts by Staff."
 
 ### Plans:
-I plan on finishing my code by this weekend so that I can give my json file to the web developers to use and present in the dashboard. We also plan to finish drafting our slides for our final presentation. This was our last team meeting, and everyone said their thank yous for being so kind and helpful to each other this semester!
+I plan on finishing my code by this weekend so that I can give my json file to the web developers to use and present in the dashboard. We also plan to finish drafting our slides for our final presentation. This was our last subteam meeting, and everyone said their thank yous for being so kind and helpful to each other this semester!
 
+## 04/19/2023: Final Presentation Day
+
+### Updates:
+I finished my code for all of my assigned tasks, and I completed my 3-4 slides for the final presentation. Before our meeting today, we spent 15 minutes rehearsing our presentation and removed any redundancies or unnecessary information since we were going overtime. We presented today, and it went very well! Everyone prepared their slides thoroughly and spoke very well.
+
+### Problems:
+There were some issues with my code, but I was able to debug it myself. Ankit asked me to reformat my json file for it to display properly, and I was able to do so. My final presentation slides took longer than 3 minutes to present during rehearsal, so I shortened it before the presentation. Everything went very well.
+
+### Self-Assessment of Progress: 
+I was able to finish coding and visualizing my graphs. I sent the web development team the json files I created from myncode for CS 1301 and CS 6601, and they were able to display the graphs I created.  
+
+### Plans:
+As far as this semester, our sub-team has no more work to progress in. I plan on finishing the peer-review and finalizing this notebook. In terms of next semester, I'm very excited to continue to improve as a data scientist and hopefully explore more roles! 
