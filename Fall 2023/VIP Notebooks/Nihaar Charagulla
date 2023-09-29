@@ -1,0 +1,65 @@
+Week 1
+Had first subteam meeting.
+Met team members and learned about roles for semester.
+Learned about goals of discussion forums subteam.
+Looked into previous results and efforts of subteam.
+
+Week 2
+
+Looked at previous models made by subteam and results.
+Completed FERPA and IRB training.
+
+Week 3
+Discussed with team to figure out what data we wanted to analyze and access.
+Read about studies on discussion forums to understand previous research.
+Prepared presentation for Journal Club
+
+Week 4
+Learned MOOC research in lecture.
+Subteam meeting to prepare for first subteam presentation
+Researched NLP and Machine Learning practices
+
+
+Created the third and fourth pages of the dashboard in react and made it look exactly like the Figma designs.
+
+Learnt routing in react and implemented it to connect the different pages of dashboard. This made it possible to navigate to other pages of the dashboard from any one page.
+
+REFERENCES
+
+https://www.youtube.com/watch?v=aZGzwEjZrXc&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=22&ab_channel=TheNetNinja
+
+https://www.youtube.com/watch?v=EmUa_tcSM-k&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=23&ab_channel=TheNetNinja
+
+https://www.youtube.com/watch?v=EmUa_tcSM-k&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=23&ab_channel=TheNetNinja
+
+Goals:
+
+Create slides for the subteam presentation. My slides talk about the current progress of the webdev team and I will present this during the subteam presentation.
+
+Complete the peer evaluations and midterm notebook.
+
+Week 5 (Oct 3 - 7)
+Presented the second, third and fourth page of dashboard along with the working page navigation in the subteam meeting.
+
+Presented the current progress of the webdev team during the subteam presentations.
+
+From our subteam, Ritika was not present and Gautam presented slides on the UX part that was completed last semester.
+
+Completed the peer evaluations and the notebooks for midterm evaluation.
+
+Goals:
+
+Get the first page from Gautam and add it to the dashboard. With this, the layout of all the pages for the dashboard will be complete.
+
+Replace the current react webapp/ dashboard file in github with my local webapp file so the webdev team can build on those files.
+
+Week 6 (Oct 10 - 14)
+Met with Gautam to get the first page to the dashboard. At first, I could not add the first page to my dashboard code. However, Gautam and I debugged it together to finally add it to the code I had.
+
+We formatted the first pages, added images and made the first page look exactly like the figma.
+
+We added first page to the React router to ensure that we can reach other pages from the first page and vice versa.
+
+Goals:
+
+Learn how to add graphs (piecharts, bargraphs and line graphs) to the dashboard.
