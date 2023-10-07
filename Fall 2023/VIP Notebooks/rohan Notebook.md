@@ -36,7 +36,7 @@ Meeting Prep: Prepare material and documentation about what was covered last sem
     Finish presentation slides before wednesdday
         - includes coming up with research goals from the new dataset
 
-### 9/22/2023 Subteam Meeting 4 / Meeting with Adrian
+### 9/29/2023 Subteam Meeting 4 / Meeting with Adrian
     This meeting was split into 2 because Adrian said he was free on Wednesday to show us how to access data.
     Told DS/ML members to download postgres before wednesday
     Me and Ankit met with Dr.Lee after class to discuss what webDev team should do until the ML team completes model and DS team make csv file or database entry.
