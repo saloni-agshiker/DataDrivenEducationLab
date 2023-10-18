@@ -90,8 +90,12 @@ WEEK 8:
   
 WEEK 9 (WORK WEEK):
 
-  After last week's problem, I am reading documentation from past classes in order to reinstall python libraries and editors. This way I can
+  After last week's problem, I read through some other documentation, saying Mac users should actually download Postico instead of Postgre.
+  I attempted this and still ran into the same issue. 
+  I am reading documentation from past classes in order to reinstall python libraries and editors. This way I can
   read the file using python and manipulate the file using pandas. 
+  However, I am not fully sure on how to import a file on python given credentials instead of a file name downloaded in a directory on my computer. 
+  I have contacted the instructors of the course via ClassZoom and email. 
   
   
 
