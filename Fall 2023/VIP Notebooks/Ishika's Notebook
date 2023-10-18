@@ -60,3 +60,39 @@ WEEK 7:
     - Clean duplicate rows in data & make usable for machine learning team.
     - Find useful data in the database
     
+    
+WEEK 8:
+  Attempted to clean the rows of the data file on Postgre SQL; encountered a problem.
+  
+  Code: 
+  select * from piazza.cs6601_np_anonymized where not folders is null;
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed is null;
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed is null;
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '_';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '__';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '___';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '___';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '____';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '_____';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '_____';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '______';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '_______';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '________';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '_________';
+  select * from piazza.cs6601_np_anonymized where not submission_html_removed like '__________';
+
+  I began with this in order to visualize each command and what would be deleted if the command was run.
+  After this, I began to change the "SELECT" statements into "DELETE" statements, and there was an error.
+  I could not make changes to the file since I am not the owner. 
+  
+  The best idea was to use python and pandas. 
+  
+  
+WEEK 9 (WORK WEEK):
+
+  After last week's problem, I am reading documentation from past classes in order to reinstall python libraries and editors. This way I can
+  read the file using python and manipulate the file using pandas. 
+  
+  
+
+  
