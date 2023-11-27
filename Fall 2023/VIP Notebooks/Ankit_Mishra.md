@@ -53,3 +53,43 @@
 
 ### Goals for next week
 - Talk to machine learning team to get more insight on how the dashboard should look like.
+
+# Week 6: Oct 11
+### Works done
+### Self-Reflection
+### Goals for next week
+
+# Week 7: Oct 17
+### Works done
+### Self-Reflection
+### Goals for next week
+
+# Week 8: Oct 25
+### Works done
+### Self-Reflection
+### Goals for next week
+
+# Week 9: Nov 1
+### Works done
+### Self-Reflection
+### Goals for next week
+
+# Week 10: Nov 8
+### Works done
+### Self-Reflection
+### Goals for next week
+
+# Week 11: Nov 15
+### Works done
+### Self-Reflection
+### Goals for next week
+
+# Week 12: Nov 22
+### Works done
+### Self-Reflection
+### Goals for next week
+
+# Week 13: Nov 29
+### Works done
+### Self-Reflection
+### Goals for next week
