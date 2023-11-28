@@ -47,7 +47,9 @@
 
 Work done: 
   Software Development Research & Digital Accessibility Lecture by Dr. Sembrat
+  
   Researched Topic Modelling to understand how the ML is applied in the Discussion Forum research
+  
   Source: https://levity.ai/blog/what-is-topic-modeling#:~:text=Topic%20modeling%20is%20a%20type,predefined%20tags%20or%20training%20data
  
   
@@ -62,7 +64,9 @@ Goals:
 
 Work done:
   Working Day
+  
   Reaserched the ABSA model documentation
+  
   Started working on Subteam presentation 2
   
 Self-Reflection: Need to understand more about how to apply topic modelling
@@ -73,8 +77,10 @@ Goals: Complete Subteam presentation 2
 **WEEK 7: Oct 25th**
 
 Work done:
-  Prresented Subteam presentation 2
+  Presented Subteam presentation 2
+  
   Realised that guided topic modelling was more appropriate for the goal of the team
+  
   Source: https://maartengr.github.io/BERTopic/getting_started/guided/guided.html
 
 Self-Reflection: Need to learn about how to apply topic modelling for our dataset
@@ -86,8 +92,11 @@ Goals: Find an appropriate model for this project
 
 Work done:
   Canvas SDK & Web App Development Practices Lecture by Mr. Freeman & Mr. Yang
+  
   Found 2 models that would work really well fo the project
+  
   https://huggingface.co/MaartenGr/BERTopic_Wikipedia
+  
   https://huggingface.co/shahrukhx01/question-vs-statement-classifier
   
 Self-Reflection: 
@@ -101,6 +110,7 @@ Goals:
 
 Work done:
   Research in Online Learning Lecture by Dr. Yilmaz Soylu
+  
   Started implementing these models on dataset with Nihaar 
 
 Self-Reflection: 
@@ -114,6 +124,7 @@ Goals:
 
 Work done: 
   Virtual workday. Worked with the ML team.
+  
   Try to deliver the output of the model/visualisation that is most useful to the teachers
   
 Self-Reflection:
