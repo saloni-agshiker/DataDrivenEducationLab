@@ -92,6 +92,7 @@ Learn more about LLMs
 https://huggingface.co/docs/transformers/quicktour
 - Learned about utilizing pipeline and loading in pretrained model
 - Completed subteam presentation 2. Discussed current plans with project and implementation of 2 LLMs
+- Think about use cases for data for web dev team and data science, chatted with Ishika about opportunities.
 
 ### Goal:
 - Load model and train on Piazza data. Continue to reformat data in pandas dataframe as needed.
