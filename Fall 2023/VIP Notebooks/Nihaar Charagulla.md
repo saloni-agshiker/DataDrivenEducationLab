@@ -58,6 +58,10 @@ Learn more about LLMs
  - found opensource LLMs via Huggingface that we can use.
 - https://huggingface.co/models?pipeline_tag=text-classification&sort=trending
 - https://huggingface.co/blog/sentiment-analysis-python
+
+- Discussed with Adaora during the week to discuss potential models amongst the Huggingface LLMs
+- Biggest challenge was deciding on the project pathway from here and knowing what our planned implementation would be
+
  ### Goal:
  - Research NLP practices and LLMs that we can integrate
  - Look more into Huggingface LLMs to find suitable models
@@ -100,7 +104,8 @@ https://huggingface.co/docs/transformers/quicktour
 - Finished testing on model and displayed accuracy metrics, 70% accurate
 ### ALL WORK IN NOTEBOOK BELOW
 https://colab.research.google.com/drive/1MQM-y16mvhNt082s0WoKBQik5UKcXxg-?usp=sharing
-
+- Followed this as a main guide for implementing the model, lots of tweaks necessary:
+- https://huggingface.co/docs/transformers/quicktour
 
 ### Goal:
 - Call with Adaora to touch base on ML progress.
