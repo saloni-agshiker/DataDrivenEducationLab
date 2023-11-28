@@ -43,6 +43,7 @@
 -Learnt about Online Learning and emergence remote teaching
 
 **WEEK 5: Oct 11th**
+
 Work done: 
   Software Development Research & Digital Accessibility Lecture by Dr. Sembrat
   Researched Topic Modelling to understand how the ML is applied in the Discussion Forum research
@@ -56,6 +57,7 @@ Goals:
   Research more on appropiriate model for the discussion forum subteam
 
 **WEEK 6: Oct 18th**
+
 Work done:
   Working Day
   Reaserched the ABSA model documentation
@@ -66,6 +68,7 @@ Self-Reflection: Need to understand more about how to apply topic modelling
 Goals: Complete Subteam presentation 2
 
 **WEEK 7: Oct 25th**
+
 Work done:
   Prresented Subteam presentation 2
   Realised that guided topic modelling was more appropriate for the goal of the team
@@ -76,6 +79,7 @@ Self-Reflection: Need to learn about how to apply topic modelling for our datase
 Goals: Find an appropriate model for this project
 
 **WEEK 8: Nov 1st**
+
 Work done:
   Canvas SDK & Web App Development Practices Lecture by Mr. Freeman & Mr. Yang
   Found 2 models that would work really well fo the project
@@ -89,6 +93,7 @@ Goals:
  Use the models on the piazza content
 
 **WEEK 9: Nov 8th**
+
 Work done:
   Research in Online Learning Lecture by Dr. Yilmaz Soylu
   Started implementing these models on dataset with Nihaar 
@@ -100,6 +105,7 @@ Goals:
   Work on final subteam. Decide wheter the model is good or should be changed 
 
 **WEEK 10: Nov 15th**
+
 Work done: 
   Virtual workday. Worked with the ML team.
   Try to deliver the output of the model/visualisation that is most useful to the teachers
@@ -108,10 +114,11 @@ Self-Reflection:
 
 Goals: Work on final subteam presentation 
 
-**WEEK 11: Nov 22nd **
-THANKSGIVING
+**WEEK 11: Nov 22nd (THANKSGIVING BREAK)**
+
 
 **WEEK 12: Nov 29th**
+
 Work done:
   Complete subteam presentation
 
