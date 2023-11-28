@@ -56,8 +56,8 @@ Learn more about LLMs
  - setup PostgreSQL to access data.
  - look at data and understand how to access
  - found opensource LLMs via Huggingface that we can use.
-https://huggingface.co/models?pipeline_tag=text-classification&sort=trending
-https://huggingface.co/blog/sentiment-analysis-python
+- https://huggingface.co/models?pipeline_tag=text-classification&sort=trending
+- https://huggingface.co/blog/sentiment-analysis-python
  ### Goal:
  - Research NLP practices and LLMs that we can integrate
  - Look more into Huggingface LLMs to find suitable models
