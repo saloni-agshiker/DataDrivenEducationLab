@@ -55,6 +55,7 @@ Learn more about LLMs
 - Met with Georgia Tech resource to learn about SQL and data manipulation tactics
  - setup PostgreSQL to access data.
  - look at data and understand how to access
+ - Met in person with Ishika to figure out how to access data in local notebook and convert into pandas dataframe. 
  - found opensource LLMs via Huggingface that we can use.
 - https://huggingface.co/models?pipeline_tag=text-classification&sort=trending
 - https://huggingface.co/blog/sentiment-analysis-python
