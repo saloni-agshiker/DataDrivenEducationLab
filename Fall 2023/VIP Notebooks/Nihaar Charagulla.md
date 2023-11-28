@@ -13,13 +13,11 @@
 - Met team members and learned about roles for semester.
 - Learned about goals of discussion forums subteam.
 - Looked into previous results and efforts of subteam.
-### Goal:
 
 # Week 3
 ### Completed:
 - Looked at previous models made by subteam and results.
 - Completed FERPA and IRB training.
-### Goal:
 
 # Week 4
 ### Completed:
