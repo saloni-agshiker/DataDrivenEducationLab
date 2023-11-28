@@ -127,6 +127,10 @@ Work done:
   
   Try to deliver the output of the model/visualisation that is most useful to the teachers
   
+  Nihaar tested on the sentence vs question classifier model on the data
+  
+  I tested the visualisation model on the data
+  
 Self-Reflection:
 
 Goals: Work on final subteam presentation 
