@@ -42,6 +42,7 @@
 
 -Learnt about Online Learning and emergence remote teaching
 
+
 **WEEK 5: Oct 11th**
 
 Work done: 
@@ -56,6 +57,7 @@ Self-Reflection:
 Goals: 
   Research more on appropiriate model for the discussion forum subteam
 
+
 **WEEK 6: Oct 18th**
 
 Work done:
@@ -67,6 +69,7 @@ Self-Reflection: Need to understand more about how to apply topic modelling
 
 Goals: Complete Subteam presentation 2
 
+
 **WEEK 7: Oct 25th**
 
 Work done:
@@ -77,6 +80,7 @@ Work done:
 Self-Reflection: Need to learn about how to apply topic modelling for our dataset
 
 Goals: Find an appropriate model for this project
+
 
 **WEEK 8: Nov 1st**
 
@@ -92,6 +96,7 @@ Self-Reflection:
 Goals: 
  Use the models on the piazza content
 
+
 **WEEK 9: Nov 8th**
 
 Work done:
@@ -104,6 +109,7 @@ Self-Reflection:
 Goals: 
   Work on final subteam. Decide wheter the model is good or should be changed 
 
+
 **WEEK 10: Nov 15th**
 
 Work done: 
@@ -114,7 +120,9 @@ Self-Reflection:
 
 Goals: Work on final subteam presentation 
 
+
 **WEEK 11: Nov 22nd (THANKSGIVING BREAK)**
+
 
 
 **WEEK 12: Nov 29th**
