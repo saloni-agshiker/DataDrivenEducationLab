@@ -127,11 +127,12 @@ Work done:
   
   Try to deliver the output of the model/visualisation that is most useful to the teachers
   
-  Nihaar tested on the sentence vs question classifier model on the data
+  Nihaar tested on the sentence vs question classifier model on the data which was successful
   
-  I tested the visualisation model on the data
+  I tested the visualisation model on the data and continously ran into errors
   
 Self-Reflection:
+  Keep trying to use modle on the data for the visualisation tool 
 
 Goals: Work on final subteam presentation 
 
@@ -139,12 +140,26 @@ Goals: Work on final subteam presentation
 **WEEK 11: Nov 22nd (THANKSGIVING BREAK)**
 
 
-
 **WEEK 12: Nov 29th**
 
 Work done:
-  Complete subteam presentation
+  Complete final subteam presentation
+  
+  Followed multiple tutorials showing how to implement BERTopic for text classification
+  
+  Tutorials:
+  https://huggingface.co/docs/transformers/quicktour
+  https://huggingface.co/blog/bertopic
+  https://hackernoon.com/nlp-tutorial-topic-modeling-in-python-with-bertopic-372w35l9
+  
+  Continued to run into errors which I consolidated with Nihaar and was still unable to resolve
+  
+  I beleive the error had more to do with NumPy and TensorFlow version compatibility
+  
+  https://colab.research.google.com/drive/1EmAL1X2zQ_8WtL3JuknQHQfp7AoTOvke?usp=sharing
 
 Self-Reflection: 
+  Although I was not sucessful in testing out the visualisation model on our data, I would like to do something similar with visualisation
 
 Goals: 
+  Continue to work on creating interesting visualisations for educator use
