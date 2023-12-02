@@ -43,3 +43,47 @@ Meeting Prep: Prepare material and documentation about what was covered last sem
 
 #### Before next meeting
     start thinking/ implementing data cleansing techniques and talk to ML team with the columns needed for a model.
+    
+### 11/3/2023 Subteam Meeting 5
+    Walked thru the dataset and brainstormed ways to modify data to fit the dashboard
+    Worked with webdev to see if meeting with TA is helpful and if so what questions should be asked
+
+#### Before next meeting
+    Get the cleand SQL data from Ishika and get the CSV file.
+    Share this file to youngwook and ML team if needed
+    
+### 11/10/2023 Subteam Meeting 6/Workday
+    Waasn't able to meet due to club competition but provided a list of deliverables for the teams
+    <student tab>
+    post over time:
+    post by students:
+    total posts this week:
+
+    <teacher tab>
+    contributions by instructor:
+    average response time: 
+    current unresolved posts: 
+    today’s average reply time(mins):
+    current unresolved posts:
+
+    DS team - complete the list of json files needed for dashboard
+    ML team - try to deliver the output of the model in a way/ visualization that can be useful to teachers
+    WebDev - upstate dashboard based on feedback from the 6601 TA
+
+#### Before next meeting
+    Talk with data science team to see what metrics are possible with current data and what isn't.
+    Ensure the meeting with TA is set or atleast reached out to.
+    
+### 11/17/2023 Subteam Meeting 7
+    Assigned presentation slides to each memeber
+    There was low attendence for this meeting so it ended early
+
+#### Before next meeting
+    Get all members of the team caught up with which parts of presentation they need to do
+    Reschedule the meeting with TA. 
+    Everyone is continuing to work on current tasks so not much to do.
+
+    
+### 11/24/2023 Subteam Meeting 8
+    Thanksgiving
+    
