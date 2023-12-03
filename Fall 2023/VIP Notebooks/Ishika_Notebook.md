@@ -159,7 +159,7 @@ Team Meeting:
 
 
 # WEEK 12
-In-Class: We had a lecture over "Research in Online Learning" by Dr. Yilmaz Soylu
+In-Class: No Lecture. Work Day!
 
 Work for Project: 
 This week I decided to just look through the data and some handouts* to find the best possible way to create useful metrics. 
@@ -318,20 +318,38 @@ Began coding the metrics. I am not sure how to upload the code file, so I am pas
 * Attaching pictures and challenges to **WEEK 14**
 
 
-# WEEK 14 (WORK WEEK)
+Work Day Deliverables for the Subteam:
+"DS team - complete the list of json files needed for dashboard"
 
-<img width="397" alt="Screenshot 2023-12-03 at 4 00 51 PM" src="https://github.gatech.edu/storage/user/73536/files/d0975e1b-6eb3-4de4-880a-bf0bbe377255">
+Turn useful code into JSON files.
+
+In-Class Meeting:
+I was not able to attend due to traveling. No additional deliverables on top of what was given on the work day were given.
+
+# WEEK 14 
+
 // finds average response rate between teacher and student
+<img width="397" alt="Screenshot 2023-12-03 at 4 00 51 PM" src="https://github.gatech.edu/storage/user/73536/files/d0975e1b-6eb3-4de4-880a-bf0bbe377255">
 
-<img width="566" alt="Screenshot 2023-12-03 at 4 07 46 PM" src="https://github.gatech.edu/storage/user/73536/files/9e8ab200-9fbc-4899-8258-3f2dbb38b5bc">
 // counts posts made by students and posts made by teachers
 // also calculates the the followup posts 
+<img width="566" alt="Screenshot 2023-12-03 at 4 07 46 PM" src="https://github.gatech.edu/storage/user/73536/files/9e8ab200-9fbc-4899-8258-3f2dbb38b5bc">
 
-<img width="221" alt="Screenshot 2023-12-03 at 4 08 38 PM" src="https://github.gatech.edu/storage/user/73536/files/897618a8-cb34-4b1f-84d1-cc515b7e3607">
 // creates JSON file with average response rate per week
+<img width="221" alt="Screenshot 2023-12-03 at 4 08 38 PM" src="https://github.gatech.edu/storage/user/73536/files/897618a8-cb34-4b1f-84d1-cc515b7e3607">
 
-<img width="334" alt="Screenshot 2023-12-03 at 4 09 25 PM" src="https://github.gatech.edu/storage/user/73536/files/0461f875-738c-4de7-8adb-6b1f2fb13465">
 // calculates posts per month
+<img width="334" alt="Screenshot 2023-12-03 at 4 09 25 PM" src="https://github.gatech.edu/storage/user/73536/files/0461f875-738c-4de7-8adb-6b1f2fb13465">
+
+
+Some challenges associated with coding:
+
 
 # WEEK 15
+
+In-Class:
+
+Peer Evals:
+
+Sub-Team Presentation 3:
 
