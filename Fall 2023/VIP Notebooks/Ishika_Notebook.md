@@ -187,129 +187,129 @@ Began coding the metrics. I am not sure how to upload the code file, so I am pas
 
 // BEGINNING OF CODE
 
-import pandas as pd
-from google.colab import files
-uploaded = files.upload()
+  import pandas as pd
+  from google.colab import files
+  uploaded = files.upload()
 
-import pandas as pd
-from datetime import datetime, timedelta
-import json
+  import pandas as pd
+  from datetime import datetime, timedelta
+  import json
 
-from google.colab import drive
-drive.mount("/content/drive")
+  from google.colab import drive
+  drive.mount("/content/drive")
 
-df = pd.read_csv("drive/My Drive/cs6601_np_anonymized.csv")
-df["Created At"] = pd.to_datetime(df["created_at"])
-df["Month"] = df["Created At"].dt.strftime('%Y-%m')
-df["Week"] = df["Created At"].dt.strftime('%Y-%U')
-df["Year"] = df["Created At"].dt.strftime('%Y')
-df["Month1"] = df["Created At"].dt.strftime('-%m')
-totalTimeDifference = timedelta(0)
-count = 0
+  df = pd.read_csv("drive/My Drive/cs6601_np_anonymized.csv")
+  df["Created At"] = pd.to_datetime(df["created_at"])
+  df["Month"] = df["Created At"].dt.strftime('%Y-%m')
+  df["Week"] = df["Created At"].dt.strftime('%Y-%U')
+  df["Year"] = df["Created At"].dt.strftime('%Y')
+  df["Month1"] = df["Created At"].dt.strftime('-%m')
+  totalTimeDifference = timedelta(0)
+  count = 0
 
-groupByPostMonthWeek = df.groupby(["post_number", "Month", "Week"])
-weeklyData = []
-index = 0
+  groupByPostMonthWeek = df.groupby(["post_number", "Month", "Week"])
+  weeklyData = []
+  index = 0
 
-for (name, month, week), group in groupByPostMonthWeek:
-  student_index = group[(group["part_of_post"] == "started_off_question")].index
-  if len(student_index) == 0:
-    continue
-  student_index = student_index[0]
+  for (name, month, week), group in groupByPostMonthWeek:
+    student_index = group[(group["part_of_post"] == "started_off_question")].index
+    if len(student_index) == 0:
+      continue
+    student_index = student_index[0]
 
 
-  ta_index = group[(group["part_of_post"] == "reply_to_followup")].index
-  if len(ta_index) == 0:
-    continue
-  ta_index = ta_index[0]
+    ta_index = group[(group["part_of_post"] == "reply_to_followup")].index
+    if len(ta_index) == 0:
+      continue
+    ta_index = ta_index[0]
 
-  time_diff = group.loc[ta_index, "Created At"] - group.loc[student_index,
-                                                            "Created At"]
+    time_diff = group.loc[ta_index, "Created At"] - group.loc[student_index,
+                                                              "Created At"]
 
-  if time_diff < timedelta(0):
-    continue
+    if time_diff < timedelta(0):
+      continue
 
-  totalTimeDifference += time_diff
-  count += 1
+    totalTimeDifference += time_diff
+    count += 1
 
-  if ta_index == group.index[-1]:
-    index += 1
-    String = "Week " + str(index)
-    average_time_diff = totalTimeDifference / count
-    average_time_diff_hours = int(average_time_diff.total_seconds()/3600)
-    print(f"The average time difference for week {week} in {month} is")+
-    print(f"{average_time_diff_hours} hours.")
-    mydict = {}
-    mydict["Week"] = String
-    mydict["Time"] = average_time_diff_hours
-    weeklyData.append(mydict)
+    if ta_index == group.index[-1]:
+      index += 1
+      String = "Week " + str(index)
+      average_time_diff = totalTimeDifference / count
+      average_time_diff_hours = int(average_time_diff.total_seconds()/3600)
+      print(f"The average time difference for week {week} in {month} is")+
+      print(f"{average_time_diff_hours} hours.")
+      mydict = {}
+      mydict["Week"] = String
+      mydict["Time"] = average_time_diff_hours
+      weeklyData.append(mydict)
 
-data_dict = {"Average Response Time per Week": weeklyData}
+  data_dict = {"Average Response Time per Week": weeklyData}
 
-jsonWrite = json.dumps(data_dict)
+  jsonWrite = json.dumps(data_dict)
 
-with open("weekly_data.json", "w") as file:
-  file.write(jsonWrite)
+  with open("weekly_data.json", "w") as file:
+    file.write(jsonWrite)
 
-  files.download('weekly_data.json')
+    files.download('weekly_data.json')
 
-df = pd.read_csv("drive/My Drive/cs6601_np_anonymized.csv")
-filtered_data = df[df['part_of_post'] == 'started_of_question']
+  df = pd.read_csv("drive/My Drive/cs6601_np_anonymized.csv")
+  filtered_data = df[df['part_of_post'] == 'started_of_question']
 
-'''counting STUDENT posts'''
-count_started_off_question = df[df['part_of_post'].str.contains('started_off_question')]['part_of_post'].count()
-count_updated_note = df[df['part_of_post'].str.contains('updated_note')]['part_of_post'].count()
-count_updated_question = df[df['part_of_post'].str.contains('updated_question')]['part_of_post'].count()
-count_answer_s = df[df['part_of_post'].str.contains('started_off_s_answer')]['part_of_post'].count()
-count3 = df[df['part_of_post'].str.contains('updated_s_answer')]['part_of_post'].count()
-total_student_posts = count_updated_note + count_started_off_question + count_updated_question + count_answer_s + count3
-print(f"The total number of posts by students: {total_student_posts}")
+  '''counting STUDENT posts'''
+  count_started_off_question = df[df['part_of_post'].str.contains('started_off_question')]['part_of_post'].count()
+  count_updated_note = df[df['part_of_post'].str.contains('updated_note')]['part_of_post'].count()
+  count_updated_question = df[df['part_of_post'].str.contains('updated_question')]['part_of_post'].count()
+  count_answer_s = df[df['part_of_post'].str.contains('started_off_s_answer')]['part_of_post'].count()
+  count3 = df[df['part_of_post'].str.contains('updated_s_answer')]['part_of_post'].count()
+  total_student_posts = count_updated_note + count_started_off_question + count_updated_question + count_answer_s + count3
+  print(f"The total number of posts by students: {total_student_posts}")
 
-'''counting TA posts'''
-count_replyToFollowUp = df[df['part_of_post'].str.contains('reply_to_followup')]['part_of_post'].count()
-count_answer_i = df[df['part_of_post'].str.contains('started_off_i_answer')]['part_of_post'].count()
-count4 = df[df['part_of_post'].str.contains('updated_i_answer')]['part_of_post'].count()
-total_TA = count_replyToFollowUp + count_answer_i + count4
-print(f"The total number of posts by TAs: {total_TA}")
+  '''counting TA posts'''
+  count_replyToFollowUp = df[df['part_of_post'].str.contains('reply_to_followup')]['part_of_post'].count()
+  count_answer_i = df[df['part_of_post'].str.contains('started_off_i_answer')]['part_of_post'].count()
+  count4 = df[df['part_of_post'].str.contains('updated_i_answer')]['part_of_post'].count()
+  total_TA = count_replyToFollowUp + count_answer_i + count4
+  print(f"The total number of posts by TAs: {total_TA}")
 
-'''undetermined'''
-followup = df[df['part_of_post'].str.contains('followup')]['part_of_post'].count()
-print(f"Count of followup posts = {followup}. It is undetermined whether students or instructors made these posts.")
+  '''undetermined'''
+  followup = df[df['part_of_post'].str.contains('followup')]['part_of_post'].count()
+  print(f"Count of followup posts = {followup}. It is undetermined whether students or instructors made these posts.")
 
-df = pd.read_csv("drive/My Drive/cs6601_np_anonymized.csv")
-filtered_data = df[df['endorsed_by_instructor'] == "TRUE"]
-count_true_values = df['endorsed_by_instructor'].astype(str).str.lower().eq('true').sum()
-print(f"Number of posts endorsed by instructor: {count_true_values}")
+  df = pd.read_csv("drive/My Drive/cs6601_np_anonymized.csv")
+  filtered_data = df[df['endorsed_by_instructor'] == "TRUE"]
+  count_true_values = df['endorsed_by_instructor'].astype(str).str.lower().eq('true').sum()
+  print(f"Number of posts endorsed by instructor: {count_true_values}")
 
-with open("weekly_data.json", "r") as file:
-  data_dict = json.load(file)
+  with open("weekly_data.json", "r") as file:
+    data_dict = json.load(file)
 
-jsonWrite = json.dumps(data_dict, indent = 2)
-print(jsonWrite)
+  jsonWrite = json.dumps(data_dict, indent = 2)
+  print(jsonWrite)
 
-df = pd.read_csv("drive/My Drive/cs6601_np_anonymized.csv")
-df["created_at"] = pd.to_datetime(df["created_at"])
-df["Month"] = df["created_at"].dt.strftime('%Y-%m')
-df["Week"] = df["created_at"].dt.strftime('%Y-%U')
-df["Year"] = df["created_at"].dt.strftime('%Y')
-df["Month1"] = df["created_at"].dt.strftime('%m')
+  df = pd.read_csv("drive/My Drive/cs6601_np_anonymized.csv")
+  df["created_at"] = pd.to_datetime(df["created_at"])
+  df["Month"] = df["created_at"].dt.strftime('%Y-%m')
+  df["Week"] = df["created_at"].dt.strftime('%Y-%U')
+  df["Year"] = df["created_at"].dt.strftime('%Y')
+  df["Month1"] = df["created_at"].dt.strftime('%m')
 
-dfNoDuplicates = df.drop_duplicates(subset = ['post_number'])
-postsMonth = dfNoDuplicates.groupby(created_at.dt.to_period('M'))
-for month, posts in postsMonth:
-  for post in posts['post_number']:
-    '''print(f"Post #{post} was created in {month}")'''
+  dfNoDuplicates = df.drop_duplicates(subset = ['post_number'])
+  postsMonth = dfNoDuplicates.groupby(created_at.dt.to_period('M'))
+  for month, posts in postsMonth:
+    for post in posts['post_number']:
+      '''print(f"Post #{post} was created in {month}")'''
 
-posts_per_month = df.groupby(['Month']).size().reset_index(name='post_count')
+  posts_per_month = df.groupby(['Month']).size().reset_index(name='post_count')
 
-print(posts_per_month)
+  print(posts_per_month)
 
-json_data = posts_per_month.to_dict(orient = 'records')
-jsonWrite = json.dumps(json_data)
+  json_data = posts_per_month.to_dict(orient = 'records')
+  jsonWrite = json.dumps(json_data)
 
-with open("postsPerMonth.json", "w") as file:
-  file.write(jsonWrite, indent = 2)
-  files.download("postsPerMonth.json")
+  with open("postsPerMonth.json", "w") as file:
+    file.write(jsonWrite, indent = 2)
+    files.download("postsPerMonth.json")
 
 // END OF CODE
 
@@ -321,13 +321,17 @@ with open("postsPerMonth.json", "w") as file:
 # WEEK 14 (WORK WEEK)
 
 <img width="397" alt="Screenshot 2023-12-03 at 4 00 51 PM" src="https://github.gatech.edu/storage/user/73536/files/d0975e1b-6eb3-4de4-880a-bf0bbe377255">
+// finds average response rate between teacher and student
 
 <img width="566" alt="Screenshot 2023-12-03 at 4 07 46 PM" src="https://github.gatech.edu/storage/user/73536/files/9e8ab200-9fbc-4899-8258-3f2dbb38b5bc">
+// counts posts made by students and posts made by teachers
+// also calculates the the followup posts 
 
 <img width="221" alt="Screenshot 2023-12-03 at 4 08 38 PM" src="https://github.gatech.edu/storage/user/73536/files/897618a8-cb34-4b1f-84d1-cc515b7e3607">
+// creates JSON file with average response rate per week
 
 <img width="334" alt="Screenshot 2023-12-03 at 4 09 25 PM" src="https://github.gatech.edu/storage/user/73536/files/0461f875-738c-4de7-8adb-6b1f2fb13465">
-
+// calculates posts per month
 
 # WEEK 15
 
