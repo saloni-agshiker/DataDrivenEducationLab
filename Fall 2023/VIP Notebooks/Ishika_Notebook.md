@@ -150,7 +150,7 @@ submission_html_removed != ' ' AND subject != ‘Student Introductions’ AND su
 
 Team Meeting:
 - Discussed what metrics the data science team has thought of for the web development team
-  - # of student posts vs # of teacher posts
+  - number of student posts vs number of teacher posts
   - average response rate between student and instructor
   - how many posts the instructor has endorsed 
 - Discussed next steps
