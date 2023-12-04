@@ -314,6 +314,8 @@ Began coding the metrics. I am not sure how to upload the code file, so I am pas
 // END OF CODE
 
 
+//  CODE COMMENTS INCLUDED IN WEEK 14
+
 * Working on this code was split between **WEEK 13** and **WEEK 14**
 * Attaching pictures and challenges to **WEEK 14**
 
@@ -342,14 +344,21 @@ I was not able to attend due to traveling. No additional deliverables on top of 
 <img width="334" alt="Screenshot 2023-12-03 at 4 09 25 PM" src="https://github.gatech.edu/storage/user/73536/files/0461f875-738c-4de7-8adb-6b1f2fb13465">
 
 
-Some challenges associated with coding:
+[VIP Code Comments.pdf](https://github.gatech.edu/C21U/vip-nlp/files/1672/VIP.Code.Comments.pdf)
 
+Challenges while coding:
+- I was unsure of how to find the average time responses. As mentioned in presentation 3, the average time response was roughly an estimate since there was no sure way of being able to know if follow-up posts were from students or from instructors. To attempt this, I found the index of the first student post and the index of the first TA post and used the index to find the time that each post was created. I think if the csv files were separated by tabs, the accuracy of the code may have been greater. 
+- It took me a while to get google colab to connect with my hose (Google Drive). I searched stack overflow and used past handouts to see how hosts are connected to the servers. Ultimately, I just contacted someone from the machine learning team and asked for help.
+
+* Overall, the task I was assigned with was made easy with handouts from a past class I took (CS2316). However, next semester the only addition the discussion forums team can benefit from is having a csv file with tabs that separate student from instructor
 
 # WEEK 15
 
-In-Class:
+In-Class: Presentation 3 
 
 Peer Evals:
+Peer Evals were released. 
 
 Sub-Team Presentation 3:
+https://docs.google.com/presentation/d/1wfN4K19HVmbJDljjQGeGDBmMUxWDtjVs/edit?usp=sharing&ouid=102705935548115878182&rtpof=true&sd=true
 
