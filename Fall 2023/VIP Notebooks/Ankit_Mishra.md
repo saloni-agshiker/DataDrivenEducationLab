@@ -81,8 +81,22 @@
 
 # Week 11: Nov 15
 ### Works done
-### Self-Reflection
+- Conducted interview with a TA regarding the usability and practical use of our dashboard.
+### Interview Results
+- What works
+   * Topic page showing sentiment regarding different aspect of course helpful
+   * Average response time of instructors and student satisfaction of replies are helpful metrics.
+- Suggestions
+   * Average response time and response posts of all TAs could be shown separately.
+   * Notification for unanswered posts after set timeout
+   * Option to remove post without resolution (manual exclusion from data)
+   * Unresolved posts should be prioritized based on importance
+- Needs improvement
+   * info in student section is interesting but unclear how to act on it
+   * metric showing what does downturn of engagement indicate could help.
 ### Goals for next week
+- Incorporate TA changes to dashboard
+- Add the data produced by ML and data science team into the dashboard.
 
 # Week 12: Nov 22
 ### Works done
@@ -91,5 +105,8 @@
 
 # Week 13: Nov 29
 ### Works done
-### Self-Reflection
+- Created slides for the final presentation. I did the current progress and next semester goals for web dev team.
+- Complete peer evaluations
 ### Goals for next week
+- Complete VIP notebooks
+- Push all code changes to the github and update documentation.
