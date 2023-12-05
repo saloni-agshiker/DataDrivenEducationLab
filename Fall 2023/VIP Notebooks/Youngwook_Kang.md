@@ -40,19 +40,29 @@
  - 
 # Week 7: Oct 20
 ### Works done
- - 
+ - Contacted the professor to obtain access to data that was missed due to incorrect email information submitted at the beginning of the semester.
 ### Next week's plan
- - 
+ - Use Beekeeper Studio, as learned from Gallard, to access and analyze data.
 # Week 8: Oct 27
 ### Works done
- - 
+ - Prepared slides for subteam presentation 2.
+ - Presented subteam presentation 2.
 ### Next week's plan
- - 
+ - Find a way to receive new data because there is a problem in the data access process and I cannot receive the data
 # Week 9: Nov 3
 ### Works done
- - 
+ - Contacted Rohan and received the data.
 ### Next week's plan
- - 
+ - Analyze the student and teacher tabs with the following criteria:
+ -**Student Tab:**
+   - Post over time
+   - Post by students
+   - Total posts this week
+ - **Teacher Tab:**
+   - Contributions by instructor
+   - Average response time
+   - Current unresolved posts
+   - Today’s average reply time (minutes)
 # Week 10: Nov 10
 ### Works done
  - 
