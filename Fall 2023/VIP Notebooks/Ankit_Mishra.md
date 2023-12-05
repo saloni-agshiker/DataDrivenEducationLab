@@ -100,8 +100,15 @@
 
 # Week 12: Nov 22
 ### Works done
+- Presented interview results to the team.
+- Added 3 new data created by ML and data science team to the dashboard. The new graphs are the Average Response Time graph, Frequency of questions vs statements graph, and number of posts per month graph.
 ### Self-Reflection
+- It was not possible to incorporate most of the changes requested in the interview.
+   * Firstly, we have data from 2020. We need access to real time data to create the unresolved posts table. Also, we cannot assign TAs to posts because of the same issue.
+   * For other changes, ML team will need more time to create those models so it will be added in next semesters.
 ### Goals for next week
+- Create sub-team presentation.
+- Complete peer evaluations.
 
 # Week 13: Nov 29
 ### Works done
