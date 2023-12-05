@@ -33,3 +33,50 @@
  - A meeting was held with Adaora, and a github link was provided to understand the overall flow of data analysis.
 ### Next week's plan
  - Based on the provided GitHub link, data analysis-related study will be conducted.
+# Week 6: Oct 13
+### Works done
+ - 
+### Next week's plan
+ - 
+# Week 7: Oct 20
+### Works done
+ - 
+### Next week's plan
+ - 
+# Week 8: Oct 27
+### Works done
+ - 
+### Next week's plan
+ - 
+# Week 9: Nov 3
+### Works done
+ - 
+### Next week's plan
+ - 
+# Week 10: Nov 10
+### Works done
+ - 
+### Next week's plan
+ - 
+# Week 11: Nov 17
+### Works done
+ - Calculated the average response time of teachers to students' weekly posts and created a JSON file with the data.
+ - Analyzed the number of student posts per time slot.
+ - Analyzed the number of teacher posts per time slot.
+### Next week's plan
+ - Analyze the weekly number of student posts.
+ - Analyze the weekly number of student posts.
+ - prepare for subteam presentation 3.
+# Week 12: Nov 24
+### Works done
+ - Analyzed the number of student posts for the week.
+ - Analyzed the number of teacher posts for the week.
+ - Created graphs for visualizing the results of the analyses.
+### Next week's plan
+ - Prepare slides for Subteam Presentation 3.
+# Week 13: Dec 1
+### Works done
+ - Prepared slides for subteam presentation 3.
+ - Present subteam presentation 3.
+### Next week's plan
+ - 
