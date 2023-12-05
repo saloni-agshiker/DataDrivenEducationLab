@@ -37,12 +37,13 @@
 ### Works done
  - 
 ### Next week's plan
- - 
+ - Contact the professor to learn how to access the data.
 # Week 7: Oct 20
 ### Works done
  - Contacted the professor to obtain access to data that was missed due to incorrect email information submitted at the beginning of the semester.
 ### Next week's plan
  - Use Beekeeper Studio, as learned from Gallard, to access and analyze data.
+ - Prepare slides for subteam presentation 2
 # Week 8: Oct 27
 ### Works done
  - Prepared slides for subteam presentation 2.
@@ -65,9 +66,10 @@
      - Today’s average reply time (minutes)
 # Week 10: Nov 10
 ### Works done
- - 
+ - Sorted the data in chronological order.
+ - Divided the data into student data and teacher data.
 ### Next week's plan
- - 
+ - Calculate the average response time of teachers to students' weekly posts and create a JSON file with the data.
 # Week 11: Nov 17
 ### Works done
  - Calculated the average response time of teachers to students' weekly posts and created a JSON file with the data.
@@ -88,5 +90,4 @@
 ### Works done
  - Prepared slides for subteam presentation 3.
  - Present subteam presentation 3.
-### Next week's plan
- - 
+
