@@ -54,7 +54,7 @@
  - Contacted Rohan and received the data.
 ### Next week's plan
  - Analyze the student and teacher tabs with the following criteria:
- -**Student Tab:**
+ - **Student Tab:**
    - Post over time
    - Post by students
    - Total posts this week
