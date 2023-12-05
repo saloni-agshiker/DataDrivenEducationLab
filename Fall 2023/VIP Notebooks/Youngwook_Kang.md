@@ -54,15 +54,15 @@
  - Contacted Rohan and received the data.
 ### Next week's plan
  - Analyze the student and teacher tabs with the following criteria:
- - **Student Tab:**
-   - Post over time
-   - Post by students
-   - Total posts this week
- - **Teacher Tab:**
-   - Contributions by instructor
-   - Average response time
-   - Current unresolved posts
-   - Today’s average reply time (minutes)
+  - **Student Tab:**
+    - Post over time
+    - Post by students
+    - Total posts this week
+  - **Teacher Tab:**
+    - Contributions by instructor
+    - Average response time
+    - Current unresolved posts
+    - Today’s average reply time (minutes)
 # Week 10: Nov 10
 ### Works done
  - 
