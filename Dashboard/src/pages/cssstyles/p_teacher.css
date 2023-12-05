@@ -1,0 +1,163 @@
+* {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin: 0 auto;
+}
+.navbar h1 {
+  color: #385c8c;
+  width: 47%;
+  text-align: start;
+
+}
+.navbar .links {
+  margin-left: 0px;
+  width: 47%;
+  text-align: end;
+}
+.navbar .link_page{
+  font-weight: bold;
+  margin-left: 16px;
+  text-decoration: None;
+  color: #004d99;
+  border-radius: 16px;
+  border: 3px solid #385c8c;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.navbar .link_current{
+  font-weight: bold;
+  margin-left: 16px;
+  text-decoration: None;
+  background-color: #004d99;
+  color: white;
+  border-radius: 16px;
+  border: 3px solid #385c8c;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.TeacherRow1 {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 1%;
+  height: 40vh;
+}
+.Contributions_Instructors {
+  width: 29.3%;
+  height: 100%;
+  border-radius: 20px;
+  float: left;
+  margin-right: 1%;
+  background-color: #385c8c;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.Average_Response_Time {
+  width: 39.3%;
+  height: 100%;
+  border-radius: 20px;
+  float: left;
+  background-color: #608cc4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.Teacher_Scores {
+  position: relative;
+  width: 29.3%;
+  height: 100%;
+  float: right;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.sc_font {
+  color: white;
+  font-size: 60px;
+}
+
+.Current_Unresolved_Post {
+  width: 100%;
+  height: 31%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background-color: #e87464;
+}
+.Today_Average_Response_Time {
+  width: 100%;
+  height: 31%;
+  position: absolute;
+  top: 34.5%;
+  left: 0;
+  border-radius: 20px;
+  background-color: #385c8c;
+}
+.Current_Unresolved {
+  width: 100%;
+  height: 31%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+  background-color: #68b4ac;
+}
+.Unresolved_Posts_Table {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color:white;
+  border-radius: 20px;
+  background-color: #206c84;
+  font-size: 12px;
+}
+.Unresolved_Posts_Table table {
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  border: 2px solid white;
+  border-collapse:collapse;
+  font-size: 15px;
+}
+
+.Unresolved_Posts_Table th, td {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
