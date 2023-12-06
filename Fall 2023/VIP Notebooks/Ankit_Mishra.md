@@ -89,7 +89,7 @@
 ### Goals for next week
 - Talk to Rohan about what the Web Dev team can do going forward.
 
-# Week 8: Nov 1
+# Week 9: Nov 1
 ### Works done
 - Discussed with Rohan about the possible next steps for Web-Dev and we decided to conduct a TA interview to demo our dashboard and get feedback.
 ### Self-Reflection
