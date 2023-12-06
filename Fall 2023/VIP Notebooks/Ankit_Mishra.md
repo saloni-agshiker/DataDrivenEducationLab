@@ -102,7 +102,7 @@
 - Incorporate TA changes to dashboard
 - Add the data produced by ML and data science team into the dashboard.
 
-# Week 11: Nov 15 - THANKSGIVING BREAK -------------------------------
+# Week 11: Nov 15 - THANKSGIVING BREAK --------------------
 
 # Week 12: Nov 22
 ### Works done
