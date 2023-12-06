@@ -60,23 +60,44 @@
    * Two best options for python - FastAPI and Flask
    * Helpful links
       1. https://auth0.com/blog/developing-restful-apis-with-python-and-flask/
-      2. 
+      2. https://flask.palletsprojects.com/en/3.0.x/
+      3. https://www.youtube.com/watch?v=0zb2kohYZIM&ab_channel=EricRoby
 ### Self-Reflection
 - The dashboard frontend does not need to be changed for now as the ML and data science team are working on improving the models for the same metrics as last semester.
-- 
+- So, we will focus on backend and try to enhance it.
 ### Goals for next week
+- Decide between Flask and FastAPI, and start working on it.
 
 # Week 7: Oct 17
 ### Works done
+- Started playing around with FastAPI.
+- Created APIs with sample data and connected to the API from the react app to get those data and update graph.
 ### Self-Reflection
+- I chose FastAPI because it is used more in production in real world because it is fast and easy to organize. 
+- FastAPI is easy to use.
 ### Goals for next week
+- Create slides for second sub-team presentation.
+- Play with FastAPI a bit more.
 
 # Week 8: Oct 25
 ### Works done
+- Created slides for the presentation and presented it during class.
+- Tested a feature in react app that will call the API every few minutes. With this, we can upload backend changes to the API from python and this will be updated when react app calls the API.
 ### Self-Reflection
+- I cannot integrate this feature in our dashboard yet because ML team and Data Science team are still in research phase. The API can only be tested when they create final results.
+- We may have to delegate this work to next semester members depending on when the ML team and Data Science are able to produce their results.
 ### Goals for next week
+- Talk to Rohan about what the Web Dev team can do going forward.
 
-# Week 9: Nov 1
+# Week 8: Nov 1
+### Works done
+- Discussed with Rohan about the possible next steps for Web-Dev and we decided to conduct a TA interview to demo our dashboard and get feedback.
+### Self-Reflection
+- We will be waiting for the professors to find us a TA to interview.
+### Goals for next week
+- Schedule interview with TA.
+
+# Week 10: Nov 8
 ### Works done
 - Emailed and scheduled an interview with a TA in CS 6601 AI course to demo our web-app.
 - Met with Kaylia to create questions for the interview and verified it with rest of the team.
@@ -90,7 +111,7 @@
 - Interview with TA and create details notes about the results of the interview.
 - Present interview results to the team.
 
-# Week 10: Nov 8
+# Week 11: Nov 15
 ### Works done
 - Conducted interview with a TA regarding the usability and practical use of our dashboard.
 ### Interview Results
@@ -108,8 +129,6 @@
 ### Goals for next week
 - Incorporate TA changes to dashboard
 - Add the data produced by ML and data science team into the dashboard.
-
-# Week 11: Nov 15 - THANKSGIVING BREAK --------------------
 
 # Week 12: Nov 22
 ### Works done
