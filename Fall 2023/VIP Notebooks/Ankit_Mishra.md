@@ -56,7 +56,14 @@
 
 # Week 6: Oct 11
 ### Works done
+- Researched ways to automate the process of uploading data into dashboard. This means that when data science team creates a more updated data for graphs and tables, we want our dashboard to automatically upload those graphs and tables with new data.
+   * Two best options for python - FastAPI and Flask
+   * Helpful links
+      1. https://auth0.com/blog/developing-restful-apis-with-python-and-flask/
+      2. 
 ### Self-Reflection
+- The dashboard frontend does not need to be changed for now as the ML and data science team are working on improving the models for the same metrics as last semester.
+- 
 ### Goals for next week
 
 # Week 7: Oct 17
