@@ -71,15 +71,19 @@
 
 # Week 9: Nov 1
 ### Works done
+- Emailed and scheduled an interview with a TA in CS 6601 AI course to demo our web-app.
+- Met with Kaylia to create questions for the interview and verified it with rest of the team.
+### Mock interview Questions
+- How useful would the resources provided by this tool be for adjusting your teaching methods and helping students?
+- How well would this tool help you to understand the current progress and understanding of students?
+- What are some tools that you think may be useful additions?
 ### Self-Reflection
+- For the interview, our main agenda will be to finalize aspects that work in our dashboard and get ideas to replace aspects that are not helpful for the TA.
 ### Goals for next week
+- Interview with TA and create details notes about the results of the interview.
+- Present interview results to the team.
 
 # Week 10: Nov 8
-### Works done
-### Self-Reflection
-### Goals for next week
-
-# Week 11: Nov 15
 ### Works done
 - Conducted interview with a TA regarding the usability and practical use of our dashboard.
 ### Interview Results
@@ -97,6 +101,8 @@
 ### Goals for next week
 - Incorporate TA changes to dashboard
 - Add the data produced by ML and data science team into the dashboard.
+
+# Week 11: Nov 15 - THANKSGIVING BREAK -------------------------------
 
 # Week 12: Nov 22
 ### Works done
