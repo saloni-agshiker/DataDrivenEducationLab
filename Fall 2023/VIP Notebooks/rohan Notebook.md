@@ -44,7 +44,47 @@ Meeting Prep: Prepare material and documentation about what was covered last sem
 #### Before next meeting
     start thinking/ implementing data cleansing techniques and talk to ML team with the columns needed for a model.
     
-### 11/3/2023 Subteam Meeting 5
+### 10/6/2023 Subteam Meeting 5
+    Review Adrians meeting. Go over how to find data
+    DS -->
+    Learn SQL Queries and research data cleaning techniques.
+    If known start cleaning data
+    Or import into pandas if that is easier
+    https://www.timescale.com/blog/postgresql-vs-python-for-data-cleaning-a-guide/
+    
+    ML -> Review Adrians meeting. Go over how to find data
+
+    Narrow potential models into 2 and get ready to start implementing
+
+
+### 10/13/2023 Subteam Meeting 6
+    -meeting for progress checks on current progress
+    -goal for ML is to start implmementing 1 model
+    -DS - Progress or roadblocks with the data?
+    If not start on visualizations - 
+    -Average response per post
+    -Current unresolved posts
+    -Average response time
+#### Before next meeting
+    -start on a model or come back with quesitons
+    -ds team work with Webdev to ensure correct format
+    
+### 10/20/2023 Subteam Meeting 7
+    -caught webdev team up to speed about futere tasks
+    -webdev team requested past resources on topic modeling and I provided a list of previous documentation they can go back and check.
+    
+#### Before next meeting
+    -Work on mock questions and prepare for the interview with CS 6601 instructors
+    -learn how to convert data into JSON files
+    
+### 10/27/2023 Subteam Meeting 8
+    -split up work to do on presentation
+    -Youngwook has been lest active so had to send a message to him ensuring if everything as fine. Talked to ishika on how tasks should be split up
+    or if I should talk to professors about youngwook.
+    -Adaora and Nihaar are making good progress on ML model.
+    -Webdev interview was pushed back and so we have to wait 1 more week for the interview.
+
+### 11/3/2023 Subteam Meeting 10
     Walked thru the dataset and brainstormed ways to modify data to fit the dashboard
     Worked with webdev to see if meeting with TA is helpful and if so what questions should be asked
 
@@ -74,7 +114,7 @@ Meeting Prep: Prepare material and documentation about what was covered last sem
     Talk with data science team to see what metrics are possible with current data and what isn't.
     Ensure the meeting with TA is set or atleast reached out to.
     
-### 11/17/2023 Subteam Meeting 7
+### 11/17/2023 Subteam Meeting 11
     Assigned presentation slides to each memeber
     There was low attendence for this meeting so it ended early
 
@@ -84,6 +124,6 @@ Meeting Prep: Prepare material and documentation about what was covered last sem
     Everyone is continuing to work on current tasks so not much to do.
 
     
-### 11/24/2023 Subteam Meeting 8
+### 11/24/2023 Subteam Meeting 12
     Thanksgiving
     
