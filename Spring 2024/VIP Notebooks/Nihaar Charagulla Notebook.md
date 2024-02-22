@@ -1,4 +1,4 @@
-# Week 1
+# Week 2
 ### Completed:
 - First VIP Meeting
 Meeting Notes
@@ -12,7 +12,7 @@ Brainstorm for Data Science team for projects through the semester.
 Decide what type of dataset to use.
 
 
-# Week 2
+# Week 3
 
 Notes from class meeting:
 Research methods + Waterfall/Agile overview
@@ -23,7 +23,7 @@ Planning to just go over Journal Club presentation during the subteam meeting.
 Will have a practice runthrough to ensure all runs smoothly.
 
 
-# Week 3
+# Week 4
 
 https://docs.google.com/presentation/d/1bWo-z_Brpzpfv_qeoCYe2M6doQaB6MfkawTPzKjH9Ys/edit?usp=sharing
 Journal Club presentation during class meeting. Went well and learned a lot from other groups about research strategies.
@@ -46,7 +46,7 @@ No other plans for the week.
 - I like the idea I saw in subteam presentation of another team to have a timeline for the semester. I think I'm gonna draw one up and try to use that to guide our work for the semester.
 - Subteam presentation went well. - https://docs.google.com/presentation/d/1JfNy0S7ey75yEC6an0rnGY0mGFrfEvvr6Ub88OzNjjc/edit?usp=sharing
 
-# Week 5
+# Week 6
 - Created Github projects through individual repo. Will give permissions at meeting.
 - Accessed database, will walk through it
 To do for me:
