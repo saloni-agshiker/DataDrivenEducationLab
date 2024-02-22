@@ -34,7 +34,7 @@ Journal Club presentation during class meeting. Went well and learned a lot from
 Created new slides and assigned portions to each member to complete before subteam meeting. 
 - I'm interested in implementing something Trello based so that everyone has tickets to complete. this would be good for organization.
 
-# Week 4
+# Week 5
 Practice subteam presentation. Hoping everyone is able to present their sections without trouble. Going to pitch the idea of a Trello board for tickets. 
 Our subteam presentation outlines kind of big goals for the semester, so that can be broken into individual tickets which is helpful...
 No other plans for the week. 
