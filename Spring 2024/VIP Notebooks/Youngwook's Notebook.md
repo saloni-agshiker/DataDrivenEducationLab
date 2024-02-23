@@ -34,7 +34,7 @@
  - Presentation 1 slides link: [Presentation 1](https://docs.google.com/presentation/d/1JfNy0S7ey75yEC6an0rnGY0mGFrfEvvr6Ub88OzNjjc/edit#slide=id.g1f0e51af5e7_0_3)
 ### Next week's plan
  - Start creating metrics for the dashboard, focusing on both student and teacher tabs with specific metrics outlined for each.
- - #### Student Tab Metrics
+#### Student Tab Metrics
 - Post over time
 - Post by students
 - Current class sentiment
