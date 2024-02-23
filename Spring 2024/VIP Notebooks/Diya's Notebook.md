@@ -32,7 +32,6 @@ Notes from class meeting:
 
 
 # Week 4
-
 Notes from subteam meeting: 
 - we practiced our presentation to make sure it was under the time limit. We realized that we needed to move faster when presenting. The presentation is linked below: 
 
@@ -62,15 +61,25 @@ Notes from class meeting:
 Notes from subteam meeting: 
 - We practiced presenting the slides again. It went well. I was able to learn more about web dev through talking to my team members who had already been on the sub-team. 
 
-Notes about web dev: 
-- I am working with Kaylia
-- Our action items involve manual exclusion of unanswered posts as well as delayed notifications for unanswered posts for web dev. 
-
 Notes from class meeting: 
 - We had our sub-team presentation #1. I really enjoyed learning about what other subteams are working on. I was able to present slides on web dev goals for the semester. 
 Here is the link to the presentation: 
 https://docs.google.com/presentation/d/1JfNy0S7ey75yEC6an0rnGY0mGFrfEvvr6Ub88OzNjjc/edit?usp=sharing
 
+### Goals:
+- try to think of clear action items for the web dev dashboard 
+
+
+# Week 7
+Notes about subteam meeting
+- Our team lead, Nihaar, introduced a dashboard that we plan to use to keep track of action items amongst our team. For web dev, we plan to define clear action items and act accordingly. 
+- 
+Notes about web dev: 
+- I am working with Kaylia. Our action items involve manual exclusion of unanswered posts as well as delayed notifications for unanswered posts for web dev. 
+
+Notes about class: 
+- We learned more about Massive open online courses, and other data driven education related topics. I found that today's presentation was very informational. 
+-
 ### Goals:
 - work on defining how we well complete the web dev goals within the discussion forms subteam
 - ask Kaylia for guidance since she has been on the team for a while
