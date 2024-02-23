@@ -1,6 +1,8 @@
 # WEEK 1
 
-First VIP Meeting
+First VIP Meeting: Introductions, met the new members of the data science team this semester (Harikesh Tamberini).
+                   Rohan is a returning member, but new on the data science team. 
+                   Worked with Youngwook last semester. 
 
 Meeting Notes
 Deciding whether to use edDiscussion or Piazza data. Piazza data seems easier since we have done it in the past. However, maybe we can try ed
@@ -10,11 +12,13 @@ data since we haven't done it. Just need data that separates student data from t
 1. Have presentation done for Journal Club by the Monday before VIP Meeting when the presentation is due so we can practice presenting.
 2. Decide what type of dataset to use.
 
-Updated IRB training -- continuation from last semester, so only had to review. 
-
+Updated IRB training -- continuation from last semester, so I only had to review the training. 
+Link to certificate: https://www.citiprogram.org/verify/?k30b097c6-f6a8-41fe-8dac-e048d7aec69b-58858250
+Able to request data now. 
 
 
 # WEEK 2
+
 Project goals: 
 1. What metrics to use?
 2. How are we going to split up work between 4 data scientists? 
@@ -22,7 +26,7 @@ Project goals:
 Have done by next subteam meeting:
 Planning to just go over Journal Club presentation during the subteam meeting.
 - Practice run through
-- my assignment: overview of article 
+- My assignment: overview of article 
 
 Requested Data for the project. 
 
@@ -38,7 +42,7 @@ https://docs.google.com/presentation/d/1bWo-z_Brpzpfv_qeoCYe2M6doQaB6MfkawTPzKjH
 # WEEK 4 
 
 No sub-team meeting this week. 
-Planned topics to cover for data science team section for Presentation 1:
+I created topics to cover for data science team section for Presentation 1 and sent to Nihaar:
   1. Previous Goals
   2. This Semester's Goals
   3. Metrics / What kind of data are we using/Relevancy of the Data
@@ -52,12 +56,13 @@ Sub-team meeting:
 content out. Instead we spoke more concisely and summarized instead of going too into depth. 
 - Integrated GitHub Ticketing System in order to check off or add tasks needed to get done by each sub-group within the subteam
 
-Link to presentation: https://docs.google.com/presentation/d/1JfNy0S7ey75yEC6an0rnGY0mGFrfEvvr6Ub88OzNjjc/edit#slide=id.g28289c18069_0_0
+Link to presentation: 
+https://docs.google.com/presentation/d/1JfNy0S7ey75yEC6an0rnGY0mGFrfEvvr6Ub88OzNjjc/edit#slide=id.g28289c18069_0_0
 ** Nihaar presented my slide for me due to time conflict **
 
-Upcoming tasks: Harikesh and I are going to partner together to solve our metrics. We are currently brainstorming possible approaches and deciding
+Upcoming tasks: 
+Harikesh and I are going to partner together to solve our metrics. We are currently brainstorming possible approaches and deciding
 on a meeting time.
-
 [update] Meeting on 02/21 at 5pm
 
 
@@ -81,3 +86,41 @@ WHERE (subject IS NOT null) AND
       (folders IS NOT null) AND
       (submission_html_removed IS NOT null) AND
       (length(submission_html_removed) > 20);
+      
+Metrics: 
+  <student tab>
+    post over time
+    post by students
+    current class sentiment
+    total posts this week
+    average score
+    top contributor
+ 
+  <teacher tab>
+    contributions by instructor
+    average response time
+    current unresolved posts
+    today’s average reply time(mins)
+    current unresolved posts
+      
+      
+      
+# WEEK 7
+
+Sub-team meeting: 
+- This week we updated Nihaar, PM,  as well as Rohan and Youngwook, of the data science team, that Harikesh and I 
+have cleaned the data file and are ready to solve some metrics. 
+- Updates: only using one datafile, similar to that of last year
+
+Did not run into any issues while cleaning the datafile. It was very similar to last semester. Harikesh pointed out 
+flaws in the logic, and we were quickly able to fix them by reconstructing our query. 
+
+Future Goals: 
+- Harikesh wants to run different models and R-tests on the data possibly and is willing to show/teach me how to do so. 
+- Solve for metrics
+
+Peer-evalutions: 
+Finished on 2/20
+
+VIP notebook to be turned in this week. 
+
