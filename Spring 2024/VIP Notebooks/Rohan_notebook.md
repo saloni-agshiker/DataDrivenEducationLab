@@ -4,7 +4,7 @@ First VIP Meeting: Introduce eachother, get new members on the Github and walk t
 
 Deciding whether to use edDiscussion or Piazza data. We have previously done piazza data, but in noder for access for new metrics, hopefully we can
 try to move to ed discussion data.
-
+ 
 #TODO:
 1. Finish reading journal club article and finish your part of the presentation in order to practice at next meeting.
 2. Research more on each dataset and find the best one to use.
