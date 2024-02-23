@@ -34,20 +34,20 @@
  - Presentation 1 slides link: [Presentation 1](https://docs.google.com/presentation/d/1JfNy0S7ey75yEC6an0rnGY0mGFrfEvvr6Ub88OzNjjc/edit#slide=id.g1f0e51af5e7_0_3)
 ### Next week's plan
  - Start creating metrics for the dashboard, focusing on both student and teacher tabs with specific metrics outlined for each.
- - <student tab>
-post over time
-post by students
-current class sentiment
-total posts this week
-average score
-top contributor
- 
-<teacher tab>
-contributions by instructor
-average response time
-current unresolved posts
-today’s average reply time(mins)
-current unresolved posts
+ - #### Student Tab Metrics
+- Post over time
+- Post by students
+- Current class sentiment
+- Total posts this week
+- Average score
+- Top contributor
+
+#### Teacher Tab Metrics
+- Contributions by instructor
+- Average response time
+- Current unresolved posts
+- Today’s average reply time (mins)
+- Current unresolved posts
  
 # Week 7
 ### Works done
