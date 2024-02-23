@@ -59,7 +59,7 @@ Notes from class meeting:
 
 # Week 6
 Notes from subteam meeting: 
-- We practiced presenting the slides again. It went well. I was able to learn more about web dev through talking to my team members who had already been on the sub-team. 
+- We practiced presenting the slides again. It went well. I was able to learn more about web dev through talking to my team members who had already been on the sub-team.  
 
 Notes from class meeting: 
 - We had our sub-team presentation #1. I really enjoyed learning about what other subteams are working on. I was able to present slides on web dev goals for the semester. 
