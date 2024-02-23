@@ -48,6 +48,7 @@ average response time
 current unresolved posts
 today’s average reply time(mins)
 current unresolved posts
+ 
 # Week 7
 ### Works done
  - Completed all metrics for the student tab except for "average score" and "top contributor" due to the absence of scores and student IDs in the CSV file.
