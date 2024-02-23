@@ -1,1 +1,94 @@
+# WEEK 1
 
+- Introducted myself to the class with my major as I am a new member of the VIP
+- Learned and understood the research goals of this VIP 
+
+Goals:
+1. Sign FERPA docs
+2. Complete IRB Training
+
+# WEEK 2
+
+- Learned about all the subteams and decided which subteam to join into
+  I decided to become part of the Discussion Forums subteam
+- Completed FERPA signing and IRB training
+- Discussed which data to use: edX and Piazza
+  Disucssed what we will do with each of these platforms since edX is new data
+- Accustomed to Microsoft Teams and Github for team collaboration
+
+Goals:
+1. Start thinking about data science team workflows
+2. Think about metrics for future analysis
+
+# WEEK 3
+
+- Consider what the subteam meeting has done in the past 
+and discussed what this team is like for new members like myself
+- Requested data for our subteam
+- Started discussions on Journal Article tasking
+
+Goals:
+1. Read the journal club article
+2. Complete 3 slides on methodology
+3. Be ready for a practice run through
+
+# WEEK 4
+
+- Practiced our Journal Club presentation during subteam meeting
+- Realized we are over time and cut down on certain aspects of my slides
+- Here is our presentation:
+https://docs.google.com/presentation/d/1bWo-z_Brpzpfv_qeoCYe2M6doQaB6MfkawTPzKjH9Ys/edit?usp=sharing
+
+Goals:
+1. Start thinking about Subteam presentation 1
+2. Think about future metrics and plans for DS team
+
+# WEEK 5
+
+- Learned about visualization practices in lecture
+- Did a practice run through in subteam meeting 
+- Realized we are over time and made the neccessary changes for our presentation
+- Finished my part for Fall23/Spring24 Plans and Previous Goals slides
+
+Goals:
+1. Prepare for presentation next week and run through
+2. Speak for the right amount of time so we don't go over ten minutes
+
+# WEEK 6
+
+- Practiced presentation during subteam meeting and was successful 
+- Completed Subteam Presentation 1 and learned/listened to other groups 
+- Actively thinking of what else we can plan for in the DS group during presentations
+- Split into 2 groups (4 members in DS team)
+
+Goals:
+1. Download PostgreSQL
+2. Clean data next week
+3. Get access to data from AWS
+4. Schedule meeting with Ishika
+
+# WEEK 7
+
+- Used PostGre SQL to clean this data with Data Science team member, Ishika
+- Work below was done in a meeting with Ishika
+  Filtered null subjects
+  Filtered empty disucssion posts
+  Removed irrelevent subjected posts such as Search for Teammates or Student Introductions
+  Filtered posts with under 20 characters
+- This is our query:
+SELECT * FROM piazza_cs6601_np_anonymized
+WHERE (subject IS NOT null) AND 
+      (subject NOT LIKE '%Student Interactions%) AND
+      (subject NOT LIKE '%Search For Teammates!%) AND
+      (folders IS NOT null) AND
+      (submission_html_removed IS NOT null) AND
+      (length(submission_html_removed) > 20);
+- Rohan and Youngwook were able to find metrics using cleaned data
+- Ishika and I communicated with PM and rest of data science team regarding this work
+- Did not run into problems and Ishika was well-versed in working with similar data
+- Completed Peer Evals
+
+Goals:
+1. Find more metrics
+2. Possibly run machine learning models in R for more conclusions
+      
