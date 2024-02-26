@@ -60,3 +60,9 @@ To do for team - put in boards:
 
 
 Update - data file cleaned + metrics consolidated into json files.
+
+# Week 7
+- Check in on past week's work:
+-  Cleaned dataset, organized action items for data science -- Data Science should work on a written consolidated report in meeting and then go forward during the week with action items
+- Web Dev action items in Github board.. start implementing TA feedback
+- Nothing else to cover.
