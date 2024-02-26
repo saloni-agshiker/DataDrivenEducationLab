@@ -70,4 +70,5 @@ Update - data file cleaned + metrics consolidated into json files.
 ### Meeting notes:
 - Web Dev decided on unanswered posts metrics and display of that from TA feedback.
 - Data Science worked on written report to consolidate findings -- placing in Github
-
+-  Ishika + Harikesh: separating student teacher posts, testing using R to run ML models
+-  Rohan + Youngwook: look into different sentiment model implementations, testing out topic modeling, potentially creating new model
