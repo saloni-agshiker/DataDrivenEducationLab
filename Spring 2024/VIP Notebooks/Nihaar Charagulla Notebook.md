@@ -66,3 +66,8 @@ Update - data file cleaned + metrics consolidated into json files.
 -  Cleaned dataset, organized action items for data science -- Data Science should work on a written consolidated report in meeting and then go forward during the week with action items
 - Web Dev action items in Github board.. start implementing TA feedback
 - Nothing else to cover.
+
+### Meeting notes:
+- Web Dev decided on unanswered posts metrics and display of that from TA feedback.
+- Data Science worked on written report to consolidate findings -- placing in Github
+
