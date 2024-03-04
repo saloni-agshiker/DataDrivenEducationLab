@@ -77,4 +77,7 @@ Update - data file cleaned + metrics consolidated into json files.
 - Talked to Dr. Lee about a cleaned dataset that sorts teachers and students, can prove very useful.  -- have ready by meeting so we can do another brainstorming during the meeting.
 - Prepare subteam presentation by class Wednesday so everyone has slides to fill -- key notes -> introduce everyone + timeline of progress + show real progress not just planning.
 - Check in on past week's work:
-- 
+- Rohan worked on a cluster model -- shared notebook.
+- Youngwook will test out ML models this week to be ready to present.
+- Ishika + Harikesh waiting bc teacher provided csv + R model. Will implement R models this week.
+- Web Dev: last semester didn't touch code. We went through the dashboard folder on Github and tried to understand it. Be ready by Wednesday to start working on actually filtering the data. 
