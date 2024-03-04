@@ -72,3 +72,9 @@ Update - data file cleaned + metrics consolidated into json files.
 - Data Science worked on written report to consolidate findings -- placing in Github
 -  Ishika + Harikesh: separating student teacher posts, testing using R to run ML models
 -  Rohan + Youngwook: look into different sentiment model implementations, testing out topic modeling, potentially creating new model
+
+# Week 8 
+- Talked to Dr. Lee about a cleaned dataset that sorts teachers and students, can prove very useful.  -- have ready by meeting so we can do another brainstorming during the meeting.
+- Prepare subteam presentation by class Wednesday so everyone has slides to fill -- key notes -> introduce everyone + timeline of progress + show real progress not just planning.
+- Check in on past week's work:
+- 
