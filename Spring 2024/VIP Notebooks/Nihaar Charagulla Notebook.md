@@ -81,3 +81,8 @@ Update - data file cleaned + metrics consolidated into json files.
 - Youngwook will test out ML models this week to be ready to present.
 - Ishika + Harikesh waiting bc teacher provided csv + R model. Will implement R models this week.
 - Web Dev: last semester didn't touch code. We went through the dashboard folder on Github and tried to understand it. Be ready by Wednesday to start working on actually filtering the data. 
+
+Meeting w Dr. Lee -- she has a dataset with useful data with final grades and student/teacher distinction.
+ -- Her feedback: share those plans of what metrics and action items in the subteam presentation
+ 
+ 
