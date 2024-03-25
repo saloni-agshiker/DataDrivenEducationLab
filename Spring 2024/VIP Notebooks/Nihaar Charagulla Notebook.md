@@ -85,4 +85,20 @@ Update - data file cleaned + metrics consolidated into json files.
 Meeting w Dr. Lee -- she has a dataset with useful data with final grades and student/teacher distinction.
  -- Her feedback: share those plans of what metrics and action items in the subteam presentation
  
- 
+# Week 10 - After Spring Break
+For subteam meeting:
+- All data science upload completed file of work + quick abstract to summarize.
+- Have Harikesh and Ishika consolidate KNN model into json file for Web Dev - start working on consolidating all data into json
+- Rohan + Youngwook continue on Kmeans model, improving accuracy + visualization for it
+- Web Dev works on removing all hard coded data, flagging areas to change and then converting to using json files. 
+- If extra time for data science, work on listed metrics in writeup from 2/26.
+
+For me:
+ask about piazza api
+ask about python data
+
+### action items:
+KNN model into json + writeup
+Rohan/Youngwook Kmeans model imrpvoign + visualization
+Web dev works on remvoing bad graphs and info + implementing new data + graphs
+Harikesh KNN upgrades on heatmap
