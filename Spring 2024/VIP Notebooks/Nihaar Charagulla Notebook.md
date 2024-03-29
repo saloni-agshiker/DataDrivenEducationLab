@@ -102,3 +102,7 @@ KNN model into json + writeup
 Rohan/Youngwook Kmeans model imrpvoign + visualization
 Web dev works on remvoing bad graphs and info + implementing new data + graphs
 Harikesh KNN upgrades on heatmap
+
+### Meeting w Dr. Lee:
+- investigated Piazza API before, only admin level users can access/manage API for Piazza data -- test API version, not real one
+- Python data can be found and sent -- she will send in later.
