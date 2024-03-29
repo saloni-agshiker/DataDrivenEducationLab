@@ -124,3 +124,52 @@ Finished on 2/20
 
 VIP notebook to be turned in this week. 
 
+
+
+# WEEK 8
+
+Harikesh and I decided to do some coding in order to run a K-Model.
+I did the coding: I used final_grades column as a way to identify a student. The grades gave a 3 decimal precision, enough to distinguish 
+an individual. Our assumption was that we could idenitify a student based on their final grades, but this is solely an assumption. With this, 
+I was able to see how many posts a student has made and how many posts a student has replied to. I sent this data as a 3 column csv file to Harikesh 
+for him to run a K-Model. 
+
+Code: 
+import pandas as pd
+
+df = pd.read_excel('piazza data user roles.xlsx')
+followup_df = df[df['Part of Post'].str.contains("followup", na=False)]
+replyToFollowup_df = df[df['Part of Post'].str.contains("reply_to_followup", na=False)]
+followup_count = followup_df.groupby('final_grades').size()
+replyToFollowup_count = replyToFollowup_df.groupby('final_grades').size()
+followup_count = followup_count.rename_axis('Final Grades').reset_index(name='# of Posts')
+replyToFollowup_count = replyToFollowup_count.rename_axis('Final Grades').reset_index(name='# of Replies')
+print(followup_count)
+print(replyToFollowup_count)
+combined_df = pd.merge(followup_count, replyToFollowup_count, on='Final Grades', how='outer')
+print(combined_df)
+combined_df.to_csv("StudentRepliesAndPosts.csv", index=False)
+
+
+# WEEK 9 - Working Day
+
+Worked on putting presentation together. Harikesh and I decided what we would split up during the presentation and who would talk about what. 
+Presentation is linked in # WEEK 10. 
+
+Presentation needs to be done by next Monday so that Nihaar can give feedback to everyone during the subteam meeting. 
+
+# WEEK 10 
+
+I ran the meeting this week since Nihaar was unavailabe due to an excused absence. Went over what went wrong last presentation and talked
+about the things that we need to add and fix moving forward. We added an introduction to the beginning of the presentation. 
+We walked through the presentation and timed ourselves. I gave constructive feedback to the team so that we could stay under the max time
+limit for the presentation. 
+
+Others pitched in as well to give advice to other sub teams. 
+
+I gathered all of the information and sent to Nihaar to update him about the team's progress. 
+
+Presentation given this week: https://docs.google.com/presentation/d/1TSyC8FaUOSJBCYl-sEQIB41JnETMPgf9/edit#slide=id.p11
+
+I was available for this presentation, unlike previous and future presentations because of a time conflict. 
+
