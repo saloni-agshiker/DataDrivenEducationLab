@@ -106,3 +106,18 @@ Harikesh KNN upgrades on heatmap
 ### Meeting w Dr. Lee:
 - investigated Piazza API before, only admin level users can access/manage API for Piazza data -- test API version, not real one
 - Python data can be found and sent -- she will send in later.
+
+
+# Week 11
+During meeting:
+Reviewing old action items --
+- Harikesh/Ishika -- web development working on heatmap. finished writeup of cleanup and heatmap work. sent in json file for heatmap
+- Rohan/Youngwook - got description of each cluster and what each of the lines are about. generate list of most active topics, they can create a graph/visualization of that, come up with some visualization idea
+- Diya/Kaylia - didn't do anything -- talking about next action item
+
+
+Next items:
+Harikesh will get replies/#ofposts to show up w cursor
+Diya/Kaylia will work on updating the hard code for the histogram
+Ishika - number of posts
+Rohan/Youngwook - json of the clusters/description with a priority of most frequent, more research on visualization.
