@@ -121,3 +121,9 @@ Harikesh will get replies/#ofposts to show up w cursor
 Diya/Kaylia will work on updating the hard code for the histogram
 Ishika - number of posts
 Rohan/Youngwook - json of the clusters/description with a priority of most frequent, more research on visualization.
+
+
+# Week 12
+Rohan/Youngwook: got a json file of top 5 clusters. generate a count per cluster -- running into issue with basic questions as overpopulated. -- can be done in the future
+Harikesh/Ishika: finished cursor thing w heatmap -- need to do the number of posts graph and class sentiment but waitin ginstructions on the second graph.
+Diya/Kaylia: test out diff visualizstiona of the top 5 clusters. 
