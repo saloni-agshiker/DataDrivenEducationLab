@@ -127,3 +127,8 @@ Rohan/Youngwook - json of the clusters/description with a priority of most frequ
 Rohan/Youngwook: got a json file of top 5 clusters. generate a count per cluster -- running into issue with basic questions as overpopulated. -- can be done in the future
 Harikesh/Ishika: finished cursor thing w heatmap -- need to do the number of posts graph and class sentiment but waitin ginstructions on the second graph.
 Diya/Kaylia: test out diff visualizstiona of the top 5 clusters. 
+
+# Week 13
+kaylia/Diya: finished number of posts graph and class sentiment graph. will do heatmap. waiting for better data from rohan.
+harikesh/ishika: finished graphs
+youngwook/Rohan: finsihing tn
