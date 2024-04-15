@@ -5,6 +5,8 @@ import currsentiment from './curr_class_sentiment.json';
 import averagescore from './CS1331_average_grade.json';
 import cp from './CS1331_cp_code.json';
 import poststd from './1301student_posts_freq.json';
+import pot from './posts_over_time_CS1301.json';
+import sot from './sentiment_over_time_CS1301.json';
 
 const postbystd = poststd.data[0];
 
@@ -29,6 +31,23 @@ const cpcode = [
 
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
+// dynically read json posts over time data
+var potConvertedData = readJsonData(pot, "post_count");
+var sotConvertedData = readJsonData(sot, "sentiment_score");
+function readJsonData(dataObj, yVal){
+  var convertedData = [];
+  for(var date in dataObj){
+    var postCount = dataObj[date][yVal];
+    var dataPoint = {
+      label: date,
+      y: postCount
+    };
+    convertedData.push(dataPoint);
+  }
+  return convertedData;
+}
+
+
 const lineOptions = {
   title: {
     text: ""
@@ -41,15 +60,7 @@ const lineOptions = {
   },
   data: [{				
             type: "line",
-            dataPoints: [
-                { label: "1/15", y: 90  },
-                { label: "1/30", y: 52  },
-                { label: "2/15", y: 48  },
-                { label: "2/28", y: 25  },
-                { label: "3/15", y: 51  },
-                { label: "3/20", y: 65  },
-                { label: "4/15", y: 60  }
-            ]
+            dataPoints: potConvertedData
    }]}
 
    const lineOptions2 = {
@@ -64,15 +75,7 @@ const lineOptions = {
     },
     data: [{				
               type: "line",
-              dataPoints: [
-                  { label: "01", y: 0.5 },
-                  { label: "02", y: 0.4 },
-                  { label: "03", y: 0.2 },
-                  { label: "04", y: 0.9 },
-                  { label: "05", y: 0.9 },
-                  { label: "06", y: 0.8 },
-                  { label: "07", y: 0.7 }
-              ]
+              dataPoints: sotConvertedData
             }]
     }
   
@@ -99,6 +102,7 @@ const lineOptions = {
      }]}
 
 const Pstudent = () => {
+
   return (
     <div className="App">
       <div className="navbar">

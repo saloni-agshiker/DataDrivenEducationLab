@@ -8,6 +8,8 @@ import sentimentovertime from './weekly_avg_CS6601.json';
 import po from '././6601student_posts.json';
 import poststd from './6601student_posts_freq.json';
 import studentpost from './CS6601_postsPerMonth.json';
+// import pot from './posts_over_time_ISYE6501.json'; // I don't think this is the ai course
+
 
 const postbystd = poststd.data[0];
 
@@ -33,6 +35,18 @@ const cpcode = [
 ]
 
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
+// dynically read json posts over time data todo if this gets added then update graph vals with convertedData
+// var convertedData = [];
+// for(var date in pot){
+//   var postCount = pot[date]["post_count"];
+//   var dataPoint = {
+//     label: date,
+//     y: postCount
+//   };
+//   convertedData.push(dataPoint)
+// }
+
 
 const lineOptions2 = {
   title: {
