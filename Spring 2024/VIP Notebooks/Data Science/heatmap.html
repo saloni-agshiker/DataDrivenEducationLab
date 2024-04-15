@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Heatmap</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        /* Add your CSS styling here */
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 60px;
+            height: 28px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: rgb(113, 114, 117);
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <svg id="heatmap" width="800" height="600"></svg>
+    <script src="heatmap.js"></script>
+</body>
+</html>
