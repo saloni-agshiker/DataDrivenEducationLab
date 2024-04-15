@@ -85,4 +85,45 @@ Update - data file cleaned + metrics consolidated into json files.
 Meeting w Dr. Lee -- she has a dataset with useful data with final grades and student/teacher distinction.
  -- Her feedback: share those plans of what metrics and action items in the subteam presentation
  
- 
+# Week 10 - After Spring Break
+For subteam meeting:
+- All data science upload completed file of work + quick abstract to summarize.
+- Have Harikesh and Ishika consolidate KNN model into json file for Web Dev - start working on consolidating all data into json
+- Rohan + Youngwook continue on Kmeans model, improving accuracy + visualization for it
+- Web Dev works on removing all hard coded data, flagging areas to change and then converting to using json files. 
+- If extra time for data science, work on listed metrics in writeup from 2/26.
+
+For me:
+ask about piazza api
+ask about python data
+
+### action items:
+KNN model into json + writeup
+Rohan/Youngwook Kmeans model imrpvoign + visualization
+Web dev works on remvoing bad graphs and info + implementing new data + graphs
+Harikesh KNN upgrades on heatmap
+
+### Meeting w Dr. Lee:
+- investigated Piazza API before, only admin level users can access/manage API for Piazza data -- test API version, not real one
+- Python data can be found and sent -- she will send in later.
+
+
+# Week 11
+During meeting:
+Reviewing old action items --
+- Harikesh/Ishika -- web development working on heatmap. finished writeup of cleanup and heatmap work. sent in json file for heatmap
+- Rohan/Youngwook - got description of each cluster and what each of the lines are about. generate list of most active topics, they can create a graph/visualization of that, come up with some visualization idea
+- Diya/Kaylia - didn't do anything -- talking about next action item
+
+
+Next items:
+Harikesh will get replies/#ofposts to show up w cursor
+Diya/Kaylia will work on updating the hard code for the histogram
+Ishika - number of posts
+Rohan/Youngwook - json of the clusters/description with a priority of most frequent, more research on visualization.
+
+
+# Week 12
+Rohan/Youngwook: got a json file of top 5 clusters. generate a count per cluster -- running into issue with basic questions as overpopulated. -- can be done in the future
+Harikesh/Ishika: finished cursor thing w heatmap -- need to do the number of posts graph and class sentiment but waitin ginstructions on the second graph.
+Diya/Kaylia: test out diff visualizstiona of the top 5 clusters. 
