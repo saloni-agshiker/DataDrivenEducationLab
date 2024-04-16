@@ -132,3 +132,8 @@ Diya/Kaylia: test out diff visualizstiona of the top 5 clusters.
 kaylia/Diya: finished number of posts graph and class sentiment graph. will do heatmap. waiting for better data from rohan.
 harikesh/ishika: finished graphs
 youngwook/Rohan: finsihing tn
+
+Meeting w Dr. Lee: 
+talk about the heatmap integration setbacks as part of presentation -- challenges, lessons learned
+for next steps, can keep it about general directions of team... investigating the same data source or another
+identifying the value of further investigation. -- general milestones, but base them on lessons learned from this semester
