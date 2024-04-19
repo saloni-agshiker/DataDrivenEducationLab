@@ -53,3 +53,29 @@
 ### Works done
  - Completed all metrics for the student tab except for "average score" and "top contributor" due to the absence of scores and student IDs in the CSV file.
  - Unable to create "contributions by instructor" metric for the teacher tab due to missing instructor IDs.
+# Week 8
+### Works done
+ - Researched and tested Machine Learning models for text data sentiment analysis.
+ - Found and tested BERT and SVM models for sentiment analysis.
+### Next week's plan
+ - Presented Presentation 2.
+ - Create a slide for Presentation 2 to show the analysis performed using the BERT and SVM models.
+# Week 10
+### Works done
+ - Selected the Kmeans model for text data sentiment analysis.
+ - Received progress updates on the Kmeans model analysis from Rohan.
+ - Studied the Kmeans model to understand its application in our analysis.
+### Next week's plan
+ - Examine the rough cluster created with the Kmeans model to improve accuracy.
+ - Work on grouping data with certain characteristics to refine the model's usefulness.
+# Week 11
+### Works done
+ - Implemented improvements on the rough cluster created with the Kmeans model.
+ - Made efforts to enhance the accuracy and refine the grouping of data based on specific characteristics.
+### Next week's plan
+ - Obtain the JSON file of the cluster to analyze the structure and distribution of the data within the clusters.
+
+# Week 13
+### Works done
+ - Created slides for the final presentation.
+ - I received feedback from the sub-team meeting to shorten the presentation time.
