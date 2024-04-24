@@ -80,6 +80,8 @@ Update - data file cleaned + metrics consolidated into json files.
 - Ishika + Harikesh waiting bc teacher provided csv + R model. Will implement R models this week.
 - Web Dev: last semester didn't touch code. We went through the dashboard folder on Github and tried to understand it. Be ready by Wednesday to start working on actually filtering the data. 
 
+- Established plan for the next week --> generate cluster model, R models, and try to work with/understand Dashboard w/ Kaylia & Diya
+
 
  
  # Week 9 - Working Day
@@ -93,6 +95,9 @@ Update - data file cleaned + metrics consolidated into json files.
 
 ### presentation
  - Prepare subteam presentation by class Wednesday so everyone has slides to fill -- key notes -> introduce everyone + timeline of progress + show real progress not just planning. Had presentation ready built 
+
+https://docs.google.com/presentation/d/1TSyC8FaUOSJBCYl-sEQIB41JnETMPgf9/edit?usp=sharing&ouid=111773263312731429764&rtpof=true&sd=true
+
  
  # Week 10
 - ran a practice subteam presentation in our subteam meeting. Everything went well, but we were a little over time. I tried to emphasize our plans using the timeline, as I think that organizes our work effectively. Addressed time issue, hopefully we are better off in the real presentation.
@@ -109,13 +114,13 @@ For subteam meeting:
 - Web Dev works on removing all hard coded data, flagging areas to change and then converting to using json files. 
 - If extra time for data science, work on listed metrics in writeup from 2/26.
 
-For me:
+For me w Dr. Lee:
 ask about piazza api
 ask about python data
 
 ### action items:
-KNN model into json + writeup
-Rohan/Youngwook Kmeans model imrpvoign + visualization
+- completed KNN model into json + writeup
+Rohan/Youngwook Kmeans model improving + visualization
 Web dev works on remvoing bad graphs and info + implementing new data + graphs
 Harikesh KNN upgrades on heatmap
 
@@ -148,13 +153,21 @@ Diya/Kaylia: test out diff visualizstiona of the top 5 clusters.
 
 - able to successfully finish integrating the Python data to recreate some old data maps that we had. 
 - Working to combien the efforts of our teams, including making json files to display on dashboard and complete other action items within data sceince
+- Worked on preparing final presentation and generated template, prefilled slides and assigned work to everyone. Sent out to everyone along with a briefing of all important notes to pay attention to while working on presentaion.
+- Emphasized visualizations and images to depict work.
+
 
 # Week 15
 kaylia/Diya: finished number of posts graph and class sentiment graph. will do heatmap. waiting for better data from rohan.
 harikesh/ishika: finished graphs
 youngwook/Rohan: finsihing tonight
 
+Practice final presentation in subteam meeting. People were missing so it was kind of hard, but we had to focus on getting in time. All the content was mostly there, so everything was fine. Web Dev slides weren't completeed so we triewd to impromptu it.
+
 Meeting w Dr. Lee: 
 talk about the heatmap integration setbacks as part of presentation -- challenges, lessons learned
 for next steps, can keep it about general directions of team... investigating the same data source or another
 identifying the value of further investigation. -- general milestones, but base them on lessons learned from this semester
+
+Completed final presentation
+https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit?usp=sharing&ouid=111773263312731429764&rtpof=true&sd=true
