@@ -74,18 +74,34 @@ Update - data file cleaned + metrics consolidated into json files.
 -  Rohan + Youngwook: look into different sentiment model implementations, testing out topic modeling, potentially creating new model
 
 # Week 8 
-- Talked to Dr. Lee about a cleaned dataset that sorts teachers and students, can prove very useful.  -- have ready by meeting so we can do another brainstorming during the meeting.
-- Prepare subteam presentation by class Wednesday so everyone has slides to fill -- key notes -> introduce everyone + timeline of progress + show real progress not just planning.
 - Check in on past week's work:
 - Rohan worked on a cluster model -- shared notebook.
 - Youngwook will test out ML models this week to be ready to present.
 - Ishika + Harikesh waiting bc teacher provided csv + R model. Will implement R models this week.
 - Web Dev: last semester didn't touch code. We went through the dashboard folder on Github and tried to understand it. Be ready by Wednesday to start working on actually filtering the data. 
 
-Meeting w Dr. Lee -- she has a dataset with useful data with final grades and student/teacher distinction.
+
+ 
+ # Week 9 - Working Day
+ - For the working day, I looked into a new possible dataset using final grades.
+- I met with Dr. Lee -- she has a dataset with useful data with final grades and student/teacher distinction.
+- I then took this dataset and did some brainstorming to consider possible use cases --> realized final grades are useful indicators for student IDs
+- each final grade is unique, let's use this to our advantage to find new data metrics.
  -- Her feedback: share those plans of what metrics and action items in the subteam presentation
  
-# Week 10 - After Spring Break
+ - bring this information to next subteam meeting and explain to team possible new action items with new dataset
+
+### presentation
+ - Prepare subteam presentation by class Wednesday so everyone has slides to fill -- key notes -> introduce everyone + timeline of progress + show real progress not just planning. Had presentation ready built 
+ 
+ # Week 10
+- ran a practice subteam presentation in our subteam meeting. Everything went well, but we were a little over time. I tried to emphasize our plans using the timeline, as I think that organizes our work effectively. Addressed time issue, hopefully we are better off in the real presentation.
+-  No other action items for the week other than preparing the subteam presentaiton
+-  Tweaked timeline and slides slightly, but otherwise no major work this week.
+ 
+ 
+ 
+# Week 12 - After Spring Break
 For subteam meeting:
 - All data science upload completed file of work + quick abstract to summarize.
 - Have Harikesh and Ishika consolidate KNN model into json file for Web Dev - start working on consolidating all data into json
@@ -107,8 +123,10 @@ Harikesh KNN upgrades on heatmap
 - investigated Piazza API before, only admin level users can access/manage API for Piazza data -- test API version, not real one
 - Python data can be found and sent -- she will send in later.
 
+- Update^^ she sent over Python data to our team to be used
 
-# Week 11
+
+# Week 13
 During meeting:
 Reviewing old action items --
 - Harikesh/Ishika -- web development working on heatmap. finished writeup of cleanup and heatmap work. sent in json file for heatmap
@@ -123,15 +141,18 @@ Ishika - number of posts
 Rohan/Youngwook - json of the clusters/description with a priority of most frequent, more research on visualization.
 
 
-# Week 12
+# Week 14
 Rohan/Youngwook: got a json file of top 5 clusters. generate a count per cluster -- running into issue with basic questions as overpopulated. -- can be done in the future
 Harikesh/Ishika: finished cursor thing w heatmap -- need to do the number of posts graph and class sentiment but waitin ginstructions on the second graph.
 Diya/Kaylia: test out diff visualizstiona of the top 5 clusters. 
 
-# Week 13
+- able to successfully finish integrating the Python data to recreate some old data maps that we had. 
+- Working to combien the efforts of our teams, including making json files to display on dashboard and complete other action items within data sceince
+
+# Week 15
 kaylia/Diya: finished number of posts graph and class sentiment graph. will do heatmap. waiting for better data from rohan.
 harikesh/ishika: finished graphs
-youngwook/Rohan: finsihing tn
+youngwook/Rohan: finsihing tonight
 
 Meeting w Dr. Lee: 
 talk about the heatmap integration setbacks as part of presentation -- challenges, lessons learned
