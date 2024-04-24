@@ -85,3 +85,93 @@ Notes about class:
 - ask Kaylia for guidance since she has been on the team for a while
 - ask Kaylia to send TA interview feedback
 - need to define action items for the next 1-2 weeks in the github board 
+
+
+# Week 8
+### In class:
+We talked about software development and digital accessibility. This was a very interesting lecture that was given by Dr. Sembrat. I really enjoyed learning about research trends that exist in software development as well as why digital accessibility is important. 
+He was able to detail the principles of accessible design and ensure that products also comply with legal standards and cater to a wide range of disabilities. 
+He also emphasized the need for ongoing research to optimize integrations regarding how software is tested, maintained and improved. 
+I was able to take notes during the lecture too. 
+
+### During the subteam meeting:
+I was able to add to the GitHub board that Nihaar created. I added the action items for our subteam.
+I worked to define web dev goals since last semester did not touch the web dev code. Kaylia sent me the TA feedback that I was able to review.
+
+### To do list:
+- Look at code in the dashboard folder to try to understand how each file interacts with each other and functions overall
+- I plan to discuss any questions that I have with Kaylia and Nihaar next week.
+
+# Week 9
+Today was a working day, so I took time to review my web development skills and also learn more to help build on my knowledge. This is directly transferable to the work that we do on our team. 
+I specifically focused on Javascript. I would highly recommend this YouTube course to anyone interested in brushing up and learning more: https://www.youtube.com/watch?v=W6NZfCO5SIk. 
+I also noticed that I wanted to brush up on my HTML and CSS knowledge so I found this course and looked through it on my own time: https://www.youtube.com/watch?v=HGTJBPNC-Gw  
+
+### To do list:
+- Brainstorm what we would want to include in our subteam presentation
+- Update npm and dependency versions
+- Rebuild Dashboard
+- Prototype code for action items and debug it. 
+
+### Presentation Link:
+https://docs.google.com/presentation/d/1TSyC8FaUOSJBCYl-sEQIB41JnETMPgf9/edit 
+
+# Week 10
+Kaylia and I were able to complete our slides prior to the subteam meeting. 
+Our progress was that we were able to update the npm and dependencies too. In the presentation, I spoke about hardships that the web dev team faced. These hardships include some of the following: implementation uncertainty, technical difficulties with npm, and hardcoded data that was in the dashboard. 
+In terms of the hard-coded data, we found that this limited our ability to dynamically read live data. 
+We found that the npm start command was not working, we also had unsuccessful attempts to fix it. We tried reinstalling/updating npm and rebuilding the package-lock.json, but that did not work. 
+
+### To do list:
+- Practice for the presentation 
+- Try to integrate live data in the dashboard 
+- Create a plan for the following action items:
+  - Implement notifications for unanswered posts after a set duration
+  - Prioritize unresolved posts based on their importance.
+  - Build a better backend to frontend pipeline that allow for updates in the dashboard in real time.
+
+# Week 12
+Kaylia and I worked on an action plan to help clarify our goals that we have for the rest of the semester. Here is the action plan: 
+Finish debugging prototyped code to complete action items
+We are currently working to implement the notifications part.
+Changes to old action plan and prioritization:
+Realized that a lot of the dashboard has hard-coded data and values so we are planning to analyze how we can change this. 
+Planning on adding functionality for reading csv data dynamically
+
+### To do list:
+- Remove all hard coded data that is on the dashboard 
+- We need to flag areas that need to be changed and then convert using json files. 
+- We need to remove that old graph and make sure that it is able to dynamically read the data. 
+
+# Week 13
+We were not able to remove the old graphs since it was difficult to troubleshoot the errors we were facing. We are talking about the next action item on the list. 
+
+### To do list:
+- Work to update the hard coded data for this histogram and graphs. 
+- Look to online resources on integrating live data into a dashboard
+- I plan to look at these sites: 
+  - https://www.tinybird.co/blog-posts/real-time-dashboard-step-by-step 
+  - https://dashboardbuilder.net/json-dashboard 
+
+These websites will provide background and ideas in order to help figure out how we can update the hard coded data. 
+
+# Week 14
+We got data for clusters and need to use different techniques to figure out how to visualize these clusters. We want to see if there is a way to represent this data on our dashboard in a way that is easy for many users to interpret. 
+I tried to see what different visualizations would work, but the clusters we are given do not seem like important data. I plan to talk to Nihaar about this.
+
+### To do list:
+- Try out different visualizations of the top 5 clusters and pick one. I may look into table visualization. 
+- Generate visualizations from the provided JSON files for the KNN Model and K Means cluster (Nihaar said to not worry about this anymore). 
+
+# Week 15
+Kaylia and I were able to create a posts graph. It has live data integrated now and is not hard coded anymore. We also created a class sentiment graph as well. This is now displayed and functioning on the dashboard. I was able to add to the slideshow for our final presentation, but we did have a few components that we still wanted to fix on the slides. After the subteam meeting, I was able to make the necessary changes based on feedback we got. 
+
+Nihaar assigned us an action item to get the heatmap on our dashboard. I tried to schedule a meeting with Kaylia to figure out how we can get the heatmap on our dashboard. Harikesh sent our team the updated Heatmap files. 
+
+### Notes from Web Dev Meeting:
+Complied with problems: “export ‘default’ imported as PHeatmap was not found in ‘./pages/heatmap.js’ (module has no exports). 
+We were not able to fix that error. Kaylia said that this action item cannot be completed due to the amount of time we have and the technical challenges we are facing. 
+I tried to look at the heatmap code more and was also not able to find a way to integrate it. 
+We plan to move this as an action item for the Web Dev team to work on next semester. 
+During the final presentation, I was able to present my slides and got to speak about the progress that our team was able to make this semester.
+
