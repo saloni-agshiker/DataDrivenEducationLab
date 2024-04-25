@@ -92,3 +92,251 @@ Goals:
 1. Find more metrics
 2. Possibly run machine learning models in R for more conclusions
       
+# WEEK 8
+
+- Researched possible models such as Linear Regression, KKN, and Decision Trees
+- Considered creating new tables with the new cleaned data
+- Collaborated with Rohan and Youngwook with Ishika to brainstorm more ideas for metrics
+
+Goals: 
+1. Finalize all of these ideas and create real testing for models and metrics/visualizations
+
+# Week 9
+
+- Receieved new dataset with final grades and student/teacher distinction
+- Since each final grade was down to the thousandths place, we were able to use the final grade 
+as student ID's and identify all the different posts from one singular student
+- Ishika and I wrote this code in Python to create a new table for the KNN model
+
+Code: 
+import pandas as pd
+
+df = pd.read_excel('piazza data user roles.xlsx')
+followup_df = df[df['Part of Post'].str.contains("followup", na=False)]
+replyToFollowup_df = df[df['Part of Post'].str.contains("reply_to_followup", na=False)]
+followup_count = followup_df.groupby('final_grades').size()
+replyToFollowup_count = replyToFollowup_df.groupby('final_grades').size()
+followup_count = followup_count.rename_axis('Final Grades').reset_index(name='# of Posts')
+replyToFollowup_count = replyToFollowup_count.rename_axis('Final Grades').reset_index(name='# of Replies')
+print(followup_count)
+print(replyToFollowup_count)
+combined_df = pd.merge(followup_count, replyToFollowup_count, on='Final Grades', how='outer')
+print(combined_df)
+combined_df.to_csv("StudentRepliesAndPosts.csv", index=False)
+
+- Then, we used the predictors and response variables to create this KNN model with visualizations
+
+KNN Code:
+
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+from sklearn.preprocessing import StandardScaler
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv('StudentRepliesAndPosts.csv')
+data['# of Replies'].fillna(0, inplace=True)
+
+X = data[['# of Posts', '# of Replies']]
+y = data['Final Grades']
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
+
+k_values = range(1, 31)
+rmse_values = []
+
+for k in k_values:
+    knn_model = KNeighborsRegressor(n_neighbors=k)
+    knn_model.fit(X_train, y_train)
+    predictions = knn_model.predict(X_test)
+    mse = mean_squared_error(y_test, predictions)
+    rmse = np.sqrt(mse)
+    rmse_values.append(rmse)
+
+optimal_k = k_values[np.argmin(rmse_values)]
+min_rmse = min(rmse_values)
+print(f"Optimal number of neighbors (k): {optimal_k}")
+print(f"Minimum RMSE: {min_rmse}")
+
+plt.figure(figsize=(10, 6))
+plt.plot(k_values, rmse_values, marker='o', linestyle='-')
+plt.title('KNN Regression: RMSE vs. Number of Neighbors')
+plt.xlabel('Number of Neighbors (k)')
+plt.ylabel('Root Mean Squared Error (RMSE)')
+plt.xticks(k_values)
+plt.grid(True)
+plt.show()
+
+
+x_min, x_max = X_scaled[:, 0].min() - 1, X_scaled[:, 0].max() + 1
+y_min, y_max = X_scaled[:, 1].min() - 1, X_scaled[:, 1].max() + 1
+xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1),
+                     np.arange(y_min, y_max, 0.1))
+
+Z = knn_model.predict(np.c_[xx.ravel(), yy.ravel()])
+Z = Z.reshape(xx.shape)
+
+plt.figure(figsize=(12, 8))
+plt.contourf(xx, yy, Z, alpha=0.4)  # Plotting the predicted grades in the background
+plt.scatter(X_scaled[:, 0], X_scaled[:, 1], c=y, s=20, edgecolor='k')  # Plotting the actual data points
+plt.title("KNN Regression (k=5)")
+plt.xlabel('# of Posts (standardized)')
+plt.ylabel('# of Replies (standardized)')
+plt.colorbar(label='Final Grades')
+plt.show()
+
+# WEEK 10
+
+- Worked on putting presentation together
+- Ishika and I decided what we would split up during the presentation and who would talk about what. 
+
+Goals:
+Presentation needs to be done by next Monday so that Nihaar can give feedback to everyone during the subteam meeting
+Adding visualizations and explaining the models and conclusions we found from the data
+
+https://docs.google.com/presentation/d/1TSyC8FaUOSJBCYl-sEQIB41JnETMPgf9/edit?usp=sharing&ouid=111773263312731429764&rtpof=true&sd=true
+
+# WEEK 11
+
+Spring Break
+
+# WEEK 12
+
+-After finetuning the KNN model, we were able to generate proper conclusions and 
+Ishika and I converted the KNN data to json for Web Dev so our DS work can be put on the dashboard
+
+Code:
+
+import json
+
+
+data_for_json = [{'x': x, 'y': y, 'predicted_grade': z} for x, y, z in zip(xx.ravel(), yy.ravel(), Z.ravel())]
+
+json_data = json.dumps(data_for_json)
+
+with open('heatmap_data.json', 'w') as file:
+    file.write(json_data)
+
+import os
+print("JSON file saved to:", os.path.join(os.getcwd(), 'heatmap_data.json'))
+
+Goals
+1. Get the python dataset from Nihaar
+2. Reach out to Nihaar about creating a live dashboard using a Piazza API
+
+# WEEK 13
+
+- Ideated a great way to make the KNN information more interactive using a 
+heatmap with a tooltip with grade information and predictors
+- Wrote the code and fixed many bugs throughout this week
+
+JS:
+
+ocument.addEventListener('DOMContentLoaded', function() {
+    const svg = d3.select("#heatmap");
+    const width = +svg.attr("width");
+    const height = +svg.attr("height");
+    
+    // Create a tooltip
+    const tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+    // Load the JSON data
+    d3.json("heatmap_data.json").then(data => {
+        // Scale for the x and y coordinates
+        const xScale = d3.scaleLinear()
+            .domain(d3.extent(data, d => d.x))
+            .range([0, width]);
+        const yScale = d3.scaleLinear()
+            .domain(d3.extent(data, d => d.y))
+            .range([height, 0]);
+
+        // Define color
+        const colorScale = d3.scaleSequential(d3.interpolateViridis)
+            .domain(d3.extent(data, d => d.predicted_grade));
+
+        // Add squares to the heatmap
+        svg.selectAll("rect")
+            .data(data)
+            .enter().append("rect")
+            .attr("x", d => xScale(d.x))
+            .attr("y", d => yScale(d.y))
+            .attr("width", 10)  // Width of each square
+            .attr("height", 10) // Height of each square
+            .style("fill", d => colorScale(d.predicted_grade))
+            .on("mouseover", function(event, d) {
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                tooltip.html(`Predicted Grade: ${d.predicted_grade.toFixed(2)}<br>Posts: ${Math.round(d.x)}<br>Replies: ${Math.round(d.y)}`)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY - 28) + "px");
+            })
+            .on("mouseout", function(d) {
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
+        
+    });
+});
+
+HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Heatmap</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 60px;
+            height: 28px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: rgb(113, 114, 117);
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <svg id="heatmap" width="800" height="600"></svg>
+    <script src="heatmap.js"></script>
+</body>
+</html>
+
+- After fixing these problems, I gave the code to WebDeb to implement into the dashboard
+- The posts and responses show up on the cursor with the heatmap information of what the predicted final grade would be
+
+Goals
+1. Ishika and I have to find the sentiment of Python and ISYE classes
+2. We also need to find the number of posts graph as well
+
+# WEEK 14
+
+- Ishika and I completed the two visualizations and converted the 
+sentiment analysis and total posts over time to JSON for webdev
+
+Goals
+1. Prepare for the final presentation
+
+# WEEK 15
+
+https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit?usp=sharing&ouid=111773263312731429764&rtpof=true&sd=true
+
+- We attempted our practice final presentation during the subteam meeting, since people were missing it was difficult
+but we had a good gauge on what to work on. I updated my slides for time and worked on my descriptions
+
+Goals
+1. Pre Eval
+2. Finish VIP notebook
