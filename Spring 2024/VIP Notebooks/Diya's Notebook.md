@@ -100,18 +100,28 @@ I worked to define web dev goals since last semester did not touch the web dev c
 
 ### To do list:
 - Look at code in the dashboard folder to try to understand how each file interacts with each other and functions overall
+- figure out how the data is integrated with the visuals on the Dashboard specifically
 - I plan to discuss any questions that I have with Kaylia and Nihaar next week.
+- review TA feedback to further determine specific goals 
+
 
 # Week 9
 Today was a working day, so I took time to review my web development skills and also learn more to help build on my knowledge. This is directly transferable to the work that we do on our team. 
 I specifically focused on Javascript. I would highly recommend this YouTube course to anyone interested in brushing up and learning more: https://www.youtube.com/watch?v=W6NZfCO5SIk. 
 I also noticed that I wanted to brush up on my HTML and CSS knowledge so I found this course and looked through it on my own time: https://www.youtube.com/watch?v=HGTJBPNC-Gw  
 
+I met with Kaylia (in-person) to work on our action items. We wanted to get the dashboard running but had issues with dependencies and a local build. We were able to update node modules and build the Dashboard on Kaylia's device using Ubuntu. 
+- found that a lot of the dashboard has hard coded values which is why it is not functional for parsing new data 
+
+During the subteam meeting this week, Nihaar said that we want to be able to improve the webdev codebase have less hard coded values. I was able to also look at the progress that we would want to show in our presentation that is coming up. 
+
 ### To do list:
 - Brainstorm what we would want to include in our subteam presentation
+- reach out to Kaylia for help since I was not able to build the dashboard on my device 
+- Goal is to write preliminary code for excluding posts  
+   - Prototype code for action items and debug it
 - Update npm and dependency versions
-- Rebuild Dashboard
-- Prototype code for action items and debug it. 
+ 
 
 ### Presentation Link:
 https://docs.google.com/presentation/d/1TSyC8FaUOSJBCYl-sEQIB41JnETMPgf9/edit 
@@ -121,6 +131,7 @@ Kaylia and I were able to complete our slides prior to the subteam meeting.
 Our progress was that we were able to update the npm and dependencies too. In the presentation, I spoke about hardships that the web dev team faced. These hardships include some of the following: implementation uncertainty, technical difficulties with npm, and hardcoded data that was in the dashboard. 
 In terms of the hard-coded data, we found that this limited our ability to dynamically read live data. 
 We found that the npm start command was not working, we also had unsuccessful attempts to fix it. We tried reinstalling/updating npm and rebuilding the package-lock.json, but that did not work. 
+During the subteam meeting, I learned that I need to speak faster in order to help with the timing of our presentation. 
 
 ### To do list:
 - Practice for the presentation 
@@ -132,46 +143,79 @@ We found that the npm start command was not working, we also had unsuccessful at
 
 # Week 12
 Kaylia and I worked on an action plan to help clarify our goals that we have for the rest of the semester. Here is the action plan: 
-Finish debugging prototyped code to complete action items
-We are currently working to implement the notifications part.
-Changes to old action plan and prioritization:
-Realized that a lot of the dashboard has hard-coded data and values so we are planning to analyze how we can change this. 
-Planning on adding functionality for reading csv data dynamically
+
+- have data that the Data Science team has and be able to get it to dynamically read on the Dashboard
+- test out different ways to present the data on the Dashboard
+- be in contact with the AI Team since they are doing something similar 
+- debug the code we made prior to break 
+
+We had to modify our original action items part since we realized the following: 
+- Realized that a lot of the dashboard has hard-coded data and values so we are planning to analyze how we can change this. 
+- Planning on adding functionality for reading csv data dynamically
 
 ### To do list:
-- Remove all hard coded data that is on the dashboard 
+- Remove all hard coded data that is on the dashboard to allow for dynamically readable data 
 - We need to flag areas that need to be changed and then convert using json files. 
-- We need to remove that old graph and make sure that it is able to dynamically read the data. 
+- Need to make sure that the data that we get from the Data Science team is complete, if it is missing anything, we need to let them know
+- Need to do more research on how the graphs are currently being integrated in the dashboard (maybe using pandas library) 
 
 # Week 13
-We were not able to remove the old graphs since it was difficult to troubleshoot the errors we were facing. We are talking about the next action item on the list. 
+We were not able to remove the old graphs since it was difficult to troubleshoot the errors we were facing. I was not able to build the dashboard on my device, and asked Kaylia for more help. We tried reinstalling the dependencies from scratch, but that also did not work. 
+- we updated documentation to reflect the issues we faced and how to resolve them (will be helpful in the future) 
+
+Due to confusion regarding the changes on action items, we were able to clarify what exactly we need to work on next. 
+- Currently, waiting for the Data Science team to give us their data that is needed for the Dashboard.
 
 ### To do list:
 - Work to update the hard coded data for this histogram and graphs. 
+- Meet with Kaylia for help on the Dashboard 
+    - help with json parsers that will be needed to integrate the live data 
 - Look to online resources on integrating live data into a dashboard
-- I plan to look at these sites: 
+- Speak to Nihaar and Kaylia to have a more definitive way to keep track of goals and also ask more about how we can better integrate what the Data Science team is working on in the Dashboard. 
+
+- I plan to look at these sites to provide background to help with hard coded data: 
   - https://www.tinybird.co/blog-posts/real-time-dashboard-step-by-step 
   - https://dashboardbuilder.net/json-dashboard 
 
-These websites will provide background and ideas in order to help figure out how we can update the hard coded data. 
 
 # Week 14
-We got data for clusters and need to use different techniques to figure out how to visualize these clusters. We want to see if there is a way to represent this data on our dashboard in a way that is easy for many users to interpret. 
-I tried to see what different visualizations would work, but the clusters we are given do not seem like important data. I plan to talk to Nihaar about this.
+We were able to find out that we can't do live data updates since there is delays on data and also privacy concerns.
+- This realization impacts our approach since we would now be using a downlaoded report to power the Dashboard instead of an API directly
+
+
+I also got data for clusters and need to use different techniques to figure out how to visualize these clusters.
+- We want to see if there is a way to represent this data on our dashboard in a way that is easy for many users to interpret. 
+- I tried to see what different visualizations would work, but the clusters we are given do not seem like important data. 
+- I plan to talk to Nihaar about this.
 
 ### To do list:
 - Try out different visualizations of the top 5 clusters and pick one. I may look into table visualization. 
 - Generate visualizations from the provided JSON files for the KNN Model and K Means cluster (Nihaar said to not worry about this anymore). 
+- speak to Nihaar about webdev action items to make sure that we are on track and have definitive delieverables. 
+- Meet with Kaylia for the dynamic graph deveolpment 
+
 
 # Week 15
-Kaylia and I were able to create a posts graph. It has live data integrated now and is not hard coded anymore. We also created a class sentiment graph as well. This is now displayed and functioning on the dashboard. I was able to add to the slideshow for our final presentation, but we did have a few components that we still wanted to fix on the slides. After the subteam meeting, I was able to make the necessary changes based on feedback we got. 
+Kaylia and I were able to create a posts graph. It has live data integrated now and is not hard coded anymore. We also created a class sentiment graph as well. This is now displayed and functioning on the dashboard. 
+- This will be a perfect setup for future semesters as it is able to provide the foundation for being able to display data that is dynamic. 
 
-Nihaar assigned us an action item to get the heatmap on our dashboard. I tried to schedule a meeting with Kaylia to figure out how we can get the heatmap on our dashboard. Harikesh sent our team the updated Heatmap files. 
+I was able to add to the slideshow for our final presentation, but we did have a few components that we still wanted to fix on the slides. After the subteam meeting, I was able to make the necessary changes based on feedback we got. 
 
-### Notes from Web Dev Meeting:
-Complied with problems: “export ‘default’ imported as PHeatmap was not found in ‘./pages/heatmap.js’ (module has no exports). 
-We were not able to fix that error. Kaylia said that this action item cannot be completed due to the amount of time we have and the technical challenges we are facing. 
-I tried to look at the heatmap code more and was also not able to find a way to integrate it. 
-We plan to move this as an action item for the Web Dev team to work on next semester. 
-During the final presentation, I was able to present my slides and got to speak about the progress that our team was able to make this semester.
+Nihaar assigned us an action item to get the heatmap on our dashboard. I tried to schedule a meeting with Kaylia to figure out how we can get the heatmap on our dashboard. Harikesh sent our team the updated Heatmap files.  
+
+### Notes from Web Dev Meeting & Closing Notes:
+Heatmap Error:
+- Complied with problems: “export ‘default’ imported as PHeatmap was not found in ‘./pages/heatmap.js’ (module has no exports). 
+    - We were not able to fix that error. Kaylia said that this action item cannot be completed due to the amount of time we have and the technical challenges we are       facing. It works by itself but causes major issues when trying to integrate it on the Dashboard. 
+    - I tried to look at the heatmap code more and was also not able to find a way to integrate it. 
+    - We plan to move this as an action item for the Web Dev team to work on next semester. We should look into some type of inheritance structure since it probably      needs some type of frontend overhaul for dynamic course data. 
+
+
+- I would recommend that the subteams try to collaborate amongst eachother to be able to display more data visualization on the dashboard. 
+
+Overall, we were able to make great progress this sememster as we are now able to read dynamic data in the dashboard, made webdev code updates, and more. 
+During the final presentation, I was able to present my slides and got to speak about the progress that our team was able to make this semester as well. 
+
+
+
 
