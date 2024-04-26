@@ -206,7 +206,215 @@ level class rigor.
 
 ** code and visuals in a jupyter notebooks file in the github
 
+import os
+current_directory = os.getcwd()
+print("Current Working Directory:", current_directory)
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load Excel file into a dataframe
+df = pd.read_excel('/Users/ishikapatel/Desktop/VIP/Forum_thread_ferpa.xlsx')
+
+# Filter rows where 'course_id' contains 'CS1301'
+df = df[df['course_id'].str.contains('CS1301')]
+
+# Convert 'created_at' column to datetime
+df['created_at'] = pd.to_datetime(df['created_at'], format='%m/%d/%Y %H:%M')
+
+# Extract year and month for grouping
+df['year'] = df['created_at'].dt.year
+df['month'] = df['created_at'].dt.month
+
+# Group by year and month
+posts_over_time = df.groupby(['year', 'month']).size().reset_index(name='post_count')
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.plot(posts_over_time.index, posts_over_time['post_count'], marker='o')
+plt.xlabel('Time')
+plt.ylabel('Number of Posts')
+plt.title('Posts Over Time for CS1301')
+plt.xticks(ticks=posts_over_time.index, labels=[f"{y}-{m}" for y, m in zip(posts_over_time['year'], posts_over_time['month'])], rotation=45)
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+
+
+import pandas as pd
+
+# Load Excel file into a dataframe
+df = pd.read_excel('/Users/ishikapatel/Desktop/VIP/Forum_thread_ferpa.xlsx')
+
+df = df[df['course_id'].str.contains('CS1301')]
+
+# Convert 'created_at' column to datetime
+df['created_at'] = pd.to_datetime(df['created_at'], format='%m/%d/%Y %H:%M')
+
+# Extract year and month for grouping
+df['month_year'] = df['created_at'].dt.strftime('%Y-%m')
+
+# Group by month-year
+posts_over_time = df.groupby('month_year').size().reset_index(name='post_count')
+
+# Convert to JSON
+json_data = posts_over_time.set_index('month_year').to_json(orient='index')
+
+# Save JSON to a file
+with open('posts_over_time_CS1301.json', 'w') as f:
+    f.write(json_data)
+    
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load Excel file into a dataframe
+df = pd.read_excel('/Users/ishikapatel/Desktop/VIP/Forum_thread_ferpa.xlsx')
+
+# Filter rows where 'course_id' contains 'ISYE6501'
+df = df[df['course_id'].str.contains('ISYE6501')]
+
+# Convert 'created_at' column to datetime
+df['created_at'] = pd.to_datetime(df['created_at'], format='%m/%d/%Y %H:%M')
+
+# Extract year and month for grouping
+df['year'] = df['created_at'].dt.year
+df['month'] = df['created_at'].dt.month
+
+# Group by year and month
+posts_over_time = df.groupby(['year', 'month']).size().reset_index(name='post_count')
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.plot(posts_over_time.index, posts_over_time['post_count'], marker='o')
+plt.xlabel('Time')
+plt.ylabel('Number of Posts')
+plt.title('Posts Over Time for ISYE6501')
+plt.xticks(ticks=posts_over_time.index, labels=[f"{y}-{m}" for y, m in zip(posts_over_time['year'], posts_over_time['month'])], rotation=45)
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+
+
+import pandas as pd
+
+# Load Excel file into a dataframe
+df = pd.read_excel('/Users/ishikapatel/Desktop/VIP/Forum_thread_ferpa.xlsx')
+
+df = df[df['course_id'].str.contains('ISYE6501')]
+
+# Convert 'created_at' column to datetime
+df['created_at'] = pd.to_datetime(df['created_at'], format='%m/%d/%Y %H:%M')
+
+# Extract year and month for grouping
+df['month_year'] = df['created_at'].dt.strftime('%Y-%m')
+
+# Group by month-year
+posts_over_time = df.groupby('month_year').size().reset_index(name='post_count')
+
+# Convert to JSON
+json_data = posts_over_time.set_index('month_year').to_json(orient='index')
+
+# Save JSON to a file
+with open('posts_over_time_ISYE6501.json', 'w') as f:
+    f.write(json_data)
+
+
 
 # WEEK 14
 
-sentiment analysis (need to finish)
+Conducted sentiment analysis on two classes:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+# Load Excel file into a dataframe
+df = pd.read_excel('/Users/ishikapatel/Desktop/VIP/Forum_comment_ferpa.xlsx')
+
+# Filter rows where 'course_id' contains 'CS1301'
+df = df[df['course_id'].str.contains('CS1301')]
+
+# Perform sentiment analysis
+nltk.download('vader_lexicon')
+sid = SentimentIntensityAnalyzer()
+
+# Function to get sentiment score
+def get_sentiment_score(text):
+    text = str(text)  # Ensure text is converted to string
+    return sid.polarity_scores(text)['compound']
+
+# Apply sentiment analysis to each comment
+df['sentiment_score'] = df['body'].apply(get_sentiment_score)
+
+# Group by every two rows, calculate average sentiment score
+sentiment_over_time = df.groupby(df.index // 1000).agg({'sentiment_score': 'mean'}).reset_index()
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.plot(sentiment_over_time.index, sentiment_over_time['sentiment_score'], marker='o')
+plt.xlabel('Time')
+plt.ylabel('Average Sentiment Score')
+plt.title('Class Sentiment Over Time')
+plt.xticks([])  # Remove x-axis ticks
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+json_data = sentiment_over_time.to_json(orient='records')
+
+
+with open('sentiment_over_time_CS1301.json', 'w') as json_file:
+    json_file.write(json_data)
+    
+import pandas as pd
+import matplotlib.pyplot as plt
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+# Load Excel file into a dataframe
+df = pd.read_excel('/Users/ishikapatel/Desktop/VIP/Forum_comment_ferpa.xlsx')
+
+# Filter rows where 'course_id' contains 'CS1301'
+df = df[df['course_id'].str.contains('ISYE6501')]
+
+# Perform sentiment analysis
+nltk.download('vader_lexicon')
+sid = SentimentIntensityAnalyzer()
+
+# Function to get sentiment score
+def get_sentiment_score(text):
+    text = str(text)  # Ensure text is converted to string
+    return sid.polarity_scores(text)['compound']
+
+# Apply sentiment analysis to each comment
+df['sentiment_score'] = df['body'].apply(get_sentiment_score)
+
+# Group by every two rows, calculate average sentiment score
+sentiment_over_time1 = df.groupby(df.index // 1000).agg({'sentiment_score': 'mean'}).reset_index()
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.plot(sentiment_over_time1.index, sentiment_over_time1['sentiment_score'], marker='o')
+plt.xlabel('Time')
+plt.ylabel('Average Sentiment Score')
+plt.title('Class Sentiment Over Time')
+plt.xticks([])  # Remove x-axis ticks
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+json_data = sentiment_over_time1.to_json(orient='records')
+
+
+with open('sentiment_over_time_ISYE6501.json', 'w') as json_file:
+    json_file.write(json_data)
+    
+
+# WEEK 15
+
+Final presentation: 
+https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit?usp=sharing&ouid=111773263312731429764&rtpof=true&sd=true
