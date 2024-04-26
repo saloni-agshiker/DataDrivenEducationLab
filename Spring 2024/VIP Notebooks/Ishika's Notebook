@@ -175,5 +175,38 @@ I was available for this presentation, unlike previous and future presentations 
 
 # WEEK 11 - SPRING BREAK
 
-# WEEK 12 - 
+# WEEK 12 
 
+Action items: 
+1. semester write up of progress (with Harikesh Tambareni)
+https://docs.google.com/document/d/1OA43oFTTWQp5dZy8Y1iUKz2HX6IJ383I4oFswMJbF5Y/edit
+
+2. consolidate KNN model into json files for web dev team (with Harikesh Tambareni)
+
+
+My deliverable: StudentRepliesAndPosts.json 
+This is in the pages folder of the Dashboard in github titled CS6601_StudentRepliesAndPosts.json
+
+End of week:
+Finished write-up and shared with Nihaar (PM).
+Raw data from KNN model json files sent on teams chat for everyone on the team to see. 
+
+# WEEK 13
+
+Action items:
+1. make visual for posts over time
+
+Found the number of posts over time for the new data set shared with us. I did not realize this was an aggregate of 
+many CS classes until other data science members questioned it. I fixed this a bit later in the week by 
+doing the following:
+
+(Updated)
+Found the number of posts over time in ISYE6501 and CS1301 in order to make comparison between upper level and lower
+level class rigor. 
+
+** code and visuals in a jupyter notebooks file in the github
+
+
+# WEEK 14
+
+sentiment analysis (need to finish)
