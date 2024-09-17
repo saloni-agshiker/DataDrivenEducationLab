@@ -29,9 +29,9 @@
 
 ### Meeting Notes
 ##### Populating dataset
-####### Schema design (Isabel/Ishika), research LLM to use (Diya/Adaora)
-###### Send example of previous schema design + what we needed for other insights, 
-####### Add to task tracking list
+###### Schema design (Isabel/Ishika), research LLM to use (Diya/Adaora)
+##### Send example of previous schema design + what we needed for other insights, 
+###### Add to task tracking list
 
 ##### Subteam presentation 1 - Ishika/Isabel will discuss how we can do metrics/what metrics we want to use, Diya/Adaora talk about ML side of implementing LLM to do larger generation
 ## Make template with full presentation breakdown.
