@@ -21,3 +21,5 @@ Week 4
 Week 5
   To prepare for upcoming subteam presentation, I was assigned with finding out LLMs to use for populating dataset
   I reached out to my co-engineer Diya to find out whether she had found any LLMs as well
+  Found a model to use to generate text: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct, https://huggingface.co/google/mt5-base
+  Found a model to convert text into tables
