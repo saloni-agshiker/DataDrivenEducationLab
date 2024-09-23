@@ -34,4 +34,16 @@
 ###### Add to task tracking list
 
 ##### Subteam presentation 1 - Ishika/Isabel will discuss how we can do metrics/what metrics we want to use, Diya/Adaora talk about ML side of implementing LLM to do larger generation
-## Make template with full presentation breakdown.
+#### Make template with full presentation breakdown.
+
+# Week 6
+### Meeting Notes
+##### Have subteam presentation ready, will practice runthrough in our meeting
+##### Discuss next steps action items (Generate dummy data via LLM)
+##### Schema design looks good, can move forward with it
+##### Came up with list of ML models we can use + can use Huggingface for integration.
+##### Diya/Adaora will do test generation of data with models to see which ones are ideal.
+
+##### Feedback on presentation: formatting slides -- some slides too text heavy
+
+##### Finished up my portion of subteam presentation, team path/goals look good. Checked in with Dr. Lee as well.
