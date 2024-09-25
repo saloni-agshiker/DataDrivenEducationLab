@@ -47,3 +47,7 @@
 ##### Feedback on presentation: formatting slides -- some slides too text heavy
 
 ##### Finished up my portion of subteam presentation, team path/goals look good. Checked in with Dr. Lee as well.
+
+##### Finished subteam presentation, went well.
+
+**IMPORTANT** VIP Notebooks due Oct 4th and Peer Eval due Oct11!
