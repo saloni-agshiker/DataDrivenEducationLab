@@ -51,3 +51,12 @@
 ##### Finished subteam presentation, went well.
 
 **IMPORTANT** VIP Notebooks due Oct 4th and Peer Eval due Oct11!
+
+# Week 7
+### Meeting Plan
+##### Discuss action items of last week and recap subteam presentation
+##### Talk about VIP Notebook completion
+##### Set up action items for next wk. Talk about upcoming deadlines
+### Meeting Notes
+##### NOTEBOOKS AND EVALS DUE.
+##### Experimenting w LLMS will be done next week, deadline is October 16.
