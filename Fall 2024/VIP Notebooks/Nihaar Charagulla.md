@@ -60,3 +60,8 @@
 ### Meeting Notes
 ##### NOTEBOOKS AND EVALS DUE.
 ##### Experimenting w LLMS will be done next week, deadline is October 16.
+
+### Meeting w Dr. Lee
+##### Discuss timeline on getting new data
+##### Ask for suggestions on improving timeline, team goals and expectations
+##### Concern about repetition, want to avoid that, ask for advice  
