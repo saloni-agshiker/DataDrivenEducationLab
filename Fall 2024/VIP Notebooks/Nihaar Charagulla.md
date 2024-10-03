@@ -65,3 +65,10 @@
 ##### Discuss timeline on getting new data
 ##### Ask for suggestions on improving timeline, team goals and expectations
 ##### Concern about repetition, want to avoid that, ask for advice  
+
+### During meeting
+#### Data got approved. Working on data anonymization.
+#### Can use LLM prompt generation as proof of concept -- synthetic data, how scalable is it?
+#### How can Data Science vary their work? -- look into handle time-series data, development of conversation over time/how does engagement evolve. when is optimal time for teacher intervention/engagement
+#### Analyzing specifically a conversation thread rather than full collection of posts in dataset
+#### identifying/modelling differently basde on student/teacher/TA data independently
