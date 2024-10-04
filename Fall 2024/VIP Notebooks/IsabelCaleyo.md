@@ -18,7 +18,7 @@
 * Worked on CITI Training
 
 #### Wednesday, September 4 - Third Class Meeting
-* Learned about research and analysis tools in presentation
+* Learned about research
 * Listened to lecture, methods, and programs for data analysis and visualization
 * Journal Club assignment introduced
 
@@ -44,8 +44,10 @@
 * Assigned team goals and tasks
 * Introduced Subteam Presentation 1 and tasked with completing team slides
 
-#### Wednesday, September 18 - Fifth Subteam Meeting
-* what the sigma
+#### Wednesday, September 18 - Fifth Class Meeting
+* Lecture with industry professionals regarding data analysis
+* Learned about data visualization best practices and methods
+* Introduced to data visualization programs and utilization
 
 #### Friday, September 20 - First Data Science Team Meeting
 * Ishika and I met to create the data schema we will follow for our own generated data
