@@ -79,4 +79,4 @@ ML for Mass Generating Posts:
 
 ### To do List:
 - [x] Work on VIP Notebook
-- [x] Meet with Adaora to work on our assigned task to mass generate data
+- [] Meet with Adaora to work on our assigned task to mass generate data
