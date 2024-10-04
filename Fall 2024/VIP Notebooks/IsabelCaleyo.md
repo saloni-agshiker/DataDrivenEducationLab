@@ -42,7 +42,10 @@
 * Discussed how team will develop for the first few weeks without data
 * Assigned task to create a schema for ML Team
 * Assigned team goals and tasks
-* Introduced Subteam Presentation 1 and tasked with completing team slides 
+* Introduced Subteam Presentation 1 and tasked with completing team slides
+
+#### Wednesday, September 18 - Fifth Subteam Meeting
+* what the sigma
 
 #### Friday, September 20 - First Data Science Team Meeting
 * Ishika and I met to create the data schema we will follow for our own generated data
@@ -61,7 +64,7 @@
 * Edited Subteam Presentation 1
 * Timed presentation practice
 
-#### Wednesday, September 25 - Subteam Presentation 1, Fifth Class Meeting (Class for Zoom)
+#### Wednesday, September 25 - Subteam Presentation 1, Sixth Class Meeting (Class for Zoom)
 * Presented Subteam Presentation 1 with team progress and goals so far in the semester
 * Listened to classmates' presentations and their progress so far
     * Subteam Presentation 1 Link: https://docs.google.com/presentation/d/1abxmobcj09t4k6mI9hQpj-CeYJXaiJchwixsDX2xofk/edit?usp=sharing
@@ -72,7 +75,7 @@
 * ML assigned with populating dataset
 * Discussed different methods/routes for doing so
 
-#### Wednesday, October 2 - Sixth Class Meeting
+#### Wednesday, October 2 - Seventh Class Meeting
 * Lecture on different types of online learning
 * History, types, methods, impact, and future trajectory for online learning discussed
 * Class discussion about how online learning has been seen in our lives/how it impacts our projects
