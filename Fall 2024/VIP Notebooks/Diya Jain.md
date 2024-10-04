@@ -77,6 +77,8 @@ Notes from subteam meeting:
 
 Notes from class meeting: 
 - Today, all teams were able to present their slides. I really enjoyed being able to share with the class what I have been working on within our subteam, as well as the new vision for our subteam itself.
+
+Link to Presentation: https://docs.google.com/presentation/d/1abxmobcj09t4k6mI9hQpj-CeYJXaiJchwixsDX2xofk/edit?usp=sharing
   
 ### Goals:
 - work on researching GenAI models that are available and how we can mass generate data
