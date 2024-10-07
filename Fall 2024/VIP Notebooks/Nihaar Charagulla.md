@@ -1,4 +1,4 @@
-
+![image](https://github.gatech.edu/C21U/vip-nlp/assets/70523/ad84aac6-19e3-4299-9e9f-a2efaa0c0204)![image](https://github.gatech.edu/C21U/vip-nlp/assets/70523/1285897a-a944-406a-bcfd-e2033b198036)
 # Week 1
 ###### Introductions, first week of school and classes
 ###### Completed FERPA documentation and subteam survey
@@ -48,7 +48,7 @@
 
 ##### Finished up my portion of subteam presentation, team path/goals look good. Checked in with Dr. Lee as well.
 
-##### Finished subteam presentation, went well.
+##### Finished subteam presentation, went well. Subteam Presentation 1: https://docs.google.com/presentation/d/1abxmobcj09t4k6mI9hQpj-CeYJXaiJchwixsDX2xofk/edit?usp=sharing
 
 **IMPORTANT** VIP Notebooks due Oct 4th and Peer Eval due Oct11!
 
@@ -72,3 +72,22 @@
 #### How can Data Science vary their work? -- look into handle time-series data, development of conversation over time/how does engagement evolve. when is optimal time for teacher intervention/engagement
 #### Analyzing specifically a conversation thread rather than full collection of posts in dataset
 #### identifying/modelling differently basde on student/teacher/TA data independently
+
+# Week 8
+
+#### Meeting Plan
+##### Give update on new dataset
+##### Talk about finished LLM prompt generation, moving forward -- prompts look good, ask Data Science for feedback. 
+##### Discuss possible time-series data, helps with teacher intervention -- also just one conversation thread
+##### Future for ML team, after finishing this generation and getting real data, can look into scalability of synthetic data -- is this a viable practice for the field
+##### PEER EVALS OPEN TODAY AND ARE DUE FRIDAY
+
+#### Meeting Notes
+##### Struggling to have randomness in data - will be important research focus in the future, parameters tweaking
+##### Will ask Dr. Lee for reference model
+
+#### Action Items
+##### ML: ROUGE score, diversity (TTR, entropy), API extensible in jupyter notebook
+##### Data Science: analyze as time-series data. try clustering based on topic right now, will continue with that until we get real data which should be better time-series wise
+##### Nihaar: Figure out better ways to move forward w ML research + converting to time-series -- more concrete action items.
+##### Nihaar: look for reference model. Check into API stuff for jupyter notebook
