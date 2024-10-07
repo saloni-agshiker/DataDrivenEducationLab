@@ -1,4 +1,3 @@
-![image](https://github.gatech.edu/C21U/vip-nlp/assets/70523/ad84aac6-19e3-4299-9e9f-a2efaa0c0204)![image](https://github.gatech.edu/C21U/vip-nlp/assets/70523/1285897a-a944-406a-bcfd-e2033b198036)
 # Week 1
 ###### Introductions, first week of school and classes
 ###### Completed FERPA documentation and subteam survey
