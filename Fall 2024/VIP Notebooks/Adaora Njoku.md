@@ -52,4 +52,4 @@ __Week 9__
   
     TO-DO: Complete subteam presentation slides
   
-    Resources: https://medium.com/@MUmarAmanat/llm-evaluation-with-rouge-0ebf6cf2aed4, 
+    Resources: https://medium.com/@MUmarAmanat/llm-evaluation-with-rouge-0ebf6cf2aed4, https://code.visualstudio.com/api/extension-guides/notebook, https://huggingface.co/databricks/dolly-v2-7b, https://huggingface.co/UmUDev/DialoGPT-medium-AlexVN
