@@ -90,3 +90,25 @@
 ##### Data Science: analyze as time-series data. try clustering based on topic right now, will continue with that until we get real data which should be better time-series wise
 ##### Nihaar: Figure out better ways to move forward w ML research + converting to time-series -- more concrete action items.
 ##### Nihaar: look for reference model. Check into API stuff for jupyter notebook
+
+# Week 9
+#### Fall break, no meeting.
+#### Used working day to explore time-series formats + LLM APIs that ML team could utilize. Still need to discuss example references.
+#### Talked to Dr. Lee about dataset timeline, coming soon
+
+# Week 10
+
+#### Meeting Plan
+##### Give updates on dataset
+##### Check for updates on progress
+##### Talk about filling data request form
+##### Practice subteam presentation
+
+#### Meeting Notes
+##### ML: resrach on entropy etc.
+##### Data Science: progress with time-series visualization
+
+
+#### Action Items
+##### ML: Keep working & making progress. Try to get some progress on TTR, entropy, and/or LLM API implementation
+##### Data Science: time-series conversion for real data? Kind of have to wait until end of the week.
