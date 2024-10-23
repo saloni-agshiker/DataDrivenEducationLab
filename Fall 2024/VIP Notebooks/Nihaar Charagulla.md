@@ -112,3 +112,6 @@
 #### Action Items
 ##### ML: Keep working & making progress. Try to get some progress on TTR, entropy, and/or LLM API implementation
 ##### Data Science: time-series conversion for real data? Kind of have to wait until end of the week.
+
+#### Subteam Presentation: https://docs.google.com/presentation/d/1lmAv2qnnGLpF_yCLprJ57NSn_fW6cfX54DUm1d_khWQ/edit#slide=id.g30d086b5d8a_1_0
+Completed and discussing next steps to continue progress
