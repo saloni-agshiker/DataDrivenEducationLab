@@ -115,3 +115,9 @@
 
 #### Subteam Presentation: https://docs.google.com/presentation/d/1lmAv2qnnGLpF_yCLprJ57NSn_fW6cfX54DUm1d_khWQ/edit#slide=id.g30d086b5d8a_1_0
 Completed and discussing next steps to continue progress
+
+# Week 11
+
+#### Action Items
+##### ML: spend next two weeks creating dataset via LLM API
+##### Data Science: brainstorm time-series, waiting for dataset
