@@ -121,3 +121,12 @@ Completed and discussing next steps to continue progress
 #### Action Items
 ##### ML: spend next two weeks creating dataset via LLM API
 ##### Data Science: brainstorm time-series, waiting for dataset
+
+Got the dataset! Requesting access and forwarded to team
+
+# Week 12
+
+#### Meeting Notes
+##### Only 2 weeks left to make significant progress
+##### ML: updates on LLM
+##### Data Science: updates on brainstorm -- waiting on dataset should have it now
