@@ -130,3 +130,16 @@ Got the dataset! Requesting access and forwarded to team
 ##### Only 2 weeks left to make significant progress
 ##### ML: updates on LLM
 ##### Data Science: updates on brainstorm -- waiting on dataset should have it now
+
+Got the dataset, shared with team and discussed how to use.
+
+# Week 13
+#### Meeting Notes
+##### Last week to work
+##### ML: Updates, put together presentation
+##### Data Science: Updates on their work -- we met so I htink they're on track.
+
+#### Action Items
+##### Data Science documentation, analysis of graphs/work
+##### ML - prompt generation, tweaking current work -- compiling everything for presentation
+##### Everyone work on subteam final presentation
