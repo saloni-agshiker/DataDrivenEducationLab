@@ -43,7 +43,8 @@ __Week 7__
 
 __Week 8__
 
-    We 
+    Diya and I were given new action items to research which would help us guide our research. 
+    This would also help us prepare for the subteam presentation
 
 __Week 9__
 
@@ -81,11 +82,12 @@ __Week 12__
     TO-DO:  Try to generate cohesive answers
             Make sure to implement the dataset as a source for the synthesized data
   
-    Resources: XX
+    Resources: https://medium.com/intel-tech/four-data-cleaning-techniques-to-improve-large-language-model-llm-performance-77bee9003625
 __Week 13__
 
     Decided to change the LLM to posssibly generate better responses.
     Also was able to input the csv file as a source
+    Coordinateed with Diya and was able to fix some errors our code was having
   
     TO-DO:  Complete the subteam presentation
             Implement the new LLM for post content 
@@ -95,9 +97,7 @@ __Week 13__
 __Week 14__
 
     Completed the final subetam presentayionn, updating on our progress throughout the semester. 
-    Was still not able to generate cohesive responses but that may be the 
+    Was still not able to generate cohesive responses but that may be the task for the upcoming VIP teams
   
-    TO-DO:  XX
-            XX
+    TO-DO:  Figure out how to create cohesive responses using the dataset
   
-    Resources: XX
