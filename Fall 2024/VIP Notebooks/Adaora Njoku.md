@@ -84,16 +84,18 @@ __Week 12__
     Resources: XX
 __Week 13__
 
-    Was able to implement the 
+    Decided to change the LLM to posssibly generate better responses.
+    Also was able to input the csv file as a source
   
-    TO-DO:  XX
+    TO-DO:  Complete the subteam presentation
             Implement the new LLM for post content 
   
-    Resources: XX
+    Resources: https://huggingface.co/google/mt5-base 
 
 __Week 14__
 
-    XX
+    Completed the final subetam presentayionn, updating on our progress throughout the semester. 
+    Was still not able to generate cohesive responses but that may be the 
   
     TO-DO:  XX
             XX
