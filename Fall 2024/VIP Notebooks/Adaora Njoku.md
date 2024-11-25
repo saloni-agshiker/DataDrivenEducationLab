@@ -48,8 +48,54 @@ __Week 8__
 __Week 9__
 
     Diya and I began prepping for the upcoming subteam presentation
-    We reserched our action items
+    We reserched our action items: Entropy, Token Ratio, Rouge Score, Randomness,  top_p and top_k
   
     TO-DO: Complete subteam presentation slides
   
     Resources: https://medium.com/@MUmarAmanat/llm-evaluation-with-rouge-0ebf6cf2aed4, https://code.visualstudio.com/api/extension-guides/notebook, https://huggingface.co/databricks/dolly-v2-7b, https://huggingface.co/UmUDev/DialoGPT-medium-AlexVN
+
+__Week 10__
+
+    Completed and presented Subteam preserntation 2
+  
+    TO-DO:  Using these new factors to generate better outputs
+            Implement the new LLM for post content 
+  
+    Resources: https://medium.com/@MUmarAmanat/llm-evaluation-with-rouge-0ebf6cf2aed4, https://code.visualstudio.com/api/extension-guides/notebook, https://huggingface.co/databricks/dolly-v2-7b, https://huggingface.co/UmUDev/DialoGPT-medium-AlexVN
+
+__Week 11__
+
+    Received the dataset for the 1301 MOOC data
+    Began reseraching how to use the dataset as a source for the LLM
+  
+    TO-DO:  Figure out how to call the LLM and use that top generate Student_Feedback
+            Create a detailed prompt when calling the model
+            Make sure to implement the dataset as a source for the synthesized data
+  
+    Resources: [https://medium.com/@MUmarAmanat/llm-evaluation-with-rouge-0ebf6cf2aed4, https://code.visualstudio.com/api/extension-guides/notebook, https://huggingface.co/databricks/dolly-v2-7b, https://huggingface.co/UmUDev/DialoGPT-medium-AlexVN](https://python.langchain.com/v0.1/docs/use_cases/sql/csv/)
+
+__Week 12__
+
+    Was able to implement the model to generate responses for Student_Feedback but it was creating nonsencial responses. 
+  
+    TO-DO:  Try to generate cohesive answers
+            Make sure to implement the dataset as a source for the synthesized data
+  
+    Resources: XX
+__Week 13__
+
+    Was able to implement the 
+  
+    TO-DO:  XX
+            Implement the new LLM for post content 
+  
+    Resources: XX
+
+__Week 14__
+
+    XX
+  
+    TO-DO:  XX
+            XX
+  
+    Resources: XX
