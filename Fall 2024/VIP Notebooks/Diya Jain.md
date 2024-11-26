@@ -80,3 +80,76 @@ ML for Mass Generating Posts:
 ### To do List:
 - [x] Work on VIP Notebook
 - [] Meet with Adaora to work on our assigned task to mass generate data
+
+# Week 8
+### Notes about subteam meeting:
+We were able to share the dataset Adaora and I were able to generate to the team for feedback. Nihaar and everyone said that it looks good. We are now shifting our focus to focus on if the use of AI to generate a dataset is viable for future research. 
+We are also finding issues in being able to randomize our data and have the model retain the information that it has already outputted. 
+### Notes about class:
+- This week’s presentation was about Design-Based Research Introduction with Software Development. 
+
+### To do List:
+- [x] 
+- [] 
+
+# Week 9
+### Notes about subteam meeting:
+Fall break occurred this week 
+### Notes about class:
+This was a working day so here is my reflection below: 
+As the focus of the machine learning engineers is shifting towards being able to see if it is possible to generate a dataset using an AI model, the action items have also evolved accordingly. Today, I used the action items that Nihaar mentioned in our last subteam meeting to guide my work. I was able to focus on researching what entropy was and how it can influence creativeness. This is a resource that I think is really helpful for this specific topic: https://towardsdatascience.com/ai-entropy-the-vicious-circle-of-ai-generated-content-8aad91a19d4f.  
+Links to an external site.
+I think that this is a really interesting resource as it is able to encompass how models can collapse with their responses. This is useful because when creating a dataset, you would have to run the model x amount of times. If the model's performance degrades then that would not be optimal. I did not face any challenges today for being able to research this topic. 
+### To do List:
+- [x] 
+- [] 
+
+# Week 10
+### Notes about subteam meeting:
+I shared progress on the relevant research that I was able to make during the working session last week. I was able to research entropy and document my findings in the document that I have been working on to serve as documentation for future semesters. 
+Adaora and I need to research more on the following topics for the next meeting: TTR, entropy, and/or LLM API implementation. 
+We plan to try to research these topics to gain a deeper understanding of what variables will impact our dataset results. 
+### Notes about class:
+Today, we had our subteam presentation #2 in class. Here is the link to the presentation below: https://docs.google.com/presentation/d/1lmAv2qnnGLpF_yCLprJ57NSn_fW6cfX54DUm1d_khWQ/edit#slide=id.g30d086b5d8a_1_0
+
+### To do List:
+- [x] Need to continue to do research on datasets that people have generated using AI in the past to gain more insights 
+- [] 
+
+# Week 11
+### Notes about subteam meeting:
+As the semester is getting closer to the end, it is really important that we apply all of our resarch to creating a dataset. 
+We are using a model via Hugging Face and plan to make more progress to show at the subteam meeting next week. I am finding challenges in getting the model to not output the student_feedback column as the prompt directly. I have reached out to Adaora for help. 
+Nihaar updated the team that we got the dataset and we all have to make sure that we request it now. 
+### Notes about class:
+Today was the in class lecture about Ethical Considerations in Data-Driven Education. It was really interesting to learn about various ethical implications associated with data analytics too. 
+
+### To do List:
+
+
+# Week 12
+### Notes about subteam meeting:
+I was able to share with the team the code that I worked on. I was able to ask them questions about if they had suggestions on how to generate better outputs for the student_feedback column. 
+I plan to meet with Nihaar if needed to follow up on the questions that I have. 
+### Notes about class:
+This lecture was about LLM Research in Education. I thought that this lecture was really relevant to the work that I am working on for this semester in my VIP as the lecturer was able to talk about the use of AI and discussed prompt engineering too. I would definitely want to reach out to Dr. Youngwon Kim in future semesters to use his experience to help our project goals in generating a fake dataset with AI. 
+### To do List:
+
+
+
+# Week 13
+### Notes about subteam meeting:
+This is the last week to work before our subteam presentation. I was able to give the team updates on what I have been working on. I will continue to adjust the prompt and also work on trying to integrate the dataset more. Adaora and I will push the code for future semesters to be able to use it on the shared github. 
+### Notes about class:
+ Future Directions for Data-Driven Education by Dr. Harmon was the presentation for today. 
+### To do List:
+Work on the final presentation and practice presenting the slides. 
+
+# Week 14
+### Notes about subteam meeting:
+This is the week of our final presentation. We met briefly and Nihaar was able to share the slideshow for us to work on. 
+I was able to delegate which machine learning slides Adaora and I can work on to properly demonstrate our work for the semester. 
+
+Link to final presentation: https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit#slide=id.g316075c8b01_0_0 
+
+
