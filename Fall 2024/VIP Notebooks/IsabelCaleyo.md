@@ -81,3 +81,76 @@
 * Lecture on different types of online learning
 * History, types, methods, impact, and future trajectory for online learning discussed
 * Class discussion about how online learning has been seen in our lives/how it impacts our projects
+
+# Week 8
+#### Subteam and class meeting
+* Discussed possible time-series approaches we could take or different paths to pursue. Mostly waiting for ML to finish their generation and getting the real data.
+* Peer evals are coming up
+* Trying to cluter based on topics, but might have to change approach. Waiting for real data so still in progress
+
+
+# Week 9
+#### Fall break
+* No subteam meeting on Monday
+#### Used working day to explore time-series formats + LLM APIs that ML team could utilize. Still need to discuss example references.
+#### Talked to Dr. Lee about dataset timeline, coming soon
+
+# Week 10
+
+#### Meeting Plan
+##### Give updates on dataset
+##### Check for updates on progress
+##### Talk about filling data request form
+##### Practice subteam presentation
+
+#### Meeting Notes
+##### ML: resrach on entropy etc.
+##### Data Science: progress with time-series visualization
+
+
+#### Action Items
+##### ML: Keep working & making progress. Try to get some progress on TTR, entropy, and/or LLM API implementation
+##### Data Science: time-series conversion for real data? Kind of have to wait until end of the week.
+
+#### Subteam Presentation: https://docs.google.com/presentation/d/1lmAv2qnnGLpF_yCLprJ57NSn_fW6cfX54DUm1d_khWQ/edit#slide=id.g30d086b5d8a_1_0
+Completed and discussing next steps to continue progress
+
+# Week 11
+
+#### Action Items
+##### ML: spend next two weeks creating dataset via LLM API
+##### Data Science: brainstorm time-series, waiting for dataset
+
+Got the dataset! Requesting access and forwarded to team
+
+# Week 12
+
+#### Meeting Notes
+##### Only 2 weeks left to make significant progress
+##### ML: updates on LLM
+##### Data Science: updates on brainstorm -- waiting on dataset should have it now
+
+Got the dataset, shared with team and discussed how to use.
+
+# Week 13
+#### Meeting Notes
+##### Last week to work
+##### ML: Updates, put together presentation
+##### Data Science: Updates on their work -- we met so I htink they're on track.
+
+#### Action Items
+##### Data Science documentation, analysis of graphs/work
+##### ML - prompt generation, tweaking current work -- compiling everything for presentation
+##### Everyone work on subteam final presentation
+
+# Week 14
+#### Meeting Notes
+##### Just recapping all the past action items of the previous few weeks
+##### Make sure to get presentation done and ready by needed deadline
+##### ML have a ready-to-present and documented version of code
+##### Data Science is done with their work
+
+#### Action Items
+##### Compile everything for presentation - https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit#slide=id.g316075c8b01_0_0
+##### Upload eveyrthing to Github, update notebooks, and complete peer-evals
+##### Ensure documentation is correct
