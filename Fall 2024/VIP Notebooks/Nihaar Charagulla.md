@@ -143,3 +143,16 @@ Got the dataset, shared with team and discussed how to use.
 ##### Data Science documentation, analysis of graphs/work
 ##### ML - prompt generation, tweaking current work -- compiling everything for presentation
 ##### Everyone work on subteam final presentation
+
+# Week 14
+#### Meeting Notes
+##### Just recapping all the past action items of the previous few weeks
+##### Make sure to get presentation done and ready by needed deadline
+##### ML have a ready-to-present and documented version of code
+##### Data Science is done with their work
+
+#### Action Items
+##### Compile everything for presentation - https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit#slide=id.g316075c8b01_0_0
+##### Upload eveyrthing to Github, update notebooks, and complete peer-evals
+##### Ensure documentation is correct
+
