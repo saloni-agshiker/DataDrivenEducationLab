@@ -85,12 +85,15 @@ ML for Mass Generating Posts:
 ### Notes about subteam meeting:
 We were able to share the dataset Adaora and I were able to generate to the team for feedback. Nihaar and everyone said that it looks good. We are now shifting our focus to focus on if the use of AI to generate a dataset is viable for future research. 
 We are also finding issues in being able to randomize our data and have the model retain the information that it has already outputted. 
+Relevant Links to Papers: 
+https://ieeexplore.ieee.org/document/10578809 
+https://ceur-ws.org/Vol-3667/GenAILA-paper3.pdf 
 ### Notes about class:
 - This week’s presentation was about Design-Based Research Introduction with Software Development. 
 
 ### To do List:
-- [x] 
-- [] 
+- [x] share dataset with subteam for feedback
+- [x] make adjustments to the dataset
 
 # Week 9
 ### Notes about subteam meeting:
@@ -101,8 +104,9 @@ As the focus of the machine learning engineers is shifting towards being able to
 Links to an external site.
 I think that this is a really interesting resource as it is able to encompass how models can collapse with their responses. This is useful because when creating a dataset, you would have to run the model x amount of times. If the model's performance degrades then that would not be optimal. I did not face any challenges today for being able to research this topic. 
 ### To do List:
-- [x] 
-- [] 
+- [x] research entropy and role in creativeness of dataset
+- [x] research different articles that are related to AI generated content
+
 
 # Week 10
 ### Notes about subteam meeting:
@@ -114,7 +118,8 @@ Today, we had our subteam presentation #2 in class. Here is the link to the pres
 
 ### To do List:
 - [x] Need to continue to do research on datasets that people have generated using AI in the past to gain more insights 
-- [] 
+- [] Explore TTR and LLM API integration
+-  [x] share research findings with subteam
 
 # Week 11
 ### Notes about subteam meeting:
@@ -125,6 +130,12 @@ Nihaar updated the team that we got the dataset and we all have to make sure tha
 Today was the in class lecture about Ethical Considerations in Data-Driven Education. It was really interesting to learn about various ethical implications associated with data analytics too. 
 
 ### To do List:
+- [x] reach out to Adaora for help resolving output issues in dataset 
+- [] request access to new dataset that Nihaar said is available
+-  [x] try to ensure that the student_feedback is not identical to the prompt
+- [x] explore more HuggingFace models
+
+
 
 
 # Week 12
@@ -134,6 +145,8 @@ I plan to meet with Nihaar if needed to follow up on the questions that I have.
 ### Notes about class:
 This lecture was about LLM Research in Education. I thought that this lecture was really relevant to the work that I am working on for this semester in my VIP as the lecturer was able to talk about the use of AI and discussed prompt engineering too. I would definitely want to reach out to Dr. Youngwon Kim in future semesters to use his experience to help our project goals in generating a fake dataset with AI. 
 ### To do List:
+[x] share code with team for feedback 
+[x] reach out to Nihaar for help if needed since I am having trouble with the current model and associated output 
 
 
 
@@ -143,7 +156,8 @@ This is the last week to work before our subteam presentation. I was able to giv
 ### Notes about class:
  Future Directions for Data-Driven Education by Dr. Harmon was the presentation for today. 
 ### To do List:
-Work on the final presentation and practice presenting the slides. 
+[x] Work on the final presentation and practice presenting the slides. 
+[x] continue to integrate the given dataset into the prompt 
 
 # Week 14
 ### Notes about subteam meeting:
@@ -151,5 +165,11 @@ This is the week of our final presentation. We met briefly and Nihaar was able t
 I was able to delegate which machine learning slides Adaora and I can work on to properly demonstrate our work for the semester. 
 
 Link to final presentation: https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit#slide=id.g316075c8b01_0_0 
+
+
+# Documentation for Machine Learning work to help future semesters: 
+https://docs.google.com/document/d/1Dl3PBcgT-Qtif93cPZ1itSQmpf-hQo-jhXR1rg50Usg/edit?usp=sharing 
+
+I created this to help serve as detailed documentation on the progress this semester. 
 
 
