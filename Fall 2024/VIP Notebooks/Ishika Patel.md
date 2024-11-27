@@ -65,3 +65,79 @@ Subteam Meeting: Not much has happened for the data scienc team. We are looking 
 
 Action Items: 
 find models that can test our metrics. 
+
+# Week 8
+DUE: peer reviews 
+Subteam Meeting: 
+    Data Science: analyze dummy data as time-series data. try clustering        based on topic right now, will continue with that until we get real         data which should be better time-series wise
+
+This week Isabel and I researched how to do a time-series since we are pretty unfamiliar with the topic. We did this independently and then planned on meeting Friday, October 11 for an hour or so to discuss what our plan is. 
+
+
+# Week 9
+Subteam Meeting: 
+      Data science team discussed what we had learned and let them know           that we we will devise a plan this week so that we can begin our            subteam presentation.
+
+This week was a reading week. Isabel and I devised a plan to get started with time series data. 
+
+These are my notes: 
+Previously, Isabel and I created a schema for the ML team. They populated about 30 entries into the tables. The code is in the discussion forums team file on github.
+
+Now that we have this data, we are planning to analyze it as time-series data. We want to try clustering based on topic/subject and will continue with that until we get real data. So, essentially, doing this is practice for when we get real data.
+
+Since this is something neither Isabel nor myself have done in the past, we wanted to take a minute and plan out our process. So to cluster our data based on the topics/subjects, we first want to preprocess the posts by tokenizing the comments/posts and removing stopwords (the, and, or, etc.). We would also have to reduce some of their words to their base form (posting becomes post). Additionally, we have to convert text into some numerical representation by weighing words by important and capturing semantic relationships between words. Second, to prepare our data for time-series analyzation, we can use a sliding window approach. We already have timestamps associated with each post. We can create time windows and aggregate posts within the windows and see how topics change over time. Next, there are two models that we could run to cluster by subject/topic. One is Latent Dirichlet Allocation, and the other is Non-Negative Matrix Factorization. Both are methods that identify/extract topics within posts. Finally, we can use cluster algorithms such as DBSCAN, K-Means, or Hierarchical Clustering. The first would be useful if there are outliers in the data. The second can cluster similar posts into groups based on the input vector. The third can build a hierarchy of clusters. After we complete all of this, we can analyze the main topics and trends. Another thing we looked into is Dynamic Time Warping. This combines clustering with  time-series so we can compare clusters across time windows.
+
+
+Today's working day consisted of doing this research, and some links I used to conduct this research are below. 
+
+https://medium.com/@metacosmos/prepare-time-series-data-for-time-series-forecasting-with-deep-learning-part-1-1a11bbf314e4Links to an external site.
+
+Links to an external site.https://lakefs.io/blog/data-preprocessing-in-machine-learning/Links to an external site.
+
+https://www.kaggle.com/code/panks03/clustering-with-topic-modeling-using-ldaLinks to an external site.
+
+https://www.geeksforgeeks.org/dbscan-clustering-in-ml-density-based-clustering/Links to an external site.
+
+https://www.geeksforgeeks.org/k-means-clustering-introduction/#Links to an external site.
+
+The only challenges I say we are faced with is knowing where to start. This would be both of our first times doing this, so we wanted to flush out a plan before we started
+
+We started coding this week. Time series was a challenge and under a time constraint we decided to find another actionable insight. The challenge was finding the date-time stamp in order to have a working analysis. Instead we did a post over time trend for presentation 2 and presented our challenges and future steps. 
+
+# Week 10
+
+Subteam Meeting: 
+We presented as we would during presentation 2 so that we can make sure we are under the time limit, and for Aditi to give us feedback on what we should add or fix. She told the data science team that we need less wording and more graphics. She told us to use those same words when we present. 
+
+Link to subteam presentation 2: 
+https://docs.google.com/presentation/d/1lmAv2qnnGLpF_yCLprJ57NSn_fW6cfX54DUm1d_khWQ/edit?usp=sharing
+
+# Week 11
+Subteam Meeting: Subteam meeting was more for ML team. Data science was told to just find more information about time series if needed so we can get started as soon as we have the data set. 
+
+Isabel and I begin to create a document that outlined the work we did this semester. 
+Link to Doc: 
+https://docs.google.com/document/d/1BwrgBs_eQ3eUkA0x8vh1e9bAC4gJwsT7T4n0BJBskLs/edit?usp=sharing
+
+# Week 12
+Subteam Meeting: We got the data, so now we are told to begin our work with time series. 
+
+Isabel and I begin to start time series analysis. All of our code will be in the github by the end of the semester. We did a couple of small insights to begin with. We also did a seasonal, trend, and residual graph. 
+
+# Week 13
+Subteam meeting: Updated the team about what Isabel and I have completed. 
+
+This week we completed our documentation for future teams. 
+
+# Week 14
+Subteam Meeting: we did not present this day to practice, but we worked on compiling all of our information for the presentation and showed our findings to Aditi. 
+
+Link to presentation: 
+https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit#slide=id.p1
+
+
+# Week 15
+
+Cleaned up notebook for Final Assessment
+
+
