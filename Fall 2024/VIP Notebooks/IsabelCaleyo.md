@@ -87,70 +87,32 @@
 * Discussed possible time-series approaches we could take or different paths to pursue. Mostly waiting for ML to finish their generation and getting the real data.
 * Peer evals are coming up
 * Trying to cluter based on topics, but might have to change approach. Waiting for real data so still in progress
-
+* Class was about design-based research introduction with software development. 
 
 # Week 9
-#### Fall break
-* No subteam meeting on Monday
-#### Used working day to explore time-series formats + LLM APIs that ML team could utilize. Still need to discuss example references.
-#### Talked to Dr. Lee about dataset timeline, coming soon
+### Subteam meeting:
+* No meeting - fall break
+* Working day - here is my reflection: 
+Ishika and I recently created a schema for the ML team, and now they've added around 30 entries to the tables. The code for is in the file 30Entries.ipynb in our Teams. 
+Now that we have this, we're planning to analyze it as time-series data. We're thinking of clustering based on topics or subjects and will keep doing that until we get our hands on the real data. Since this is something neither Ishika nor I have done before, we wanted to  plan out what we are going to do. To cluster by topic/subject, the first step would be to preprocess the posts—tokenizing the comments and removing stop words (like "the," "and," "or"). We'd also need to reduce words to their base form. Then, we’d convert the text into a numerical format, weighing the words by importance and capturing semantic relationships between them.  To prepare for time-series analysis, we're thinking of using a sliding window approach. Since we already have timestamps for each post, we can create time windows, group posts within those windows, and track how topics evolve over time. For the clustering itself, we’re considering two models: Latent Dirichlet Allocation and Non-Negative Matrix Factorization. Both help identify or extract topics from the posts. Once we have that, we can apply clustering algorithms like DBSCAN for outliers, K-Means for grouping, or Hierarchical Clustering (to build a hierarchy of clusters). We’ll analyze the main topics and trends. Another technique we’ve looked into is Dynamic Time Warping. Today’s workday involved researching these methods, and I’ve listed some links Ishika and I found useful during our research.  This is our first time doing this, so knowing where to begin and trying to piece everything together in a coherent and effective way has been the hardest part.
+
+Source links:
+https://medium.com/@metacosmos/prepare-time-series-data-for-time-series-forecasting-with-deep-learning-part-1-1a11bbf314e4 Links to an external site.
+https://www.geeksforgeeks.org/k-means-clustering-introduction/ Links to an external site.
+https://www.kaggle.com/code/panks03/clustering-with-topic-modeling-using-lda Links to an external site.
+https://www.geeksforgeeks.org/dbscan-clustering-in-ml-density-based-clustering/ Links to an external site.
+
 
 # Week 10
-
-#### Meeting Plan
-##### Give updates on dataset
-##### Check for updates on progress
-##### Talk about filling data request form
-##### Practice subteam presentation
-
-#### Meeting Notes
-##### ML: resrach on entropy etc.
-##### Data Science: progress with time-series visualization
-
-
-#### Action Items
-##### ML: Keep working & making progress. Try to get some progress on TTR, entropy, and/or LLM API implementation
-##### Data Science: time-series conversion for real data? Kind of have to wait until end of the week.
-
-#### Subteam Presentation: https://docs.google.com/presentation/d/1lmAv2qnnGLpF_yCLprJ57NSn_fW6cfX54DUm1d_khWQ/edit#slide=id.g30d086b5d8a_1_0
-Completed and discussing next steps to continue progress
+### Subteam meeting:
+* Ishika and I are waiting for the data set and haven't done much. We practiced our 
+### About class:
+Today, we practiced our subteam presentation 2 in class.
+Link: https://docs.google.com/presentation/d/1lmAv2qnnGLpF_yCLprJ57NSn_fW6cfX54DUm1d_khWQ/edit#slide=id.g30d086b5d8a_1_0
 
 # Week 11
+### Subteam meeting:
+* We have a dataset! Ishika and I will start working on it.
+* Ishika and I got together and worked on the dataset.
+Today was the in class lecture about Ethical Considerations in Data-Driven Education. It was really interesting to learn about various ethical implications associated with data analytics too. 
 
-#### Action Items
-##### ML: spend next two weeks creating dataset via LLM API
-##### Data Science: brainstorm time-series, waiting for dataset
-
-Got the dataset! Requesting access and forwarded to team
-
-# Week 12
-
-#### Meeting Notes
-##### Only 2 weeks left to make significant progress
-##### ML: updates on LLM
-##### Data Science: updates on brainstorm -- waiting on dataset should have it now
-
-Got the dataset, shared with team and discussed how to use.
-
-# Week 13
-#### Meeting Notes
-##### Last week to work
-##### ML: Updates, put together presentation
-##### Data Science: Updates on their work -- we met so I htink they're on track.
-
-#### Action Items
-##### Data Science documentation, analysis of graphs/work
-##### ML - prompt generation, tweaking current work -- compiling everything for presentation
-##### Everyone work on subteam final presentation
-
-# Week 14
-#### Meeting Notes
-##### Just recapping all the past action items of the previous few weeks
-##### Make sure to get presentation done and ready by needed deadline
-##### ML have a ready-to-present and documented version of code
-##### Data Science is done with their work
-
-#### Action Items
-##### Compile everything for presentation - https://docs.google.com/presentation/d/1s9r3A7ptF1E50pm9cW-bYLrE_AAWA9NH/edit#slide=id.g316075c8b01_0_0
-##### Upload eveyrthing to Github, update notebooks, and complete peer-evals
-##### Ensure documentation is correct
