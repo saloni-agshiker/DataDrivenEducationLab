@@ -1,3 +1,4 @@
+__Ethan's Spring 2025 VIP-DDE-DF Notebook__
 # Week 1
 ## General Body Meeting:
 - Partook in a circle introduction among Data-Driven Education instructors, returning members, and new members
