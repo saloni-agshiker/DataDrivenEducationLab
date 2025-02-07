@@ -37,3 +37,13 @@ __Ethan's Spring 2025 VIP-DDE-DF Notebook__
 - This is because we want to use the new edX dataset, which most likely will be incompatible with the previous database app that contains several hardcoded values
 ## TODO
 - Polish my individual goal for this project and continue learning on potential resources
+- Research potential use of Hugging Face and LDA to deploy NLP model
+# Week 5
+## General Body Meeting
+- Listened to Dr. Grigoryan’s presentation about the real-world applications of explainable artificial intelligence 
+## Sub-Team Meeting
+- Presented my insight on implementing a BERT/DistilBERT model
+- Can streamline text classification model through Transformers library on HF
+- One caveat is that the DF datasets are relatively small (~9k entries)
+- Still open to using LDA as long as we clean the datasets
+
