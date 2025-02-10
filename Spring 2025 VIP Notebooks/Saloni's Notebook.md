@@ -52,3 +52,20 @@
 ### To Do:
 - [x] Fill out notebook for this month
 - [x] Research into the best NLP model to use: I am looking into BERT and LDA, Ethan is looking into Hugging Face and LDA.
+
+
+## Week 4: Feb 5, 2025
+
+### Class Meeting Notes:
+- We listened to a presentation on Explainable AI and learned about methods like LIME and Shap values that researchers are exploring to understand the factors that affect an AI machine's decision-making process.
+
+### Sub-Team Meeting Notes: Feb 7, 2025
+- [x] Provide weekly updates on the work each person did during the week: I looked through the datasets we will be using and explained the research I did on BERT and LDA models.
+- [x] Decide logistics for our first sub-team presentation next week.
+- [x] Set up a time to meet with Ethan and Bo (data science team) to finalize our research plan for the semester. We met on Sunday 2/9 and 
+created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BERT models, run the data on them, and analyze our results to be displayed in an interactive dashboard.
+- Link to timeline: https://docs.google.com/document/d/1AilcZCyB7zOE53JqY7gHSuiyRJveBCkMhojdFnTZFKI/edit?usp=sharing
+
+### To Do:
+- [x] Complete my slides for sub-team presentation 1 and practice
+- [x] Research into steps for pre-processing data for LDA model and creating an LDA model
