@@ -46,4 +46,14 @@ __Ethan's Spring 2025 VIP-DDE-DF Notebook__
 - Can streamline text classification model through Transformers library on HF
 - One caveat is that the DF datasets are relatively small (~9k entries)
 - Still open to using LDA as long as we clean the datasets
+- Collaborated on a working timeline for the data science team
+## TODO
+- Prepare my slides on data metrics for the upcoming sub-team presentation
+- Begin to clean the dataset using Pandas
+# Week 6
+## General Body Meeting
+- Presented Sub-Team Presentation 1 via Microsoft Teams
+- Listened to other sub-teams’ presentations
+## Sub-Team Meeting
+
 
