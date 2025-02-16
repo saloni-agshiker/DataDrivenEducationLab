@@ -69,3 +69,17 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 ### To Do:
 - [x] Complete my slides for sub-team presentation 1 and practice
 - [x] Research into steps for pre-processing data for LDA model and creating an LDA model
+
+
+## Week 5: Feb 12, 2025
+
+### Class Meeting Notes:
+- We gave our first subteam presentation on past work conducted in this team, as well as our goals and timeline for the semester. We also listened to the other subteams' presentations.
+
+### Sub-Team Meeting Notes: Feb 14, 2025
+- [x] Provide weekly updates on the work each person did during the week: I prepared for the subteam presentation and researched into how to setup the LDA model with Python libraries.
+- [x] Set up a time to meet with Data Science team. We met on Sunday 2/16 and looked at the progress with pre-processing the data and configuring the LDA model. Since the dataset has messages for five classes, we decided to focus on the two classes with the most number of comments first. Ethan has begun pre-processing the data using the NLTK Python library and I am researching more into the LDA model.
+- Link to LDA model information: https://medium.com/towards-data-science/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
+
+### To Do:
+- [x] Setup LDA model in Jupyter Notebook or VSCode (due Wednesday 2/19)
