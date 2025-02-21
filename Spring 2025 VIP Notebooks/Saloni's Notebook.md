@@ -75,6 +75,7 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### Class Meeting Notes:
 - We gave our first subteam presentation on past work conducted in this team, as well as our goals and timeline for the semester. We also listened to the other subteams' presentations.
+- Link to our first subteam presentation: https://docs.google.com/presentation/d/1JxvFgwIIzVG8skGg-7P63wErp5LZP8HYaAonREsespo/edit?usp=sharing
 
 ### Sub-Team Meeting Notes: Feb 14, 2025
 - [x] Provide weekly updates on the work each person did during the week: I prepared for the subteam presentation and researched into how to setup the LDA model with Python libraries.
@@ -83,3 +84,16 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### To Do:
 - [x] Setup LDA model in Jupyter Notebook or VSCode (due Wednesday 2/19)
+
+
+## Week 6: Feb 19, 2025
+
+### Class Meeting Notes:
+- We listened to a presentation on Research in Online Learning by Dr. Yilmaz Soylu, which was very insightful. I didn't realize how many sub-areas of research there are for this topic: such as research into developing the most effective teaching methods and the psychological effects of online learning on students and teachers.
+
+### Sub-Team Meeting Notes: Feb 21, 2025
+- [x] Provide weekly updates on the work each person did during the week: I setup the LDA model using the Pandas and Gensim NLP Python libraries, and ran it on a dummy dataset.
+- [x] Link to LDA model: https://colab.research.google.com/drive/1ymlapQIkFbH-Jpec-dIrh0u9clhK5lbI?usp=sharing
+
+### To Do:
+- [x] Run LDA model on processed EdX dataset & analyze results
