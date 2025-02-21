@@ -93,7 +93,8 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### Sub-Team Meeting Notes: Feb 21, 2025
 - [x] Provide weekly updates on the work each person did during the week: I setup the LDA model using the Pandas and Gensim NLP Python libraries, and ran it on a dummy dataset.
-- [x] Link to LDA model: https://colab.research.google.com/drive/1ymlapQIkFbH-Jpec-dIrh0u9clhK5lbI?usp=sharing
+- Link to LDA model: https://colab.research.google.com/drive/1ymlapQIkFbH-Jpec-dIrh0u9clhK5lbI?usp=sharing
+- Link to dummy dataset: https://www.kaggle.com/datasets/therohk/million-headlines/data
 
 ### To Do:
-- [x] Run LDA model on processed EdX dataset & analyze results
+- [x] Run LDA model on processed EdX dataset & analyze results with Data Science subteam
