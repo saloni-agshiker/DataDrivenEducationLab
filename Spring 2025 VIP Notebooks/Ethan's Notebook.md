@@ -26,11 +26,13 @@ __Ethan's Spring 2025 VIP-DDE-DF Notebook__
 - Submitted request to C21U for access to edX data
 - Planned to revamp educational dashboard as one of DF’s primary goals
 ## TODO:
+- Read into Journal Club research article: https://www.sciencedirect.com/science/article/pii/S2666920X2100031X
 - Complete Journal Club presentation and be prepared to present during Wednesday’s class
 - Research other tools and resources that will be needed to build a dashboard
 # Week 4
 ## General Body Meeting
 - Journal Club: presented our synopsis of research on automated analysis of cognitive presence in online discussion forums
+- Journal Club Presentation Link: https://docs.google.com/presentation/d/1hLA1SvFfgXJ0a2T8p69YJ5cbIZVgoVLKpcKsdBzZT0w/edit?usp=sharing
 - Listened to other subteams’ presentations
 ## Sub-Team Meeting
 - Fine-tuned plans for creating a dashboard that foregoes using previous database app from four years ago and starting from scratch instead
@@ -50,9 +52,11 @@ __Ethan's Spring 2025 VIP-DDE-DF Notebook__
 ## TODO
 - Prepare my slides on data metrics for the upcoming sub-team presentation
 - Begin to clean the dataset using Pandas
+- Basic guideline for using NLTK tools: https://www.geeksforgeeks.org/introduction-to-nltk-tokenization-stemming-lemmatization-pos-tagging/
 # Week 6
 ## General Body Meeting
 - Presented Sub-Team Presentation 1 via Microsoft Teams
+- Sub-Team Presentation 1 Link: https://docs.google.com/presentation/d/1JxvFgwIIzVG8skGg-7P63wErp5LZP8HYaAonREsespo/edit?usp=sharing
 - Listened to other sub-teams’ presentations
 ## Sub-Team Meeting
 - Prepared to start the build phase of our project
@@ -68,6 +72,7 @@ __Ethan's Spring 2025 VIP-DDE-DF Notebook__
 - Combined and thoroughly cleaned the thread and comment edX datasets, now ready to be used in LDA
 - Available in GitHub Repo as 'cleaned_edX_dataset.csv'
 ## TODO
-
+- Research how to implement LDA models: https://medium.com/@corymaklin/latent-dirichlet-allocation-dfcea0b1fddc#:~:text=We%20start%20off%20by%20splitting,(the%20probabilities%20should%20converge). AND https://www.geeksforgeeks.org/topic-modeling-using-latent-dirichlet-allocation-lda/
+- Start working on the LDA model
 
 
