@@ -1,8 +1,6 @@
 # Discussion Forms Subteam
 
 ## Week 1: Jan 8, 2025
-
-###Notes:
 - Today, everyone was able to meet with each other. As I am a time-conflict student, I communicated with Dr. Lee and provided her details with my conflicting class. It is called CS 3803. I will be attending all the team meetings that happen once a week. I also have completed the sub-team survey and indicated that I want to go back to the discussion forms subteam. 
 
 ### To Do:
@@ -43,7 +41,8 @@ Here is a link to Fall 2024’s presentation: https://docs.google.com/presentati
 
 ## Week 4: Jan 29, 2025
 
-### Sub-Team Meeting Notes & My Progress: I was able to hear about updates on what our team has been researching. I was able to also get started on the research aspect of my project for this semester. Specifically, I researched Retrieval Augmented Generation (relies on vectors). The main goal is to explore if I can integrate this into previous semester's code and improve the output from the ML models. 
+### Sub-Team Meeting Notes & My Progress: 
+I was able to hear about updates on what our team has been researching. I was able to also get started on the research aspect of my project for this semester. Specifically, I researched Retrieval Augmented Generation (relies on vectors). The main goal is to explore if I can integrate this into previous semester's code and improve the output from the ML models. 
 
 ### To Do:
 - [x] Research RAG 
