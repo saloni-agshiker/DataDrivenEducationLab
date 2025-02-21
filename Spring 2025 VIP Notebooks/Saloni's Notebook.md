@@ -92,9 +92,9 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 - We listened to a presentation on Research in Online Learning by Dr. Yilmaz Soylu, which was very insightful. I didn't realize how many sub-areas of research there are for this topic: such as research into developing the most effective teaching methods and the psychological effects of online learning on students and teachers.
 
 ### Sub-Team Meeting Notes: Feb 21, 2025
-- [x] Provide weekly updates on the work each person did during the week: I setup the LDA model using the Pandas and Gensim NLP Python libraries, and ran it on a dummy dataset.
+- [x] Provide weekly updates on the work each person did during the week: I setup the LDA and TF-IDF models using the Pandas and Gensim NLP Python libraries, and ran it on a dummy dataset.
 - Link to LDA model: https://colab.research.google.com/drive/1ymlapQIkFbH-Jpec-dIrh0u9clhK5lbI?usp=sharing
 - Link to dummy dataset: https://www.kaggle.com/datasets/therohk/million-headlines/data
 
 ### To Do:
-- [x] Run LDA model on processed EdX dataset & analyze results with Data Science subteam (due Wednesday, 2/26)
+- [x] Run LDA and TF-IDF models on processed EdX dataset & analyze results with Data Science subteam (due Wednesday, 2/26)
