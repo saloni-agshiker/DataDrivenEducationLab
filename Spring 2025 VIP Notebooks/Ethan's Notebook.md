@@ -55,5 +55,19 @@ __Ethan's Spring 2025 VIP-DDE-DF Notebook__
 - Presented Sub-Team Presentation 1 via Microsoft Teams
 - Listened to other sub-teams’ presentations
 ## Sub-Team Meeting
+- Prepared to start the build phase of our project
+- Focused on meeting deadlines set by Zilu in Jira with flexibility
+## TODO
+- Polish notebook before midterm evaluations
+- Submit peer evaluations
+# Week 7
+## General Body Meeting
+- Listened to a presentation on online learning by Dr. Yilmaz Soylu
+- Received some input from Dr. Soylu about how to manage some current struggles with preprocessing the datasets
+## Sub-Team Meeting
+- Combined and thoroughly cleaned the thread and comment edX datasets, now ready to be used in LDA
+- Available in GitHub Repo as 'cleaned_edX_dataset.csv'
+## TODO
+
 
 
