@@ -97,4 +97,4 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 - Link to dummy dataset: https://www.kaggle.com/datasets/therohk/million-headlines/data
 
 ### To Do:
-- [x] Run LDA model on processed EdX dataset & analyze results with Data Science subteam
+- [x] Run LDA model on processed EdX dataset & analyze results with Data Science subteam (due Wednesday, 2/26)
