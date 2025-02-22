@@ -11,8 +11,8 @@
 - Completed the sub-team survey, selected the Discussion Forums sub-team.
 
 ### To Do:
-- [ ] Complete IRB Training (Due 1/22)
-- [ ] Sign FERPA document
+- [x] Complete IRB Training (Due 1/22)
+- [x] Sign FERPA document
 - [x] Complete Sub-team Survey (Completed)
 
 ---
@@ -27,9 +27,9 @@
 - Joined Microsoft Teams and created a subteam group chat.
 
 ### To Do:
-- [ ] Prepare for the first sub-team meeting (introduce past work/slideshows)
-- [ ] Verify participation in class (Due 1/21)
-- [ ] IRB Training/Certification
+- [x] Prepare for the first sub-team meeting (introduce past work/slideshows)
+- [x] Verify participation in class (Due 1/21)
+- [x] IRB Training/Certification
 
 ---
 
@@ -50,11 +50,12 @@
 ## Week 4 (Jan 29, 2025) – Journal Club 
 - **Journal Club presentation:** Gave insight into using **Deep Learning models** and **Explainable AI visualizations** for deeper insights.
 - Spoke with Dr. Lee about meeting with another education researcher in the VIP team to better understand the research expected of the position.
+- Presentation:https://docs.google.com/presentation/d/1hLA1SvFfgXJ0a2T8p69YJ5cbIZVgoVLKpcKsdBzZT0w/edit?usp=sharing  
 
 ### To Do:
-- [ ] Explore advanced deep learning models.
-- [ ] Work on VIP notebook.
-- [ ] Complete data-access request form to obtain the dataset.
+- [x] Explore advanced deep learning models.
+- [x] Work on VIP notebook.
+- [x] Complete data-access request form to obtain the dataset.
 
 ---
 
@@ -69,8 +70,8 @@
 - Gained access to the dataset.
 
 ### To Do:
-- [ ] Finish slides and script for presentation.
-- [ ] Update VIP notebook.
+- [x] Finish slides and script for presentation.
+- [x] Update VIP notebook.
 
 ---
 
@@ -80,6 +81,7 @@
 
 ### Progress:
 - Met with the **data science team** to put together a **Spring Semester Research Timeline**.
+- Spring 2025 DF Timeline: https://docs.google.com/document/d/1AilcZCyB7zOE53JqY7gHSuiyRJveBCkMhojdFnTZFKI/edit?usp=sharing
 - Data science team began **cleaning the dataset** for analysis.
 - Worked on an **annotated bibliography**.
 
