@@ -25,6 +25,11 @@ Georgia Tech has had great success in MOOC forums. Check out C21U's chief scient
 * Demo of initial web-app
 * Present results
 
+# Spring 2025 Updates
+* Data source: EdX forum data from several Georgia Tech undergrad courses
+* LDA, TF-IDF model for topic modeling
+* Research on RAG application to the model
+
 # Team Roles and Responsibilities
 * **Project Manager** Coordinate tasks between team members, keep project tasks up to date, lead presentations
 * **Data Scientist** Apply machine learning, evaluate results, create visualization
@@ -37,3 +42,4 @@ Georgia Tech has had great success in MOOC forums. Check out C21U's chief scient
 * [Scott Crossley's Research](https://shared.cas.gsu.edu/profile/crossley-scott/)
 * [Predicting Instructor Interventions in MOOC Forums](https://www.aclweb.org/anthology/P14-1141)
 * [Cognitive Presence Assessment through Learning Analytics Methods](https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ad2fa27b0-1e6e-4de9-8d74-d3021ad6e20b)
+* [Topic Modeling](https://www.ibm.com/think/topics/topic-modeling)
