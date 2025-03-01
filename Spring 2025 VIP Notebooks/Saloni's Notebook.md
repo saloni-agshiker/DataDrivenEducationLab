@@ -54,7 +54,7 @@
 - [x] Research into the best NLP model to use: I am looking into BERT and LDA, Ethan is looking into Hugging Face and LDA.
 
 
-## Week 4: Feb 5, 2025
+## Week 5: Feb 5, 2025
 
 ### Class Meeting Notes:
 - We listened to a presentation on Explainable AI and learned about methods like LIME and Shap values that researchers are exploring to understand the factors that affect an AI machine's decision-making process.
@@ -71,7 +71,7 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 - [x] Research into steps for pre-processing data for LDA model and creating an LDA model
 
 
-## Week 5: Feb 12, 2025
+## Week 6: Feb 12, 2025
 
 ### Class Meeting Notes:
 - We gave our first subteam presentation on past work conducted in this team, as well as our goals and timeline for the semester. We also listened to the other subteams' presentations.
@@ -86,7 +86,7 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 - [x] Setup LDA model in Jupyter Notebook or VSCode (due Wednesday 2/19)
 
 
-## Week 6: Feb 19, 2025
+## Week 7: Feb 19, 2025
 
 ### Class Meeting Notes:
 - We listened to a presentation on Research in Online Learning by Dr. Yilmaz Soylu, which was very insightful. I didn't realize how many sub-areas of research there are for this topic: such as research into developing the most effective teaching methods and the psychological effects of online learning on students and teachers.
@@ -98,3 +98,17 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### To Do:
 - [x] Run LDA and TF-IDF models on processed EdX dataset & analyze results with Data Science subteam (due Wednesday, 2/26)
+
+
+## Week 8: Feb 26, 2025
+
+### Class Meeting Notes:
+- We listened to a presentation on Design-Based Research with Software Development by Dr. Sembrat. It opened my mind to the idea of research in the field of software development and the importance of reflecting on the effectiveness of the methodology and process after completing a project.
+
+### Sub-Team Meeting Notes: Feb 28, 2025
+- [x] Provide weekly updates on the work each person did during the week: I ran the LDA and TF-IDF models on datasets from the two classes with the most number of comments: CS 1301 and ISYE 6501. At this point, we have run our dataset on one of the two text analysis models we planned to which means we have made significant progress in our timeline for this semester. The models ran well for both datasets, however they currently analyze the frequency of words in each comment and we want to analyze the frequency of words in all comments.
+- Link to LDA model for CS 1301: https://colab.research.google.com/drive/11mkPzC0l1i7-ETIjXidWmb9dSZAzHc9Q?usp=sharing
+- Link to LDA model for ISYE 6501: https://colab.research.google.com/drive/151P7Tzf4OrE2__Qov3Mn3Pto_wIljHsL?usp=sharing
+
+### To Do:
+- [x] Work with Data Science sub-team to fine-tune the LDA model to analyze the frequency of words in all comments in each dataset. Also, research into how to analyze and interpret the results of the model.
