@@ -94,5 +94,10 @@ Continue to figure out how to analyze and interpret results from LDA
 - My goals for the session were to further my understanding of how to leverage the results from the LDA model and to establish a connection between our current progress with creating the BERT classification model. I primarily used this time to reassess the data science team’s progress and how it will affect our plans, and then some research into topic labeling and pyLDAvis. I believe we are still in-line with our initial deadline of finishing the LDA model by 3/14, with finishing touches to be made during Spring Break potentially. I combined multiple pieces of data into one data point in order to try to fix our LDA model which requires one document. Moving forward, I would like to work with pyLDAvis to create a visual representation of our LDA model’s findings. One current challenge we are facing is that the LDA model interprets each comment individually rather than as one large course thread. I worked with Saloni and Zilu on this issue, and we discovered that we cannot use TF-IDF in combination with our LDA model since TF-IDF requires multiple documents, but LDA works more effectively with one combined data point. We have pivoted to potentially predefining our own topic categories rather than having LDA initially discover our categories, and so we will reverse engineer and start from classifying through BERT. We are also looking into Naive Bayes as a potential model to implement, which I will do more research into moving forward.
 - I will be referencing this link to understand how to work with pyLDAvis: https://medium.com/towards-data-science/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0
 - I found a similar project idea that implements clustering from LDA into BERT: https://medium.com/analytics-vidhya/bert-for-topic-modeling-bert-vs-lda-8076e72c602b
+## Sub-Team Meeting:
+- Conducted a rehearsal before Presentation 2 on Wednesday
+## TODO
+- Finish data cleaning slides for Presentation 2
+
 
 
