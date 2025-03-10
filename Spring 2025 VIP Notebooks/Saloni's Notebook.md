@@ -112,3 +112,17 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### To Do:
 - [x] Work with Data Science sub-team to fine-tune the LDA model to analyze the frequency of words in all comments in each dataset. Also, research into how to analyze and interpret the results of the model.
+
+
+## Week 9: March 5, 2025
+
+### Class Meeting / Working Day Notes:
+- This week, our class meeting was a working day so I met in-person with Ethan and Zilu. We planned for sub-team presentation 2 next week by creating the slideshow and assigning tasks to each person.
+- We problem solved with the issue we were encountering with the LDA model. Previously, we ran the LDA model on our dataset of comments from the CS 1301 EdDiscussion forum and it returned frequencies of words for each comment. Instead of this, we wanted overall categories and frequencies of words among all the comments. We tried combining all comments into one document and running the model on that, but realized that the TF-IDF model that we also use requires more than one document to run properly. We concluded that the TF-IDF model will not be the best model for topic modeling given the context of our dataset and explored alternatives, such as BERT and Naive Bayes.
+- While this was not the result we were expecting, this experience taught us to fail quickly and always be open to change. We will now transition to the next milestone in our timeline, which is running our models using BERT for sentiment analysis and hopefully, topic modeling.
+
+### Sub-Team Meeting: Cancelled to work on sub-team presentation 2
+
+### To Do:
+- [x] Research into using BERT and Naive Bayes for topic modeling and sentiment analysis.
+- [x] Complete my slides for sub-team presentation 2 and practice (due Monday 3/10)
