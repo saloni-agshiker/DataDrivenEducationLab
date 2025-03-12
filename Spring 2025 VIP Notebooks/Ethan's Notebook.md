@@ -99,5 +99,11 @@ Continue to figure out how to analyze and interpret results from LDA
 ## TODO
 - Finish data cleaning slides for Presentation 2
 
+# Week 10
+## General  Body Meeting
+- Presented Presentation 2
+- Link: https://docs.google.com/presentation/d/1YFboFAtlwY3jeUBAiQvnIGs855sQKDe
+WyiuF4BeMneY/edit#slide=id.g32d593a5437_2_53
+
 
 
