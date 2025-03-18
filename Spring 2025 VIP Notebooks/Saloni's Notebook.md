@@ -1,4 +1,6 @@
-# Discussion Forms Subteam
+## Saloni Agshiker's Spring 2025 Notebook
+
+# DDE: Discussion Forms Subteam
 
 ## Week 1: Jan 8, 2025
 
@@ -124,5 +126,16 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 ### Sub-Team Meeting: Cancelled to work on sub-team presentation 2
 
 ### To Do:
-- [x] Research into using BERT and Naive Bayes for topic modeling and sentiment analysis.
 - [x] Complete my slides for sub-team presentation 2 and practice (due Monday 3/10)
+
+
+## Week 10: March 12, 2025
+
+### Class Meeting Notes:
+- We gave our second subteam presentation to update our peers and advisors on the research we have conducted thus far as well as our results and plans for the rest of the semester. We also listened to the other subteams' presentations.
+- Link to our second subteam presentation: https://docs.google.com/presentation/d/1YFboFAtlwY3jeUBAiQvnIGs855sQKDeWyiuF4BeMneY/edit?usp=sharing
+
+### Sub-Team Meeting: Cancelled for Spring Break
+
+### To Do:
+- [x] Research into using BERT and Naive Bayes for topic modeling and sentiment analysis (due Wednesday 3/26)
