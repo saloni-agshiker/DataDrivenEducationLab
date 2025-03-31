@@ -146,6 +146,7 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### Sub-Team Meeting: March 28, 2025
 - [x] Provide weekly updates on the work each person did during the week: I researched into neural networks, deep learning models, transformers, encoders, PyTorch, and TensorFlow to better understand BERT. I also ran Mr. Adrian's code to create a BERT model in Google Colab and reached the part where I need to setup an API key. I researched into how BERT can be used for topic modeling - essentially, BERT would provide the embeddings and then a K-means clustering algorithm would be necessary to group the embeddings into clusters (where each cluster represents a topic). By conducting this research, I now feel knowledgeable enough to create, train, and run the BERT model on our discussion forum datasets for topic modeling - thus working towards the next goal in our timeline.
+- Link to BERT model: https://colab.research.google.com/drive/1M7zqD3eKUd52yTdFoD0bgKdKE-32tnEA?usp=sharing
 
 ### To Do:
 - [x] Communicate research with other Data Science team members and start creating, training, and running BERT model on our datasets.
