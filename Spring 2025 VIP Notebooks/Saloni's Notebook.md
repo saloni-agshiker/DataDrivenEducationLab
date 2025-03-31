@@ -139,3 +139,13 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### To Do:
 - [x] Research into using BERT and Naive Bayes for topic modeling and sentiment analysis (due Wednesday 3/26)
+
+
+## Week 11: March 26, 2025
+- We listened to a presentation by Mr. Adrian Gallard on Digital Learning Data Analysis and Visualization Practices. He covered various text processing models like WordNinja to separate conjoined words, SetFit for text classification, and BERT for various NLP uses. His presentation was very helpful as it provided a good introduction to BERT before I research more into it.
+
+### Sub-Team Meeting: March 28, 2025
+- [x] Provide weekly updates on the work each person did during the week: I researched into neural networks, deep learning models, transformers, encoders, PyTorch, and TensorFlow to better understand BERT. I also ran Mr. Adrian's code to create a BERT model in Google Colab and reached the part where I need to setup an API key. I researched into how BERT can be used for topic modeling - essentially, BERT would provide the embeddings and then a K-means clustering algorithm would be necessary to group the embeddings into clusters (where each cluster represents a topic). By conducting this research, I now feel knowledgeable enough to create, train, and run the BERT model on our discussion forum datasets for topic modeling - thus working towards the next goal in our timeline.
+
+### To Do:
+- [x] Communicate research with other Data Science team members and start creating, training, and running BERT model on our datasets.
