@@ -104,6 +104,14 @@ Continue to figure out how to analyze and interpret results from LDA
 - Presented Presentation 2
 - Link: https://docs.google.com/presentation/d/1YFboFAtlwY3jeUBAiQvnIGs855sQKDe
 WyiuF4BeMneY/edit#slide=id.g32d593a5437_2_53
+# Week 11
+## General Body Meeting
+- Listened to a presentation on data analysis and visualization by Mr. Adrian Gallard.
+## Sub-Team Meeting
+- Began taking steps to learn how to implement BERT
+## TODO
+- Look at Mr. Gallard’s implementation of BERT and determine how we could potentially apply his ideas
+- Learn how BERT works independently
 
 
 
