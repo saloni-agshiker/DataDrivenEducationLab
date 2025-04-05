@@ -113,5 +113,15 @@ WyiuF4BeMneY/edit#slide=id.g32d593a5437_2_53
 - Look at Mr. Gallard’s implementation of BERT and determine how we could potentially apply his ideas
 - Learn how BERT works independently
 
+# Week 12
+## General Body Meeting
+- Listened to a presentation on ethics in data-driven education by Dr. Warren Goetzel
+## Sub-Team Meeting
+- Ran Mr. Gallard’s code on Google Colab but realized that I need to perform a foundational level of research on BERT before trying to decipher his code
+- Separately, Saloni and I are collaborating on creating our presentation for Georgia Tech’s 2025 UROP Symposium
+## TODO
+- Spend more research on learning how to implement BERT
+- Decipher Mr. Gallard’s shared implementation
+
 
 
