@@ -123,5 +123,14 @@ WyiuF4BeMneY/edit#slide=id.g32d593a5437_2_53
 - Spend more research on learning how to implement BERT
 - Decipher Mr. Gallard’s shared implementation
 
-
-
+# Week 13
+## General Body Meeting
+- Listened to a presentation on the future outlook of C21U and Data-Driven Education
+- Was particularly interested in the development of Socratic Mind
+## Sub-Team Meeting
+- Not enough time to deploy a fleshed-out version of BERT, so we will further our implementation of LDA
+- Developed a word cloud for CS 1301 dataset as an element of data visualization
+- Started the foundation of implementing pyLDAvis for more data visualization on unsupervised topic modeling
+## TODO
+- Complete slides for Presentation 3
+- Merge implementation of our Data Science subteam’s LDA with ML subteam’s synthetic dataset, then incorporate into a one-page dashboard
