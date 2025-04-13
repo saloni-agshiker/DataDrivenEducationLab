@@ -150,3 +150,14 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### To Do:
 - [x] Communicate research with other Data Science team members and start creating, training, and running BERT model on our datasets.
+
+
+## Week 12: April 2, 2025
+- We listened to a presentation by Dr. Warren Goetzel on Ethics in Data-Driven Education. He emphasized the importance of transparency with regards to how data is collected/used and explained the detailed security measures around obtaining data that contains individual personal details.
+
+### Sub-Team Meeting: April 4, 2025
+- [x] Provide weekly updates on the work each person did during the week: After discussing our research on BERT with the data science team, one of my team members realized they needed to perform more foundational level research on BERT before moving forward with implementing it. Thus, I paused my research on BERT as my sub-team members performed the research they needed to do. In the meantime, I have been separately collaborating with Ethan to create our poster for Georgia Tech's 2025 UROP Symposium. I worked on the Introduction, Motivation, and Goals section as well as the section on the work we did this semester. Working on this poster has helped me put together my thoughts for the final sub-team presentation soon and ensure that the research we are doing is aligned with the overall project goals.
+- 
+
+### To Do:
+- [x] 
