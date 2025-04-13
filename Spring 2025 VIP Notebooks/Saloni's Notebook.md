@@ -163,3 +163,15 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 - [x] Communicate with other Data Science team members when they are ready to start implementing BERT
 - [x] Collaborate with AI/ML team to deliver a joint product for final sub-team presentation (due Saturday, 4/12)
 - [x] Finish poster for UROP Symposium and practice presentation (due Saturday, 4/12)
+
+
+## Week 13: April 9, 2025
+- We listened to a presentation on the Future Outlook of C21U and Data-Driven Education by Dr. Lee. Her discussion prompted some thought-provoking questions about the future of education - specifically, how AI will lead to the modularization of learning which allows for a flexible yet purposeful learning experience. She also touched on the fact that AI has now increased accessibility to information and so information absorption depends more on individual motivations.
+
+### Sub-Team Meeting: April 11, 2025
+- [x] Provide weekly updates on the work each person did during the week: I spoke with my Data Science team members and we realized that there is not enough time to implement and deploy a fleshed-out version of BERT before our final sub-team presentation. We decided to refine and expand on our implementations of LDA and TF-IDF to gain stronger topic modeling insights and create visualizations for a mock-up of the dashboard.
+- [x] Set up a time to meet with the AI/ML team to collaborate and incorporate our work into the dashboard. The Data Science and AI/ML teams met on Saturday 4/12 and decided to run the synthetic CS 1301 dataset on our LDA and TF-IDF models to compare the topic modeling results from the real CS 1301 dataset and the synthetic dataset. This collaboration will provide insights into the accuracy of the synthetic dataset.
+
+### To Do:
+- [x] Run LDA and TF-IDF models on synthetic CS 1301 dataset & generate visualizations (due Monday, 4/14)
+- [x] Complete my slides for sub-team presentation 3 and practice (due Monday 4/14)
