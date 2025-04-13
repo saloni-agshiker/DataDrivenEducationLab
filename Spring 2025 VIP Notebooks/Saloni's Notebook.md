@@ -160,4 +160,6 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 - Link to UROP Symposium poster: https://drive.google.com/file/d/127ZrGdRZkk_nr-ysWNOEQfDWOuP_Dhf_/view?usp=sharing
 
 ### To Do:
-- [x] 
+- [x] Communicate with other Data Science team members when they are ready to start implementing BERT
+- [x] Collaborate with AI/ML team to deliver a joint product for final sub-team presentation (due Saturday, 4/12)
+- [x] Finish poster for UROP Symposium and practice presentation (due Saturday, 4/12)
