@@ -157,7 +157,7 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 
 ### Sub-Team Meeting: April 4, 2025
 - [x] Provide weekly updates on the work each person did during the week: After discussing our research on BERT with the data science team, one of my team members realized they needed to perform more foundational level research on BERT before moving forward with implementing it. Thus, I paused my research on BERT as my sub-team members performed the research they needed to do. In the meantime, I have been separately collaborating with Ethan to create our poster for Georgia Tech's 2025 UROP Symposium. I worked on the Introduction, Motivation, and Goals section as well as the section on the work we did this semester. Working on this poster has helped me put together my thoughts for the final sub-team presentation soon and ensure that the research we are doing is aligned with the overall project goals.
-- 
+- Link to UROP Symposium poster: https://drive.google.com/file/d/127ZrGdRZkk_nr-ysWNOEQfDWOuP_Dhf_/view?usp=sharing
 
 ### To Do:
 - [x] 
