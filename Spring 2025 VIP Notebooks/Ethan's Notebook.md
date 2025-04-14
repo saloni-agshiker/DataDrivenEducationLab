@@ -120,7 +120,8 @@ WyiuF4BeMneY/edit#slide=id.g32d593a5437_2_53
 - Ran Mr. Gallard’s code on Google Colab but realized that I need to perform a foundational level of research on BERT before trying to decipher his code
 - Separately, Saloni and I are collaborating on creating our presentation for Georgia Tech’s 2025 UROP Symposium
 ## TODO
-- Spend more research on learning how to implement BERT
+- Spend more research on learning how to implement BERT and BERTopic
+- Use this website for learning BERT + sub-BERTs: https://maartengr.github.io/BERTopic/index.html#fine-tune-topic-representations
 - Decipher Mr. Gallard’s shared implementation
 
 # Week 13
@@ -131,12 +132,14 @@ WyiuF4BeMneY/edit#slide=id.g32d593a5437_2_53
 - Not enough time to deploy a fleshed-out version of BERT, so we will further our implementation of LDA
 - Developed a word cloud for CS 1301 dataset as an element of data visualization
 - Started the foundation of implementing pyLDAvis for more data visualization on unsupervised topic modeling
+- Using this pyLDAvis data visualization output as inspiration: https://app.myeducator.com/reader/web/1702d/topicmodel/n34se/
 ## TODO
 - Complete slides for Presentation 3
 - Merge implementation of our Data Science subteam’s LDA with ML subteam’s synthetic dataset, then incorporate into a one-page dashboard
 - Week 14
 # General Body Meeting
 - Presented final Presentation 3
+- Link: https://docs.google.com/presentation/d/1T_oG1iDVmdbqy6Mp3QwiKcNeTWthUFWl0pkkBr-w-iw/edit?usp=sharing
 ## Sub-Team Meeting
 Implemented LDA on synthetic dataset created by ML team on a dummy CS 1301 forum, compared results’ LDA weights and intertopic distribution between the synthetic and real datasets, and displayed this analysis in a mockup dashboard
 
