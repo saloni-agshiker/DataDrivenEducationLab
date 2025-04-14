@@ -136,10 +136,11 @@ WyiuF4BeMneY/edit#slide=id.g32d593a5437_2_53
 ## TODO
 - Complete slides for Presentation 3
 - Merge implementation of our Data Science subteam’s LDA with ML subteam’s synthetic dataset, then incorporate into a one-page dashboard
-- Week 14
-# General Body Meeting
+
+# Week 14
+## General Body Meeting
 - Presented final Presentation 3
 - Link: https://docs.google.com/presentation/d/1T_oG1iDVmdbqy6Mp3QwiKcNeTWthUFWl0pkkBr-w-iw/edit?usp=sharing
 ## Sub-Team Meeting
-Implemented LDA on synthetic dataset created by ML team on a dummy CS 1301 forum, compared results’ LDA weights and intertopic distribution between the synthetic and real datasets, and displayed this analysis in a mockup dashboard
+- Implemented LDA on synthetic dataset created by ML team on a dummy CS 1301 forum, compared results’ LDA weights and intertopic distribution between the synthetic and real datasets, and displayed this analysis in a mockup dashboard
 
