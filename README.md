@@ -26,9 +26,13 @@ Georgia Tech has had great success in MOOC forums. Check out C21U's chief scient
 * Present results
 
 # Spring 2025 Updates
-* Data source: EdX forum data from several Georgia Tech undergrad courses
+* Data source: Ed forum data from several Georgia Tech undergrad courses
 * LDA, TF-IDF model for topic modeling
 * Research on RAG application to the model
+* Generated synthetic dataset
+* Topic modeling with real dataset and synthetic dataset
+* Built an interactive dashboard with React using CS1301 as the demo
+
 
 # Team Roles and Responsibilities
 * **Project Manager** Coordinate tasks between team members, keep project tasks up to date, lead presentations
