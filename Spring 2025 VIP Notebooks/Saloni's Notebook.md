@@ -175,3 +175,11 @@ created a timeline to clean/pre-process the data, create the LDA, TF-IDF, and BE
 ### To Do:
 - [x] Run LDA and TF-IDF models on synthetic CS 1301 dataset & generate visualizations (due Monday, 4/14)
 - [x] Complete my slides for sub-team presentation 3 and practice (due Monday 4/14)
+
+
+## Week 14: April 16, 2025
+- We gave our third and final subteam presentation for the semester. We also listened to the other subteams' presentations.
+- Link to our third subteam presentation: https://docs.google.com/presentation/d/1T_oG1iDVmdbqy6Mp3QwiKcNeTWthUFWl0pkkBr-w-iw/edit?usp=sharing
+- Ethan and I also presented our poster at the UROP Symposium on Thursday 4/17. Our research was well-received and we got insightful feedback like having an objective statement to summarize the goals of our research, having statistics that describe the accuracy of our LDA model, and future directions for the research. This was a valuable opportunity to showcase our research with other scholars and researchers. Seeing how interested people were in our research motivates us to continue with it and develop our insights even further.
+
+### Sub-Team Meeting: Cancelled because end of VIP
