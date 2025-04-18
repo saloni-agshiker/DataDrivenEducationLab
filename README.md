@@ -31,7 +31,7 @@ Georgia Tech has had great success in MOOC forums. Check out C21U's chief scient
 * Research on RAG application to the model
 * Generated synthetic dataset
 * Topic modeling with real dataset and synthetic dataset
-* Built an interactive dashboard with React using CS1301 as the demo
+* Built an interactive dashboard with React using CS1301 as the demo (navigate to new Dashboard Spring 2025)
 
 
 # Team Roles and Responsibilities
