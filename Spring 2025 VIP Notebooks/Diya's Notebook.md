@@ -112,6 +112,12 @@ https://www.mercity.ai/blog-post/using-chatgpt-to-build-synthetic-datasets
 
 This week, I explored more prompt engineering strategies for ensuring that the student posts on the synthetic discussion form are better. I researched different methods: no-shots, few-shot, and chain-of-thought prompting. 
 
+Resources: 
+- https://www.promptingguide.ai/techniques/zeroshot
+- https://shelf.io/blog/zero-shot-and-few-shot-prompting/
+- https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api
+- https://www.youtube.com/watch?v=p09yRj47kNM
+  
 I found that no-shot and CoT produced the best quality in responses. Although this is true, I want the output to be more diverse instead of the current version. I plan to look into other models to help with this. 
 
 I also began more preliminary testing with models on HuggingFace and OpenAI models. I learned about different text geneartion models: https://huggingface.co/tasks/text-generation. 
@@ -134,6 +140,9 @@ I want to also be able to integrate the CS 1301 EdDiscussion dataset in these ef
 During our in-class working session, I was able to run several prompts with different LLMs and compare their outputs. During the meeting, we also talked about ways to better have the synthetic dataset reflect a real dataset. 
 
 I was able to conduct a comparative effort between the responses of different LLMs. Out of all models, I found Chat GPT o1’s model to be the most promising. 
+
+I completed this course that was really helpful: https://www.youtube.com/watch?v=5i2Hn8OG94o. 
+I would recommend it to other people that are interested in learning more about prompt engineering.
 
 ### To Do:
 - [x] generate an initial batch of responses with Chat o1
