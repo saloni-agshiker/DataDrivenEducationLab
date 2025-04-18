@@ -114,7 +114,11 @@ This week, I explored more prompt engineering strategies for ensuring that the s
 
 I found that no-shot and CoT produced the best quality in responses. Although this is true, I want the output to be more diverse instead of the current version. I plan to look into other models to help with this. 
 
-I also began more preliminary testing with models on HuggingFace and OpenAI models. I want to also be able to integrate the CS 1301 EdDiscussion dataset in these efforts. I have also begun to evaluate more models based on reliability and its speed. 
+I also began more preliminary testing with models on HuggingFace and OpenAI models. I learned about different text geneartion models: https://huggingface.co/tasks/text-generation. 
+
+This is a link to a useful video about text-generation: https://www.youtube.com/watch?v=e9gNEAlsOvU. 
+
+I want to also be able to integrate the CS 1301 EdDiscussion dataset in these efforts. I have also begun to evaluate more models based on reliability and its speed. 
 
 ### To Do:
 - [x] refine prompt more to reflect CS 1301 class more 
@@ -160,9 +164,16 @@ Link to the presentation: https://docs.google.com/presentation/d/1YFboFAtlwY3jeU
 ## Week 12: 
 
 ### Meeting Notes & Progress: 
-I was able to look into the use of llama-2 for text-generation purposes. I learned that there is a style of prompts that produce the best responses based on different models. I began to provide more details about the course to the models used. In terms of tasks done, I was able to test more advanced models for generating posts. I was also able to integrate course milestones into the prompt. 
+I was able to look into the use of llama-2 for text-generation purposes. I learned that there is a style of prompts that produce the best responses based on different models. 
+This is a link to list of recommendations of creating a better prompt: https://community.openai.com/t/tips-for-creating-effective-prompts-for-o1/1101197
 
-Additionally, I have been using the Chatgpt o1 model more. I have learned that the amount of context that you give to a model needs to be clear and directed. I can see the student feedback column is more human like now.
+I began to provide more details about the course to the models used. In terms of tasks done, I was able to test more advanced models for generating posts. I was also able to integrate course milestones into the prompt. 
+
+This is a link to documentation for llama-2: https://huggingface.co/docs/transformers/en/model_doc/llama2. I had to request access to the model. I liked ChatGPT's usability more.
+
+Additionally, I have been using the Chatgpt o1 model more. Here is a link to the o1 model: https://openai.com/o1/
+
+I have learned that the amount of context that you give to a model needs to be clear and directed. I can see the student feedback column is more human like now.
 
 ### To Do:
 - [x] finalize the dataset and give it to Ethan and Saloni for additional analysis
@@ -210,6 +221,6 @@ I have worked on ensuring that my notebook is clear to help next semester effort
 - [x] complete peer evaluations 
 
 Overall reflection: 
-I learned a lot this semester. I am now able to say that I am continent in my prompt engineering skills, model evaluating skills, and more. I am proud that we were able to create a usable dataset that mimics a MOOC for CS 1301. The quality of responses are really good and the dataset is rich in quality. I look forward to seeing how the next semesters continue these efforts forward. 
+I learned a lot this semester. I am now able to say that I am continent in my prompt engineering skills, model evaluating skills, and more. I am proud that we were able to create a usable dataset that mimics a MOOC for CS 1301. The quality of responses are really good and the dataset is rich in quality. I look forward to seeing how the next semesters continue these efforts forward. I have added the synthetic dataset to the github for future use. 
  
 
