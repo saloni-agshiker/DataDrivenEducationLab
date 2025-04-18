@@ -229,3 +229,13 @@ Had a separate meeting with Saloni, Ethan, and Diya to discuss how to align our 
 
 ### Reflection
 We should have conducted more working hour meetings together because this is really helpful in exchanging ideas and know how others are doing.
+
+## Week 15
+We had the last presentation this week, the practice meeting was on Tuesday night. All presentations were impressive and provided meaningful insights.
+
+### TODO
+- Organizing files and README so that people will understand what to do next semester
+- Make sure everyone in the team complete the peer evaluation and upload the notebooks.
+
+### Final reflection
+This was an amazing semester working as the PM of the team. I spent time exploring mu duties and what the whole team is working on. Everyone on the team was supportive and responsible, they were all great teammates. I think I have tried my best as this is my first semester joining the team.
