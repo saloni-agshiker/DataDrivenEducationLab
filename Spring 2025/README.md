@@ -1,4 +1,4 @@
-# Discussion Forum 2025 Srping Notebook
+# Discussion Forum 2025 Spring Notebook
 
 This folder contains the work done in 2025 Spring semester. See files folder for the codes and literature reviews
 
