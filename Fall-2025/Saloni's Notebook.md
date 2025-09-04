@@ -17,7 +17,7 @@
 ### Class Meeting Notes:
 - Got assigned to sub-teams and met with our individual sub-team members. We decided the best time to hold our weekly sub-team meetings and discussed areas of research we are interested in pursuing.
 - Everyone was added to the shared GitHub and we started exploring the work from past semesters.
-- [x] First sub-team meeting: next Thursday, 9/4 at 11AM
+- First sub-team meeting: next Thursday, 9/4 at 11AM
 
 ### To Do:
 - [x] Start thinking about areas of research for this semester.
