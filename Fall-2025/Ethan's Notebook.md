@@ -24,5 +24,13 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 - Divided work for Journal Club presentation among DF team
 - Initiated first steps of actiont to completing presentation
 ## TODO:
-- Continue reading into Journal Club research article: [add link]
+- Continue reading into Journal Club research article: [](https://www.sciencedirect.com/science/article/pii/S1096751625000107?via%3Dihub)
 - Complete Journal Club presentation and be prepared to present during Wednesday’s class
+# Week 4
+## General Body Meeting
+- Journal Club presentations:
+- DF Presentation: [](https://gtvault.sharepoint.com/:p:/s/VIPData-DrivenEducationTeam-DiscussionForums/EZ7b-JWQVURDpUW0Ynh1VWoBkynz8Hj1ZOztc2D9McWx1A?e=0EePoz)
+## Sub-Team Meeting:
+- 
+## TODO:
+- 
