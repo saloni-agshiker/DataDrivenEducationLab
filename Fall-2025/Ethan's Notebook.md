@@ -31,6 +31,6 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 - Journal Club presentations
 - DF Presentation: [Here](https://gtvault.sharepoint.com/:p:/s/VIPData-DrivenEducationTeam-DiscussionForums/EZ7b-JWQVURDpUW0Ynh1VWoBkynz8Hj1ZOztc2D9McWx1A?e=0EePoz)
 ## Sub-Team Meeting:
-- 
+- Decided individual repsonsibilities to complete ahead of Sub-Team Presentation 1
 ## TODO:
-- 
+- Work with Saloni and Zilu to create catalogs/labels for the edX dataset
