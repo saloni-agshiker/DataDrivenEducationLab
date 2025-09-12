@@ -36,3 +36,15 @@
 - [x] Read the assigned paper for Journal club (due Sunday 9/7)
 - [x] Complete the assigned slides for Journal club (due Monday 9/8)
 - [x] Practice presenting slides with entire team (meeting on Tuesday 9/9)
+
+
+## Week 4: Sept 10, 2025
+
+### Class Meeting Notes:
+- Our Discussion Forums subteam presented our slideshow on the Journal Club article we read and we listened to other subteam presentations, which were very insightful.
+
+### Sub-Team Meeting Notes: Sept 11, 2025
+- We discussed our goals to achieve before the first sub-team presentation. Since we did not have enough time to implement the BERT model for sentiment analysis last semester, we chose to start this semester by completing that task. Our goal is to analyze student emotion in discussion posts to gain insight about their mood/perspective on the course as well as struggles and cognitive presence indicators. Before the first sub-team presentation in two weeks, we aim to label all of the data in preparation for sentiment analysis.
+
+### To Do:
+- [x] Research on how to perform data labeling (due Thursday 9/18)
