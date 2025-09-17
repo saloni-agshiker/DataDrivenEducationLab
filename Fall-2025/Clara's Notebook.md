@@ -28,4 +28,15 @@ __Clara's Fall 2025 VIP Notebook__
 - Initiated first steps of completing presentation
 ## TODO:
 - Continue reading into Journal Club research article: [add link]
-- Complete Journal Club presentation responsibilities- Final takeaways & Discussion Q- and be prepared to present during Wednesday’s class
+- Complete Journal Club presentation responsibilities- Results & author takeaways- and be prepared to present during Wednesday’s class
+# Week 4
+## General Body Meeting
+- Presented DF group Journal Club PPT: 
+- Listened to other 3 groups- AI, Just-in-time, assessment quality- present their Journal Club PPTs
+- XXXXXXXXXXX
+## Sub-Team Meeting:
+- Reviewed new DF sub-team goals set in Week 2-3: discussed their viability & compared to last semester's work
+- XXXXXXXXXX
+## TODO:
+- Submit Data Request form- Edx and Discussion Forum data in Python
+- Look at the data (once given access) and formulate plan for how to contribute to sub-team goals as a data scientist
