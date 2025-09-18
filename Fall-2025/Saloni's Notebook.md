@@ -48,3 +48,18 @@
 
 ### To Do:
 - [x] Research on how to perform data labeling (due Thursday 9/18)
+
+
+## Week 5: Sept 17, 2025
+
+### Class Meeting Notes:
+- Dr. Yilmaz Soylu presented on how to design a seamless UI/UX personalized to your user base, providing useful tips as we design our dashboard around our instructors' needs.
+
+### Sub-Team Meeting Notes: Sept 18, 2025
+- The data science team decided our approach for sentiment analysis: given the size of our dataset (40K+ comments), BERT looks like the best model for sentiment analysis. We will first label a subset of the dataset (about 1000 comments) based on five categories (very positive, positive, neutral, negative, very negative) to train the model with. We are planning to meet on Saturday, 9/20 to label 100 comments together to determine our inter-rater reliability and decide a clear criteria for annotation, and will then individually label 300 comments each.
+- We also planned for our first sub-team presentation next week, determining what each person will speak on.
+
+### To Do:
+- [x] Meet to label dataset on Saturday 9/20
+- [x] Label 300 comments individually (by Tuesday 9/23)
+- [x] Complete assigned slides for first sub-team presentation & practice for presentation (by Tuesday 9/23)
