@@ -34,3 +34,12 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 - Decided individual repsonsibilities to complete ahead of Sub-Team Presentation 1
 ## TODO:
 - Work with Saloni and Zilu to create catalogs/labels for the edX dataset
+# Week 5
+## General Body Meeting
+- Listened to a presentation on UX and UI by Dr. Yilmaz Soylu
+## Sub-Team Meeting:
+- Decided to label first 1k data points for sentiment analysis
+- This will be used to determine feasibility of sentiment analysis and give us something to work with for Presentation 1
+## TODO:
+- Label the data on Saturday morning
+- Work on slides for Presentation 1
