@@ -56,11 +56,16 @@ It might be better to get a baseline model done on sentiment analysis so that we
 ### Tasks done:
 1. We( Ethan, Saloni, and I) labeled the first 100 data, and calculated the cohen kappa score. It is a little bit low both with 5-category and 3-category
 2. Prepared the slides and did dry-run for presentation 1
+3. Talked with Harikesh on the possible next step for machine learning
 
 ### TODO:
-
+1. Label the rest of the data
+2. Decide what to do with ML in detail
 
 ### Reflection:
+The labeling is giving me an unexpected result, I am thinking of using the average and threshold for the final labeling.
+
+The lecture on UX and research in Education given by Dr. Soylu is interesting. It reminds me that it is important to do some user research and testings when we are building our dashboard later.
 
 ## Week 6
 ### Tasks done:
