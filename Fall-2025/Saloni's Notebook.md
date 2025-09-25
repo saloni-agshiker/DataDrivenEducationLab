@@ -63,3 +63,17 @@
 - [x] Meet to label dataset on Saturday 9/20
 - [x] Label 300 comments individually (by Tuesday 9/23)
 - [x] Complete assigned slides for first sub-team presentation & practice for presentation (by Tuesday 9/23)
+
+
+## Week 6: Sept 24, 2025
+
+### Class Meeting Notes:
+- We gave our first subteam presentation on past work conducted in this team, as well as our goals and timeline for the semester. We also listened to the other subteams' presentations.
+- Link to our first subteam presentation: https://gtvault.sharepoint.com/:p:/s/VIPData-DrivenEducationTeam-DiscussionForums/EYNHZxDpTddNv-pbFNa472MB14ROhxyAPakvwnWc3hTyrg?e=gW0VJK
+
+### Sub-Team Meeting Notes: Sept 25, 2025
+- The data science team made a plan on how to finish labeling the dataset. We had a separate meeting on Saturday 9/20 to label 100 comments, but realized our inter-rater reliability was quite low and having 5 categories made it more difficult to score (because there isn't much difference between 'positive' and 'very positive'). Therefore, we decided to reduce to 3 categories (negative, neutral, positive), each person will rate all 1000 comments, and then calculate the average score for each.
+- We also spoke about how our ML team could collaborate with the data science team -- and it looks like our work on cognitive presence may be useful to the ML team and we can merge our statistics/insights together into one cohesive dashboard at the end of the semester.
+
+### To Do:
+- [x] Label 1000 comments individually (by Thursday 10/2)
