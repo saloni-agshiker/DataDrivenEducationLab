@@ -46,7 +46,7 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 # Week 6
 ## General Body Meeting
 - Sub-team presentation 1
-- DF Presentation: [Here](Fall-2025/slides/Discussion Forum Presentation 1.pdf)
+- DF Presentation: [Here](https://github.gatech.edu/C21U/vip-nlp/blob/b76b22b9b1666cb0ac112c386cbb7a0a373de786/Fall-2025/slides/Discussion%20Forum%20Presentation%201.pdf)
 ## Sub-Team Meeting:
 - Determined that 5 sentiment categories was too narrow, so we are using only 3 now
 - Each data science team member will be labelling 1k data points by themselves and then we will perform an average on the ratings
