@@ -43,3 +43,13 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 ## TODO:
 - Label the data on Saturday morning
 - Work on slides for Presentation 1
+# Week 6
+## General Body Meeting
+- Sub-team presentation 1
+## Sub-Team Meeting:
+- Determined that 5 sentiment categories was too narrow, so we are using only 3 now
+- Each data science team member will be labelling 1k data points by themselves and then we will perform an average on the ratings
+- This will prevent us from having to deal with bias in inter-readability.
+## TODO:
+- Finish labelling the data
+- Perform first steps of data analysis on the labelled data
