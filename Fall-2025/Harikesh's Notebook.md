@@ -77,9 +77,13 @@
 -Presenting our work on the Subteam presentation 1 for the discussion forums
 
 ### Sub-Team Meeting Notes:
-
+-Explained the project for ML team in depth, using a bi-modal model to find student behaviors that lead to grade success
+-Informed the team of the plan of attack on my side
+-Listening in on how the DS team plans on working on the CP of discussion posts by labeling the posts manually
 
 ### To-do:
 -Starting putting together the queries for the 3 tables
 -Clean the data set
 -Create a first pass of the semantic modality part of my ML model
+
+## Week 7: Oct 1, 2025
