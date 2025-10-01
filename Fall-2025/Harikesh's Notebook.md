@@ -87,3 +87,12 @@
 -Create a first pass of the semantic modality part of my ML model
 
 ## Week 7: Oct 1, 2025
+
+### Lecture Notes:
+-Learning about education and AI from Dr. Lee
+-For example, learning about the research trends and oppurtunities for education technologies
+
+### Sub-Team Meeting Notes:
+
+
+### To-do:
