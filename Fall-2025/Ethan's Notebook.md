@@ -54,3 +54,10 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 ## TODO:
 - Finish labelling the data
 - Perform first steps of data analysis on the labelled data
+# Week 7
+## General Body Meeting
+- Listened to presentations on AI-powered learning and explainable AI by Dr. Lee and Dr. Grigoryan.
+## Sub-Team Meeting:
+- Initiated plans on data analysis of three reviewer's inter-readability scores
+## TODO:
+- Revise some of my data point ratings since Claude unproperly rated some comments; initially thought that manually labelling the first 200 data points would be enough for Claude to train off of and understand my marks for creating sentiment analysis ratings, but it tended to hallucinate.
