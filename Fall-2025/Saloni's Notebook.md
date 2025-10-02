@@ -85,7 +85,7 @@
 - We listened to a presentation on Explainable AI and learned about methods like LIME and Shap values that researchers are exploring to understand the factors that affect an AI machine's decision-making process.
 
 ### Sub-Team Meeting Notes: October 2, 2025
-- The data science team completed our labeling of the first 1000 comments of the EdDiscussion data. Zilu started performing statistical analysis of our scores, computing the average and majority values. Our Cohen's Kappa value (represents inter-rater reliability) was significantly higher (around 0.69 compared to 0.25) since we labeled a larger portion of the dataset manually and reduced our rating categories. Once Zilu completes her analysis, we will begin building our sentiment analysis model using BERT and feeding the training data into it.
+- The data science team completed our labeling of the first 1000 comments of the EdDiscussion data individually. Zilu started performing statistical analysis of our scores, computing the average and majority values. Our Cohen's Kappa value (represents inter-rater reliability) was significantly higher (around 0.69 compared to 0.25) since we labeled a larger portion of the dataset manually and reduced our rating categories. Once Zilu completes her analysis, we will begin building our sentiment analysis model using BERT and feeding the training data into it.
 
 ### To Do:
 - [x] Research how to build sentiment analysis model using BERT (by Thursday 10/9)
