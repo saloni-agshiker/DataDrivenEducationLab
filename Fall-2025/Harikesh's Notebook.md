@@ -93,6 +93,13 @@
 -For example, learning about the research trends and oppurtunities for education technologies
 
 ### Sub-Team Meeting Notes:
-
+-Hearing about the discussion for the completion of labeling data science's data
+-Seeing the labeling metrics from Zilu
+-Letting the team know of my work as the ML team, I ran the queries between 3 tables to clean and create 1 joined table
+-I started running R squared tests on Ridge, Lasso, and KNN models using 15-20 features from time series data (LSTM) and semantic data (transformers model).
+-The model was severely flawed because the R squared was negative.
+-Discussed overall data and got tips from Zilu on models, features, and future improvements.
 
 ### To-do:
+-Turn in VIP notebook and peer assignment
+-Bring down the number of features and try to take a higher-level approach on the behaviors so we can fine tune the model to show correlations
