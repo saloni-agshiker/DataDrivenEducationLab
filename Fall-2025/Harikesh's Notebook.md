@@ -103,3 +103,20 @@
 ### To-do:
 -Turn in VIP notebook and peer assignment
 -Bring down the number of features and try to take a higher-level approach on the behaviors so we can fine tune the model to show correlations
+
+Preprocessing code:
+
+def load_and_prepare_data():
+    threads_df = pd.read_csv('Forum thread ferpa(in).csv', encoding='utf-8')
+    comments_df = pd.read_csv('Forum comment ferpa(in).csv', encoding='utf-8')
+    grades_df = pd.read_csv('edX data set_student grade(edX data).csv', encoding='cp1252')
+    date_format = '%m/%d/%Y %H:%M'
+    threads_df['created_at'] = pd.to_datetime(threads_df['created_at'], format=date_format, errors='coerce')
+    threads_df['last_activity_at'] = pd.to_datetime(threads_df['last_activity_at'], format=date_format, errors='coerce')
+    threads_df['updated_at'] = pd.to_datetime(threads_df['updated_at'], format=date_format, errors='coerce')
+    comments_df['created_at'] = pd.to_datetime(comments_df['created_at'], format=date_format, errors='coerce')
+    comments_df['updated_at'] = pd.to_datetime(comments_df['updated_at'], format=date_format, errors='coerce')
+    grades_df = grades_df.dropna(subset=['percent_grade'])
+    print(f"Loaded {len(threads_df)} threads, {len(comments_df)} comments, {len(grades_df)} students with grades")
+    return threads_df, comments_df, grades_df
+
