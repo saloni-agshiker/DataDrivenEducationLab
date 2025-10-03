@@ -90,7 +90,6 @@ We also talked about XAI and why it is important.
 2. Looked up time series for MOOC with grades: <https://arxiv.org/pdf/2408.13960>
 3. Tested out the labeling agreement between 3 raters
     - Python packages used in analysis: numpy, statsmodels, pandas
-4. 
 
 ### TODO:
 1. Determin whether we should use Majority Vote, Mean of Labels, or Weighted Average for labels
