@@ -69,8 +69,34 @@ The lecture on UX and research in Education given by Dr. Soylu is interesting. I
 
 ## Week 6
 ### Tasks done:
+1. Presented in-person for presentation 1 (slides are in the *slides* folder)
+2. After trying out, decided to use average ratings on labeling
+3. Hosted the stand-up and checked out individual's progress
+4. Updated the Jira tasks
 
 ### TODO:
-
+1. Saloni, Ethan, and Clara will be labeling the data, will provide any help if needed
+2. Provide any assistant needed for Harikesh to work on ml side 
 
 ### Reflection:
+Everyone was doing a great job on presenting their work. Different from other groups that might inherit the works done in previous semesters, we are working on something that is rather new or continuout from semesters ago. As a result, we should be more careful on how to document our work so that people in the later semesters can understand our part easily.
+
+## Week 7
+During lecture, we talked about AI and GenAI in current education system. There are many advantages of such technology, including personalization and scalability, providing support to students and promote engagement. However, there are still many limitations in both the nature of AI and the ethical issues.
+
+We also talked about XAI and why it is important.
+### Tasks done:
+1. Took a look at the labels. Trying to determine to next step for sentiment analysis
+2. Looked up time series for MOOC with grades: <https://arxiv.org/pdf/2408.13960>
+3. Tested out the labeling agreement between 3 raters
+    - Python packages used in analysis: numpy, statsmodels, pandas
+4. 
+
+### TODO:
+1. Determin whether we should use Majority Vote, Mean of Labels, or Weighted Average for labels
+    - Wait for Ethan revising the labeling
+2. Support Harikesh for machine learning model
+    - Look into technique for improving the model (possibly early stopping)
+
+### Reflection:
+Inspired from our lecture, I think we should also focus on whether we are able to explain our result from sentiment analysis and time series analysis. For example, as we have talked about the R^2 and feature slection for time series analysis, we have to make decisions on what features are logistically related to students' success in the course/\.
