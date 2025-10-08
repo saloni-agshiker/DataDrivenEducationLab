@@ -89,3 +89,13 @@
 
 ### To Do:
 - [x] Research how to build sentiment analysis model using BERT (by Thursday 10/9)
+
+
+## Week 8: October 8, 2025
+
+### Class Meeting Notes:
+- We listened to a presentation by Mr. Adrian Gallard on Digital Learning Data Analysis and Visualization Practices. He covered various text processing models like WordNinja to separate conjoined words, SetFit for text classification, and BERT for various NLP uses. His presentation was very helpful as it provided a good introduction to BERT before I research more into it.
+
+### Sub-Team Meeting Notes: October 9, 2025
+
+### To Do:
