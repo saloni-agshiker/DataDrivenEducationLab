@@ -61,3 +61,13 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 - Initiated plans on data analysis of three reviewer's inter-readability scores
 ## TODO:
 - Revise some of my data point ratings since Claude unproperly rated some comments; initially thought that manually labelling the first 200 data points would be enough for Claude to train off of and understand my marks for creating sentiment analysis ratings, but it tended to hallucinate.
+# Week 8
+## General Body Meeting
+- Listened to presentation on data analysis techniques by Mr. Adrian Gallard.
+## Sub-Team Meeting:
+- Revised my ratings of the first 1k data points prior to the meeting
+- Proposed initial plans for DS team to create BERT model
+## TODO:
+- Begin to work on creating the BERT model
+- Take necessary actions to fully understand how to prepare for creating the BERT model
+- Interpret average results of first 1k data points.
