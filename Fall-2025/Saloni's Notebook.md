@@ -97,5 +97,7 @@
 - We listened to a presentation by Mr. Adrian Gallard on Digital Learning Data Analysis and Visualization Practices. He covered various text processing models like WordNinja to separate conjoined words, SetFit for text classification, and BERT for various NLP uses. His presentation was very helpful as it provided a good introduction to BERT before I research more into it.
 
 ### Sub-Team Meeting Notes: October 9, 2025
+- We gave our weekly updates: next steps for the data science team are to complete analysis of the labelled data (Zilu will perform this analysis calculating Cohen's Kappa and IRR before the next sub-team meeting) and then to build our sentiment analysis model using BERT. We made a plan for the working day next week: we will meet at the library on campus during class time to start training BERT.
 
 ### To Do:
+- [x] Complete the mid-term Peer Evaluations (by Friday, 10/10)
