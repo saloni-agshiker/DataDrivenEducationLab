@@ -101,3 +101,14 @@
 
 ### To Do:
 - [x] Complete the mid-term Peer Evaluations (by Friday, 10/10)
+
+
+## Week 9: October 15, 2025
+
+### Working Day Notes:
+- My sub-team met today in-person from 11-11:50 at Culc 445 to work together. I worked with Ethan, Zilu, and Clara to build the BERT model and train it on our labelled dataset. To build BERT, we followed a comprehensive guide posted on Medium (link: https://medium.com/@alexrodriguesj/sentiment-analysis-with-bert-a-comprehensive-guide-6d4d091eb6bb#6318) and coded in Google Colab. Of our 1000 labelled data, we decided to use 70% for training, 15% for validation, and 15% for testing purposes. We ran into a slight bug in the code where the number of categories BERT expected did not match what we inputted, but we were able to fix it by changing our code. By the end of our meeting, we finished training BERT. The next step is to test BERT and determine how accurate it is and if any fine-tuning is necessary.
+
+### Sub-Team Meeting: Moved to next Tuesday, 10/21
+
+### To Do:
+- [x] Complete assigned slides for second sub-team presentation & practice for presentation (by Tuesday 10/21)
