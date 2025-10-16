@@ -73,8 +73,9 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 - Interpret average results of first 1k data points.
 # Week 9
 ## Working Day
-- The DF team and I planned out our first steps to completing Presentation 2, including setting up a meeting time for a dry run ahead next Tuesday ahead of the presentation. After that, we split up into the DS and ML subteams. As part of the DS team, we set up a Google Colab, read an article on performing sentiment analysis with BERT, and fine-tuned the given model for our dataset to create a 70 traning/15 validation/15 testing percentage. Article found here: https://medium.com/@alexrodriguesj/sentiment-analysis-with-bert-a-comprehensive-guide-6d4d091eb6bb#6318. I collaborated with Saloni, Zilu, and Clara during this process. One primary issue we ran into the model didn't initially train from our data, but we figured out the issue was that the label mapping was off by 1 index. We are hoping to continue working on BERT and create some sentiment analysis insight by Presentation 2.
+- The DF team and I planned out our first steps to completing Presentation 2, including setting up a meeting time for a dry run ahead next Tuesday ahead of the presentation. After that, we split up into the DS and ML subteams. As part of the DS team, we set up a Google Colab, read an article on performing sentiment analysis with BERT, and fine-tuned the given model for our dataset to create a 70 traning/15 validation/15 testing percentage. Article found [here](https://medium.com/@alexrodriguesj/sentiment-analysis-with-bert-a-comprehensive-guide-6d4d091eb6bb#6318). I collaborated with Saloni, Zilu, and Clara during this process. One primary issue we ran into the model didn't initially train from our data, but we figured out the issue was that the label mapping was off by 1 index. We are hoping to continue working on BERT and create some sentiment analysis insight by Presentation 2.
 ## Sub-Team Meeting:
-- 
+- Performed a dry run of Presentation 2 ahead of Wednesday's class
 ## TODO:
-- 
+- Finish slides for Presentation 2
+- Complete initial training of BERT model
