@@ -81,7 +81,7 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 - Complete initial training of BERT model
 # Week 10
 ## General Body Meeting
-- Presented Presentation 2
+- Presented Presentation 2 found [here](http://github.gatech.edu/C21U/vip-nlp/blob/master/Fall-2025/slides/Discussion%20Forum%20Presentation%202.pdf)
 ## Sub-Team Meeting:
 - Discussed next steps for DS and ML teams ahead of Presentation 3
 - DS plans to fine-tune BERT model by using cleaned dataset, adding accuracy scores like F1, and scaling to unlabelled data.
