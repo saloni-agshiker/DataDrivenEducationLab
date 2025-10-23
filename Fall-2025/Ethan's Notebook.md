@@ -79,3 +79,12 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 ## TODO:
 - Finish slides for Presentation 2
 - Complete initial training of BERT model
+# Week 10
+## General Body Meeting
+- Presented Presentation 2
+## Sub-Team Meeting:
+- Discussed next steps for DS and ML teams ahead of Presentation 3
+- DS plans to fine-tune BERT model by using cleaned dataset, adding accuracy scores like F1, and scaling to unlabelled data.
+## TODO:
+- Use BERT model on clean dataset
+- Start adding accuracy metrics
