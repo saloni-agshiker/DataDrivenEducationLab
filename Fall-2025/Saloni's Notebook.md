@@ -107,8 +107,22 @@
 
 ### Working Day Notes:
 - My sub-team met today in-person from 11-11:50 at Culc 445 to work together. I worked with Ethan, Zilu, and Clara to build the BERT model and train it on our labelled dataset. To build BERT, we followed a comprehensive guide posted on Medium (link: https://medium.com/@alexrodriguesj/sentiment-analysis-with-bert-a-comprehensive-guide-6d4d091eb6bb#6318) and coded in Google Colab. Of our 1000 labelled data, we decided to use 70% for training, 15% for validation, and 15% for testing purposes. We ran into a slight bug in the code where the number of categories BERT expected did not match what we inputted, but we were able to fix it by changing our code. By the end of our meeting, we finished training BERT. The next step is to test BERT and determine how accurate it is and if any fine-tuning is necessary.
+- Link to our BERT model: https://colab.research.google.com/drive/1t_046rpA0XoHjswIXealJnzmva0XxWx5?usp=sharing
 
 ### Sub-Team Meeting: Moved to next Tuesday, 10/21
 
 ### To Do:
 - [x] Complete assigned slides for second sub-team presentation & practice for presentation (by Tuesday 10/21)
+
+
+## Week 10: October 22, 2025
+
+### Class Meeting Notes:
+- We gave our second subteam presentation on the progress we have achieved so far in the semester. We also listened to the other subteams' presentations.
+- Link to our second subteam presentation: https://gtvault.sharepoint.com/:p:/s/VIPData-DrivenEducationTeam-DiscussionForums/EXkgbQKYwuBJmoGFjZ4Z0OQBgeT7IkgbfvcCad9ZhHKpdQ?e=ywnQWQ&nav=eyJzSWQiOjI1NiwiY0lkIjowfQ
+
+### Sub-Team Meeting Notes: October 23, 2025
+- We gave our weekly updates: the data science team finished building the first version of our BERT sentiment analysis model. Although it is able to classify comments well, we are running into a couple issues: we need to reduce the training time from one hour and increase accuracy. We will schedule a meeting during the week to work on these issues.
+
+### To Do:
+- [x] Fine-tune BERT model (by Thursday 10/30)
