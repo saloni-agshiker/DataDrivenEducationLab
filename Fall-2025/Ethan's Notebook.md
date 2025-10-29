@@ -88,3 +88,10 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 ## TODO:
 - Use BERT model on clean dataset
 - Start adding accuracy metrics
+# Week 11
+## General Body Meeting
+- Listened to a presentation on software development research by Dr. Eric Sembrat
+## Sub-Team Meeting:
+- 
+## TODO:
+- 
