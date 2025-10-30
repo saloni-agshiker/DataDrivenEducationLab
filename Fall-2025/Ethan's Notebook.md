@@ -92,6 +92,9 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 ## General Body Meeting
 - Listened to a presentation on software development research by Dr. Eric Sembrat
 ## Sub-Team Meeting:
-- 
+- Transitioned from BERT to DistilBERT
+- Revised and refined sentiment analysis model trained on first 1k entries (cleaned)
+- Used model to predict sentiment analysis for the rest of the cleaned dataset
 ## TODO:
-- 
+- Create another model that is trained and used on the original dataset
+- Compare results between original and clean data using accuracy scores
