@@ -135,6 +135,7 @@
 
 ### Sub-Team Meeting Notes: October 30, 2025
 - We gave our weekly updates: on the data science team, Ethan created a slightly different version of our BERT model, called Distilled BERT, because its classifications are more accurate and it runs faster for our smaller dataset. Ethan ran this model on our cleaned dataset and it performed well. For next steps, Ethan will run the Distilled BERT on the original dataset. Then, I will compare results from the original and cleaned datasets and calculate accuracy scores, using measures like a confusion matrix which calculates true positive, true negative, false positive, and false negative.
+- Link for more info about confusion matrix: https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/
 
 ### To Do:
 - [x] Calculate accuracy measures and cross-comparisons for Distilled BERT results (by Thursday 11/6)
