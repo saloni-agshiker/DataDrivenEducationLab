@@ -139,3 +139,15 @@
 
 ### To Do:
 - [x] Calculate accuracy measures and cross-comparisons for Distilled BERT results (by Thursday 11/6)
+
+
+## Week 12: November 5, 2025
+
+### Class Meeting Notes:
+- Dr. Yilmaz Soylu provided a presentation on the ethical use of AI, touching specifically on ways to mitigate algorithmic bias. The presentation was quite relevant as our subteam is building AI models for sentiment analysis and cognitive presence, so we must factor in these ethical considerations.
+
+### Sub-Team Meeting Notes: November 6, 2025
+- We gave our weekly updates: Ethan ran the Distilled BERT on our original dataset and I learned about confusion matrices (using the link Zilu provided in our last sub-team meeting) to calculate analytics (accuracy, precision, F1 scores) on our models. Building the confusion matrix requires running our model on our testing dataset, so I am now working with Zilu to write the code for that. If our accuracy, precision, etc scores are high enough, the next step is to aggregate the classifications from the model to make conclusions about student sentiment in the course. Otherwise, we will have to determine why scores are low and refine the model.
+
+### To Do:
+- [x] Work with Zilu to build confusion matrix and extract sentiment-related insights from our model (by Thursday 11/13)
