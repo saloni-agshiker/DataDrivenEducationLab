@@ -98,3 +98,10 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 ## TODO:
 - Create another model that is trained and used on the original dataset
 - Compare results between original and clean data using accuracy scores
+# Week 12
+## General Body Meeting
+- Listened to a presentation on AI governance written by Dr. Warren Goetzel and presented by Dr. Yilmaz Soylu
+## Sub-Team Meeting:
+- Used same DistilBERT model on original dataset so now there are comparable results between original and clean versions
+## TODO:
+- Create confusion matrix to determine accuracy and similarity between the modeled data
