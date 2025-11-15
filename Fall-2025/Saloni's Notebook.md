@@ -151,3 +151,19 @@
 
 ### To Do:
 - [x] Work with Zilu to build confusion matrix and extract sentiment-related insights from our model (by Thursday 11/13)
+
+
+## Week 13: November 12, 2025
+
+### Class Meeting Notes:
+- Dr. Stephen Harmon, the executive director of C21U, spoke about the history and development of educational technologies. His presentation was quite informative and it led me to retrospect on how educational technology shapes my learning experience and how I can contribute to this development.
+
+### Sub-Team Meeting: Pushed to Tuesday, November 18, 2025
+- We pushed our sub-team meeting to next Tuesday to give us more time to wrap up our work before we put everything together for the final sub-team presentation on Wednesday. I worked with Zilu to create a confusion matrix for the results of running our Distilled BERT model on the testing dataset. This analysis was very insightful, as it showed that our model is biased towards neutral predictions & struggles to distinguish emotionally charged language (positive or negative) from neutral tones. This was expected, as neutral comments were the majority class in our training dataset, although we tried to mitigate it by taking a random sample of our dataset. At our next sub-team meeting, we will discuss ways to improve our model and one way I suggest is to balance the dataset (undersample neutral or oversample positive/negative).
+- The next steps are to run the model on Harikesh's dataset of CS 1301 comments to tie our work together and extract insights to put into our dashboard. In addition, I will conduct some research to determine how to explain our results from a cognitive presence perspective.
+- Distilled BERT Confusion Matrix & Analysis: https://docs.google.com/document/d/1yWXFBNKkWWnRH-KgmBi_BW5NFbMnT2fLzIYTPJ_2B7M/edit?usp=sharing
+
+### To Do:
+- [x] Run Distilled BERT model on Harikesh's dataset (by Sunday 11/16)
+- [x] Conduct research to explain our results from a cognitive presence perspetive (by Sunday 11/16)
+- [x] Work on final sub-team presentation (by Monday 11/17)  
