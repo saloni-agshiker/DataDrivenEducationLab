@@ -165,5 +165,5 @@
 
 ### To Do:
 - [x] Run Distilled BERT model on Harikesh's dataset (by Sunday 11/16)
-- [x] Conduct research to explain our results from a cognitive presence perspetive (by Sunday 11/16)
+- [x] Conduct research to explain our results from a cognitive presence perspective (by Sunday 11/16)
 - [x] Work on final sub-team presentation (by Monday 11/17)  
