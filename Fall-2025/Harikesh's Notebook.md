@@ -66,7 +66,7 @@
 
 ### To-do:
 -Started taking my ML learnings from last week and started thinking about implementation
--Complete slides for the Subteam presentation
+-Complete slides for the Subteam presentation - Goals, Progress, and Plan of ML team
 -Create an outlined plan on the ML research question after playing around with the data that I have access to
 -Practice during dry run for Subteam presentation 1 on Monday
 
@@ -96,6 +96,8 @@
 -Hearing about the discussion for the completion of labeling data science's data
 -Seeing the labeling metrics from Zilu
 -Letting the team know of my work as the ML team, I ran the queries between 3 tables to clean and create 1 joined table
+-Do basic EDA including average grades, number of students with grades, number of posts within the students that have grades
+-Created univariate correlation analysis to understand the variables better without creating a complicated model yet
 -I started running R squared tests on Ridge, Lasso, and KNN models using 15-20 features from time series data (LSTM) and semantic data (transformers model).
 -The model was severely flawed because the R squared was negative.
 -Discussed overall data and got tips from Zilu on models, features, and future improvements.
@@ -126,33 +128,39 @@ def load_and_prepare_data():
 -Was not available to make it to class (excused - Harvard MBA event)
 
 ### Sub-Team Meeting Notes:
--
+-Created the plan for the working day next week for each team and location that we will meet
+-Gave the current updates on what I planned to accomplish for the upcoming working day
 
 ### To-do:
--Improve the model and re-examine all of the present features and find places to improve
+-Improve the model and re-examine all of the present features and find places to improve R^2
+-Study my previous work from Spring for the KNN model heatmap using posts and replies by students
 
 ## Week 9: Oct 15th, 2025
 
-### Lecture Notes:
--
+### Working Day Notes:
+-Main goal was to solve for the R^2 being meaningless with this dataset because there was too much noise
+-Analyzed all of the features and realized which ones aren't key to this experiment and are messing with the model
+-Created a much more accurate Ridge model and did research into the model to prevent overfitting and pushed for the negative coefficient factoring with Ridge models
 
-### Sub-Team Meeting Notes:
--
+### Sub-Team Meeting Notes (Moved to 10/21):
+-Performed a dry run of our Subteam presentation 2 before the Wednesday 11/22 class
 
-### To-do:
--
+### To-do (After working day):
+-Complete my slides showing Original Plan, EDA, Ridge Model, and Next Steps for the ML Team
 
 ## Week 10: Oct 22st, 2025
 
 ### Lecture Notes:
--Listened into the other subteams' Presentation 2
+-Listened to the other subteams' Presentation 2
 -Presented Discussion Forums Presentation 2
 
 ### Sub-Team Meeting Notes:
-
+-Talked about what will happen next for both MS and DS teams after the Subteam meeting 3
 
 ### To-do:
-
+-I need to see how I can continue the R^2 and target for .30 as my metric
+-Both checking new models and seeing any optimization in my variables is the next step
+-Discussing with Clara about how to viz ML model for the dashboard
 
 ## Week 11: Oct 29th, 2025
 
@@ -160,10 +168,13 @@ def load_and_prepare_data():
 -Was not available to make it to class (unexcused)
 
 ### Sub-Team Meeting Notes:
--
+-Team knew about my progress on the Ridge model and I explained what my next testing steps were to optimize
+-Also discussed after I finalize my model, I can focus more on 
 
 ### To-do:
-
+-Test Ridge and Lasso with new variables
+-Test with the PCA algorithm on top of the Ridge algorithm to see if we can optimize the current model
+-Test with Gradient boosting to see if a more fluid algorithm can help with noisy data
 
 ## Week 12: Nov 5th, 2025
 
@@ -171,21 +182,27 @@ def load_and_prepare_data():
 -Was not available to make it to class (unexcused)
 
 ### Sub-Team Meeting Notes:
-
+-Shared that I landed on a final algorithm and the model is complete
+-Discussed how to work with Clara and DS to have my data that I am using from the two CS1301 classes for viz + BERT
 
 ### To-do:
+-Met with Clara to break down the ML model for student behaviors so she has context to create some sketches of potential viz
+-Send Clara two datasets so she can create viz for ML model that Zilu can use to create the dashboard: 1) all the user ids with grades attached and the coefficient scoring for each feature 2) all the users and the actual posts they made with grades
 
 
 ## Week 13: Nov 12th, 2025
 
 ### Lecture Notes:
-
+-Attended the lecture for Future Directions for Data-Driven Education by Dr. Harmon
 
 ### Sub-Team Meeting Notes:
-
+-Guide Zilu and Clara with the dashboard and how to go forward with the viz
 
 ### To-do:
-
+-Create file for dataset with all discussion posts with grade data attached and cleaned (the dataset my ML model is using) to the DS team to use their BERT model
+-Create ML team's subteam presentation 3 section
+-Create 9 new viz to understand the final results of the model
+-Clean up code to remove all of the testing that I was doing to find the best model and solidify results
 
 ## Week 14: Nov 19th, 2025
 
@@ -199,5 +216,4 @@ def load_and_prepare_data():
 -Ran a mock subteam presentation run-through
 
 ### To-do:
--Complete the VIP notebook
-=Turn in the final team peer eval
+-Turn in the final team peer eval
