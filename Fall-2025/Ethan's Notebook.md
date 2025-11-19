@@ -105,3 +105,18 @@ __Ethan's Fall 2025 VIP-DDE-DF Notebook__
 - Used same DistilBERT model on original dataset so now there are comparable results between original and clean versions
 ## TODO:
 - Create confusion matrix to determine accuracy and similarity between the modeled data
+# Week 13
+## General Body Meeting
+- Listened to a presentation on the evolution of education technology by Dr. Stephen Harmon
+## Sub-Team Meeting:
+- Was not present due to an interview
+- Analyze confusion matrix results to see where we can gain insight into the data and future improvements
+## TODO:
+- Work on presentation 3
+# Week 12
+## General Body Meeting
+- Presented Presentation 3 and listened to other subteams' presentations
+## Sub-Team Meeting:
+- Did a dry run of Presentation 3 found [here](https://github.gatech.edu/C21U/vip-nlp/blob/master/Fall-2025/slides/Discussion%20Forum%20Presentation%203.pdf) ahead of the presentation day
+## TODO:
+- Peer evaluation and final submission of notebook
