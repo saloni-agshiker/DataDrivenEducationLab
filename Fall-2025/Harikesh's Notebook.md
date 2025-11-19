@@ -82,7 +82,7 @@
 -Listening in on how the DS team plans on working on the CP of discussion posts by labeling the posts manually
 
 ### To-do:
--Starting putting together the queries for the 3 tables
+-Starting to put together the queries for the 3 tables
 -Clean the data set
 -Create a first pass of the semantic modality part of my ML model
 
@@ -90,7 +90,7 @@
 
 ### Lecture Notes:
 -Learning about education and AI from Dr. Lee
--For example, learning about the research trends and oppurtunities for education technologies
+-For example, learning about the research trends and opportunities for education technologies
 
 ### Sub-Team Meeting Notes:
 -Hearing about the discussion for the completion of labeling data science's data
@@ -120,3 +120,84 @@ def load_and_prepare_data():
     print(f"Loaded {len(threads_df)} threads, {len(comments_df)} comments, {len(grades_df)} students with grades")
     return threads_df, comments_df, grades_df
 
+## Week 8: Oct 8th, 2025
+
+### Lecture Notes:
+-Was not available to make it to class (excused - Harvard MBA event)
+
+### Sub-Team Meeting Notes:
+-
+
+### To-do:
+-Improve the model and re-examine all of the present features and find places to improve
+
+## Week 9: Oct 15th, 2025
+
+### Lecture Notes:
+-
+
+### Sub-Team Meeting Notes:
+-
+
+### To-do:
+-
+
+## Week 10: Oct 22st, 2025
+
+### Lecture Notes:
+-Listened into the other subteams' Presentation 2
+-Presented Discussion Forums Presentation 2
+
+### Sub-Team Meeting Notes:
+
+
+### To-do:
+
+
+## Week 11: Oct 29th, 2025
+
+### Lecture Notes:
+-Was not available to make it to class (unexcused)
+
+### Sub-Team Meeting Notes:
+-
+
+### To-do:
+
+
+## Week 12: Nov 5th, 2025
+
+### Lecture Notes:
+-Was not available to make it to class (unexcused)
+
+### Sub-Team Meeting Notes:
+
+
+### To-do:
+
+
+## Week 13: Nov 12th, 2025
+
+### Lecture Notes:
+
+
+### Sub-Team Meeting Notes:
+
+
+### To-do:
+
+
+## Week 14: Nov 19th, 2025
+
+### Lecture Notes:
+-Hearing about dynamic and static data
+-Seeing multiple teams' dashboards and seeing how they are organizing data for real insights
+-Listening to the 4 teams presenting their subteam presentation 3
+-Presenting our work on the Subteam presentation 3 for the discussion forums
+
+### Sub-Team Meeting Notes:
+-Ran a mock subteam presentation run-through
+
+### To-do:
+-Complete the VIP notebook
+=Turn in the final team peer eval
