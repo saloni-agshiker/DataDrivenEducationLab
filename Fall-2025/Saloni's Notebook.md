@@ -167,3 +167,18 @@
 - [x] Run Distilled BERT model on Harikesh's dataset (by Sunday 11/16)
 - [x] Conduct research to explain our results from a cognitive presence perspective (by Sunday 11/16)
 - [x] Work on final sub-team presentation (by Monday 11/17)  
+
+
+## Week 14: November 19, 2025
+
+### Class Meeting Notes:
+- We gave our final subteam presentation for the semester, covering the work we accomplished in the last sprint, takeaways, and next steps. We also listened to the other subteams' presentations.
+- Link to our final subteam presentation: https://gtvault.sharepoint.com/:p:/s/VIPData-DrivenEducationTeam-DiscussionForums/EdNonKMkgmVPki-cRf7S4EABTysrEmCNUZwFquMbBphQqw?e=eaosZA
+
+### Sub-Team Meeting: November 18, 2025
+- We gave our weekly updates: I researched how to connect our results from the confusion matrix to a cognitive presence perspective and added my work to the doc below. Since our sentiment model cannot accurately classify negative or positive sentiment, it is difficult to understand the exact phase a student is in. However, we have laid a good foundation for the connection this semester and once we improve the model's accuracy, we will be able to extract even more data. I also ran the Distilled BERT model on Harikesh's dataset to classify his discussion comments, but we have to discuss how to integrate this analysis with his current work.
+- We did a run-through of our final sub-team presentation.
+
+### To Do:
+- [x] Complete VIP notebook (by Monday 11/24)
+- [x] Complete Peer Evals (due Wednesday 11/26)
