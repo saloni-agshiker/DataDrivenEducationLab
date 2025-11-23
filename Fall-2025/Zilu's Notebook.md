@@ -185,3 +185,43 @@ In class we learned about Design-based research, I really love the sentence that
 Before we start our project and research, we should always polish our design, clarify what we want to achieve and how do we do that. Every step should have a clear purpose so that we won't get lost during iterative deployment.
 
 ## Week 12
+During class, we talked about the ethical perspective of research related to education. This is an important topic to keep in mind that we should try our best to avoid algorithm/model bias.
+
+Data Science team is doing well with DistilBert, ML is switching to Gradient Boost to see if it is a more suitable model.
+
+### Task Done:
+1. Checked the dashboard built from last semester, looked up some ideas on how to build visualizations.
+
+### TODO:
+1. Have data science team to run model on CS1301 data
+2. Had some delays on updating REAME files, try to finish that
+3. Pulled some of my old code and gave Saloni a template for confusion matrix
+
+### Reflection:
+The topic that we had in class reminded me of talking about using AI for student admission. We should be extra careful in our project giving the fact that we are trying to predict student's grade. Models should only be a tool that gives us additional insights.
+
+## Week 13
+Dr. Harmon gave us an interesting introduction on the development of education and how it is important to our society. He showed us different perspectives of education to highlight the importance of our research.
+
+Pushed our weekly stand-up to Tuesday evening to give everyone extra time to finishing up the works and slides.
+
+### Tasks done:
+1. Got data from ds and ml for dashboard
+2. Talked with Clara for the design ideas
+3. Finished the slides
+4. Added dashboards in React
+
+### TODO:
+1. Finish up the presentation 3
+2. Finish all documentations
+
+
+## Week 14
+Had our final presentation for the semester and listened to other groups presentations.
+Everyone is doing a great job and the milestones are all achieved.
+
+### Tasks Done:
+1. Wrapping up the codes and updating documentations.
+
+### Reflection:
+Our team had an amazing finish and showed that our approach is promising. The only part that we could do better is connecting cognitive presence to ds and ml. I have looked up some research online but they were hard to replicate. The most important thing is that I should leave comprehensive documentations for people to review and catch up in the future.
