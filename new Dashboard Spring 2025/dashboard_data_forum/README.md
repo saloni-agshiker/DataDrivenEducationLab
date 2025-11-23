@@ -1,87 +1,105 @@
-# Welcome to React Router!
+# Sketches
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## Sentiment & Grade Prediction Dashboard
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+This is a React dashboard app for visualizing sentiment analysis results and ridge regression predictions on educational forum data.
 
 ---
 
-Built with ❤️ using React Router.
+### Features
+
+- **Sentiment Analysis Dashboard**
+  - Showcases precomputed sentiment results for example sentences.
+  - Interactive dropdown to analyze sentiment of selected sentences.
+
+- **Grade Prediction Dashboard**
+  - Visualizes regression coefficients and actual vs. predicted grades.
+  - Predicts grades using Gradient Boost based on forum activity features.
+
+- **Routing**
+  - Built with React Router for multi-page navigation.
+
+---
+
+### Project Structure
+
+```
+app/
+  routes/
+    home.tsx
+    sentiment.tsx
+    GradePrediction.tsx
+  data/
+    (local data files, e.g. exampleData.ts)
+  routes.ts
+public/
+  data/
+    (static assets, e.g. .json or .csv files)
+  ...
+.react-router/
+  types/
+    app/
+      routes/
+        +types/
+          (type definitions for route files)
+```
+
+---
+
+### Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+3. **Open your browser:**  
+   Visit [http://localhost:3000](http://localhost:3000) (or the port shown in your terminal).
+
+---
+
+### Adding Data
+
+- Place TypeScript/JS data files in `app/data/`.
+- For static assets (JSON/CSV), use `public/data/`.
+- Import your data in route components as needed:
+  ```ts
+  import { exampleData } from "~/data/exampleData";
+  ```
+
+---
+
+### Customization
+
+- Edit `app/routes/sentiment.tsx` to change sentiment examples or logic.
+- Edit `app/routes/ridgeRegression.tsx` or `app/routes/GradePrediction.tsx` to update regression features or data.
+- Update type definitions in `.react-router/types/app/routes/+types/` if you change route exports or props.
+
+---
+
+### Tech Stack
+
+- [React](https://react.dev/)
+- [React Router](https://reactrouter.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Recharts](https://recharts.org/) (for charts)
+- [ml-matrix](https://github.com/mljs/matrix) (for regression math)
+
+---
+
+### License
+
+MIT
+
+---
+
+*Created for educational data analysis and dashboarding.*
