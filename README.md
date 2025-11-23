@@ -15,6 +15,8 @@ Georgia Tech has had great success in MOOC forums. Check out C21U's chief scient
 * Community of Inquiry
 * Quality of discourse
 * Slack web-scraping?
+* Sentiment analysis
+* Grade prediction
 
 # Fall 2020 Deliverables
 * Project management plan
@@ -33,6 +35,13 @@ Georgia Tech has had great success in MOOC forums. Check out C21U's chief scient
 * Topic modeling with real dataset and synthetic dataset
 * Built an interactive dashboard with React using CS1301 as the demo (navigate to new Dashboard Spring 2025)
 * See more details [here](./Spring%202025%20VIP%20Notebooks/README.md)
+
+# Fall 2025 Updates
+* Data source: Used additional grades data for CS1301
+* Gradient Boost for grade prediction
+* DistilBert for sentiment analysis
+* Add additional visualizations (navigate to new Dashboard Spring 2025)
+* See more details [here](./Fall%202025%20VIP%20Notebooks/README.md)
 
 
 # Team Roles and Responsibilities
