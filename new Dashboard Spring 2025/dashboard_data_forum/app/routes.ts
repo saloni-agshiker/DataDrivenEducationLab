@@ -11,5 +11,6 @@ export default [
     index("routes/home.tsx"), // main page
     // define other pages
     // route("test", "routes/header/header.tsx"), 
+    route("grade-prediction", "routes/GradePrediction.tsx"),
 
 ] satisfies RouteConfig;
