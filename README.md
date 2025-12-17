@@ -16,6 +16,13 @@ This team focuses on the effects that data are having in shaping education, on h
 
 ## 🎯 What it Does
 
+- [VIP_LDA_Model_Test.ipynb]:
+Built two NLP models using Pandas and Gensim:
+(1) **Term Frequency–Inverse Document Frequency (TF-IDF)**, which represents documents as numerical vectors by weighting words based on their importance within a document relative to the full corpus, and
+(2) **Latent Dirichlet Allocation (LDA)**, a probabilistic topic-modeling algorithm that identifies latent topics across a collection of documents.
+
+A corpus of approximately 40,000 discussion-forum comments from Georgia Tech CS 1301 and ISYE 6501 courses was processed through the TF-IDF model to identify high-importance terms, and through the LDA model to uncover common thematic structures across the comments.
+
 ***
 
 ## 🛠 How we Built it
