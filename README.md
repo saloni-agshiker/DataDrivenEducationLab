@@ -24,7 +24,7 @@ We developed a **sentiment analysis model** using DistilBERT, a lightweight, dis
 
 ## 📽 Demo
 
-![LDA Model Results](images/LDA_results.png)
+![LDA Model Results](images/LDA_Results.png)
 
 ![Confusion Matrix](images/Confusion_Matrix.png)
 
