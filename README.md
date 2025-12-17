@@ -22,8 +22,6 @@ We developed a **sentiment analysis model** using DistilBERT, a lightweight, dis
 
 ***
 
-## 🛠 How we Built it
-
-***
-
 ## 📽 Demo
+
+
