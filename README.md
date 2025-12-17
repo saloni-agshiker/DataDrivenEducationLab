@@ -6,6 +6,10 @@ Saloni Agshiker, Ethan Lu, Zilu Zhu, Diya Jain, Harikesh Tambareni, Clara Murray
 
 ***
 
+## 🚀 Goals
+
+***
+
 ## 🎯 What it Does
 
 ***
