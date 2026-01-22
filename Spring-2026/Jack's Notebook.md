@@ -12,5 +12,11 @@
 - Submit FERPA Acknowledgment Form via DocuSign
 - Complete Qualtrics Sub-Team Survey
 
-# Week 1: 1/14
+# Week 1: 1/21
 ## General Body Meeting:
+- Selected as a member of Discussion Forums sub-team working as a Machine Learning Engineer.
+- Get together with the sub-team and reintroduce myself and the role that I will be working on.
+- Joined Microsoft Teams and Discussion Forums github repo.
+## TODO:
+- Complete the IRB Training
+- Look into Discussion Forums github repo to gain a better understanding of the team structures/objectives
