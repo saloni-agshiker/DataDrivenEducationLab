@@ -1,288 +1,519 @@
+import { useState, useEffect } from "react";
 import {
-    ScatterChart,
-    Scatter,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    ResponsiveContainer,
-    BarChart,
-    Bar,
-    Cell,
-    ReferenceLine,
-  } from "recharts";
-  
-  // Sample data - replace with real data from your team
-  const studentData = [
-    { user_id: 5710, actual: 0.85, predicted: 0.82, active_weeks: 4, avg_comment_len: 182, posts: 7 },
-    { user_id: 30786, actual: 1.0, predicted: 0.94, active_weeks: 8, avg_comment_len: 101, posts: 19 },
-    { user_id: 69478, actual: 0.59, predicted: 0.65, active_weeks: 1, avg_comment_len: 632, posts: 4 },
-    { user_id: 12345, actual: 0.72, predicted: 0.70, active_weeks: 5, avg_comment_len: 150, posts: 12 },
-    { user_id: 67890, actual: 0.91, predicted: 0.88, active_weeks: 7, avg_comment_len: 200, posts: 15 },
-    { user_id: 11111, actual: 0.45, predicted: 0.52, active_weeks: 2, avg_comment_len: 80, posts: 3 },
-    { user_id: 22222, actual: 0.78, predicted: 0.75, active_weeks: 6, avg_comment_len: 175, posts: 10 },
-    { user_id: 33333, actual: 0.88, predicted: 0.85, active_weeks: 6, avg_comment_len: 220, posts: 14 },
-    { user_id: 44444, actual: 0.65, predicted: 0.68, active_weeks: 3, avg_comment_len: 95, posts: 6 },
-    { user_id: 55555, actual: 0.95, predicted: 0.91, active_weeks: 8, avg_comment_len: 250, posts: 20 },
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  Cell,
+  PieChart,
+  Pie,
+} from "recharts";
+
+// Type definitions
+interface Post {
+  id: number;
+  body: string;
+  cpCode: number;
+  grade: number | null;
+  userCategory: string;
+  userId: number | null;
+}
+
+// CP Labels
+const cpLabels: Record<number, string> = {
+  0: "Social/Other",
+  1: "Triggering Event",
+  2: "Exploration",
+  3: "Integration",
+  4: "Resolution",
+};
+
+// Colors
+const cpColors: Record<number, string> = {
+  0: "#9ca3af", // Gray - Social
+  1: "#3b82f6", // Blue - Triggering
+  2: "#f59e0b", // Yellow - Exploration
+  3: "#22c55e", // Green - Integration
+  4: "#003057", // Navy - Resolution
+};
+
+const categoryColors: Record<string, string> = {
+  Student: "#003057",
+  "Community TA": "#B3A369",
+  Instructor: "#22c55e",
+  Staff: "#3b82f6",
+  Unknown: "#9ca3af",
+};
+
+export function meta() {
+  return [
+    { title: "Grade Analysis | Discussion Forum Dashboard" },
+    { name: "description", content: "Analyze relationship between forum participation and grades" },
   ];
-  
-  const featureImportance = [
-    { name: "topic_x_entropy", importance: 0.1186, category: "Semantic" },
-    { name: "topic_x_active", importance: 0.0995, category: "Interaction" },
-    { name: "avg_comment_len", importance: 0.0829, category: "Text" },
-    { name: "local_topic_entropy", importance: 0.0793, category: "Semantic" },
-    { name: "dist_to_centroid", importance: 0.065, category: "Semantic" },
-    { name: "active_weeks", importance: 0.062, category: "Temporal" },
-    { name: "early_activity_index", importance: 0.058, category: "Temporal" },
-    { name: "replies_made", importance: 0.052, category: "Behavioral" },
-    { name: "threads_posted", importance: 0.048, category: "Behavioral" },
-    { name: "upvotes_per_post", importance: 0.042, category: "Interaction" },
-  ];
-  
-  const categoryColors: Record<string, string> = {
-    Semantic: "#003057",      // Navy Blue
-    Interaction: "#B3A369",   // Tech Gold
-    Text: "#22c55e",          // Green
-    Temporal: "#3b82f6",      // Blue
-    Behavioral: "#ef4444",    // Red
+}
+
+export default function Grades() {
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedCP, setSelectedCP] = useState<number | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 10;
+
+  // Load data from JSON file
+  // Place forum_data.json in your public/data/ folder
+  useEffect(() => {
+    fetch("/data/forum_data.json")
+      .then((res) => res.json())
+      .then((data: Post[]) => {
+        setPosts(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error loading data:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  // Calculate statistics from loaded data
+  const stats = {
+    totalPosts: posts.length,
+    totalStudents: new Set(posts.map((p) => p.userId).filter(Boolean)).size,
+    avgGrade:
+      posts.filter((p) => p.grade !== null).reduce((sum, p) => sum + (p.grade || 0), 0) /
+        posts.filter((p) => p.grade !== null).length || 0,
+    studentsWithGrades: posts.filter((p) => p.grade !== null).length,
   };
-  
-  export function meta() {
-    return [
-      { title: "Grade Prediction | Discussion Forum Dashboard" },
-      { name: "description", content: "Predict student grades from forum behavior" },
-    ];
-  }
-  
-  export default function Grades() {
-    // Calculate R² (simplified - using the sample data)
-    const r2 = 0.153;
-    const mae = 0.049;
-  
+
+  // Calculate CP distribution
+  const cpDistribution = [0, 1, 2, 3, 4].map((code) => ({
+    code,
+    label: cpLabels[code],
+    count: posts.filter((p) => p.cpCode === code).length,
+  }));
+
+  // Calculate average grade by CP
+  const gradeByCP = [0, 1, 2, 3, 4].map((code) => {
+    const cpPosts = posts.filter((p) => p.cpCode === code && p.grade !== null);
+    const avgGrade = cpPosts.length > 0
+      ? cpPosts.reduce((sum, p) => sum + (p.grade || 0), 0) / cpPosts.length
+      : 0;
+    return {
+      code,
+      label: cpLabels[code],
+      avgGrade,
+    };
+  });
+
+  // Calculate grade distribution
+  const gradeRanges = ["0-20%", "21-40%", "41-60%", "61-80%", "81-100%"];
+  const gradeDistribution = gradeRanges.map((range, index) => {
+    const min = index * 0.2;
+    const max = (index + 1) * 0.2;
+    return {
+      range,
+      count: posts.filter((p) => p.grade !== null && p.grade > min && p.grade <= max).length,
+    };
+  });
+
+  // Calculate user category distribution
+  const userCategories = Object.entries(
+    posts.reduce((acc, p) => {
+      acc[p.userCategory] = (acc[p.userCategory] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>)
+  ).map(([category, count]) => ({ category, count }));
+
+  // Filter posts
+  const filteredPosts = posts.filter((post) => {
+    const matchesCP = selectedCP === null || post.cpCode === selectedCP;
+    const matchesSearch = post.body.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesCP && matchesSearch;
+  });
+
+  // Pagination
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+  const paginatedPosts = filteredPosts.slice(
+    (currentPage - 1) * postsPerPage,
+    currentPage * postsPerPage
+  );
+
+  // Reset page when filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCP, searchTerm]);
+
+  if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 py-8">
-          {/* Page Header */}
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold text-gray-900">Grade Prediction</h1>
-            <p className="text-gray-600 mt-2">
-              Gradient Boosting model predicts student grades based on forum participation patterns.
-            </p>
-          </div>
-  
-          {/* Model Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-            <StatCard title="R² Score" value={r2.toFixed(3)} subtitle="Variance explained" />
-            <StatCard title="MAE" value={mae.toFixed(3)} subtitle="Mean Absolute Error" />
-            <StatCard title="Students" value={studentData.length.toString()} subtitle="In dataset" />
-            <StatCard title="Features" value={featureImportance.length.toString()} subtitle="Input variables" />
-          </div>
-  
-          {/* Charts Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-            {/* Scatter Plot */}
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">
-                Actual vs Predicted Grades
-              </h2>
-              <div className="h-80">
-                <ResponsiveContainer width="100%" height="100%">
-                  <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis
-                      type="number"
-                      dataKey="actual"
-                      name="Actual Grade"
-                      domain={[0, 1]}
-                      tickFormatter={(v) => `${(v * 100).toFixed(0)}%`}
-                      label={{ value: "Actual Grade", position: "bottom", offset: 0 }}
-                    />
-                    <YAxis
-                      type="number"
-                      dataKey="predicted"
-                      name="Predicted Grade"
-                      domain={[0, 1]}
-                      tickFormatter={(v) => `${(v * 100).toFixed(0)}%`}
-                      label={{ value: "Predicted Grade", angle: -90, position: "left" }}
-                    />
-                    <Tooltip
-                      content={({ payload }) => {
-                        if (payload && payload.length > 0) {
-                          const data = payload[0].payload;
-                          return (
-                            <div className="bg-white p-3 rounded-lg shadow-lg border">
-                              <p className="font-medium">Student {data.user_id}</p>
-                              <p className="text-sm text-gray-600">
-                                Actual: {(data.actual * 100).toFixed(1)}%
-                              </p>
-                              <p className="text-sm text-gray-600">
-                                Predicted: {(data.predicted * 100).toFixed(1)}%
-                              </p>
-                              <p className="text-sm text-gray-500 mt-1">
-                                Active weeks: {data.active_weeks}
-                              </p>
-                            </div>
-                          );
-                        }
-                        return null;
-                      }}
-                    />
-                    <ReferenceLine
-                      segment={[{ x: 0, y: 0 }, { x: 1, y: 1 }]}
-                      stroke="#9ca3af"
-                      strokeDasharray="5 5"
-                      label={{ value: "Perfect prediction", position: "insideTopLeft" }}
-                    />
-                    <Scatter name="Students" data={studentData} fill="#B3A369" fillOpacity={0.8} />
-                  </ScatterChart>
-                </ResponsiveContainer>
-              </div>
-              <p className="text-sm text-gray-500 mt-2 text-center">
-                Points closer to the diagonal line = more accurate predictions
-              </p>
-            </div>
-  
-            {/* Feature Importance */}
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">
-                Feature Importance
-              </h2>
-              <div className="h-80">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart
-                    data={featureImportance}
-                    layout="vertical"
-                    margin={{ top: 5, right: 30, left: 100, bottom: 5 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis
-                      type="number"
-                      domain={[0, 0.15]}
-                      tickFormatter={(v) => `${(v * 100).toFixed(0)}%`}
-                    />
-                    <YAxis type="category" dataKey="name" width={100} tick={{ fontSize: 12 }} />
-                    <Tooltip
-                      formatter={(value: number) => `${(value * 100).toFixed(2)}%`}
-                      labelFormatter={(label) => `Feature: ${label}`}
-                    />
-                    <Bar dataKey="importance" radius={[0, 4, 4, 0]}>
-                      {featureImportance.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={categoryColors[entry.category]} />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-              {/* Legend */}
-              <div className="flex flex-wrap gap-4 mt-4 justify-center">
-                {Object.entries(categoryColors).map(([category, color]) => (
-                  <div key={category} className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded" style={{ backgroundColor: color }} />
-                    <span className="text-sm text-gray-600">{category}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-  
-          {/* Student Details Table */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-            <div className="px-6 py-4 border-b border-gray-200">
-              <h2 className="text-lg font-semibold text-gray-900">Student Details</h2>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
-                      User ID
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
-                      Actual Grade
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
-                      Predicted Grade
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
-                      Difference
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
-                      Active Weeks
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
-                      Total Posts
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  {studentData.map((student) => {
-                    const diff = student.predicted - student.actual;
-                    return (
-                      <tr key={student.user_id} className="hover:bg-gray-50">
-                        <td className="px-6 py-4 text-sm font-medium text-gray-900">
-                          {student.user_id}
-                        </td>
-                        <td className="px-6 py-4 text-sm text-gray-700">
-                          {(student.actual * 100).toFixed(1)}%
-                        </td>
-                        <td className="px-6 py-4 text-sm text-gray-700">
-                          {(student.predicted * 100).toFixed(1)}%
-                        </td>
-                        <td className="px-6 py-4 text-sm">
-                          <span
-                            className={`font-medium ${
-                              Math.abs(diff) < 0.05
-                                ? "text-green-600"
-                                : Math.abs(diff) < 0.1
-                                ? "text-yellow-600"
-                                : "text-red-600"
-                            }`}
-                          >
-                            {diff > 0 ? "+" : ""}
-                            {(diff * 100).toFixed(1)}%
-                          </span>
-                        </td>
-                        <td className="px-6 py-4 text-sm text-gray-700">{student.active_weeks}</td>
-                        <td className="px-6 py-4 text-sm text-gray-700">{student.posts}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </div>
-  
-          {/* Model Info */}
-          <div className="mt-8 bg-[#B3A369]/20 rounded-xl border border-[#B3A369]/40 p-6">
-            <h3 className="font-semibold text-[#003057] mb-2">About the Model</h3>
-            <ul className="text-sm text-[#003057]/80 space-y-1">
-              <li>• <strong>Model:</strong> Gradient Boosting Regressor</li>
-              <li>• <strong>Training R²:</strong> 0.96 (overfitting observed)</li>
-              <li>• <strong>Test R²:</strong> 0.153</li>
-              <li>• <strong>Top predictor:</strong> topic_x_entropy (topic diversity)</li>
-              <li>• <strong>Data:</strong> CS1301 courses from 2017-2018</li>
-            </ul>
-          </div>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003057] mx-auto"></div>
+          <p className="mt-4 text-gray-600">Loading data...</p>
         </div>
       </div>
     );
   }
-  
-  // Stat Card Component
-  function StatCard({
-    title,
-    value,
-    subtitle,
-  }: {
-    title: string;
-    value: string;
-    subtitle: string;
-  }) {
+
+  if (posts.length === 0) {
     return (
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <p className="text-sm font-medium text-gray-600">{title}</p>
-        <p className="text-3xl font-bold text-[#003057] mt-1">{value}</p>
-        <p className="text-sm text-gray-500 mt-1">{subtitle}</p>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center max-w-md">
+          <h2 className="text-xl font-bold text-gray-900 mb-2">No Data Found</h2>
+          <p className="text-gray-600 mb-4">
+            Make sure to place <code className="bg-gray-100 px-2 py-1 rounded">forum_data.json</code> in your{" "}
+            <code className="bg-gray-100 px-2 py-1 rounded">public/data/</code> folder.
+          </p>
+        </div>
       </div>
     );
   }
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        {/* Page Header */}
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold text-gray-900">Grade Analysis</h1>
+          <p className="text-gray-600 mt-2">
+            Analyzing the relationship between cognitive presence in forum posts and student grades.
+          </p>
+        </div>
+
+        {/* Summary Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <StatCard title="Total Posts" value={stats.totalPosts.toString()} subtitle="Analyzed" />
+          <StatCard title="Students" value={stats.totalStudents.toString()} subtitle="Unique users" />
+          <StatCard
+            title="Avg Grade"
+            value={`${(stats.avgGrade * 100).toFixed(1)}%`}
+            subtitle="Mean"
+          />
+          <StatCard
+            title="With Grades"
+            value={stats.studentsWithGrades.toString()}
+            subtitle="Posts"
+          />
+        </div>
+
+        {/* Key Finding Banner */}
+        <div className="bg-[#003057] text-white rounded-xl p-6 mb-8">
+          <h2 className="text-xl font-bold mb-2">📈 Key Finding</h2>
+          <p className="text-lg">
+            Students with deeper cognitive engagement (Integration & Resolution) have{" "}
+            <span className="font-bold text-[#B3A369]">higher average grades</span>.
+          </p>
+          <div className="mt-4 grid grid-cols-2 md:grid-cols-5 gap-4">
+            {gradeByCP.map((item) => (
+              <div key={item.code} className="text-center">
+                <p className="text-sm opacity-80">{item.label}</p>
+                <p className="text-2xl font-bold">{(item.avgGrade * 100).toFixed(1)}%</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Charts Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+          {/* CP Code vs Average Grade */}
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">
+              Average Grade by Cognitive Presence Level
+            </h2>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={gradeByCP} margin={{ top: 20, right: 30, left: 20, bottom: 60 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis
+                    dataKey="label"
+                    angle={-45}
+                    textAnchor="end"
+                    interval={0}
+                    tick={{ fontSize: 11 }}
+                  />
+                  <YAxis
+                    domain={[0, 1]}
+                    tickFormatter={(v) => `${(v * 100).toFixed(0)}%`}
+                  />
+                  <Tooltip
+                    formatter={(value: number) => [`${(value * 100).toFixed(1)}%`, "Avg Grade"]}
+                  />
+                  <Bar dataKey="avgGrade" radius={[4, 4, 0, 0]}>
+                    {gradeByCP.map((entry) => (
+                      <Cell key={`cell-${entry.code}`} fill={cpColors[entry.code]} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* CP Code Distribution */}
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">
+              Post Distribution by Cognitive Presence
+            </h2>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={cpDistribution} margin={{ top: 20, right: 30, left: 20, bottom: 60 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis
+                    dataKey="label"
+                    angle={-45}
+                    textAnchor="end"
+                    interval={0}
+                    tick={{ fontSize: 11 }}
+                  />
+                  <YAxis />
+                  <Tooltip />
+                  <Bar dataKey="count" radius={[4, 4, 0, 0]}>
+                    {cpDistribution.map((entry) => (
+                      <Cell key={`cell-${entry.code}`} fill={cpColors[entry.code]} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Grade Distribution */}
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Grade Distribution</h2>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={gradeDistribution} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="range" />
+                  <YAxis />
+                  <Tooltip />
+                  <Bar dataKey="count" fill="#B3A369" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* User Category Distribution */}
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Posts by User Category</h2>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={userCategories}
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={60}
+                    outerRadius={100}
+                    dataKey="count"
+                    nameKey="category"
+                    label={({ category, count }) => `${category}: ${count}`}
+                  >
+                    {userCategories.map((entry) => (
+                      <Cell
+                        key={entry.category}
+                        fill={categoryColors[entry.category] || "#9ca3af"}
+                      />
+                    ))}
+                  </Pie>
+                  <Tooltip />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </div>
+
+        {/* Posts Browser Section */}
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div className="px-6 py-4 border-b border-gray-200">
+            <h2 className="text-lg font-semibold text-gray-900">Browse All Posts ({posts.length})</h2>
+            <p className="text-sm text-gray-500">
+              Click a CP level to filter and see all comments in that category
+            </p>
+          </div>
+
+          {/* Filters */}
+          <div className="px-6 py-4 bg-gray-50 border-b border-gray-200">
+            <div className="flex flex-wrap gap-4 items-center">
+              {/* CP Filter Buttons */}
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setSelectedCP(null)}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    selectedCP === null
+                      ? "bg-[#003057] text-white"
+                      : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
+                  }`}
+                >
+                  All ({posts.length})
+                </button>
+                {[0, 1, 2, 3, 4].map((code) => (
+                  <button
+                    key={code}
+                    onClick={() => setSelectedCP(code)}
+                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                      selectedCP === code
+                        ? "text-white"
+                        : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
+                    }`}
+                    style={selectedCP === code ? { backgroundColor: cpColors[code] } : {}}
+                  >
+                    {cpLabels[code]} ({cpDistribution.find((c) => c.code === code)?.count || 0})
+                  </button>
+                ))}
+              </div>
+
+              {/* Search */}
+              <div className="flex-1 min-w-[200px]">
+                <input
+                  type="text"
+                  placeholder="Search posts..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003057] focus:border-transparent bg-white text-gray-900 placeholder-gray-400"
+                />
+              </div>
+            </div>
+
+            {/* Results count */}
+            <p className="mt-3 text-sm text-gray-600">
+              Showing {filteredPosts.length} posts
+              {selectedCP !== null && ` in ${cpLabels[selectedCP]}`}
+              {searchTerm && ` matching "${searchTerm}"`}
+            </p>
+          </div>
+
+          {/* Posts List */}
+          <div className="divide-y divide-gray-200">
+            {paginatedPosts.map((post) => (
+              <div key={post.id} className="px-6 py-4 hover:bg-gray-50">
+                <div className="flex items-start gap-4">
+                  {/* CP Badge */}
+                  <span
+                    className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium text-white shrink-0"
+                    style={{ backgroundColor: cpColors[post.cpCode] }}
+                  >
+                    {cpLabels[post.cpCode]}
+                  </span>
+
+                  {/* Content */}
+                  <div className="flex-1 min-w-0">
+                    <p className="text-gray-800">{post.body}</p>
+                    <div className="mt-2 flex flex-wrap gap-4 text-sm text-gray-500">
+                      <span>
+                        Grade:{" "}
+                        <span className="font-medium text-gray-700">
+                          {post.grade !== null ? `${(post.grade * 100).toFixed(0)}%` : "N/A"}
+                        </span>
+                      </span>
+                      <span>
+                        User:{" "}
+                        <span className="font-medium text-gray-700">{post.userCategory}</span>
+                      </span>
+                      <span>
+                        ID:{" "}
+                        <span className="font-medium text-gray-700">{post.userId || "N/A"}</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Previous
+              </button>
+              <span className="text-sm text-gray-600">
+                Page {currentPage} of {totalPages}
+              </span>
+              <button
+                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Next
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* CP Code Legend */}
+        <div className="mt-8 bg-[#B3A369]/20 rounded-xl border border-[#B3A369]/40 p-6">
+          <h3 className="font-semibold text-[#003057] mb-4">
+            Cognitive Presence Phases (Community of Inquiry Framework)
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div className="flex items-start gap-2">
+              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[0] }} />
+              <div>
+                <p className="font-medium text-sm">Social/Other</p>
+                <p className="text-xs text-gray-600">Introductions, social chat</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[1] }} />
+              <div>
+                <p className="font-medium text-sm">Triggering Event</p>
+                <p className="text-xs text-gray-600">Asking questions</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[2] }} />
+              <div>
+                <p className="font-medium text-sm">Exploration</p>
+                <p className="text-xs text-gray-600">Sharing ideas</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[3] }} />
+              <div>
+                <p className="font-medium text-sm">Integration</p>
+                <p className="text-xs text-gray-600">Connecting ideas</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-2">
+              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[4] }} />
+              <div>
+                <p className="font-medium text-sm">Resolution</p>
+                <p className="text-xs text-gray-600">Reaching conclusions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Data Source Note */}
+        <div className="mt-6 text-center text-sm text-gray-500">
+          Data loaded from: /data/forum_data.json
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Stat Card Component
+function StatCard({
+  title,
+  value,
+  subtitle,
+}: {
+  title: string;
+  value: string;
+  subtitle: string;
+}) {
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 p-5">
+      <p className="text-sm font-medium text-gray-600">{title}</p>
+      <p className="text-3xl font-bold text-[#003057] mt-1">{value}</p>
+      <p className="text-sm text-gray-500 mt-1">{subtitle}</p>
+    </div>
+  );
+}

@@ -5,3 +5,6 @@
 # React Router
 /.react-router/
 /build/
+
+# Data files (FERPA protected)
+public/data/forum_data.json
