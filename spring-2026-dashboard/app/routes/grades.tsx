@@ -64,7 +64,6 @@ export default function Grades() {
   const postsPerPage = 10;
 
   // Load data from JSON file
-  // Place forum_data.json in your public/data/ folder
   useEffect(() => {
     fetch("/data/forum_data.json")
       .then((res) => res.json())

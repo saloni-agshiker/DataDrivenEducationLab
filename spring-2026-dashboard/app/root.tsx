@@ -8,7 +8,8 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
-import { NavHeader } from "./components/NavHeader";
+import { NavHeader } from "~/components/NavHeader";
+import { ClassProvider } from "~/components/ClassContext";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -44,10 +45,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <>
+    <ClassProvider>
       <NavHeader />
       <Outlet />
-    </>
+    </ClassProvider>
   );
 }
 
@@ -68,7 +69,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <>
+    <ClassProvider>
       <NavHeader />
       <main className="pt-16 p-4 container mx-auto">
         <h1 className="text-4xl font-bold text-red-600">{message}</h1>
@@ -79,6 +80,6 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
           </pre>
         )}
       </main>
-    </>
+    </ClassProvider>
   );
 }

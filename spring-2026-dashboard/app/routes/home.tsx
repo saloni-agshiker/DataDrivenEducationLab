@@ -52,7 +52,7 @@ export default function Home() {
         </div>
 
         {/* Info Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Sentiment Analysis Card */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">
@@ -102,6 +102,31 @@ export default function Home() {
               View Grade Predictions →
             </a>
           </div>
+
+          {/* Topic Modeling Card */}
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">
+              🏷️ Topic Modeling
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Discovering discussion themes using LDA topic modeling.
+              Understand what students are talking about most.
+            </p>
+            <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+              <p className="text-sm text-green-800">
+                <strong>Topics Identified:</strong> 3 categories
+              </p>
+              <p className="text-sm text-green-700 mt-1">
+                Programming concepts, course logistics, debugging
+              </p>
+            </div>
+            <a
+              href="/topics"
+              className="inline-block mt-4 text-[#003057] font-medium hover:text-[#B3A369]"
+            >
+              View Topic Analysis →
+            </a>
+          </div>
         </div>
 
         {/* About Section */}
@@ -115,6 +140,38 @@ export default function Home() {
             and identify students who may need additional support. The data comes from
             CS1301 (Introduction to Computing) courses on EdX.
           </p>
+        </div>
+
+        {/* Quick Navigation */}
+        <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <a
+            href="/"
+            className="bg-[#003057] text-white rounded-xl p-4 text-center hover:bg-[#003057]/90 transition-colors"
+          >
+            <span className="text-2xl block mb-2">🏠</span>
+            <span className="font-medium">Home</span>
+          </a>
+          <a
+            href="/sentiment"
+            className="bg-white border border-gray-200 rounded-xl p-4 text-center hover:bg-gray-50 transition-colors"
+          >
+            <span className="text-2xl block mb-2">😊</span>
+            <span className="font-medium text-gray-900">Sentiment</span>
+          </a>
+          <a
+            href="/grades"
+            className="bg-white border border-gray-200 rounded-xl p-4 text-center hover:bg-gray-50 transition-colors"
+          >
+            <span className="text-2xl block mb-2">📈</span>
+            <span className="font-medium text-gray-900">Grades</span>
+          </a>
+          <a
+            href="/topics"
+            className="bg-white border border-gray-200 rounded-xl p-4 text-center hover:bg-gray-50 transition-colors"
+          >
+            <span className="text-2xl block mb-2">🏷️</span>
+            <span className="font-medium text-gray-900">Topics</span>
+          </a>
         </div>
       </div>
     </div>
