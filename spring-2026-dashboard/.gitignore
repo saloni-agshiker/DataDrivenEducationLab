@@ -7,4 +7,4 @@
 /build/
 
 # Data files (FERPA protected)
-public/data/forum_data.json
+public/data/student_data.json

@@ -1,4 +1,7 @@
+import { useState, useEffect, useMemo } from "react";
+import { Link } from "react-router";
 import type { Route } from "./+types/home";
+import { useClassContext } from "~/components/ClassContext";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -7,7 +10,95 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
+interface StudentData {
+  metadata: {
+    total_students: number;
+    total_posts: number;
+  };
+  students: {
+    user_id: number;
+    user_category: string;
+    course_id: string;
+    percent_grade: number | null;
+    features: {
+      behavioral: {
+        total_posts: number;
+        endorsed_count: number;
+        upvotes_total: number;
+        avg_text_len: number;
+      };
+      temporal: { active_weeks: number };
+      semantic: { cluster: number };
+    };
+    posts: {
+      body: string;
+      upvotes: number;
+      endorsed: boolean;
+      date: string;
+    }[];
+  }[];
+}
+
 export default function Home() {
+  const [data, setData] = useState<StudentData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const { selectedClass } = useClassContext();
+
+  useEffect(() => {
+    fetch("/data/student_data.json")
+      .then((res) => res.json())
+      .then((d: StudentData) => {
+        setData(d);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  const stats = useMemo(() => {
+    if (!data) return null;
+    const students =
+      selectedClass === "all"
+        ? data.students
+        : data.students.filter((s) => s.course_id === selectedClass);
+
+    const totalPosts = students.reduce((sum, s) => sum + s.posts.length, 0);
+    const totalStudents = students.length;
+    const grades = students
+      .map((s) => s.percent_grade)
+      .filter((g): g is number => g !== null);
+    const avgGrade = grades.length > 0 ? grades.reduce((a, b) => a + b, 0) / grades.length : 0;
+    const totalEndorsed = students.reduce(
+      (sum, s) => sum + s.posts.filter((p) => p.endorsed).length,
+      0
+    );
+    const avgActiveWeeks =
+      students.reduce((sum, s) => sum + s.features.temporal.active_weeks, 0) / (totalStudents || 1);
+    const totalUpvotes = students.reduce(
+      (sum, s) => sum + s.posts.reduce((ps, p) => ps + p.upvotes, 0),
+      0
+    );
+
+    return { totalPosts, totalStudents, avgGrade, totalEndorsed, avgActiveWeeks, totalUpvotes };
+  }, [data, selectedClass]);
+
+  const classLabel =
+    selectedClass === "all"
+      ? "All Classes"
+      : selectedClass.includes("1T2017")
+      ? "CS1301 2017"
+      : "CS1301 2018";
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003057] mx-auto" />
+          <p className="mt-4 text-gray-600">Loading dashboard...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-8">
@@ -15,49 +106,64 @@ export default function Home() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">Dashboard Overview</h1>
           <p className="text-gray-600 mt-2">
-            Analyze student engagement and predict academic success from EdX discussion forums.
+            Analyze student engagement and predict academic success from EdX discussion forums.{" "}
+            <span className="font-medium text-[#003057]">Viewing: {classLabel}</span>
           </p>
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <StatCard
-            title="Total Comments"
-            value="1,247"
-            subtitle="From CS1301 forums"
-            icon="💬"
-            color="blue"
-          />
-          <StatCard
-            title="Positive Sentiment"
-            value="42%"
-            subtitle="523 comments"
-            icon="😊"
-            color="green"
-          />
-          <StatCard
-            title="Neutral Sentiment"
-            value="51%"
-            subtitle="636 comments"
-            icon="😐"
-            color="gray"
-          />
-          <StatCard
-            title="Negative Sentiment"
-            value="7%"
-            subtitle="88 comments"
-            icon="😟"
-            color="red"
-          />
-        </div>
+        {stats && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <StatCard
+              title="Total Students"
+              value={stats.totalStudents.toLocaleString()}
+              subtitle={`From ${classLabel} forums`}
+              icon="👤"
+              color="blue"
+            />
+            <StatCard
+              title="Total Posts"
+              value={stats.totalPosts.toLocaleString()}
+              subtitle="Threads + replies"
+              icon="💬"
+              color="gold"
+            />
+            <StatCard
+              title="Avg Grade"
+              value={`${(stats.avgGrade * 100).toFixed(1)}%`}
+              subtitle="Mean across students"
+              icon="📊"
+              color="green"
+            />
+            <StatCard
+              title="Endorsed Posts"
+              value={stats.totalEndorsed.toLocaleString()}
+              subtitle="Instructor-endorsed"
+              icon="✅"
+              color="blue"
+            />
+            <StatCard
+              title="Total Upvotes"
+              value={stats.totalUpvotes.toLocaleString()}
+              subtitle="Community votes"
+              icon="👍"
+              color="gold"
+            />
+            <StatCard
+              title="Avg Active Weeks"
+              value={stats.avgActiveWeeks.toFixed(1)}
+              subtitle="Per student"
+              icon="📅"
+              color="green"
+            />
+          </div>
+        )}
 
         {/* Info Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Sentiment Analysis Card */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
-              📊 Sentiment Analysis
-            </h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">📊 Sentiment Analysis</h2>
             <p className="text-gray-600 mb-4">
               Using DistilBERT to classify student comments as positive, neutral, or negative.
               Helps identify students who may be struggling or frustrated.
@@ -70,19 +176,17 @@ export default function Home() {
                 Trained on 1,000 manually labeled forum comments
               </p>
             </div>
-            <a
-              href="/sentiment"
+            <Link
+              to="/sentiment"
               className="inline-block mt-4 text-[#003057] font-medium hover:text-[#B3A369]"
             >
               View Sentiment Analysis →
-            </a>
+            </Link>
           </div>
 
           {/* Grade Prediction Card */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
-              📈 Grade Prediction
-            </h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">📈 Grade Prediction</h2>
             <p className="text-gray-600 mb-4">
               Using Gradient Boosting to predict student grades based on forum participation
               patterns, post quality, and engagement timing.
@@ -95,22 +199,20 @@ export default function Home() {
                 Key predictors: topic entropy, active weeks, comment length
               </p>
             </div>
-            <a
-              href="/grades"
+            <Link
+              to="/grades"
               className="inline-block mt-4 text-[#003057] font-medium hover:text-[#B3A369]"
             >
               View Grade Predictions →
-            </a>
+            </Link>
           </div>
 
           {/* Topic Modeling Card */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
-              🏷️ Topic Modeling
-            </h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">🏷️ Topic Modeling</h2>
             <p className="text-gray-600 mb-4">
-              Discovering discussion themes using LDA topic modeling.
-              Understand what students are talking about most.
+              Discovering discussion themes using LDA topic modeling. Understand what students
+              are talking about most.
             </p>
             <div className="bg-green-50 rounded-lg p-4 border border-green-200">
               <p className="text-sm text-green-800">
@@ -120,65 +222,62 @@ export default function Home() {
                 Programming concepts, course logistics, debugging
               </p>
             </div>
-            <a
-              href="/topics"
+            <Link
+              to="/topics"
               className="inline-block mt-4 text-[#003057] font-medium hover:text-[#B3A369]"
             >
               View Topic Analysis →
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* About Section */}
         <div className="mt-8 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
-            ℹ️ About This Dashboard
-          </h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">ℹ️ About This Dashboard</h2>
           <p className="text-gray-600">
-            This dashboard is part of the Georgia Tech VIP Data Driven Education project.
-            It helps instructors understand student engagement in online discussion forums
-            and identify students who may need additional support. The data comes from
-            CS1301 (Introduction to Computing) courses on EdX.
+            This dashboard is part of the Georgia Tech VIP Data Driven Education project. It helps
+            instructors understand student engagement in online discussion forums and identify
+            students who may need additional support. The data comes from CS1301 (Introduction to
+            Computing) courses on EdX — Spring 2017 and Spring 2018 runs.
           </p>
         </div>
 
         {/* Quick Navigation */}
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="bg-[#003057] text-white rounded-xl p-4 text-center hover:bg-[#003057]/90 transition-colors"
           >
             <span className="text-2xl block mb-2">🏠</span>
             <span className="font-medium">Home</span>
-          </a>
-          <a
-            href="/sentiment"
+          </Link>
+          <Link
+            to="/sentiment"
             className="bg-white border border-gray-200 rounded-xl p-4 text-center hover:bg-gray-50 transition-colors"
           >
             <span className="text-2xl block mb-2">😊</span>
             <span className="font-medium text-gray-900">Sentiment</span>
-          </a>
-          <a
-            href="/grades"
+          </Link>
+          <Link
+            to="/grades"
             className="bg-white border border-gray-200 rounded-xl p-4 text-center hover:bg-gray-50 transition-colors"
           >
             <span className="text-2xl block mb-2">📈</span>
             <span className="font-medium text-gray-900">Grades</span>
-          </a>
-          <a
-            href="/topics"
+          </Link>
+          <Link
+            to="/topics"
             className="bg-white border border-gray-200 rounded-xl p-4 text-center hover:bg-gray-50 transition-colors"
           >
             <span className="text-2xl block mb-2">🏷️</span>
             <span className="font-medium text-gray-900">Topics</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   );
 }
 
-// Stat Card Component
 function StatCard({
   title,
   value,
@@ -190,20 +289,18 @@ function StatCard({
   value: string;
   subtitle: string;
   icon: string;
-  color: "blue" | "green" | "gray" | "red";
+  color: "blue" | "green" | "gold";
 }) {
   const colorClasses = {
     blue: "bg-[#003057]/10 border-[#003057]/20",
     green: "bg-green-50 border-green-200",
-    gray: "bg-gray-50 border-gray-200",
-    red: "bg-red-50 border-red-200",
+    gold: "bg-[#B3A369]/20 border-[#B3A369]/40",
   };
 
   const valueColors = {
     blue: "text-[#003057]",
     green: "text-green-600",
-    gray: "text-gray-600",
-    red: "text-red-600",
+    gold: "text-[#8a7a40]",
   };
 
   return (

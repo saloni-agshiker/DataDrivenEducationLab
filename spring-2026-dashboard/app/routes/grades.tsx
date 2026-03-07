@@ -1,170 +1,200 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  Cell,
-  PieChart,
-  Pie,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
+  ResponsiveContainer, Cell, ScatterChart, Scatter,
+  ZAxis, ReferenceLine,
 } from "recharts";
+import { useClassContext } from "~/components/ClassContext";
 
-// Type definitions
 interface Post {
-  id: number;
+  source: string;
+  course_id: string;
+  date: string;
+  week_of_course: number;
+  type: string;
+  title: string | null;
   body: string;
-  cpCode: number;
-  grade: number | null;
-  userCategory: string;
-  userId: number | null;
+  upvotes: number;
+  downvotes: number;
+  comment_count: number | null;
+  endorsed: boolean;
 }
 
-// CP Labels
-const cpLabels: Record<number, string> = {
-  0: "Social/Other",
-  1: "Triggering Event",
-  2: "Exploration",
-  3: "Integration",
-  4: "Resolution",
-};
+interface Student {
+  user_id: number;
+  user_category: string;
+  course_id: string;
+  percent_grade: number | null;
+  features: {
+    behavioral: {
+      threads_posted: number;
+      replies_made: number;
+      total_posts: number;
+      thread_upvotes: number;
+      comment_upvotes: number;
+      upvotes_total: number;
+      upvotes_per_post: number;
+      avg_thread_len: number;
+      avg_comment_len: number;
+      avg_text_len: number;
+      questions_asked: number;
+      discussions_made: number;
+      endorsed_count: number;
+    };
+    temporal: {
+      active_weeks: number;
+      early_activity_index: number;
+      weekly_variance: number;
+      consistency_score: number;
+      early_active_ratio: number;
+    };
+    interaction: {
+      normalized_upvotes: number;
+      early_x_active: number;
+    };
+    semantic: {
+      cluster: number;
+      dist_to_centroid: number;
+      local_topic_entropy: number;
+      topic_x_active: number;
+      topic_x_entropy: number;
+      longtext_x_on_topic: number;
+    };
+  };
+  posts: Post[];
+}
 
-// Colors
-const cpColors: Record<number, string> = {
-  0: "#9ca3af", // Gray - Social
-  1: "#3b82f6", // Blue - Triggering
-  2: "#f59e0b", // Yellow - Exploration
-  3: "#22c55e", // Green - Integration
-  4: "#003057", // Navy - Resolution
-};
-
-const categoryColors: Record<string, string> = {
-  Student: "#003057",
-  "Community TA": "#B3A369",
-  Instructor: "#22c55e",
-  Staff: "#3b82f6",
-  Unknown: "#9ca3af",
-};
+interface StudentData {
+  students: Student[];
+}
 
 export function meta() {
   return [
     { title: "Grade Analysis | Discussion Forum Dashboard" },
-    { name: "description", content: "Analyze relationship between forum participation and grades" },
+    { name: "description", content: "Student forum participation and grades" },
   ];
 }
 
+const GRADE_COLORS = ["#ef4444", "#f97316", "#eab308", "#22c55e", "#003057"];
+// Cap the scatter at this value; anything above is flagged as an outlier
+const POST_CAP = 50;
+
+// Custom scatter dot — color-codes by grade
+const CustomDot = (props: any) => {
+  const { cx, cy, payload } = props;
+  const grade = payload.grade;
+  const color =
+    grade >= 80 ? "#003057"
+    : grade >= 60 ? "#22c55e"
+    : grade >= 40 ? "#eab308"
+    : "#ef4444";
+  const isOutlier = payload.isOutlier;
+  return (
+    <circle
+      cx={cx}
+      cy={cy}
+      r={isOutlier ? 7 : 5}
+      fill={color}
+      fillOpacity={0.7}
+      stroke={isOutlier ? "#f97316" : "white"}
+      strokeWidth={isOutlier ? 2 : 1}
+    />
+  );
+};
+
+// Custom tooltip for scatter
+const ScatterTooltip = ({ active, payload }: any) => {
+  if (!active || !payload?.length) return null;
+  const d = payload[0].payload;
+  return (
+    <div className="bg-white border border-gray-200 rounded-lg shadow-lg p-3 text-sm">
+      <p className="font-semibold text-gray-900 font-mono">user_id: {d.userId}</p>
+      <p className="text-gray-600">total_posts: <span className="font-medium text-gray-900">{d.rawPosts}</span>{d.isOutlier ? " ⚠️ outlier" : ""}</p>
+      <p className="text-gray-600">percent_grade: <span className="font-medium text-gray-900">{d.grade}%</span></p>
+    </div>
+  );
+};
+
 export default function Grades() {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [data, setData] = useState<StudentData | null>(null);
   const [loading, setLoading] = useState(true);
-  const [selectedCP, setSelectedCP] = useState<number | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 10;
+  const [sortBy, setSortBy] = useState<string>("grade");
+  const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
+  const studentsPerPage = 15;
+  const { selectedClass } = useClassContext();
 
-  // Load data from JSON file
   useEffect(() => {
-    fetch("/data/forum_data.json")
+    fetch("/data/student_data.json")
       .then((res) => res.json())
-      .then((data: Post[]) => {
-        setPosts(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error loading data:", err);
-        setLoading(false);
-      });
+      .then((d: StudentData) => { setData(d); setLoading(false); })
+      .catch(() => setLoading(false));
   }, []);
 
-  // Calculate statistics from loaded data
-  const stats = {
-    totalPosts: posts.length,
-    totalStudents: new Set(posts.map((p) => p.userId).filter(Boolean)).size,
-    avgGrade:
-      posts.filter((p) => p.grade !== null).reduce((sum, p) => sum + (p.grade || 0), 0) /
-        posts.filter((p) => p.grade !== null).length || 0,
-    studentsWithGrades: posts.filter((p) => p.grade !== null).length,
-  };
+  const students = useMemo(() => {
+    if (!data) return [];
+    return selectedClass === "all"
+      ? data.students
+      : data.students.filter((s) => s.course_id === selectedClass);
+  }, [data, selectedClass]);
 
-  // Calculate CP distribution
-  const cpDistribution = [0, 1, 2, 3, 4].map((code) => ({
-    code,
-    label: cpLabels[code],
-    count: posts.filter((p) => p.cpCode === code).length,
-  }));
-
-  // Calculate average grade by CP
-  const gradeByCP = [0, 1, 2, 3, 4].map((code) => {
-    const cpPosts = posts.filter((p) => p.cpCode === code && p.grade !== null);
-    const avgGrade = cpPosts.length > 0
-      ? cpPosts.reduce((sum, p) => sum + (p.grade || 0), 0) / cpPosts.length
-      : 0;
-    return {
-      code,
-      label: cpLabels[code],
-      avgGrade,
-    };
-  });
-
-  // Calculate grade distribution
-  const gradeRanges = ["0-20%", "21-40%", "41-60%", "61-80%", "81-100%"];
-  const gradeDistribution = gradeRanges.map((range, index) => {
-    const min = index * 0.2;
-    const max = (index + 1) * 0.2;
-    return {
+  const gradeDistribution = useMemo(() => {
+    const ranges = ["0–20%", "21–40%", "41–60%", "61–80%", "81–100%"];
+    return ranges.map((range, i) => ({
       range,
-      count: posts.filter((p) => p.grade !== null && p.grade > min && p.grade <= max).length,
-    };
-  });
+      count: students.filter((s) => {
+        const g = s.percent_grade ?? 0;
+        return g > i * 0.2 && g <= (i + 1) * 0.2;
+      }).length,
+      color: GRADE_COLORS[i],
+    }));
+  }, [students]);
 
-  // Calculate user category distribution
-  const userCategories = Object.entries(
-    posts.reduce((acc, p) => {
-      acc[p.userCategory] = (acc[p.userCategory] || 0) + 1;
-      return acc;
-    }, {} as Record<string, number>)
-  ).map(([category, count]) => ({ category, count }));
-
-  // Filter posts
-  const filteredPosts = posts.filter((post) => {
-    const matchesCP = selectedCP === null || post.cpCode === selectedCP;
-    const matchesSearch = post.body.toLowerCase().includes(searchTerm.toLowerCase());
-    return matchesCP && matchesSearch;
-  });
-
-  // Pagination
-  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
-  const paginatedPosts = filteredPosts.slice(
-    (currentPage - 1) * postsPerPage,
-    currentPage * postsPerPage
+  // Scatter: cap outliers so the axis is readable
+  const scatterData = useMemo(() =>
+    students.map((s) => {
+      const rawPosts = s.features.behavioral.total_posts;
+      const isOutlier = rawPosts > POST_CAP;
+      return {
+        posts: isOutlier ? POST_CAP : rawPosts, // capped X position
+        rawPosts,                                // real value shown in tooltip
+        grade: Math.round((s.percent_grade ?? 0) * 100),
+        userId: s.user_id,
+        isOutlier,
+      };
+    }),
+    [students]
   );
 
-  // Reset page when filter changes
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [selectedCP, searchTerm]);
+  const outlierCount = scatterData.filter((d) => d.isOutlier).length;
+
+  const filteredStudents = useMemo(() => {
+    return students
+      .filter((s) => searchTerm ? String(s.user_id).includes(searchTerm) : true)
+      .sort((a, b) => {
+        if (sortBy === "grade") return (b.percent_grade ?? 0) - (a.percent_grade ?? 0);
+        if (sortBy === "total_posts") return b.features.behavioral.total_posts - a.features.behavioral.total_posts;
+        if (sortBy === "active_weeks") return b.features.temporal.active_weeks - a.features.temporal.active_weeks;
+        if (sortBy === "endorsed_count") return b.features.behavioral.endorsed_count - a.features.behavioral.endorsed_count;
+        return 0;
+      });
+  }, [students, searchTerm, sortBy]);
+
+  const totalPages = Math.ceil(filteredStudents.length / studentsPerPage);
+  const paginatedStudents = filteredStudents.slice(
+    (currentPage - 1) * studentsPerPage,
+    currentPage * studentsPerPage
+  );
+
+  useEffect(() => { setCurrentPage(1); }, [searchTerm, sortBy, selectedClass]);
 
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003057] mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading data...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (posts.length === 0) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center max-w-md">
-          <h2 className="text-xl font-bold text-gray-900 mb-2">No Data Found</h2>
-          <p className="text-gray-600 mb-4">
-            Make sure to place <code className="bg-gray-100 px-2 py-1 rounded">forum_data.json</code> in your{" "}
-            <code className="bg-gray-100 px-2 py-1 rounded">public/data/</code> folder.
-          </p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003057] mx-auto" />
+          <p className="mt-4 text-gray-600">Loading grade data...</p>
         </div>
       </div>
     );
@@ -173,346 +203,369 @@ export default function Grades() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-8">
-        {/* Page Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">Grade Analysis</h1>
           <p className="text-gray-600 mt-2">
-            Analyzing the relationship between cognitive presence in forum posts and student grades.
+            Click any student row to see their full record.{" "}
+            <span className="font-medium text-[#003057]">{students.length} students</span> in selection.
           </p>
         </div>
 
-        {/* Summary Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <StatCard title="Total Posts" value={stats.totalPosts.toString()} subtitle="Analyzed" />
-          <StatCard title="Students" value={stats.totalStudents.toString()} subtitle="Unique users" />
-          <StatCard
-            title="Avg Grade"
-            value={`${(stats.avgGrade * 100).toFixed(1)}%`}
-            subtitle="Mean"
-          />
-          <StatCard
-            title="With Grades"
-            value={stats.studentsWithGrades.toString()}
-            subtitle="Posts"
-          />
-        </div>
-
-        {/* Key Finding Banner */}
-        <div className="bg-[#003057] text-white rounded-xl p-6 mb-8">
-          <h2 className="text-xl font-bold mb-2">📈 Key Finding</h2>
-          <p className="text-lg">
-            Students with deeper cognitive engagement (Integration & Resolution) have{" "}
-            <span className="font-bold text-[#B3A369]">higher average grades</span>.
-          </p>
-          <div className="mt-4 grid grid-cols-2 md:grid-cols-5 gap-4">
-            {gradeByCP.map((item) => (
-              <div key={item.code} className="text-center">
-                <p className="text-sm opacity-80">{item.label}</p>
-                <p className="text-2xl font-bold">{(item.avgGrade * 100).toFixed(1)}%</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Charts Grid */}
+        {/* Charts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-          {/* CP Code vs Average Grade */}
+          {/* Grade distribution */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">
-              Average Grade by Cognitive Presence Level
-            </h2>
-            <div className="h-80">
+            <h2 className="text-lg font-semibold text-gray-900 mb-1">Grade Distribution</h2>
+            <p className="text-sm text-gray-500 mb-4">How many students fall into each grade band</p>
+            <div className="h-64">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={gradeByCP} margin={{ top: 20, right: 30, left: 20, bottom: 60 }}>
+                <BarChart data={gradeDistribution}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="range" tick={{ fontSize: 12 }} />
+                  <YAxis allowDecimals={false} label={{ value: "Students", angle: -90, position: "insideLeft", offset: 10 }} />
+                  <Tooltip formatter={(v: number) => [v, "Students"]} />
+                  <Bar dataKey="count" radius={[4, 4, 0, 0]}>
+                    {gradeDistribution.map((e, i) => <Cell key={i} fill={e.color} />)}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Scatter: total_posts vs grade */}
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-1">total_posts vs percent_grade</h2>
+            <p className="text-sm text-gray-500 mb-1">
+              Each dot = 1 student. X axis capped at {POST_CAP} posts for readability.
+            </p>
+            {outlierCount > 0 && (
+              <p className="text-xs text-orange-600 mb-3">
+                ⚠️ {outlierCount} student{outlierCount > 1 ? "s" : ""} with {POST_CAP}+ posts shown pinned to the right edge — hover to see their real count.
+              </p>
+            )}
+            {/* Legend */}
+            <div className="flex gap-4 mb-3 text-xs text-gray-500">
+              {[
+                { color: "#003057", label: "≥80%" },
+                { color: "#22c55e", label: "60–79%" },
+                { color: "#eab308", label: "40–59%" },
+                { color: "#ef4444", label: "<40%" },
+              ].map(({ color, label }) => (
+                <span key={label} className="flex items-center gap-1">
+                  <span className="w-3 h-3 rounded-full inline-block" style={{ backgroundColor: color }} />
+                  {label}
+                </span>
+              ))}
+            </div>
+            <div className="h-56">
+              <ResponsiveContainer width="100%" height="100%">
+                <ScatterChart margin={{ top: 5, right: 20, left: 10, bottom: 20 }}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis
-                    dataKey="label"
-                    angle={-45}
-                    textAnchor="end"
-                    interval={0}
+                    dataKey="posts"
+                    type="number"
+                    name="total_posts"
+                    domain={[0, POST_CAP]}
+                    ticks={[0, 10, 20, 30, 40, 50]}
+                    label={{ value: "total_posts", position: "insideBottom", offset: -12, fontSize: 12 }}
                     tick={{ fontSize: 11 }}
                   />
                   <YAxis
-                    domain={[0, 1]}
-                    tickFormatter={(v) => `${(v * 100).toFixed(0)}%`}
-                  />
-                  <Tooltip
-                    formatter={(value: number) => [`${(value * 100).toFixed(1)}%`, "Avg Grade"]}
-                  />
-                  <Bar dataKey="avgGrade" radius={[4, 4, 0, 0]}>
-                    {gradeByCP.map((entry) => (
-                      <Cell key={`cell-${entry.code}`} fill={cpColors[entry.code]} />
-                    ))}
-                  </Bar>
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-
-          {/* CP Code Distribution */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">
-              Post Distribution by Cognitive Presence
-            </h2>
-            <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={cpDistribution} margin={{ top: 20, right: 30, left: 20, bottom: 60 }}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis
-                    dataKey="label"
-                    angle={-45}
-                    textAnchor="end"
-                    interval={0}
+                    dataKey="grade"
+                    type="number"
+                    name="percent_grade"
+                    domain={[0, 100]}
+                    ticks={[0, 25, 50, 75, 100]}
+                    tickFormatter={(v) => `${v}%`}
                     tick={{ fontSize: 11 }}
                   />
-                  <YAxis />
-                  <Tooltip />
-                  <Bar dataKey="count" radius={[4, 4, 0, 0]}>
-                    {cpDistribution.map((entry) => (
-                      <Cell key={`cell-${entry.code}`} fill={cpColors[entry.code]} />
-                    ))}
-                  </Bar>
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-
-          {/* Grade Distribution */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Grade Distribution</h2>
-            <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={gradeDistribution} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="range" />
-                  <YAxis />
-                  <Tooltip />
-                  <Bar dataKey="count" fill="#B3A369" radius={[4, 4, 0, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-
-          {/* User Category Distribution */}
-          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Posts by User Category</h2>
-            <div className="h-80">
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <Pie
-                    data={userCategories}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={60}
-                    outerRadius={100}
-                    dataKey="count"
-                    nameKey="category"
-                    label={({ category, count }) => `${category}: ${count}`}
-                  >
-                    {userCategories.map((entry) => (
-                      <Cell
-                        key={entry.category}
-                        fill={categoryColors[entry.category] || "#9ca3af"}
-                      />
-                    ))}
-                  </Pie>
-                  <Tooltip />
-                </PieChart>
+                  <ZAxis range={[40, 40]} />
+                  <Tooltip content={<ScatterTooltip />} />
+                  <ReferenceLine x={POST_CAP} stroke="#f97316" strokeDasharray="4 4" strokeWidth={1.5} />
+                  <Scatter data={scatterData} shape={<CustomDot />} />
+                </ScatterChart>
               </ResponsiveContainer>
             </div>
           </div>
         </div>
 
-        {/* Posts Browser Section */}
+        {/* Student Table */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
           <div className="px-6 py-4 border-b border-gray-200">
-            <h2 className="text-lg font-semibold text-gray-900">Browse All Posts ({posts.length})</h2>
-            <p className="text-sm text-gray-500">
-              Click a CP level to filter and see all comments in that category
-            </p>
+            <h2 className="text-lg font-semibold text-gray-900">
+              All Students ({filteredStudents.length})
+            </h2>
+            <p className="text-sm text-gray-500 mt-1">Click a row to expand the full student record</p>
           </div>
 
-          {/* Filters */}
-          <div className="px-6 py-4 bg-gray-50 border-b border-gray-200">
-            <div className="flex flex-wrap gap-4 items-center">
-              {/* CP Filter Buttons */}
-              <div className="flex flex-wrap gap-2">
+          <div className="px-6 py-3 bg-gray-50 border-b border-gray-200 flex flex-wrap gap-3 items-center">
+            <input
+              type="text"
+              placeholder="Search by User ID..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="px-3 py-1.5 border border-gray-300 rounded-lg text-sm bg-white text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-[#003057]"
+            />
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-gray-600">Sort:</span>
+              {[
+                ["grade", "Grade"],
+                ["total_posts", "Posts"],
+                ["active_weeks", "Active Wks"],
+                ["endorsed_count", "Endorsed"],
+              ].map(([key, label]) => (
                 <button
-                  onClick={() => setSelectedCP(null)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    selectedCP === null
+                  key={key}
+                  onClick={() => setSortBy(key)}
+                  className={`px-3 py-1 rounded-lg font-medium transition-colors ${
+                    sortBy === key
                       ? "bg-[#003057] text-white"
-                      : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
+                      : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
                   }`}
                 >
-                  All ({posts.length})
+                  {label}
                 </button>
-                {[0, 1, 2, 3, 4].map((code) => (
-                  <button
-                    key={code}
-                    onClick={() => setSelectedCP(code)}
-                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                      selectedCP === code
-                        ? "text-white"
-                        : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                    }`}
-                    style={selectedCP === code ? { backgroundColor: cpColors[code] } : {}}
-                  >
-                    {cpLabels[code]} ({cpDistribution.find((c) => c.code === code)?.count || 0})
-                  </button>
-                ))}
-              </div>
-
-              {/* Search */}
-              <div className="flex-1 min-w-[200px]">
-                <input
-                  type="text"
-                  placeholder="Search posts..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#003057] focus:border-transparent bg-white text-gray-900 placeholder-gray-400"
-                />
-              </div>
+              ))}
             </div>
-
-            {/* Results count */}
-            <p className="mt-3 text-sm text-gray-600">
-              Showing {filteredPosts.length} posts
-              {selectedCP !== null && ` in ${cpLabels[selectedCP]}`}
-              {searchTerm && ` matching "${searchTerm}"`}
-            </p>
           </div>
 
-          {/* Posts List */}
-          <div className="divide-y divide-gray-200">
-            {paginatedPosts.map((post) => (
-              <div key={post.id} className="px-6 py-4 hover:bg-gray-50">
-                <div className="flex items-start gap-4">
-                  {/* CP Badge */}
-                  <span
-                    className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium text-white shrink-0"
-                    style={{ backgroundColor: cpColors[post.cpCode] }}
-                  >
-                    {cpLabels[post.cpCode]}
-                  </span>
-
-                  {/* Content */}
-                  <div className="flex-1 min-w-0">
-                    <p className="text-gray-800">{post.body}</p>
-                    <div className="mt-2 flex flex-wrap gap-4 text-sm text-gray-500">
-                      <span>
-                        Grade:{" "}
-                        <span className="font-medium text-gray-700">
-                          {post.grade !== null ? `${(post.grade * 100).toFixed(0)}%` : "N/A"}
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="bg-gray-50 border-b border-gray-200 text-xs uppercase tracking-wide text-gray-500">
+                <tr>
+                  <th className="px-4 py-3 text-left">user_id</th>
+                  <th className="px-4 py-3 text-left">course</th>
+                  <th className="px-4 py-3 text-left">percent_grade</th>
+                  <th className="px-4 py-3 text-left">total_posts</th>
+                  <th className="px-4 py-3 text-left">threads_posted</th>
+                  <th className="px-4 py-3 text-left">replies_made</th>
+                  <th className="px-4 py-3 text-left">active_weeks</th>
+                  <th className="px-4 py-3 text-left">avg_text_len</th>
+                  <th className="px-4 py-3 text-left">upvotes_total</th>
+                  <th className="px-4 py-3 text-left">endorsed_count</th>
+                  <th className="px-4 py-3 text-left">cluster</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {paginatedStudents.map((s) => (
+                  <>
+                    <tr
+                      key={s.user_id}
+                      onClick={() =>
+                        setSelectedStudent(selectedStudent?.user_id === s.user_id ? null : s)
+                      }
+                      className={`cursor-pointer transition-colors ${
+                        selectedStudent?.user_id === s.user_id
+                          ? "bg-[#003057]/5 border-l-4 border-l-[#003057]"
+                          : "hover:bg-gray-50"
+                      }`}
+                    >
+                      <td className="px-4 py-3 font-mono text-gray-700">{s.user_id}</td>
+                      <td className="px-4 py-3 text-gray-500 text-xs">
+                        {s.course_id.includes("1T2017") ? "2017" : "2018"}
+                      </td>
+                      <td className="px-4 py-3">
+                        <span className={`font-semibold ${
+                          (s.percent_grade ?? 0) >= 0.8 ? "text-green-600"
+                          : (s.percent_grade ?? 0) >= 0.5 ? "text-yellow-600"
+                          : "text-red-600"
+                        }`}>
+                          {((s.percent_grade ?? 0) * 100).toFixed(1)}%
                         </span>
-                      </span>
-                      <span>
-                        User:{" "}
-                        <span className="font-medium text-gray-700">{post.userCategory}</span>
-                      </span>
-                      <span>
-                        ID:{" "}
-                        <span className="font-medium text-gray-700">{post.userId || "N/A"}</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+                      </td>
+                      <td className="px-4 py-3 text-gray-700">{s.features.behavioral.total_posts}</td>
+                      <td className="px-4 py-3 text-gray-700">{s.features.behavioral.threads_posted}</td>
+                      <td className="px-4 py-3 text-gray-700">{s.features.behavioral.replies_made}</td>
+                      <td className="px-4 py-3 text-gray-700">{s.features.temporal.active_weeks}</td>
+                      <td className="px-4 py-3 text-gray-700">{s.features.behavioral.avg_text_len}</td>
+                      <td className="px-4 py-3 text-gray-700">{s.features.behavioral.upvotes_total}</td>
+                      <td className="px-4 py-3 text-gray-700">{s.features.behavioral.endorsed_count}</td>
+                      <td className="px-4 py-3 text-gray-700">{s.features.semantic.cluster}</td>
+                    </tr>
+
+                    {selectedStudent?.user_id === s.user_id && (
+                      <tr key={`${s.user_id}-detail`}>
+                        <td colSpan={11} className="bg-[#003057]/[0.03] border-b border-[#003057]/10 p-0">
+                          <StudentDetail student={s} />
+                        </td>
+                      </tr>
+                    )}
+                  </>
+                ))}
+              </tbody>
+            </table>
           </div>
 
-          {/* Pagination */}
           {totalPages > 1 && (
             <div className="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50"
               >
                 Previous
               </button>
-              <span className="text-sm text-gray-600">
-                Page {currentPage} of {totalPages}
-              </span>
+              <span className="text-sm text-gray-600">Page {currentPage} of {totalPages}</span>
               <button
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50"
               >
                 Next
               </button>
             </div>
           )}
         </div>
+      </div>
+    </div>
+  );
+}
 
-        {/* CP Code Legend */}
-        <div className="mt-8 bg-[#B3A369]/20 rounded-xl border border-[#B3A369]/40 p-6">
-          <h3 className="font-semibold text-[#003057] mb-4">
-            Cognitive Presence Phases (Community of Inquiry Framework)
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-            <div className="flex items-start gap-2">
-              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[0] }} />
-              <div>
-                <p className="font-medium text-sm">Social/Other</p>
-                <p className="text-xs text-gray-600">Introductions, social chat</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[1] }} />
-              <div>
-                <p className="font-medium text-sm">Triggering Event</p>
-                <p className="text-xs text-gray-600">Asking questions</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[2] }} />
-              <div>
-                <p className="font-medium text-sm">Exploration</p>
-                <p className="text-xs text-gray-600">Sharing ideas</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[3] }} />
-              <div>
-                <p className="font-medium text-sm">Integration</p>
-                <p className="text-xs text-gray-600">Connecting ideas</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-2">
-              <div className="w-4 h-4 rounded mt-0.5" style={{ backgroundColor: cpColors[4] }} />
-              <div>
-                <p className="font-medium text-sm">Resolution</p>
-                <p className="text-xs text-gray-600">Reaching conclusions</p>
-              </div>
-            </div>
+// ── Student detail panel ────────────────────────────────────────────────────
+function StudentDetail({ student: s }: { student: Student }) {
+  const [postFilter, setPostFilter] = useState<string>("all");
+
+  const filteredPosts = useMemo(() => {
+    if (postFilter === "all") return s.posts;
+    return s.posts.filter((p) => p.source === postFilter);
+  }, [s.posts, postFilter]);
+
+  return (
+    <div className="p-6">
+      {/* Header */}
+      <div className="flex items-center gap-4 mb-6">
+        <div className="w-10 h-10 rounded-full bg-[#003057] flex items-center justify-center text-white font-bold text-sm shrink-0">
+          {String(s.user_id).slice(-2)}
+        </div>
+        <div>
+          <p className="font-bold text-gray-900 font-mono">user_id: {s.user_id}</p>
+          <p className="text-xs text-gray-500 font-mono">
+            user_category: {s.user_category} · course_id: {s.course_id}
+          </p>
+        </div>
+        <div className="ml-auto bg-white border border-gray-200 rounded-xl px-5 py-3 text-center shrink-0">
+          <p className="text-2xl font-bold text-[#003057]">
+            {((s.percent_grade ?? 0) * 100).toFixed(1)}%
+          </p>
+          <p className="text-xs text-gray-400 font-mono">percent_grade</p>
+        </div>
+      </div>
+
+      {/* Feature sections */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <FeatureSection title="behavioral" headerColor="bg-[#003057]">
+          {Object.entries(s.features.behavioral).map(([k, v]) => (
+            <FeatureRow key={k} label={k} value={v} />
+          ))}
+        </FeatureSection>
+        <FeatureSection title="temporal" headerColor="bg-[#B3A369]">
+          {Object.entries(s.features.temporal).map(([k, v]) => (
+            <FeatureRow key={k} label={k} value={v} />
+          ))}
+        </FeatureSection>
+        <FeatureSection title="interaction" headerColor="bg-green-600">
+          {Object.entries(s.features.interaction).map(([k, v]) => (
+            <FeatureRow key={k} label={k} value={v} />
+          ))}
+        </FeatureSection>
+        <FeatureSection title="semantic" headerColor="bg-gray-500">
+          {Object.entries(s.features.semantic).map(([k, v]) => (
+            <FeatureRow key={k} label={k} value={v} />
+          ))}
+        </FeatureSection>
+      </div>
+
+      {/* Posts — scrollable, no pagination */}
+      <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+        <div className="px-4 py-3 border-b border-gray-200 flex items-center justify-between gap-4">
+          <p className="font-semibold text-gray-900 font-mono text-sm shrink-0">
+            posts <span className="text-gray-400 font-normal">[{s.posts.length}]</span>
+          </p>
+          {/* Filter by source */}
+          <div className="flex gap-2 text-xs">
+            {["all", "thread", "comment"].map((f) => (
+              <button
+                key={f}
+                onClick={() => setPostFilter(f)}
+                className={`px-3 py-1 rounded-full font-medium transition-colors ${
+                  postFilter === f
+                    ? "bg-[#003057] text-white"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                }`}
+              >
+                {f} {f !== "all" && `(${s.posts.filter((p) => p.source === f).length})`}
+              </button>
+            ))}
           </div>
+          <p className="text-xs text-gray-400 shrink-0">
+            showing {filteredPosts.length} posts — scroll to see all
+          </p>
         </div>
 
-        {/* Data Source Note */}
-        <div className="mt-6 text-center text-sm text-gray-500">
-          Data loaded from: /data/forum_data.json
+        {/* Scrollable post list — no pagination, just scroll */}
+        <div className="divide-y divide-gray-100 max-h-[480px] overflow-y-auto">
+          {filteredPosts.map((post, i) => (
+            <div key={i} className="px-4 py-4">
+              <div className="flex flex-wrap gap-2 text-xs font-mono mb-2">
+                <Tag label="source" value={post.source} />
+                <Tag label="type" value={post.type} />
+                <Tag label="week_of_course" value={post.week_of_course} />
+                <Tag label="date" value={post.date} />
+                <Tag label="upvotes" value={post.upvotes} />
+                <Tag label="downvotes" value={post.downvotes} />
+                {post.comment_count !== null && (
+                  <Tag label="comment_count" value={post.comment_count} />
+                )}
+                <Tag label="endorsed" value={String(post.endorsed)} highlight={post.endorsed} />
+              </div>
+              {post.title && (
+                <p className="text-sm font-semibold text-gray-800 mb-1">
+                  <span className="font-mono text-gray-400 font-normal text-xs mr-1">title:</span>
+                  {post.title}
+                </p>
+              )}
+              <p className="text-sm text-gray-600 leading-relaxed">
+                <span className="font-mono text-gray-400 text-xs mr-1">body:</span>
+                {post.body}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 }
 
-// Stat Card Component
-function StatCard({
-  title,
-  value,
-  subtitle,
-}: {
-  title: string;
-  value: string;
-  subtitle: string;
+function FeatureSection({ title, headerColor, children }: {
+  title: string; headerColor: string; children: React.ReactNode;
 }) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-5">
-      <p className="text-sm font-medium text-gray-600">{title}</p>
-      <p className="text-3xl font-bold text-[#003057] mt-1">{value}</p>
-      <p className="text-sm text-gray-500 mt-1">{subtitle}</p>
+    <div className="rounded-xl border border-gray-200 overflow-hidden bg-white">
+      <div className={`px-3 py-2 ${headerColor}`}>
+        <p className="text-xs font-bold uppercase tracking-wider text-white font-mono">{title}</p>
+      </div>
+      <div className="px-3 py-3 space-y-1.5">{children}</div>
     </div>
+  );
+}
+
+function FeatureRow({ label, value }: { label: string; value: number }) {
+  return (
+    <div className="flex justify-between items-center text-xs">
+      <span className="font-mono text-gray-500 truncate mr-2">{label}</span>
+      <span className="font-semibold text-gray-900 shrink-0 tabular-nums">{value}</span>
+    </div>
+  );
+}
+
+function Tag({ label, value, highlight = false }: {
+  label: string; value: string | number; highlight?: boolean;
+}) {
+  return (
+    <span className={`px-2 py-0.5 rounded text-xs ${
+      highlight ? "bg-green-100 text-green-700 font-semibold" : "bg-gray-100 text-gray-600"
+    }`}>
+      {label}: {value}
+    </span>
   );
 }

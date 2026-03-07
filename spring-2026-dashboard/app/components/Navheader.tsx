@@ -6,9 +6,7 @@ export function NavHeader() {
   const { selectedClass, setSelectedClass, availableClasses } = useClassContext();
 
   const isActive = (path: string) => {
-    if (path === "/") {
-      return location.pathname === "/";
-    }
+    if (path === "/") return location.pathname === "/";
     return location.pathname.startsWith(path);
   };
 
@@ -47,8 +45,8 @@ export function NavHeader() {
               >
                 <option value="all">All Classes</option>
                 {availableClasses.map((cls) => (
-                  <option key={cls} value={cls}>
-                    {cls}
+                  <option key={cls.courseId} value={cls.courseId}>
+                    {cls.label}
                   </option>
                 ))}
               </select>
@@ -59,18 +57,10 @@ export function NavHeader() {
 
             {/* Navigation Links */}
             <nav className="flex items-center gap-2">
-              <Link to="/" className={linkClass("/")}>
-                Home
-              </Link>
-              <Link to="/sentiment" className={linkClass("/sentiment")}>
-                Sentiment
-              </Link>
-              <Link to="/grades" className={linkClass("/grades")}>
-                Grades
-              </Link>
-              <Link to="/topics" className={linkClass("/topics")}>
-                Topics
-              </Link>
+              <Link to="/" className={linkClass("/")}>Home</Link>
+              <Link to="/sentiment" className={linkClass("/sentiment")}>Sentiment</Link>
+              <Link to="/grades" className={linkClass("/grades")}>Grades</Link>
+              <Link to="/topics" className={linkClass("/topics")}>Topics</Link>
             </nav>
           </div>
         </div>

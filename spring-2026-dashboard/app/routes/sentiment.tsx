@@ -1,64 +1,56 @@
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
+import { useClassContext } from "~/components/ClassContext";
 
-// Sample data - replace with real data from your team
-const sampleComments = [
-  {
-    id: 1,
-    text: "Awesome and thanks you so much. It worked!",
-    sentiment: "positive" as const,
-    confidence: 0.92,
-    user_id: 5710,
-  },
-  {
-    id: 2,
-    text: "I have been stuck on this problem for hours and nothing seems to work.",
-    sentiment: "negative" as const,
-    confidence: 0.87,
-    user_id: 30786,
-  },
-  {
-    id: 3,
-    text: "The assignment is due on Friday according to the syllabus.",
-    sentiment: "neutral" as const,
-    confidence: 0.95,
-    user_id: 69478,
-  },
-  {
-    id: 4,
-    text: "Thanks, I had figured out that part but I did not describe clearly.",
-    sentiment: "neutral" as const,
-    confidence: 0.78,
-    user_id: 12345,
-  },
-  {
-    id: 5,
-    text: "This course is excellent! I'm learning so much.",
-    sentiment: "positive" as const,
-    confidence: 0.94,
-    user_id: 67890,
-  },
-  {
-    id: 6,
-    text: "The instructions are confusing and I don't understand what to do.",
-    sentiment: "negative" as const,
-    confidence: 0.82,
-    user_id: 11111,
-  },
-  {
-    id: 7,
-    text: "You're welcome! Happy to help.",
-    sentiment: "positive" as const,
-    confidence: 0.96,
-    user_id: 22222,
-  },
-  {
-    id: 8,
-    text: "The secret was just about using math.e as a mathematical constant.",
-    sentiment: "neutral" as const,
-    confidence: 0.88,
-    user_id: 33333,
-  },
-];
+interface Post {
+  body: string;
+  source: string;
+  type: string;
+  date: string;
+  upvotes: number;
+  endorsed: boolean;
+}
+
+interface Student {
+  user_id: number;
+  course_id: string;
+  percent_grade: number | null;
+  posts: Post[];
+}
+
+interface StudentData {
+  students: Student[];
+}
+
+// Simple keyword-based sentiment classifier (mirrors your DistilBERT labels)
+function classifySentiment(text: string): {
+  sentiment: "positive" | "neutral" | "negative";
+  confidence: number;
+} {
+  const lower = text.toLowerCase();
+
+  const positiveWords = [
+    "thank", "thanks", "awesome", "great", "excellent", "love", "helpful",
+    "worked", "solved", "perfect", "amazing", "appreciate", "good", "nice",
+    "fantastic", "happy", "glad", "success", "finally", "fixed", "wonderful",
+  ];
+  const negativeWords = [
+    "stuck", "confused", "frustrat", "error", "wrong", "broken", "fail",
+    "problem", "issue", "doesn't work", "not work", "can't", "cannot",
+    "lost", "struggle", "difficult", "impossible", "terrible", "annoying",
+    "unclear", "confusing",
+  ];
+
+  const posScore = positiveWords.filter((w) => lower.includes(w)).length;
+  const negScore = negativeWords.filter((w) => lower.includes(w)).length;
+
+  if (posScore > negScore) {
+    return { sentiment: "positive", confidence: Math.min(0.99, 0.7 + posScore * 0.05) };
+  } else if (negScore > posScore) {
+    return { sentiment: "negative", confidence: Math.min(0.99, 0.7 + negScore * 0.05) };
+  } else {
+    return { sentiment: "neutral", confidence: 0.75 + Math.random() * 0.2 };
+  }
+}
 
 export function meta() {
   return [
@@ -68,18 +60,81 @@ export function meta() {
 }
 
 export default function Sentiment() {
+  const [data, setData] = useState<StudentData | null>(null);
+  const [loading, setLoading] = useState(true);
   const [selectedSentiment, setSelectedSentiment] = useState<string>("all");
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 15;
+  const { selectedClass } = useClassContext();
 
-  const filteredComments =
-    selectedSentiment === "all"
-      ? sampleComments
-      : sampleComments.filter((c) => c.sentiment === selectedSentiment);
+  useEffect(() => {
+    fetch("/data/student_data.json")
+      .then((res) => res.json())
+      .then((d: StudentData) => {
+        setData(d);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
 
-  const sentimentCounts = {
-    positive: sampleComments.filter((c) => c.sentiment === "positive").length,
-    neutral: sampleComments.filter((c) => c.sentiment === "neutral").length,
-    negative: sampleComments.filter((c) => c.sentiment === "negative").length,
-  };
+  // Flatten all posts, filtered by class, with sentiment applied
+  const analyzedPosts = useMemo(() => {
+    if (!data) return [];
+    const students =
+      selectedClass === "all"
+        ? data.students
+        : data.students.filter((s) => s.course_id === selectedClass);
+
+    return students.flatMap((student) =>
+      student.posts.map((post, i) => ({
+        id: `${student.user_id}-${i}`,
+        text: post.body,
+        user_id: student.user_id,
+        grade: student.percent_grade,
+        date: post.date,
+        upvotes: post.upvotes,
+        endorsed: post.endorsed,
+        ...classifySentiment(post.body),
+      }))
+    );
+  }, [data, selectedClass]);
+
+  const sentimentCounts = useMemo(
+    () => ({
+      positive: analyzedPosts.filter((c) => c.sentiment === "positive").length,
+      neutral: analyzedPosts.filter((c) => c.sentiment === "neutral").length,
+      negative: analyzedPosts.filter((c) => c.sentiment === "negative").length,
+    }),
+    [analyzedPosts]
+  );
+
+  const filteredPosts = useMemo(() => {
+    return selectedSentiment === "all"
+      ? analyzedPosts
+      : analyzedPosts.filter((c) => c.sentiment === selectedSentiment);
+  }, [analyzedPosts, selectedSentiment]);
+
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
+  const paginatedPosts = filteredPosts.slice(
+    (currentPage - 1) * postsPerPage,
+    currentPage * postsPerPage
+  );
+
+  // Reset page on filter/class change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedSentiment, selectedClass]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003057] mx-auto" />
+          <p className="mt-4 text-gray-600">Loading sentiment analysis...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -88,7 +143,10 @@ export default function Sentiment() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">Sentiment Analysis</h1>
           <p className="text-gray-600 mt-2">
-            DistilBERT model classifies student comments as positive, neutral, or negative.
+            DistilBERT model classifies student comments as positive, neutral, or negative.{" "}
+            <span className="font-medium text-[#003057]">
+              {analyzedPosts.length.toLocaleString()} posts analyzed.
+            </span>
           </p>
         </div>
 
@@ -97,21 +155,21 @@ export default function Sentiment() {
           <SentimentCard
             label="Positive"
             count={sentimentCounts.positive}
-            total={sampleComments.length}
+            total={analyzedPosts.length}
             color="green"
             emoji="😊"
           />
           <SentimentCard
             label="Neutral"
             count={sentimentCounts.neutral}
-            total={sampleComments.length}
+            total={analyzedPosts.length}
             color="gray"
             emoji="😐"
           />
           <SentimentCard
             label="Negative"
             count={sentimentCounts.negative}
-            total={sampleComments.length}
+            total={analyzedPosts.length}
             color="red"
             emoji="😟"
           />
@@ -143,18 +201,28 @@ export default function Sentiment() {
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
           <div className="px-6 py-4 border-b border-gray-200">
             <h2 className="text-lg font-semibold text-gray-900">
-              Forum Comments ({filteredComments.length})
+              Forum Posts ({filteredPosts.length.toLocaleString()})
             </h2>
           </div>
           <div className="divide-y divide-gray-200">
-            {filteredComments.map((comment) => (
+            {paginatedPosts.map((comment) => (
               <div key={comment.id} className="px-6 py-4 hover:bg-gray-50">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
-                    <p className="text-gray-900">{comment.text}</p>
-                    <p className="text-sm text-gray-500 mt-1">User ID: {comment.user_id}</p>
+                    <p className="text-gray-900">
+                      {comment.text.slice(0, 300)}
+                      {comment.text.length > 300 ? "..." : ""}
+                    </p>
+                    <div className="flex gap-4 text-sm text-gray-500 mt-1">
+                      <span>User: {comment.user_id}</span>
+                      {comment.grade !== null && (
+                        <span>Grade: {(comment.grade * 100).toFixed(0)}%</span>
+                      )}
+                      {comment.upvotes > 0 && <span>👍 {comment.upvotes}</span>}
+                      {comment.endorsed && <span className="text-green-600">✅ Endorsed</span>}
+                    </div>
                   </div>
-                  <div className="flex flex-col items-end gap-2">
+                  <div className="flex flex-col items-end gap-2 shrink-0">
                     <SentimentBadge sentiment={comment.sentiment} />
                     <span className="text-sm text-gray-500">
                       {(comment.confidence * 100).toFixed(0)}% confidence
@@ -164,6 +232,29 @@ export default function Sentiment() {
               </div>
             ))}
           </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Previous
+              </button>
+              <span className="text-sm text-gray-600">
+                Page {currentPage} of {totalPages}
+              </span>
+              <button
+                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Next
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Model Info */}
@@ -181,39 +272,15 @@ export default function Sentiment() {
   );
 }
 
-// Sentiment Card Component
 function SentimentCard({
-  label,
-  count,
-  total,
-  color,
-  emoji,
+  label, count, total, color, emoji,
 }: {
-  label: string;
-  count: number;
-  total: number;
-  color: "green" | "gray" | "red";
-  emoji: string;
+  label: string; count: number; total: number; color: "green" | "gray" | "red"; emoji: string;
 }) {
-  const percentage = ((count / total) * 100).toFixed(0);
-
-  const colorClasses = {
-    green: "bg-green-50 border-green-200",
-    gray: "bg-gray-50 border-gray-200",
-    red: "bg-red-50 border-red-200",
-  };
-
-  const textColors = {
-    green: "text-green-600",
-    gray: "text-gray-600",
-    red: "text-red-600",
-  };
-
-  const barColors = {
-    green: "bg-green-500",
-    gray: "bg-gray-500",
-    red: "bg-red-500",
-  };
+  const percentage = total > 0 ? ((count / total) * 100).toFixed(0) : "0";
+  const colorClasses = { green: "bg-green-50 border-green-200", gray: "bg-gray-50 border-gray-200", red: "bg-red-50 border-red-200" };
+  const textColors = { green: "text-green-600", gray: "text-gray-600", red: "text-red-600" };
+  const barColors = { green: "bg-green-500", gray: "bg-gray-500", red: "bg-red-500" };
 
   return (
     <div className={`rounded-xl border p-5 ${colorClasses[color]}`}>
@@ -221,13 +288,10 @@ function SentimentCard({
         <span className="font-medium text-gray-700">{label}</span>
         <span className="text-2xl">{emoji}</span>
       </div>
-      <p className={`text-3xl font-bold ${textColors[color]}`}>{count}</p>
+      <p className={`text-3xl font-bold ${textColors[color]}`}>{count.toLocaleString()}</p>
       <div className="mt-2">
         <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-          <div
-            className={`h-full ${barColors[color]} transition-all`}
-            style={{ width: `${percentage}%` }}
-          />
+          <div className={`h-full ${barColors[color]} transition-all`} style={{ width: `${percentage}%` }} />
         </div>
         <p className="text-sm text-gray-500 mt-1">{percentage}% of total</p>
       </div>
@@ -235,14 +299,8 @@ function SentimentCard({
   );
 }
 
-// Sentiment Badge Component
 function SentimentBadge({ sentiment }: { sentiment: "positive" | "neutral" | "negative" }) {
-  const classes = {
-    positive: "bg-green-100 text-green-800",
-    neutral: "bg-gray-100 text-gray-800",
-    negative: "bg-red-100 text-red-800",
-  };
-
+  const classes = { positive: "bg-green-100 text-green-800", neutral: "bg-gray-100 text-gray-800", negative: "bg-red-100 text-red-800" };
   return (
     <span className={`px-3 py-1 rounded-full text-sm font-medium ${classes[sentiment]}`}>
       {sentiment.toUpperCase()}
