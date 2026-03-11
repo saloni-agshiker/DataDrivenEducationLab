@@ -8,3 +8,5 @@
 
 # Data files (FERPA protected)
 public/data/student_data.json
+public/data/sentiment_18k.json
+public/data/sentiment_eval.json

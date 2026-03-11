@@ -3,7 +3,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, Cell, PieChart, Pie,
 } from "recharts";
-import { useClassContext } from "~/components/ClassContext";
+
 
 interface Post {
   body: string;
@@ -115,8 +115,6 @@ export default function Topics() {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 10;
-  const { selectedClass } = useClassContext();
-
   useEffect(() => {
     fetch("/data/student_data.json")
       .then((res) => res.json())
@@ -124,15 +122,10 @@ export default function Topics() {
       .catch(() => setLoading(false));
   }, []);
 
-  // Flatten and classify posts, filtered by class
+  // Flatten and classify all posts
   const processedPosts = useMemo(() => {
     if (!data) return [];
-    const students =
-      selectedClass === "all"
-        ? data.students
-        : data.students.filter((s) => s.course_id === selectedClass);
-
-    return students.flatMap((student) =>
+    return data.students.flatMap((student) =>
       student.posts.map((post, i) => ({
         id: `${student.user_id}-${i}`,
         body: post.body,
@@ -143,7 +136,7 @@ export default function Topics() {
         topicId: assignTopic(post.body),
       }))
     );
-  }, [data, selectedClass]);
+  }, [data]);
 
   const topicStats = useMemo(() => {
     return topicData.map((topic) => {
@@ -181,7 +174,7 @@ export default function Topics() {
     currentPage * postsPerPage
   );
 
-  useEffect(() => { setCurrentPage(1); }, [selectedTopic, searchTerm, selectedClass]);
+  useEffect(() => { setCurrentPage(1); }, [selectedTopic, searchTerm]);
 
   if (loading) {
     return (
