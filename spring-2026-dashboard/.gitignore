@@ -10,3 +10,5 @@
 public/data/student_data.json
 public/data/sentiment_18k.json
 public/data/sentiment_eval.json
+public/data/labelled_predictions.csv
+public/data/unlabelled_predictions.csv

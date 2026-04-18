@@ -21,14 +21,14 @@ export function NavHeader() {
         <div className="flex items-center justify-between">
           {/* Logo / Title */}
           <Link to="/" className="flex items-center gap-3">
-            <span className="text-2xl">🐝</span>
+            <img src="/gt.png" alt="Georgia Tech" className="h-8 w-auto bg-white rounded p-1" />
             <div>
               <h1 className="text-xl font-bold text-white">Discussion Forum Dashboard</h1>
               <p className="text-[#B3A369] text-sm">Georgia Tech - Data Driven Education</p>
             </div>
           </Link>
 
-          {/* Navigation Links + Class Selector */}
+          {/* Navigation Links */}
           <nav className="flex items-center gap-2">
             <Link to="/" className={linkClass("/")}>Home</Link>
             <Link to="/sentiment" className={linkClass("/sentiment")}>Sentiment</Link>
