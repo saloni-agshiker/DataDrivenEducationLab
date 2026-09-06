@@ -45,7 +45,11 @@ const CP_COLORS: Record<number, { bar: string; bg: string; text: string; border:
 };
 
 const CP_LABEL_MAP: Record<number, string> = {
-  0: "None", 1: "Phase 1", 2: "Phase 2", 3: "Phase 3", 4: "Phase 4",
+  0: "None",
+  1: "Triggering Event",
+  2: "Exploration",
+  3: "Integration",
+  4: "Resolution",
 };
 
 function fmt(n: number, d = 1) { return n.toFixed(d); }
