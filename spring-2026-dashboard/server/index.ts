@@ -1,6 +1,6 @@
 import "dotenv/config";
 import express, { type NextFunction, type Request, type Response } from "express";
-import OpenAI from "openai";
+import { GoogleGenAI } from "@google/genai";
 
 const app = express();
 const port = Number(process.env.PORT ?? 3001);
@@ -21,8 +21,9 @@ app.use((req, res, next) => {
   next();
 });
 
-const openai = process.env.OPENAI_API_KEY
-  ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
+const geminiApiKey = process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY;
+const gemini = geminiApiKey
+  ? new GoogleGenAI({ apiKey: geminiApiKey })
   : null;
 
 const SUMMARY_SCHEMA = {
@@ -56,7 +57,7 @@ const SUMMARY_SCHEMA = {
     },
   },
   required: ["summary", "key_findings", "caveats", "recommended_actions"],
-} as const;
+};
 
 const INSTRUCTIONS = `You are an educational analytics assistant.
 
@@ -110,40 +111,37 @@ function validateContext(value: unknown): AnalyticsContext {
 }
 
 app.get("/api/health", (_req, res) => {
-  res.json({ ok: true, llm_configured: Boolean(openai) });
+  res.json({ ok: true, llm_configured: Boolean(gemini) });
 });
 
 app.post("/api/summarize", async (req, res, next) => {
   try {
-    if (!openai) {
+    if (!gemini) {
       res.status(503).json({
-        error: "LLM backend is not configured. Set OPENAI_API_KEY before making summarize requests.",
+        error: "Gemini backend is not configured. Set GEMINI_API_KEY before making summarize requests.",
       });
       return;
     }
 
     const context = validateContext(req.body);
-    const response = await openai.responses.create({
-      model: process.env.OPENAI_MODEL ?? "gpt-5.2",
-      store: false,
-      instructions: INSTRUCTIONS,
+    const interaction = await gemini.interactions.create({
+      model: process.env.GEMINI_MODEL ?? "gemini-3.6-flash",
+      system_instruction: INSTRUCTIONS,
       input: `<analytics_context>\n${JSON.stringify(context)}\n</analytics_context>`,
-      text: {
-        format: {
-          type: "json_schema",
-          name: "sentiment_analytics_summary",
-          strict: true,
-          schema: SUMMARY_SCHEMA,
-        },
+      store: false,
+      response_format: {
+        type: "text",
+        mime_type: "application/json",
+        schema: SUMMARY_SCHEMA,
       },
     });
 
-    if (!response.output_text) {
+    if (!interaction.output_text) {
       res.status(502).json({ error: "The LLM returned an empty response." });
       return;
     }
 
-    res.json(JSON.parse(response.output_text));
+    res.json(JSON.parse(interaction.output_text));
   } catch (error) {
     next(error);
   }
@@ -156,5 +154,5 @@ app.use((error: unknown, _req: Request, res: Response, _next: NextFunction) => {
 });
 
 app.listen(port, () => {
-  console.log(`LLM backend listening on http://localhost:${port}`);
+  console.log(`Gemini backend listening on http://localhost:${port}`);
 });

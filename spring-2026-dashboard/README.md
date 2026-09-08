@@ -34,6 +34,20 @@ npm run dev
 
 Your application will be available at `http://localhost:5173`.
 
+### Gemini analytics backend
+
+The analytics summary endpoint uses Google's Gemini API through the official
+`@google/genai` SDK. Copy `.env.example` to `.env`, set your Google AI Studio
+key in `GEMINI_API_KEY`, and start the backend in a second terminal:
+
+```bash
+npm run backend
+```
+
+`GEMINI_MODEL` defaults to `gemini-3.6-flash` and can be changed to another
+Gemini model available to your API key. The API key stays server-side and is
+never sent to the browser.
+
 ## Building for Production
 
 Create a production build:
