@@ -48,6 +48,43 @@ npm run backend
 Gemini model available to your API key. The API key stays server-side and is
 never sent to the browser.
 
+### Local EdStem MCP bridge
+
+The backend can also launch a local EdStem MCP server and expose its tools to
+Gemini. Add the actual local server path and EdStem token to `.env`:
+
+```bash
+EDSTEM_MCP_PATH=/absolute/path/to/edstem-mcp/dist/index.js
+EDSTEM_MCP_COMMAND=node
+ED_API_TOKEN=your_token
+EDSTEM_MCP_TEST_ENDPOINTS=true
+```
+
+Then restart the backend. The MCP process connects when the backend starts.
+Check `/api/health` for `edstem_mcp_status: "connected"`.
+This uses the Google GenAI SDK's local `mcpToTool` bridge; the MCP server runs
+locally alongside the backend rather than in the browser.
+
+To test EdStem without involving Gemini, list the available tools:
+
+```bash
+curl http://localhost:3001/api/edstem/tools
+```
+
+Then call a tool directly, such as `list_threads`:
+
+```bash
+curl -X POST http://localhost:3001/api/edstem/call \
+  -H 'Content-Type: application/json' \
+  -d '{"name":"list_threads","arguments":{}}'
+```
+
+Keep `EDSTEM_MCP_TEST_ENDPOINTS=false` outside local testing because the call
+endpoint can execute any tool exposed by the MCP server.
+
+If `list_threads` requires parameters, use the input schema returned by
+`/api/edstem/tools` to populate the `arguments` object.
+
 ## Building for Production
 
 Create a production build:

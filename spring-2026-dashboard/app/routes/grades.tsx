@@ -574,7 +574,7 @@ export default function Grades() {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="range" tick={{ fontSize: 12 }} />
                   <YAxis allowDecimals={false} label={{ value: "Students", angle: -90, position: "insideLeft", offset: 10 }} />
-                  <Tooltip formatter={(v: number) => [v, "Students"]} />
+                <Tooltip formatter={(v: number | undefined) => [v ?? 0, "Students"]} />
                   <Bar dataKey="count" radius={[4, 4, 0, 0]}>
                     {gradeDistribution.map((e, i) => <Cell key={i} fill={e.color} />)}
                   </Bar>

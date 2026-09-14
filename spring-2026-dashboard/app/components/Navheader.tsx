@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router";
+import { useAuth } from "~/components/AuthContext";
 
 export function NavHeader() {
   const location = useLocation();
+  const { isAuthenticated, logout } = useAuth();
 
   const isActive = (path: string) => {
     if (path === "/") return location.pathname === "/";
@@ -14,6 +16,23 @@ export function NavHeader() {
         ? "bg-[#B3A369] text-[#003057]"
         : "text-white hover:bg-[#004477]"
     }`;
+
+  const navItem = (path: string, label: string) => {
+    if (!isAuthenticated && path !== "/") {
+      return (
+        <span
+          key={path}
+          className="cursor-not-allowed rounded-lg px-4 py-2 font-medium text-white/40"
+          aria-disabled="true"
+          title="Sign in to access this workspace"
+        >
+          {label}
+        </span>
+      );
+    }
+
+    return <Link key={path} to={path} className={linkClass(path)}>{label}</Link>;
+  };
 
   return (
     <header className="bg-[#003057] shadow-lg">
@@ -30,10 +49,15 @@ export function NavHeader() {
 
           {/* Navigation Links */}
           <nav className="flex items-center gap-2">
-            <Link to="/" className={linkClass("/")}>Home</Link>
-            <Link to="/sentiment" className={linkClass("/sentiment")}>Sentiment</Link>
-            <Link to="/grades" className={linkClass("/grades")}>Grades</Link>
-            <Link to="/topics" className={linkClass("/topics")}>Topics</Link>
+            {navItem("/", "Home")}
+            {navItem("/sentiment", "Sentiment")}
+            {navItem("/grades", "Grades")}
+            {navItem("/topics", "Topics")}
+            {isAuthenticated && (
+              <button type="button" onClick={logout} className="ml-2 rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white/75 transition-colors hover:border-white/50 hover:text-white">
+                Sign out
+              </button>
+            )}
           </nav>
         </div>
       </div>

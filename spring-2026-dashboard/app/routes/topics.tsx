@@ -235,7 +235,7 @@ export default function Topics() {
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" angle={-15} textAnchor="end" tick={{ fontSize: 11 }} interval={0} />
                 <YAxis unit="%" domain={[0, 50]} />
-                <Tooltip formatter={(v: number) => [`${v}%`, "Token share"]} />
+                <Tooltip formatter={(v: number | undefined) => [`${v ?? 0}%`, "Token share"]} />
                 <Bar dataKey="tokenPct" name="Token %" radius={[4, 4, 0, 0]}>
                   {topicData.map((t, i) => <Cell key={i} fill={t.color} />)}
                 </Bar>
