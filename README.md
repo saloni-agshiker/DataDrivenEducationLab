@@ -28,6 +28,8 @@ We developed a **sentiment analysis model** using DistilBERT, a lightweight, dis
 
 ## 📽 Demo
 
+![Check out COMPASS!](https://data-driven-education.netlify.app/)
+
 ![LDA Model Results](images/LDA_Results.png)
 
 ![Confusion Matrix](images/Confusion_Matrix.png)
